@@ -1,0 +1,16 @@
+[3.187s] Invoking command in '/home/unitree/106a_final/build/base_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unitree/106a_final/install/go2_bringup:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_return_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/navigation_node_three:/home/unitree/106a_final/install/navigation_node:/home/unitree/106a_final/install/navigatigation_node_three:/home/unitree/106a_final/install/aruco_node:/home/unitree/106a_final/install/arm_control:/opt/ros/foxy /usr/bin/cmake --build /home/unitree/106a_final/build/base_driver -- -j4 -l4
+[3.406s] [ 50%] Built target base_wrapper
+[3.434s] [35m[1mScanning dependencies of target base_driver[0m
+[3.528s] [ 75%] [32mBuilding CXX object CMakeFiles/base_driver.dir/src/base_driver.cpp.o[0m
+[24.615s] [100%] [32m[1mLinking CXX executable base_driver[0m
+[26.130s] /usr/bin/ld: CMakeFiles/base_driver.dir/src/base_driver.cpp.o: in function `BaseDriver::~BaseDriver()':
+[26.130s] base_driver.cpp:(.text._ZN10BaseDriverD2Ev[_ZN10BaseDriverD5Ev]+0x40): undefined reference to `BaseWrapper::stop_move()'
+[26.130s] /usr/bin/ld: CMakeFiles/base_driver.dir/src/base_driver.cpp.o: in function `BaseDriver::laydown_callback(std::shared_ptr<std_msgs::msg::Bool_<std::allocator<void> > >)':
+[26.131s] base_driver.cpp:(.text._ZN10BaseDriver16laydown_callbackESt10shared_ptrIN8std_msgs3msg5Bool_ISaIvEEEE[_ZN10BaseDriver16laydown_callbackESt10shared_ptrIN8std_msgs3msg5Bool_ISaIvEEEE]+0x194): undefined reference to `BaseWrapper::damp()'
+[26.131s] /usr/bin/ld: CMakeFiles/base_driver.dir/src/base_driver.cpp.o: in function `BaseDriver::stop_move_callback(std::shared_ptr<std_msgs::msg::Bool_<std::allocator<void> > >)':
+[26.131s] base_driver.cpp:(.text._ZN10BaseDriver18stop_move_callbackESt10shared_ptrIN8std_msgs3msg5Bool_ISaIvEEEE[_ZN10BaseDriver18stop_move_callbackESt10shared_ptrIN8std_msgs3msg5Bool_ISaIvEEEE]+0x30): undefined reference to `BaseWrapper::stop_move()'
+[26.131s] collect2: error: ld returned 1 exit status
+[26.135s] make[2]: *** [CMakeFiles/base_driver.dir/build.make:137: base_driver] Error 1
+[26.135s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/base_driver.dir/all] Error 2
+[26.136s] make: *** [Makefile:141: all] Error 2
+[26.142s] Invoked command in '/home/unitree/106a_final/build/base_driver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unitree/106a_final/install/go2_bringup:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_return_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/navigation_node_three:/home/unitree/106a_final/install/navigation_node:/home/unitree/106a_final/install/navigatigation_node_three:/home/unitree/106a_final/install/aruco_node:/home/unitree/106a_final/install/arm_control:/opt/ros/foxy /usr/bin/cmake --build /home/unitree/106a_final/build/base_driver -- -j4 -l4

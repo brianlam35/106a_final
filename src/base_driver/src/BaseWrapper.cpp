@@ -2,6 +2,7 @@
 #include <unitree/robot/go2/sport/sport_client.hpp>
 #include <iostream>
 #include <memory>
+#include <unistd.h> 
 
 struct RealBase {
     std::shared_ptr<unitree::robot::go2::SportClient> client;
@@ -26,7 +27,8 @@ BaseWrapper::~BaseWrapper() {
     if (m_data) delete static_cast<RealBase*>(m_data);
 }
 
-void BaseWrapper::stop() {
+// Renamed stop() to stop_move() to be explicit
+void BaseWrapper::stop_move() {
     RealBase* d = static_cast<RealBase*>(m_data);
     if(d->client) d->client->StopMove();
 }
@@ -36,11 +38,20 @@ void BaseWrapper::move(float vx, float vy, float vyaw) {
     if(d->client) d->client->Move(vx, vy, vyaw);
 }
 
-// --- NEW FUNCTION ---
+// Legacy "Lay Down" -> Becomes "Damp"
+void BaseWrapper::damp() {
+    RealBase* d = static_cast<RealBase*>(m_data);
+    if(d->client) {
+        std::cout << "[BaseWrapper] Executing DAMP..." << std::endl;
+        d->client->Damp(); 
+    }
+}
+
+// New "Stand Down"
 void BaseWrapper::stand_down() {
     RealBase* d = static_cast<RealBase*>(m_data);
     if(d->client) {
-        // This is the controlled "sit/lie down" command
+        std::cout << "[BaseWrapper] Executing STAND DOWN..." << std::endl;
         d->client->StandDown(); 
     }
 }

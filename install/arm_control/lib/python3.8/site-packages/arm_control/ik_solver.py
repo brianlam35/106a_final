@@ -28,7 +28,7 @@ class IKSolver:
         # y=Pitch (45 deg down), z=Yaw (Towards bottle)
         # Check your URDF: If 'y' is pitch, this works. 
         # If it curls sideways, change 'y' to 'x'.
-        r = R.from_euler('zy', [yaw_to_target, 45], degrees=True)
+        r = R.from_euler('zy', [yaw_to_target, 30], degrees=True)
         target_orientation = r.as_matrix()
 
         # --- 3. SOLVE ---

@@ -18,7 +18,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/unitree/106a_final/src/base_driver/include"
-  "/home/unitree/106a_final/src/base_driver/src"
   "/usr/local/include/ddscxx"
   "/usr/local/include/iceoryx/v2.0.2"
   "/opt/ros/foxy/include"

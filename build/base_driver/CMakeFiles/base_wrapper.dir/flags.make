@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/unitree/106a_final/src/base_driver/include -I/home/unitree/106a_final/src/base_driver/src -I/usr/local/include/ddscxx -I/usr/local/include/iceoryx/v2.0.2 
+CXX_INCLUDES = -I/home/unitree/106a_final/src/base_driver/include -I/usr/local/include/ddscxx -I/usr/local/include/iceoryx/v2.0.2 
 

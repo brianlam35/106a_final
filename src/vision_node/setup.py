@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'pingpong_node = vision_node.pingpong:main',
+            'arm_aruco = vision_node.arm_aruco:main',
         ],
     },
 )

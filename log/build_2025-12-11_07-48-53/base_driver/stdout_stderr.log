@@ -1,0 +1,14 @@
+[ 50%] Built target base_wrapper
+[35m[1mScanning dependencies of target base_driver[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/base_driver.dir/src/base_driver.cpp.o[0m
+[100%] [32m[1mLinking CXX executable base_driver[0m
+/usr/bin/ld: CMakeFiles/base_driver.dir/src/base_driver.cpp.o: in function `BaseDriver::~BaseDriver()':
+base_driver.cpp:(.text._ZN10BaseDriverD2Ev[_ZN10BaseDriverD5Ev]+0x40): undefined reference to `BaseWrapper::stop_move()'
+/usr/bin/ld: CMakeFiles/base_driver.dir/src/base_driver.cpp.o: in function `BaseDriver::laydown_callback(std::shared_ptr<std_msgs::msg::Bool_<std::allocator<void> > >)':
+base_driver.cpp:(.text._ZN10BaseDriver16laydown_callbackESt10shared_ptrIN8std_msgs3msg5Bool_ISaIvEEEE[_ZN10BaseDriver16laydown_callbackESt10shared_ptrIN8std_msgs3msg5Bool_ISaIvEEEE]+0x194): undefined reference to `BaseWrapper::damp()'
+/usr/bin/ld: CMakeFiles/base_driver.dir/src/base_driver.cpp.o: in function `BaseDriver::stop_move_callback(std::shared_ptr<std_msgs::msg::Bool_<std::allocator<void> > >)':
+base_driver.cpp:(.text._ZN10BaseDriver18stop_move_callbackESt10shared_ptrIN8std_msgs3msg5Bool_ISaIvEEEE[_ZN10BaseDriver18stop_move_callbackESt10shared_ptrIN8std_msgs3msg5Bool_ISaIvEEEE]+0x30): undefined reference to `BaseWrapper::stop_move()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/base_driver.dir/build.make:137: base_driver] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/base_driver.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

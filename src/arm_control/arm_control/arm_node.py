@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PointStamped, PoseStamped
-from std_msgs.msg import Float32MultiArray
+from std_msgs.msg import Float32MultiArray, String
 from sensor_msgs.msg import JointState
 from rclpy.qos import qos_profile_sensor_data
 import numpy as np
@@ -13,31 +13,41 @@ class ArmManager(Node):
         super().__init__('arm_manager')
         self.ik = IKSolver()
         
-        # --- OFFSETS ---
-        self.cam_x_offset = 0.2
-        self.cam_y_offset = 0.0
-        self.cam_z_offset = 0.1
+        # --- OFFSETS (Physical distance from Arm Base to Camera Lens) ---
+        self.cam_x_offset = 0.23  # Forward/Back   0.38-0.12 = base to cam offset - calibration offset
+        self.cam_y_offset = 0.04  # Left/Right
+        self.cam_z_offset = 0.0   # Up/Down
 
-        # --- HARDWARE CALIBRATION SHIM ---
-        # Positive = Shifts Target LEFT relative to the robot
-        # Negative = Shifts Target RIGHT relative to the robot
-        self.y_bias = -0.04  # <--- ADJUST THIS TO CALIBRATE
+        # --- TUNING: SCALING FACTORS ---
+        self.x_scale = 1.9   
+        self.y_scale = 0.667  # Your calibrated value
+        self.z_scale = 1.0   
+
+        # --- TUNING: BIAS ---
+        self.y_bias = -0.04   #tweak this
+
+        # --- ARUCO SETTINGS ---
+        # Radius of the object (Water Bottle)
+        # We add this to reach the CENTER of the bottle, not just the surface tag.
+        self.BOTTLE_RADIUS = 0.02 # 2cm
 
         # State Variables
         self.current_joints = []
         self.target_joints = []
-        self.state = "IDLE" 
+        self.state = "WAITING_FOR_START" # <--- NEW INITIAL STATE
         self.start_time = 0
 
         # --- SUBSCRIBERS ---
-        # 1. Vision (We support both PointStamped and PoseStamped)
-        self.sub_vision_pt = self.create_subscription(
-            PointStamped, '/vision/target_pose', self.vision_cb_point, 10)
-            
-        self.sub_vision_pose = self.create_subscription(
-            PoseStamped, '/vision/target_pose', self.vision_cb_pose, qos_profile_sensor_data)
+        
+        # 1. The Trigger (Prerequisite)
+        self.sub_start = self.create_subscription(
+            String, '/arm_start', self.start_cb, 10)
 
-        # 2. Joint State
+        # 2. Vision (ArUco Pose)
+        self.sub_vision_pose = self.create_subscription(
+            PoseStamped, '/aruco_target', self.vision_cb_pose, qos_profile_sensor_data)
+
+        # 3. Joint State
         self.sub_state = self.create_subscription(
             JointState, '/arm_joint_states', self.state_cb, 10)
             
@@ -47,39 +57,48 @@ class ArmManager(Node):
         # Control Loop
         self.timer = self.create_timer(0.1, self.control_loop)
         
-        self.get_logger().info("Arm Manager Ready (Immediate Mode). Waiting for vision...")
+        self.get_logger().info("Arm Manager Ready. Waiting for '/arm_start' signal...")
+
+    def start_cb(self, msg):
+        # Check if we are waiting AND if the message is correct
+        if self.state == "WAITING_FOR_START" and msg.data == 'start':
+            self.get_logger().info("Received START signal! Activating Arm...")
+            self.state = "IDLE" # Now ready to process vision
 
     def state_cb(self, msg):
         self.current_joints = list(msg.position)
 
-    # Handler for PointStamped (Matches your manual test)
-    def vision_cb_point(self, msg):
-        # DIRECT MAPPING (Matches your original script)
-        # X -> Forward
-        # Y -> Left/Right
-        # Z -> Up/Down
-        self.process_target(msg.point.x, msg.point.y, msg.point.z)
-
-    # Handler for PoseStamped (Matches your original script logic)
     def vision_cb_pose(self, msg):
+        # X=Right, Y=Down, Z=Forward (Standard Camera Frame)
         self.process_target(msg.pose.position.x, msg.pose.position.y, msg.pose.position.z)
 
-    def process_target(self, msg_x, msg_y, msg_z):
-        if self.state != "IDLE": return # Ignore if busy
+    def process_target(self, cam_x, cam_y, cam_z):
+        # Only process if we have received the start signal
+        if self.state != "IDLE": return 
         
-        # --- COORDINATE MAPPING (Reverted to your original) ---
-        tx = msg_x + self.cam_x_offset
-        ty = msg_y + self.cam_y_offset + self.y_bias # <--- BIAS APPLIED HERE
-        tz = msg_z + self.cam_z_offset
+        # --- COORDINATE MAPPING ---
         
-        # --- DEBUG PRINT ---
-        self.get_logger().info(f"DEBUG: Bias={self.y_bias}. InputX={msg_x:.2f} -> TargetX={tx:.2f}, TargetY={ty:.3f}")
+        # 1. Forward Reach (tx)
+        # Cam Z (Depth) + Offset + Reach INSIDE the bottle (Radius)
+        tx = (cam_z * self.x_scale) + self.cam_x_offset + self.BOTTLE_RADIUS
+        
+        # 2. Left/Right (ty)
+        # -Cam X (Right is neg) + Offset + Bias
+        ty = (-cam_x * self.y_scale) + self.cam_y_offset + self.y_bias
+        
+        # 3. Height (tz)
+        # Cam Y (Down) + Offset. 
+        # Since the tag is on the SIDE of the cap, this Z is the exact cap height.
+        # We might subtract 5mm to ensure we don't hit the top lip.
+        tz = (cam_y * self.z_scale) + self.cam_z_offset - 0.1
+        
+        self.get_logger().info(f"DEBUG: InputZ={cam_z:.2f} | Radius Added | Final Target: ({tx:.2f}, {ty:.2f}, {tz:.2f})")
         
         try:
             self.approach_angles = list(self.ik.compute_ik(tx, ty, tz))
             self.lift_angles     = list(self.ik.compute_ik(tx, ty, tz + 0.15))
 
-            # self.get_logger().info("Target Calculated. Starting Approach...")
+            self.get_logger().info("Target Calculated. Starting Approach...")
             self.state = "START_APPROACH"
             
         except Exception as e:
@@ -97,36 +116,43 @@ class ArmManager(Node):
         return error < threshold
 
     def control_loop(self):
-        if self.state == "IDLE":
-            pass
+        if self.state == "WAITING_FOR_START":
+            pass # Do nothing, wait for topic
+
+        elif self.state == "IDLE":
+            pass # Active, waiting for ArUco tag
 
         elif self.state == "START_APPROACH":
-            self.send_cmd(self.approach_angles, 1.5) # Open
+            self.send_cmd(self.approach_angles, 1.5) 
             self.state = "APPROACHING"
             
         elif self.state == "APPROACHING":
             if self.is_at_target():
-                # self.get_logger().info("Reached Target. Gripping...")
                 self.state = "START_GRIP"
         
         elif self.state == "START_GRIP":
-            self.send_cmd(self.approach_angles, -1.5) # Close
+            self.send_cmd(self.approach_angles, -1.5) 
             self.start_time = self.get_clock().now().seconds_nanoseconds()[0]
             self.state = "GRIPPING"
             
         elif self.state == "GRIPPING":
             if (self.get_clock().now().seconds_nanoseconds()[0] - self.start_time) > 3:
-                # self.get_logger().info("Grip Complete. Lifting...")
                 self.state = "START_LIFT"
         
         elif self.state == "START_LIFT":
-            self.send_cmd(self.lift_angles, -1.5) # Keep Closed
+            self.send_cmd(self.lift_angles, -1.5)
             self.state = "LIFTING"
 
         elif self.state == "LIFTING":
-            if self.is_at_target():
-                self.get_logger().info("Lift Complete! Resetting.")
-                self.state = "IDLE"
+            now = self.get_clock().now().seconds_nanoseconds()[0]
+            is_timed_out = (now - self.start_time) > 5.0 
+
+            if self.is_at_target() or is_timed_out:
+                self.get_logger().info("Lift Complete! Disabling further action.")
+                self.state = "TASK_COMPLETE"
+
+        elif self.state == "TASK_COMPLETE":
+            pass # Arm is done. Ignore all vision data and start signals.
 
 def main(args=None):
     rclpy.init(args=args)

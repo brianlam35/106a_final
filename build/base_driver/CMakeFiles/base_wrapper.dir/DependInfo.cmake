@@ -11,7 +11,6 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/unitree/106a_final/src/base_driver/include"
-  "/home/unitree/106a_final/src/base_driver/src"
   "/usr/local/include/ddscxx"
   "/usr/local/include/iceoryx/v2.0.2"
   )

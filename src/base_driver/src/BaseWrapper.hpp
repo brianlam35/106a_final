@@ -7,9 +7,14 @@ public:
     ~BaseWrapper();
 
     void move(float vx, float vy, float vyaw);
-    void stop();
     
-    // New function for controlled lowering
+    // Stops the robot's movement (velocity = 0)
+    void stop_move();
+    
+    // Emergency collapse (low stiffness)
+    void damp(); 
+    
+    // Controlled sit (keeps motors active)
     void stand_down(); 
 
 private:

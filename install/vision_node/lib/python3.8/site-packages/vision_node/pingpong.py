@@ -85,7 +85,7 @@ class BottleVisionNode(Node):
 
         boxes = results[0].boxes
         for i, cls in enumerate(boxes.cls):
-            if int(cls) == 39:  # COCO class index 39 = sports ball
+            if int(cls) == 39:  # COCO class index 39 = bottle
                 xyxy = boxes.xyxy[i].cpu().numpy()
                 cx = int((xyxy[0] + xyxy[2]) / 2)
                 cy = int((xyxy[1] + xyxy[3]) / 2)
