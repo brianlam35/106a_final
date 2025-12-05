@@ -1,0 +1,374 @@
+[0.000000] (-) TimerEvent: {}
+[0.000842] (unitree_sdk2py) JobQueued: {'identifier': 'unitree_sdk2py', 'dependencies': OrderedDict()}
+[0.001050] (z1_sdk) JobQueued: {'identifier': 'z1_sdk', 'dependencies': OrderedDict()}
+[0.001471] (unitree_sdk2py) JobStarted: {'identifier': 'unitree_sdk2py'}
+[0.099204] (-) TimerEvent: {}
+[0.200625] (-) TimerEvent: {}
+[0.301790] (-) TimerEvent: {}
+[0.329202] (z1_sdk) JobStarted: {'identifier': 'z1_sdk'}
+[0.402045] (-) TimerEvent: {}
+[0.502902] (-) TimerEvent: {}
+[0.603593] (-) TimerEvent: {}
+[0.704573] (-) TimerEvent: {}
+[0.805337] (-) TimerEvent: {}
+[0.905954] (-) TimerEvent: {}
+[1.006557] (-) TimerEvent: {}
+[1.107204] (-) TimerEvent: {}
+[1.135067] (z1_sdk) JobProgress: {'identifier': 'z1_sdk', 'progress': 'cmake'}
+[1.136609] (z1_sdk) Command: {'cmd': ['/usr/bin/cmake', '/home/unitree/106a_final/src/z1_sdk', '-DCMAKE_INSTALL_PREFIX=/home/unitree/106a_final/src/install/z1_sdk'], 'cwd': '/home/unitree/106a_final/src/build/z1_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_AGENT_PID', '2881'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree/106a_final/src/unitree_sdk2_python'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2711'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3252'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('JOURNAL_STREAM', '7:65953'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'unitree'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2916,unix/ubuntu:/tmp/.ICE-unix/2916'), ('INVOCATION_ID', '35159fdd98824c70b41a16b826247864'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:eda227fe-d507-4f53-952e-ddfd5a67b8aa'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/unitree/106a_final/src/build/z1_sdk'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds')]), 'shell': False}
+[1.207438] (-) TimerEvent: {}
+[1.308153] (-) TimerEvent: {}
+[1.360340] (z1_sdk) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[1.408309] (-) TimerEvent: {}
+[1.508958] (-) TimerEvent: {}
+[1.531852] (z1_sdk) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.549113] (z1_sdk) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.609153] (-) TimerEvent: {}
+[1.691072] (z1_sdk) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.693326] (z1_sdk) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.709293] (-) TimerEvent: {}
+[1.809880] (-) TimerEvent: {}
+[1.833180] (z1_sdk) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.856594] (z1_sdk) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.857638] (z1_sdk) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.865730] (z1_sdk) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[1.910097] (-) TimerEvent: {}
+[2.000773] (unitree_sdk2py) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/unitree_sdk2py', 'build', '--build-base', '/home/unitree/106a_final/src/build/unitree_sdk2py/build', 'install', '--record', '/home/unitree/106a_final/src/build/unitree_sdk2py/install.log', '--single-version-externally-managed'], 'cwd': '/home/unitree/106a_final/src/unitree_sdk2_python', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'unitree', 'SSH_AGENT_PID': '2881', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/unitree', 'CYCLONEDDS_URI': '/home/unitree/cyclonedds_ws/cyclonedds.xml', 'OLDPWD': '/home/unitree/106a_final/src/unitree_sdk2_python', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2711', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3252', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'unitree', 'JOURNAL_STREAM': '7:65953', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'unitree', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/2916,unix/ubuntu:/tmp/.ICE-unix/2916', 'INVOCATION_ID': '35159fdd98824c70b41a16b826247864', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:eda227fe-d507-4f53-952e-ddfd5a67b8aa', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/unitree/106a_final/src/build/unitree_sdk2py', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/unitree/106a_final/src/build/unitree_sdk2py/prefix_override:/home/unitree/106a_final/src/install/unitree_sdk2py/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds'}, 'shell': False}
+[2.010206] (-) TimerEvent: {}
+[2.033547] (z1_sdk) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[2.037126] (z1_sdk) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.110491] (-) TimerEvent: {}
+[2.198171] (z1_sdk) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.210643] (-) TimerEvent: {}
+[2.221437] (z1_sdk) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.222920] (z1_sdk) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.275440] (z1_sdk) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python (found version "2.7.18") \n'}
+[2.309959] (z1_sdk) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython2.7.so\n'}
+[2.310732] (-) TimerEvent: {}
+[2.320431] (z1_sdk) StdoutLine: {'line': b'-- Performing Test HAS_CPP14_FLAG\n'}
+[2.410917] (-) TimerEvent: {}
+[2.432484] (unitree_sdk2py) StdoutLine: {'line': b'running egg_info\n'}
+[2.434472] (unitree_sdk2py) StdoutLine: {'line': b'writing ../build/unitree_sdk2py/unitree_sdk2py.egg-info/PKG-INFO\n'}
+[2.435803] (unitree_sdk2py) StdoutLine: {'line': b'writing dependency_links to ../build/unitree_sdk2py/unitree_sdk2py.egg-info/dependency_links.txt\n'}
+[2.436738] (unitree_sdk2py) StdoutLine: {'line': b'writing requirements to ../build/unitree_sdk2py/unitree_sdk2py.egg-info/requires.txt\n'}
+[2.437818] (unitree_sdk2py) StdoutLine: {'line': b'writing top-level names to ../build/unitree_sdk2py/unitree_sdk2py.egg-info/top_level.txt\n'}
+[2.473610] (z1_sdk) StdoutLine: {'line': b'-- Performing Test HAS_CPP14_FLAG - Success\n'}
+[2.484707] (z1_sdk) StdoutLine: {'line': b'-- Performing Test HAS_FLTO\n'}
+[2.506353] (unitree_sdk2py) StdoutLine: {'line': b"reading manifest file '../build/unitree_sdk2py/unitree_sdk2py.egg-info/SOURCES.txt'\n"}
+[2.511081] (unitree_sdk2py) StdoutLine: {'line': b"writing manifest file '../build/unitree_sdk2py/unitree_sdk2py.egg-info/SOURCES.txt'\n"}
+[2.511430] (-) TimerEvent: {}
+[2.511991] (unitree_sdk2py) StdoutLine: {'line': b'running build\n'}
+[2.512186] (unitree_sdk2py) StdoutLine: {'line': b'running build_py\n'}
+[2.529233] (unitree_sdk2py) StdoutLine: {'line': b'running install\n'}
+[2.531245] (unitree_sdk2py) StdoutLine: {'line': b'running install_lib\n'}
+[2.546868] (unitree_sdk2py) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.551192] (unitree_sdk2py) StdoutLine: {'line': b"removing '/home/unitree/106a_final/src/install/unitree_sdk2py/lib/python3.8/site-packages/unitree_sdk2py-1.0.1-py3.8.egg-info' (and everything under it)\n"}
+[2.551713] (unitree_sdk2py) StdoutLine: {'line': b'Copying ../build/unitree_sdk2py/unitree_sdk2py.egg-info to /home/unitree/106a_final/src/install/unitree_sdk2py/lib/python3.8/site-packages/unitree_sdk2py-1.0.1-py3.8.egg-info\n'}
+[2.553115] (unitree_sdk2py) StdoutLine: {'line': b'running install_scripts\n'}
+[2.596371] (unitree_sdk2py) StdoutLine: {'line': b"writing list of installed files to '/home/unitree/106a_final/src/build/unitree_sdk2py/install.log'\n"}
+[2.611662] (-) TimerEvent: {}
+[2.661497] (unitree_sdk2py) CommandEnded: {'returncode': 0}
+[2.711800] (-) TimerEvent: {}
+[2.764021] (z1_sdk) StdoutLine: {'line': b'-- Performing Test HAS_FLTO - Success\n'}
+[2.765310] (z1_sdk) StdoutLine: {'line': b'-- LTO enabled\n'}
+[2.765887] (z1_sdk) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.774643] (z1_sdk) StdoutLine: {'line': b'-- Generating done\n'}
+[2.778857] (z1_sdk) StdoutLine: {'line': b'-- Build files have been written to: /home/unitree/106a_final/src/build/z1_sdk\n'}
+[2.812024] (-) TimerEvent: {}
+[2.914166] (-) TimerEvent: {}
+[2.922335] (unitree_sdk2py) JobEnded: {'identifier': 'unitree_sdk2py', 'rc': 0}
+[2.925659] (z1_sdk) CommandEnded: {'returncode': 0}
+[2.928167] (z1_sdk) JobProgress: {'identifier': 'z1_sdk', 'progress': 'build'}
+[2.930742] (z1_sdk) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/unitree/106a_final/src/build/z1_sdk', '--', '-j4', '-l4'], 'cwd': '/home/unitree/106a_final/src/build/z1_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_AGENT_PID', '2881'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree/106a_final/src/unitree_sdk2_python'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2711'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3252'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('JOURNAL_STREAM', '7:65953'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'unitree'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2916,unix/ubuntu:/tmp/.ICE-unix/2916'), ('INVOCATION_ID', '35159fdd98824c70b41a16b826247864'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:eda227fe-d507-4f53-952e-ddfd5a67b8aa'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/unitree/106a_final/src/build/z1_sdk'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds')]), 'shell': False}
+[3.014407] (-) TimerEvent: {}
+[3.015239] (z1_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lowcmd_multirobots\x1b[0m\n'}
+[3.015759] (z1_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target highcmd_development\x1b[0m\n'}
+[3.017918] (z1_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lowcmd_development\x1b[0m\n'}
+[3.028593] (z1_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target unitree_arm_interface\x1b[0m\n'}
+[3.042488] (z1_sdk) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/lowcmd_multirobots.dir/examples/lowcmd_multirobots.cpp.o\x1b[0m\n'}
+[3.052119] (z1_sdk) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/highcmd_development.dir/examples/highcmd_development.cpp.o\x1b[0m\n'}
+[3.064708] (z1_sdk) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/lowcmd_development.dir/examples/lowcmd_development.cpp.o\x1b[0m\n'}
+[3.081122] (z1_sdk) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/unitree_arm_interface.dir/examples_py/arm_python_interface.cpp.o\x1b[0m\n'}
+[3.114582] (-) TimerEvent: {}
+[3.215301] (-) TimerEvent: {}
+[3.316033] (-) TimerEvent: {}
+[3.416757] (-) TimerEvent: {}
+[3.517489] (-) TimerEvent: {}
+[3.618220] (-) TimerEvent: {}
+[3.719446] (-) TimerEvent: {}
+[3.820774] (-) TimerEvent: {}
+[3.921963] (-) TimerEvent: {}
+[4.022998] (-) TimerEvent: {}
+[4.123748] (-) TimerEvent: {}
+[4.224487] (-) TimerEvent: {}
+[4.325434] (-) TimerEvent: {}
+[4.426152] (-) TimerEvent: {}
+[4.527107] (-) TimerEvent: {}
+[4.628081] (-) TimerEvent: {}
+[4.729008] (-) TimerEvent: {}
+[4.829951] (-) TimerEvent: {}
+[4.930898] (-) TimerEvent: {}
+[5.031879] (-) TimerEvent: {}
+[5.132628] (-) TimerEvent: {}
+[5.233369] (-) TimerEvent: {}
+[5.334358] (-) TimerEvent: {}
+[5.435321] (-) TimerEvent: {}
+[5.536296] (-) TimerEvent: {}
+[5.637266] (-) TimerEvent: {}
+[5.737986] (-) TimerEvent: {}
+[5.838750] (-) TimerEvent: {}
+[5.939470] (-) TimerEvent: {}
+[6.040205] (-) TimerEvent: {}
+[6.140923] (-) TimerEvent: {}
+[6.241658] (-) TimerEvent: {}
+[6.342350] (-) TimerEvent: {}
+[6.443125] (-) TimerEvent: {}
+[6.543892] (-) TimerEvent: {}
+[6.644586] (-) TimerEvent: {}
+[6.745332] (-) TimerEvent: {}
+[6.846070] (-) TimerEvent: {}
+[6.946791] (-) TimerEvent: {}
+[7.047503] (-) TimerEvent: {}
+[7.148263] (-) TimerEvent: {}
+[7.248984] (-) TimerEvent: {}
+[7.349687] (-) TimerEvent: {}
+[7.450441] (-) TimerEvent: {}
+[7.551145] (-) TimerEvent: {}
+[7.651879] (-) TimerEvent: {}
+[7.752589] (-) TimerEvent: {}
+[7.853298] (-) TimerEvent: {}
+[7.954017] (-) TimerEvent: {}
+[8.055009] (-) TimerEvent: {}
+[8.155964] (-) TimerEvent: {}
+[8.256690] (-) TimerEvent: {}
+[8.357426] (-) TimerEvent: {}
+[8.458170] (-) TimerEvent: {}
+[8.559035] (-) TimerEvent: {}
+[8.659862] (-) TimerEvent: {}
+[8.738215] (z1_sdk) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable highcmd_development\x1b[0m\n'}
+[8.760078] (-) TimerEvent: {}
+[8.860871] (-) TimerEvent: {}
+[8.962703] (-) TimerEvent: {}
+[9.064197] (-) TimerEvent: {}
+[9.088605] (z1_sdk) StdoutLine: {'line': b'[ 50%] Built target highcmd_development\n'}
+[9.123616] (z1_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target highcmd_basic\x1b[0m\n'}
+[9.164385] (-) TimerEvent: {}
+[9.165480] (z1_sdk) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/highcmd_basic.dir/examples/highcmd_basic.cpp.o\x1b[0m\n'}
+[9.202373] (z1_sdk) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX executable lowcmd_development\x1b[0m\n'}
+[9.264565] (-) TimerEvent: {}
+[9.365478] (-) TimerEvent: {}
+[9.466522] (-) TimerEvent: {}
+[9.544487] (z1_sdk) StdoutLine: {'line': b'[ 70%] Built target lowcmd_development\n'}
+[9.566702] (-) TimerEvent: {}
+[9.665751] (z1_sdk) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable lowcmd_multirobots\x1b[0m\n'}
+[9.666778] (-) TimerEvent: {}
+[9.767547] (-) TimerEvent: {}
+[9.856098] (z1_sdk) StdoutLine: {'line': b'[ 80%] Built target lowcmd_multirobots\n'}
+[9.867729] (-) TimerEvent: {}
+[9.969123] (-) TimerEvent: {}
+[10.069885] (-) TimerEvent: {}
+[10.170665] (-) TimerEvent: {}
+[10.271505] (-) TimerEvent: {}
+[10.372224] (-) TimerEvent: {}
+[10.473240] (-) TimerEvent: {}
+[10.573933] (-) TimerEvent: {}
+[10.674608] (-) TimerEvent: {}
+[10.775313] (-) TimerEvent: {}
+[10.875988] (-) TimerEvent: {}
+[10.976732] (-) TimerEvent: {}
+[11.077470] (-) TimerEvent: {}
+[11.178389] (-) TimerEvent: {}
+[11.279090] (-) TimerEvent: {}
+[11.380370] (-) TimerEvent: {}
+[11.481317] (-) TimerEvent: {}
+[11.582021] (-) TimerEvent: {}
+[11.682746] (-) TimerEvent: {}
+[11.783438] (-) TimerEvent: {}
+[11.884226] (-) TimerEvent: {}
+[11.984938] (-) TimerEvent: {}
+[12.085784] (-) TimerEvent: {}
+[12.186972] (-) TimerEvent: {}
+[12.287691] (-) TimerEvent: {}
+[12.389328] (-) TimerEvent: {}
+[12.490291] (-) TimerEvent: {}
+[12.591230] (-) TimerEvent: {}
+[12.692134] (-) TimerEvent: {}
+[12.792892] (-) TimerEvent: {}
+[12.893622] (-) TimerEvent: {}
+[12.994351] (-) TimerEvent: {}
+[13.095043] (-) TimerEvent: {}
+[13.195777] (-) TimerEvent: {}
+[13.296674] (-) TimerEvent: {}
+[13.397437] (-) TimerEvent: {}
+[13.498663] (-) TimerEvent: {}
+[13.600125] (-) TimerEvent: {}
+[13.701159] (-) TimerEvent: {}
+[13.794572] (z1_sdk) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable highcmd_basic\x1b[0m\n'}
+[13.801204] (-) TimerEvent: {}
+[13.901949] (-) TimerEvent: {}
+[13.959568] (z1_sdk) StdoutLine: {'line': b'[ 90%] Built target highcmd_basic\n'}
+[14.002090] (-) TimerEvent: {}
+[14.102780] (-) TimerEvent: {}
+[14.203452] (-) TimerEvent: {}
+[14.304141] (-) TimerEvent: {}
+[14.404853] (-) TimerEvent: {}
+[14.505536] (-) TimerEvent: {}
+[14.606224] (-) TimerEvent: {}
+[14.706987] (-) TimerEvent: {}
+[14.807662] (-) TimerEvent: {}
+[14.908402] (-) TimerEvent: {}
+[15.009118] (-) TimerEvent: {}
+[15.109818] (-) TimerEvent: {}
+[15.210455] (-) TimerEvent: {}
+[15.311163] (-) TimerEvent: {}
+[15.411889] (-) TimerEvent: {}
+[15.512586] (-) TimerEvent: {}
+[15.613245] (-) TimerEvent: {}
+[15.713924] (-) TimerEvent: {}
+[15.814628] (-) TimerEvent: {}
+[15.915332] (-) TimerEvent: {}
+[16.016015] (-) TimerEvent: {}
+[16.117028] (-) TimerEvent: {}
+[16.217881] (-) TimerEvent: {}
+[16.318577] (-) TimerEvent: {}
+[16.419257] (-) TimerEvent: {}
+[16.520009] (-) TimerEvent: {}
+[16.620674] (-) TimerEvent: {}
+[16.721370] (-) TimerEvent: {}
+[16.822061] (-) TimerEvent: {}
+[16.923103] (-) TimerEvent: {}
+[17.023811] (-) TimerEvent: {}
+[17.124577] (-) TimerEvent: {}
+[17.225265] (-) TimerEvent: {}
+[17.325947] (-) TimerEvent: {}
+[17.426668] (-) TimerEvent: {}
+[17.527343] (-) TimerEvent: {}
+[17.628042] (-) TimerEvent: {}
+[17.728728] (-) TimerEvent: {}
+[17.829410] (-) TimerEvent: {}
+[17.930096] (-) TimerEvent: {}
+[18.030775] (-) TimerEvent: {}
+[18.131465] (-) TimerEvent: {}
+[18.232122] (-) TimerEvent: {}
+[18.332761] (-) TimerEvent: {}
+[18.433389] (-) TimerEvent: {}
+[18.534035] (-) TimerEvent: {}
+[18.634682] (-) TimerEvent: {}
+[18.735327] (-) TimerEvent: {}
+[18.835960] (-) TimerEvent: {}
+[18.936646] (-) TimerEvent: {}
+[19.037363] (-) TimerEvent: {}
+[19.115318] (z1_sdk) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared module /home/unitree/106a_final/src/z1_sdk/lib/unitree_arm_interface.so\x1b[0m\n'}
+[19.137558] (-) TimerEvent: {}
+[19.238479] (-) TimerEvent: {}
+[19.339342] (-) TimerEvent: {}
+[19.440070] (-) TimerEvent: {}
+[19.540741] (-) TimerEvent: {}
+[19.641477] (-) TimerEvent: {}
+[19.742243] (-) TimerEvent: {}
+[19.842930] (-) TimerEvent: {}
+[19.943646] (-) TimerEvent: {}
+[20.044340] (-) TimerEvent: {}
+[20.145039] (-) TimerEvent: {}
+[20.245699] (-) TimerEvent: {}
+[20.346412] (-) TimerEvent: {}
+[20.447084] (-) TimerEvent: {}
+[20.547768] (-) TimerEvent: {}
+[20.648472] (-) TimerEvent: {}
+[20.749135] (-) TimerEvent: {}
+[20.849825] (-) TimerEvent: {}
+[20.950504] (-) TimerEvent: {}
+[21.051171] (-) TimerEvent: {}
+[21.151885] (-) TimerEvent: {}
+[21.252539] (-) TimerEvent: {}
+[21.353217] (-) TimerEvent: {}
+[21.453892] (-) TimerEvent: {}
+[21.554563] (-) TimerEvent: {}
+[21.655246] (-) TimerEvent: {}
+[21.755970] (-) TimerEvent: {}
+[21.856629] (-) TimerEvent: {}
+[21.957327] (-) TimerEvent: {}
+[22.058066] (-) TimerEvent: {}
+[22.158826] (-) TimerEvent: {}
+[22.259511] (-) TimerEvent: {}
+[22.360237] (-) TimerEvent: {}
+[22.461094] (-) TimerEvent: {}
+[22.561845] (-) TimerEvent: {}
+[22.662509] (-) TimerEvent: {}
+[22.763225] (-) TimerEvent: {}
+[22.863927] (-) TimerEvent: {}
+[22.964625] (-) TimerEvent: {}
+[23.065287] (-) TimerEvent: {}
+[23.165960] (-) TimerEvent: {}
+[23.266635] (-) TimerEvent: {}
+[23.367318] (-) TimerEvent: {}
+[23.468021] (-) TimerEvent: {}
+[23.568703] (-) TimerEvent: {}
+[23.669389] (-) TimerEvent: {}
+[23.770078] (-) TimerEvent: {}
+[23.870777] (-) TimerEvent: {}
+[23.971476] (-) TimerEvent: {}
+[24.072176] (-) TimerEvent: {}
+[24.172884] (-) TimerEvent: {}
+[24.273566] (-) TimerEvent: {}
+[24.374249] (-) TimerEvent: {}
+[24.474951] (-) TimerEvent: {}
+[24.575663] (-) TimerEvent: {}
+[24.676387] (-) TimerEvent: {}
+[24.777053] (-) TimerEvent: {}
+[24.877719] (-) TimerEvent: {}
+[24.978405] (-) TimerEvent: {}
+[25.079086] (-) TimerEvent: {}
+[25.179774] (-) TimerEvent: {}
+[25.280517] (-) TimerEvent: {}
+[25.381224] (-) TimerEvent: {}
+[25.481911] (-) TimerEvent: {}
+[25.582615] (-) TimerEvent: {}
+[25.683295] (-) TimerEvent: {}
+[25.783967] (-) TimerEvent: {}
+[25.884655] (-) TimerEvent: {}
+[25.985333] (-) TimerEvent: {}
+[26.085988] (-) TimerEvent: {}
+[26.186660] (-) TimerEvent: {}
+[26.287353] (-) TimerEvent: {}
+[26.388055] (-) TimerEvent: {}
+[26.488711] (-) TimerEvent: {}
+[26.589378] (-) TimerEvent: {}
+[26.690045] (-) TimerEvent: {}
+[26.790741] (-) TimerEvent: {}
+[26.891435] (-) TimerEvent: {}
+[26.992365] (-) TimerEvent: {}
+[27.093063] (-) TimerEvent: {}
+[27.193732] (-) TimerEvent: {}
+[27.294412] (-) TimerEvent: {}
+[27.395091] (-) TimerEvent: {}
+[27.495758] (-) TimerEvent: {}
+[27.596575] (-) TimerEvent: {}
+[27.697282] (-) TimerEvent: {}
+[27.798018] (-) TimerEvent: {}
+[27.898750] (-) TimerEvent: {}
+[27.999563] (-) TimerEvent: {}
+[28.100270] (-) TimerEvent: {}
+[28.200965] (-) TimerEvent: {}
+[28.301842] (-) TimerEvent: {}
+[28.402544] (-) TimerEvent: {}
+[28.503243] (-) TimerEvent: {}
+[28.603936] (-) TimerEvent: {}
+[28.704607] (-) TimerEvent: {}
+[28.805284] (-) TimerEvent: {}
+[28.905967] (-) TimerEvent: {}
+[29.006647] (-) TimerEvent: {}
+[29.107327] (-) TimerEvent: {}
+[29.208030] (-) TimerEvent: {}
+[29.308723] (-) TimerEvent: {}
+[29.409398] (-) TimerEvent: {}
+[29.510376] (-) TimerEvent: {}
+[29.611289] (-) TimerEvent: {}
+[29.712126] (-) TimerEvent: {}
+[29.812796] (-) TimerEvent: {}
+[29.813329] (z1_sdk) StdoutLine: {'line': b'[100%] Built target unitree_arm_interface\n'}
+[29.839964] (z1_sdk) CommandEnded: {'returncode': 0}
+[29.912955] (-) TimerEvent: {}
+[30.031816] (-) TimerEvent: {}
+[30.040213] (z1_sdk) JobEnded: {'identifier': 'z1_sdk', 'rc': 0}
+[30.041725] (-) EventReactorShutdown: {}
