@@ -1,0 +1,186 @@
+[0.000000] (-) TimerEvent: {}
+[0.000673] (marm_code) JobQueued: {'identifier': 'marm_code', 'dependencies': OrderedDict()}
+[0.001246] (marm_code) JobStarted: {'identifier': 'marm_code'}
+[0.099478] (-) TimerEvent: {}
+[0.199975] (-) TimerEvent: {}
+[0.300768] (-) TimerEvent: {}
+[0.328375] (marm_code) JobProgress: {'identifier': 'marm_code', 'progress': 'cmake'}
+[0.329565] (marm_code) Command: {'cmd': ['/usr/bin/cmake', '/home/unitree/106a_final/src/d1_sdk', '-DCMAKE_INSTALL_PREFIX=/home/unitree/106a_final/src/d1_sdk/install/marm_code'], 'cwd': '/home/unitree/106a_final/src/d1_sdk/build/marm_code', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_AGENT_PID', '3081'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree/106a_final/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2909'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('JOURNAL_STREAM', '7:71748'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'unitree'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/unitree/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3116,unix/ubuntu:/tmp/.ICE-unix/3116'), ('INVOCATION_ID', '5168fb35590a4c549cc44d739524a212'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/eb036322_3ca1_44f6_ac3e_ddfe7b5c86bc'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.182'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/unitree/106a_final/src/d1_sdk/build/marm_code'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds')]), 'shell': False}
+[0.400988] (-) TimerEvent: {}
+[0.455198] (marm_code) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.501137] (-) TimerEvent: {}
+[0.561217] (marm_code) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.571758] (marm_code) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.601316] (-) TimerEvent: {}
+[0.701967] (-) TimerEvent: {}
+[0.702548] (marm_code) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.703993] (marm_code) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.802140] (-) TimerEvent: {}
+[0.840356] (marm_code) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.875738] (marm_code) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.876617] (marm_code) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.883226] (marm_code) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.902264] (-) TimerEvent: {}
+[1.002839] (-) TimerEvent: {}
+[1.026967] (marm_code) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[1.030996] (marm_code) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.103007] (-) TimerEvent: {}
+[1.183758] (marm_code) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.203097] (-) TimerEvent: {}
+[1.217636] (marm_code) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.218741] (marm_code) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.221455] (marm_code) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.233057] (marm_code) StdoutLine: {'line': b'-- Generating done\n'}
+[1.237491] (marm_code) StdoutLine: {'line': b'-- Build files have been written to: /home/unitree/106a_final/src/d1_sdk/build/marm_code\n'}
+[1.244074] (marm_code) CommandEnded: {'returncode': 0}
+[1.246133] (marm_code) JobProgress: {'identifier': 'marm_code', 'progress': 'build'}
+[1.248179] (marm_code) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/unitree/106a_final/src/d1_sdk/build/marm_code', '--', '-j4', '-l4'], 'cwd': '/home/unitree/106a_final/src/d1_sdk/build/marm_code', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_AGENT_PID', '3081'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree/106a_final/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2909'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('JOURNAL_STREAM', '7:71748'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'unitree'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/unitree/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3116,unix/ubuntu:/tmp/.ICE-unix/3116'), ('INVOCATION_ID', '5168fb35590a4c549cc44d739524a212'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/eb036322_3ca1_44f6_ac3e_ddfe7b5c86bc'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.182'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/unitree/106a_final/src/d1_sdk/build/marm_code'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds')]), 'shell': False}
+[1.303338] (-) TimerEvent: {}
+[1.331875] (marm_code) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target joint_enable_control\x1b[0m\n'}
+[1.332416] (marm_code) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target get_arm_joint_angle\x1b[0m\n'}
+[1.332709] (marm_code) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target multiple_joint_angle_control\x1b[0m\n'}
+[1.333399] (marm_code) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target arm_zero_control\x1b[0m\n'}
+[1.360773] (marm_code) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/arm_zero_control.dir/src/arm_zero_control.cpp.o\x1b[0m\n'}
+[1.361845] (marm_code) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/joint_enable_control.dir/src/joint_enable_control.cpp.o\x1b[0m\n'}
+[1.362212] (marm_code) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/get_arm_joint_angle.dir/src/get_arm_joint_angle.cpp.o\x1b[0m\n'}
+[1.362402] (marm_code) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/multiple_joint_angle_control.dir/src/multiple_joint_angle_control.cpp.o\x1b[0m\n'}
+[1.403502] (-) TimerEvent: {}
+[1.504225] (-) TimerEvent: {}
+[1.604942] (-) TimerEvent: {}
+[1.705702] (-) TimerEvent: {}
+[1.806454] (-) TimerEvent: {}
+[1.907217] (-) TimerEvent: {}
+[2.008009] (-) TimerEvent: {}
+[2.108801] (-) TimerEvent: {}
+[2.209568] (-) TimerEvent: {}
+[2.310303] (-) TimerEvent: {}
+[2.411049] (-) TimerEvent: {}
+[2.511813] (-) TimerEvent: {}
+[2.612638] (-) TimerEvent: {}
+[2.713421] (-) TimerEvent: {}
+[2.814183] (-) TimerEvent: {}
+[2.914942] (-) TimerEvent: {}
+[3.015715] (-) TimerEvent: {}
+[3.116462] (-) TimerEvent: {}
+[3.217232] (-) TimerEvent: {}
+[3.317973] (-) TimerEvent: {}
+[3.418726] (-) TimerEvent: {}
+[3.519491] (-) TimerEvent: {}
+[3.620250] (-) TimerEvent: {}
+[3.721001] (-) TimerEvent: {}
+[3.821772] (-) TimerEvent: {}
+[3.922513] (-) TimerEvent: {}
+[4.023240] (-) TimerEvent: {}
+[4.124011] (-) TimerEvent: {}
+[4.224774] (-) TimerEvent: {}
+[4.325533] (-) TimerEvent: {}
+[4.426283] (-) TimerEvent: {}
+[4.528629] (-) TimerEvent: {}
+[4.629378] (-) TimerEvent: {}
+[4.730122] (-) TimerEvent: {}
+[4.830852] (-) TimerEvent: {}
+[4.931622] (-) TimerEvent: {}
+[5.032317] (-) TimerEvent: {}
+[5.133033] (-) TimerEvent: {}
+[5.233766] (-) TimerEvent: {}
+[5.334509] (-) TimerEvent: {}
+[5.435206] (-) TimerEvent: {}
+[5.535909] (-) TimerEvent: {}
+[5.636603] (-) TimerEvent: {}
+[5.737316] (-) TimerEvent: {}
+[5.838013] (-) TimerEvent: {}
+[5.938711] (-) TimerEvent: {}
+[6.039421] (-) TimerEvent: {}
+[6.046432] (marm_code) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/multiple_joint_angle_control.dir/src/msg/ArmString_.cpp.o\x1b[0m\n'}
+[6.084495] (marm_code) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/joint_enable_control.dir/src/msg/ArmString_.cpp.o\x1b[0m\n'}
+[6.122442] (marm_code) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/arm_zero_control.dir/src/msg/ArmString_.cpp.o\x1b[0m\n'}
+[6.139600] (-) TimerEvent: {}
+[6.240523] (-) TimerEvent: {}
+[6.341524] (-) TimerEvent: {}
+[6.442511] (-) TimerEvent: {}
+[6.543499] (-) TimerEvent: {}
+[6.644465] (-) TimerEvent: {}
+[6.745491] (-) TimerEvent: {}
+[6.846461] (-) TimerEvent: {}
+[6.947493] (-) TimerEvent: {}
+[7.048610] (-) TimerEvent: {}
+[7.149546] (-) TimerEvent: {}
+[7.250443] (-) TimerEvent: {}
+[7.351366] (-) TimerEvent: {}
+[7.383710] (marm_code) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable multiple_joint_angle_control\x1b[0m\n'}
+[7.425579] (marm_code) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX executable joint_enable_control\x1b[0m\n'}
+[7.444056] (marm_code) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX executable arm_zero_control\x1b[0m\n'}
+[7.451555] (-) TimerEvent: {}
+[7.552536] (-) TimerEvent: {}
+[7.653309] (-) TimerEvent: {}
+[7.754064] (-) TimerEvent: {}
+[7.854808] (-) TimerEvent: {}
+[7.955607] (-) TimerEvent: {}
+[8.056364] (-) TimerEvent: {}
+[8.064052] (marm_code) StdoutLine: {'line': b'[ 62%] Built target multiple_joint_angle_control\n'}
+[8.088633] (marm_code) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target joint_angle_control\x1b[0m\n'}
+[8.095263] (marm_code) StdoutLine: {'line': b'[ 62%] Built target joint_enable_control\n'}
+[8.116471] (marm_code) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/get_arm_joint_angle.dir/src/msg/ArmString_.cpp.o\x1b[0m\n'}
+[8.117004] (marm_code) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/joint_angle_control.dir/src/joint_angle_control.cpp.o\x1b[0m\n'}
+[8.135433] (marm_code) StdoutLine: {'line': b'[ 75%] Built target arm_zero_control\n'}
+[8.156566] (-) TimerEvent: {}
+[8.158216] (marm_code) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/get_arm_joint_angle.dir/src/msg/PubServoInfo_.cpp.o\x1b[0m\n'}
+[8.256773] (-) TimerEvent: {}
+[8.357550] (-) TimerEvent: {}
+[8.458314] (-) TimerEvent: {}
+[8.559004] (-) TimerEvent: {}
+[8.659739] (-) TimerEvent: {}
+[8.760457] (-) TimerEvent: {}
+[8.861212] (-) TimerEvent: {}
+[8.961936] (-) TimerEvent: {}
+[9.062655] (-) TimerEvent: {}
+[9.163403] (-) TimerEvent: {}
+[9.236583] (marm_code) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/joint_angle_control.dir/src/msg/ArmString_.cpp.o\x1b[0m\n'}
+[9.263601] (-) TimerEvent: {}
+[9.364355] (-) TimerEvent: {}
+[9.465092] (-) TimerEvent: {}
+[9.486785] (marm_code) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX executable get_arm_joint_angle\x1b[0m\n'}
+[9.565311] (-) TimerEvent: {}
+[9.666345] (-) TimerEvent: {}
+[9.767557] (-) TimerEvent: {}
+[9.868293] (-) TimerEvent: {}
+[9.969036] (-) TimerEvent: {}
+[10.069808] (-) TimerEvent: {}
+[10.170514] (-) TimerEvent: {}
+[10.190237] (marm_code) StdoutLine: {'line': b'[ 93%] Built target get_arm_joint_angle\n'}
+[10.270690] (-) TimerEvent: {}
+[10.371386] (-) TimerEvent: {}
+[10.472085] (-) TimerEvent: {}
+[10.572753] (-) TimerEvent: {}
+[10.673450] (-) TimerEvent: {}
+[10.774116] (-) TimerEvent: {}
+[10.874799] (-) TimerEvent: {}
+[10.975472] (-) TimerEvent: {}
+[11.076160] (-) TimerEvent: {}
+[11.176834] (-) TimerEvent: {}
+[11.277529] (-) TimerEvent: {}
+[11.378203] (-) TimerEvent: {}
+[11.478849] (-) TimerEvent: {}
+[11.579471] (-) TimerEvent: {}
+[11.680112] (-) TimerEvent: {}
+[11.780765] (-) TimerEvent: {}
+[11.881457] (-) TimerEvent: {}
+[11.982098] (-) TimerEvent: {}
+[12.082735] (-) TimerEvent: {}
+[12.183363] (-) TimerEvent: {}
+[12.284004] (-) TimerEvent: {}
+[12.384652] (-) TimerEvent: {}
+[12.485315] (-) TimerEvent: {}
+[12.538168] (marm_code) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable joint_angle_control\x1b[0m\n'}
+[12.585513] (-) TimerEvent: {}
+[12.686206] (-) TimerEvent: {}
+[12.786895] (-) TimerEvent: {}
+[12.887560] (-) TimerEvent: {}
+[12.988239] (-) TimerEvent: {}
+[13.088880] (-) TimerEvent: {}
+[13.097921] (marm_code) StdoutLine: {'line': b'[100%] Built target joint_angle_control\n'}
+[13.123539] (marm_code) CommandEnded: {'returncode': 0}
+[13.189040] (-) TimerEvent: {}
+[13.290040] (-) TimerEvent: {}
+[13.304297] (marm_code) JobEnded: {'identifier': 'marm_code', 'rc': 0}
+[13.306311] (-) EventReactorShutdown: {}
