@@ -42,7 +42,7 @@ class PingPongNode(Node):
 
         # Subscribers
         self.create_subscription(Image, "/camera/color/image_raw", self.rgb_cb, 10)
-        self.create_subscription(Image, "/camera/depth/image_rect_raw", self.depth_cb, 10)
+        self.create_subscription(Image, "/camera/aligned_depth_to_color/image_raw", self.depth_cb, 10)
         self.create_subscription(CameraInfo, "/camera/color/camera_info", self.caminfo_cb, 10)
 
         # Publisher
@@ -68,14 +68,14 @@ class PingPongNode(Node):
     # -----------------------------
     def try_process(self):
         if self.rgb_image is None or self.depth_image is None or self.K is None:
-            self.get_logger().info("DOES NOT ENTER TRY PROCESS")
+            # self.get_logger().info("DOES NOT ENTER TRY PROCESS")
             return
 
         try:
             results = self.model.predict(
                 source=self.rgb_image,
-                conf=0.5,        # confidence threshold
-                device="cpu"     # force CPU to avoid memory issues
+                conf=0.5,
+                device="cpu"
             )
         except Exception as e:
             self.get_logger().error(f"YOLO prediction failed: {e}")
@@ -85,17 +85,28 @@ class PingPongNode(Node):
             return
 
         boxes = results[0].boxes
-        # COCO class index 32 = sports ball
         for i, cls in enumerate(boxes.cls):
-            if int(cls) == 32:
-                xyxy = boxes.xyxy[i].cpu().numpy()  # left, top, right, bottom
+            if int(cls) == 32:  # sports ball
+                xyxy = boxes.xyxy[i].cpu().numpy()
                 cx = int((xyxy[0] + xyxy[2]) / 2)
                 cy = int((xyxy[1] + xyxy[3]) / 2)
 
-                # Get depth (in meters)
-                depth = float(self.depth_image[cy, cx]) * 0.001
-                if depth <= 0 or np.isnan(depth):
+                # ---- bounds check vs depth image ----
+                h, w = self.depth_image.shape
+                if cx < 0 or cx >= w or cy < 0 or cy >= h:
+                    self.get_logger().warn(
+                        f"Skipping ball: depth index ({cx},{cy}) out of bounds for depth size ({w},{h})"
+                    )
                     continue
+
+                depth_raw = float(self.depth_image[cy, cx])
+                if depth_raw == 0 or np.isnan(depth_raw):
+                    self.get_logger().info(
+                        f"Skipping ball: invalid depth at ({cx},{cy}), value={depth_raw}"
+                    )
+                    continue
+
+                depth = depth_raw * 0.001  # keep if depth topic is in mm
 
                 X, Y, Z = self.pixel_to_3d(cx, cy, depth)
                 pt_msg = PointStamped()
@@ -104,8 +115,11 @@ class PingPongNode(Node):
                 pt_msg.point.y = Y
                 pt_msg.point.z = Z
                 self.xyz_pub.publish(pt_msg)
-                self.get_logger().info(f"Ping pong ball detected at ({X:.2f}, {Y:.2f}, {Z:.2f})")
-                break  # publish only the first detected ball
+                self.get_logger().info(
+                    f"Ping pong ball detected at ({X:.2f}, {Y:.2f}, {Z:.2f})"
+                )
+                break
+
 
     # -----------------------------
     # Utility
