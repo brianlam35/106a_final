@@ -42,7 +42,7 @@ class PingPongNode(Node):
 
         # Subscribers
         self.create_subscription(Image, "/camera/color/image_raw", self.rgb_cb, 10)
-        self.create_subscription(Image, "/camera/aligned_depth_to_color/image_raw", self.depth_cb, 10)
+        self.create_subscription(Image, "/camera/depth/image_rect_raw", self.depth_cb, 10)
         self.create_subscription(CameraInfo, "/camera/color/camera_info", self.caminfo_cb, 10)
 
         # Publisher
@@ -68,6 +68,7 @@ class PingPongNode(Node):
     # -----------------------------
     def try_process(self):
         if self.rgb_image is None or self.depth_image is None or self.K is None:
+            self.get_logger().info("DOES NOT ENTER TRY PROCESS")
             return
 
         try:
