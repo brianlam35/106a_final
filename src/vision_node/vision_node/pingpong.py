@@ -14,14 +14,14 @@ import numpy as np
 
 from cv_bridge import CvBridge
 from sensor_msgs.msg import Image, CameraInfo
-from geometry_msgs.msg import PointStamped
+from geometry_msgs.msg import PoseStamped, PointStamped
 
 from ultralytics import YOLO
 
 
-class PingPongNode(Node):
+class BottleVisionNode(Node):
     def __init__(self):
-        super().__init__("pingpong_node")
+        super().__init__("bottle_vision_node")
         self.bridge = CvBridge()
 
         # Load YOLOv8n pretrained on COCO, force CPU
@@ -46,7 +46,7 @@ class PingPongNode(Node):
         self.create_subscription(CameraInfo, "/camera/color/camera_info", self.caminfo_cb, 10)
 
         # Publisher
-        self.xyz_pub = self.create_publisher(PointStamped, "/vision/target_xyz", 10)
+        self.pose_pub = self.create_publisher(PoseStamped, "/vision/target_pose", 10)
 
     # -----------------------------
     # Callbacks
@@ -68,7 +68,6 @@ class PingPongNode(Node):
     # -----------------------------
     def try_process(self):
         if self.rgb_image is None or self.depth_image is None or self.K is None:
-            # self.get_logger().info("DOES NOT ENTER TRY PROCESS")
             return
 
         try:
@@ -86,7 +85,7 @@ class PingPongNode(Node):
 
         boxes = results[0].boxes
         for i, cls in enumerate(boxes.cls):
-            if int(cls) == 39:  # sports ball
+            if int(cls) == 39:  # COCO class index 39 = sports ball
                 xyxy = boxes.xyxy[i].cpu().numpy()
                 cx = int((xyxy[0] + xyxy[2]) / 2)
                 cy = int((xyxy[1] + xyxy[3]) / 2)
@@ -100,26 +99,31 @@ class PingPongNode(Node):
                     continue
 
                 depth_raw = float(self.depth_image[cy, cx])
-                if depth_raw == 0 or np.isnan(depth_raw):
+                if depth_raw <= 0 or np.isnan(depth_raw):
                     self.get_logger().info(
                         f"Skipping bottle: invalid depth at ({cx},{cy}), value={depth_raw}"
                     )
                     continue
 
-                depth = depth_raw * 0.001  # keep if depth topic is in mm
+                depth = depth_raw * 0.001  # convert mm to meters if needed
 
                 X, Y, Z = self.pixel_to_3d(cx, cy, depth)
+
+                # Create PointStamped first
                 pt_msg = PointStamped()
                 pt_msg.header.frame_id = "camera_link"
+                pt_msg.header.stamp = self.get_clock().now().to_msg()
                 pt_msg.point.x = X
                 pt_msg.point.y = Y
                 pt_msg.point.z = Z
-                self.xyz_pub.publish(pt_msg)
+
+                # Convert to PoseStamped
+                pose_msg = self.point_to_pose(pt_msg)
+                self.pose_pub.publish(pose_msg)
                 self.get_logger().info(
                     f"Bottle detected at ({X:.2f}, {Y:.2f}, {Z:.2f})"
                 )
-                break
-
+                break  # only publish the first detected bottle
 
     # -----------------------------
     # Utility
@@ -131,10 +135,17 @@ class PingPongNode(Node):
         Z = depth
         return X, Y, Z
 
+    def point_to_pose(self, pt: PointStamped) -> PoseStamped:
+        ps = PoseStamped()
+        ps.header = pt.header
+        ps.pose.position = pt.point
+        ps.pose.orientation.w = 1.0  # neutral orientation
+        return ps
+
 
 def main(args=None):
     rclpy.init(args=args)
-    node = PingPongNode()
+    node = BottleVisionNode()
     try:
         rclpy.spin(node)
     finally:
@@ -144,4 +155,3 @@ def main(args=None):
 
 if __name__ == "__main__":
     main()
-

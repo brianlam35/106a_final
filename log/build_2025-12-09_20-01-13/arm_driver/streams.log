@@ -1,0 +1,509 @@
+[4.050s] Invoking command in '/home/unitree/106a_final/build/arm_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unitree/106a_final/install/navigation_node:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/arm_control:/opt/ros/foxy /usr/bin/cmake --build /home/unitree/106a_final/build/arm_driver -- -j4 -l4
+[4.417s] [ 33%] [32mBuilding CXX object CMakeFiles/servo_driver.dir/src/servo_driver.cpp.o[0m
+[12.052s] In file included from [01m[K/usr/local/include/ddscxx/dds/domain/detail/TDomainParticipantImpl.hpp:23[m[K,
+[12.053s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/detail/DomainParticipant.hpp:22[m[K,
+[12.054s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/DomainParticipant.hpp:22[m[K,
+[12.054s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/find.hpp:22[m[K,
+[12.054s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/ddsdomain.hpp:21[m[K,
+[12.054s]                  from [01m[K/usr/local/include/ddscxx/dds/dds.hpp:34[m[K,
+[12.054s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4[m[K,
+[12.054s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4[m[K,
+[12.056s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5[m[K,
+[12.057s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4[m[K,
+[12.057s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4[m[K,
+[12.057s]                  from [01m[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8[m[K:
+[12.059s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/domain/DomainParticipantDelegate.hpp:120:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kdds_typeinfo_t[m[K’ does not name a type; did you mean ‘[01m[Kdds_sample_info_t[m[K’?
+[12.059s]   120 |                  const [01;31m[Kdds_typeinfo_t[m[K *type_info,
+[12.059s]       |                        [01;31m[K^~~~~~~~~~~~~~[m[K
+[12.060s]       |                        [32m[Kdds_sample_info_t[m[K
+[12.094s] In file included from [01m[K/usr/local/include/ddscxx/dds/topic/detail/TopicDescription.hpp:22[m[K,
+[12.095s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/TopicDescription.hpp:22[m[K,
+[12.095s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:22[m[K,
+[12.095s]                  from [01m[K/usr/local/include/ddscxx/dds/dds.hpp:35[m[K,
+[12.095s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4[m[K,
+[12.095s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4[m[K,
+[12.095s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5[m[K,
+[12.095s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4[m[K,
+[12.095s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4[m[K,
+[12.096s]                  from [01m[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8[m[K:
+[12.096s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicDescriptionDelegate.hpp:73:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kddsi_sertype[m[K’ does not name a type; did you mean ‘[01m[Kddsi_sertopic[m[K’?
+[12.096s]    73 |     [01;31m[Kddsi_sertype[m[K *get_ser_type() const;
+[12.096s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[12.096s]       |     [32m[Kddsi_sertopic[m[K
+[12.119s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicDescriptionDelegate.hpp:80:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kddsi_sertype[m[K’ does not name a type; did you mean ‘[01m[Kddsi_sertopic[m[K’?
+[12.120s]    80 |     [01;31m[Kddsi_sertype[m[K *ser_type_;
+[12.120s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[12.120s]       |     [32m[Kddsi_sertopic[m[K
+[12.193s] In file included from [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/AnyTopicDelegate.hpp:23[m[K,
+[12.194s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/AnyTopic.hpp:22[m[K,
+[12.195s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/AnyTopic.hpp:22[m[K,
+[12.197s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/Topic.hpp:27[m[K,
+[12.200s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/Topic.hpp:21[m[K,
+[12.202s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:23[m[K,
+[12.205s]                  from [01m[K/usr/local/include/ddscxx/dds/dds.hpp:35[m[K,
+[12.209s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4[m[K,
+[12.210s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4[m[K,
+[12.211s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5[m[K,
+[12.211s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4[m[K,
+[12.212s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4[m[K,
+[12.212s]                  from [01m[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8[m[K:
+[12.221s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:95:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kddsi_sertype[m[K’ does not name a type; did you mean ‘[01m[Kddscxx_sertype[m[K’?
+[12.222s]    95 |     static [01;31m[Kddsi_sertype[m[K *getSerType(allowable_encodings_t kinds = allowableEncodings())
+[12.224s]       |            [01;31m[K^~~~~~~~~~~~[m[K
+[12.225s]       |            [32m[Kddscxx_sertype[m[K
+[12.227s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:167:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kddsi_typeid_t[m[K’ does not name a type; did you mean ‘[01m[Kdds_guid_t[m[K’?
+[12.229s]   167 |     static [01;31m[Kddsi_typeid_t[m[K* getTypeId(const struct ddsi_sertype *, ddsi_typeid_kind_t kind)
+[12.235s]       |            [01;31m[K^~~~~~~~~~~~~[m[K
+[12.238s]       |            [32m[Kdds_guid_t[m[K
+[12.241s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:188:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kddsi_typemap_t[m[K’ does not name a type
+[12.247s]   188 |     static [01;31m[Kddsi_typemap_t[m[K* getTypeMap(const struct ddsi_sertype *)
+[12.248s]       |            [01;31m[K^~~~~~~~~~~~~~[m[K
+[12.250s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:202:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kddsi_typeinfo_t[m[K’ does not name a type; did you mean ‘[01m[Kdds_sample_info_t[m[K’?
+[12.252s]   202 |     static [01;31m[Kddsi_typeinfo_t[m[K* getTypeInfo(const struct ddsi_sertype *)
+[12.254s]       |            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[12.256s]       |            [32m[Kdds_sample_info_t[m[K
+[12.262s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:266:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kdds_data_representation_id_t[m[K’ has not been declared
+[12.263s]   266 | uct ddsi_sertype* deriveSertype(const struct ddsi_sertype *, [01;31m[Kdds_data_representation_id_t[m[K data_representation, dds_type_consistency_enforcement_qospolicy_t)
+[12.271s]       |                                                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.273s] 
+[12.274s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:266:126:[m[K [01;31m[Kerror: [m[K‘[01m[Kdds_type_consistency_enforcement_qospolicy_t[m[K’ has not been declared
+[12.277s]   266 | sertype *, dds_data_representation_id_t data_representation, [01;31m[Kdds_type_consistency_enforcement_qospolicy_t[m[K)
+[12.279s]       |                                                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.280s] 
+[12.282s] In file included from [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/AnyTopicDelegate.hpp:23[m[K,
+[12.283s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/AnyTopic.hpp:22[m[K,
+[12.285s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/AnyTopic.hpp:22[m[K,
+[12.286s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/Topic.hpp:27[m[K,
+[12.288s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/Topic.hpp:21[m[K,
+[12.289s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:23[m[K,
+[12.290s]                  from [01m[K/usr/local/include/ddscxx/dds/dds.hpp:35[m[K,
+[12.293s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4[m[K,
+[12.295s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4[m[K,
+[12.299s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5[m[K,
+[12.300s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4[m[K,
+[12.303s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4[m[K,
+[12.304s]                  from [01m[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8[m[K:
+[12.305s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:[m[K In static member function ‘[01m[Kstatic org::eclipse::cyclonedds::topic::ddsi_sertype* org::eclipse::cyclonedds::topic::TopicTraits<TOPIC>::deriveSertype(const org::eclipse::cyclonedds::topic::ddsi_sertype*, int, int)[m[K’:
+[12.307s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:270:16:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_DATA_REPRESENTATION_XCDR1[m[K’ was not declared in this scope
+[12.308s]   270 |           case [01;31m[KDDS_DATA_REPRESENTATION_XCDR1[m[K:
+[12.310s]       |                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.311s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:271:32:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_DATA_REPRESENTATION_FLAG_XCDR1[m[K’ was not declared in this scope
+[12.312s]   271 |               ptr = getSerType([01;31m[KDDS_DATA_REPRESENTATION_FLAG_XCDR1[m[K);
+[12.314s]       |                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.317s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:271:21:[m[K [01;31m[Kerror: [m[Kthere are no arguments to ‘[01m[KgetSerType[m[K’ that depend on a template parameter, so a declaration of ‘[01m[KgetSerType[m[K’ must be available [[01;31m[K-fpermissive[m[K]
+[12.319s]   271 |               ptr = [01;31m[KgetSerType[m[K(DDS_DATA_REPRESENTATION_FLAG_XCDR1);
+[12.321s]       |                     [01;31m[K^~~~~~~~~~[m[K
+[12.322s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:271:21:[m[K [01;36m[Knote: [m[K(if you use ‘[01m[K-fpermissive[m[K’, G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+[12.339s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:273:16:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_DATA_REPRESENTATION_XCDR2[m[K’ was not declared in this scope
+[12.340s]   273 |           case [01;31m[KDDS_DATA_REPRESENTATION_XCDR2[m[K:
+[12.340s]       |                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.384s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:274:32:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_DATA_REPRESENTATION_FLAG_XCDR2[m[K’ was not declared in this scope
+[12.385s]   274 |               ptr = getSerType([01;31m[KDDS_DATA_REPRESENTATION_FLAG_XCDR2[m[K);
+[12.385s]       |                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.386s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:274:21:[m[K [01;31m[Kerror: [m[Kthere are no arguments to ‘[01m[KgetSerType[m[K’ that depend on a template parameter, so a declaration of ‘[01m[KgetSerType[m[K’ must be available [[01;31m[K-fpermissive[m[K]
+[12.386s]   274 |               ptr = [01;31m[KgetSerType[m[K(DDS_DATA_REPRESENTATION_FLAG_XCDR2);
+[12.386s]       |                     [01;31m[K^~~~~~~~~~[m[K
+[12.440s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:279:58:[m[K [01;31m[Kerror: [m[K‘[01m[KDDSI_SERTYPE_REFC_MASK[m[K’ was not declared in this scope
+[12.441s]   279 |             ddsrt_atomic_st32 (&ptr->flags_refc, refc & ~[01;31m[KDDSI_SERTYPE_REFC_MASK[m[K);
+[12.441s]       |                                                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.441s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:279:58:[m[K [01;36m[Knote: [m[Kthe macro ‘[01m[KDDSI_SERTYPE_REFC_MASK[m[K’ had not yet been defined
+[12.441s] In file included from [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:155[m[K,
+[12.442s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/BuiltinTopic.hpp:23[m[K,
+[12.442s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/BuiltinTopic.hpp:22[m[K,
+[12.442s]                  from [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/sub/AnyDataReaderDelegate.hpp:36[m[K,
+[12.442s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:31[m[K,
+[12.442s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/ContentFilteredTopic.hpp:22[m[K,
+[12.442s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:25[m[K,
+[12.442s]                  from [01m[K/usr/local/include/ddscxx/dds/dds.hpp:35[m[K,
+[12.443s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4[m[K,
+[12.443s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4[m[K,
+[12.443s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5[m[K,
+[12.443s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4[m[K,
+[12.443s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4[m[K,
+[12.443s]                  from [01m[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8[m[K:
+[12.444s] [01m[K/usr/local/include/dds/ddsi/ddsi_sertype.h:36:[m[K [01;36m[Knote: [m[Kit was later defined here
+[12.444s]    36 | #define DDSI_SERTYPE_REFC_MASK   0x0fffffffu
+[12.444s]       | 
+[12.516s] In file included from [01m[K/opt/ros/foxy/include/dds/ddsrt/rusage.h:33[m[K,
+[12.517s]                  from [01m[K/opt/ros/foxy/include/dds/ddsi/q_log.h:19[m[K,
+[12.517s]                  from [01m[K/opt/ros/foxy/include/dds/ddsi/ddsi_xqos.h:20[m[K,
+[12.517s]                  from [01m[K/usr/local/include/dds/ddsi/ddsi_sertype.h:18[m[K,
+[12.517s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:155[m[K,
+[12.517s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/BuiltinTopic.hpp:23[m[K,
+[12.517s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/BuiltinTopic.hpp:22[m[K,
+[12.518s]                  from [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/sub/AnyDataReaderDelegate.hpp:36[m[K,
+[12.518s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:31[m[K,
+[12.518s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/ContentFilteredTopic.hpp:22[m[K,
+[12.518s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:25[m[K,
+[12.518s]                  from [01m[K/usr/local/include/ddscxx/dds/dds.hpp:35[m[K,
+[12.519s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4[m[K,
+[12.519s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4[m[K,
+[12.519s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5[m[K,
+[12.519s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4[m[K,
+[12.519s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4[m[K,
+[12.519s]                  from [01m[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8[m[K:
+[12.520s] [01m[K/opt/ros/foxy/include/dds/ddsrt/threads.h:[m[K At global scope:
+[12.520s] [01m[K/opt/ros/foxy/include/dds/ddsrt/threads.h:71:3:[m[K [01;31m[Kerror: [m[K‘[01m[KDDSRT_SCHED_DEFAULT[m[K’ conflicts with a previous declaration
+[12.520s]    71 |   [01;31m[KDDSRT_SCHED_DEFAULT[m[K,
+[12.520s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[12.520s] In file included from [01m[K/usr/local/include/dds/ddsi/ddsi_config.h:19[m[K,
+[12.520s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/TDomainParticipant.hpp:24[m[K,
+[12.520s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/detail/TDomainParticipantImpl.hpp:22[m[K,
+[12.521s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/detail/DomainParticipant.hpp:22[m[K,
+[12.521s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/DomainParticipant.hpp:22[m[K,
+[12.521s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/find.hpp:22[m[K,
+[12.521s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/ddsdomain.hpp:21[m[K,
+[12.521s]                  from [01m[K/usr/local/include/ddscxx/dds/dds.hpp:34[m[K,
+[12.521s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4[m[K,
+[12.521s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4[m[K,
+[12.522s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5[m[K,
+[12.522s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4[m[K,
+[12.522s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4[m[K,
+[12.522s]                  from [01m[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8[m[K:
+[12.522s] [01m[K/usr/local/include/dds/ddsrt/sched.h:28:3:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kddsrt_sched_t DDSRT_SCHED_DEFAULT[m[K’
+[12.522s]    28 |   [01;36m[KDDSRT_SCHED_DEFAULT[m[K,
+[12.523s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[12.523s] In file included from [01m[K/opt/ros/foxy/include/dds/ddsrt/rusage.h:33[m[K,
+[12.523s]                  from [01m[K/opt/ros/foxy/include/dds/ddsi/q_log.h:19[m[K,
+[12.523s]                  from [01m[K/opt/ros/foxy/include/dds/ddsi/ddsi_xqos.h:20[m[K,
+[12.523s]                  from [01m[K/usr/local/include/dds/ddsi/ddsi_sertype.h:18[m[K,
+[12.524s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:155[m[K,
+[12.524s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/BuiltinTopic.hpp:23[m[K,
+[12.524s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/BuiltinTopic.hpp:22[m[K,
+[12.524s]                  from [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/sub/AnyDataReaderDelegate.hpp:36[m[K,
+[12.524s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:31[m[K,
+[12.524s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/ContentFilteredTopic.hpp:22[m[K,
+[12.524s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:25[m[K,
+[12.524s]                  from [01m[K/usr/local/include/ddscxx/dds/dds.hpp:35[m[K,
+[12.525s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4[m[K,
+[12.525s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4[m[K,
+[12.525s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5[m[K,
+[12.525s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4[m[K,
+[12.525s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4[m[K,
+[12.527s]                  from [01m[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8[m[K:
+[12.528s] [01m[K/opt/ros/foxy/include/dds/ddsrt/threads.h:78:3:[m[K [01;31m[Kerror: [m[K‘[01m[KDDSRT_SCHED_REALTIME[m[K’ conflicts with a previous declaration
+[12.528s]    78 |   [01;31m[KDDSRT_SCHED_REALTIME[m[K,
+[12.528s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[12.528s] In file included from [01m[K/usr/local/include/dds/ddsi/ddsi_config.h:19[m[K,
+[12.528s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/TDomainParticipant.hpp:24[m[K,
+[12.528s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/detail/TDomainParticipantImpl.hpp:22[m[K,
+[12.529s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/detail/DomainParticipant.hpp:22[m[K,
+[12.529s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/DomainParticipant.hpp:22[m[K,
+[12.529s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/find.hpp:22[m[K,
+[12.529s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/ddsdomain.hpp:21[m[K,
+[12.529s]                  from [01m[K/usr/local/include/ddscxx/dds/dds.hpp:34[m[K,
+[12.529s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4[m[K,
+[12.529s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4[m[K,
+[12.530s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5[m[K,
+[12.531s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4[m[K,
+[12.533s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4[m[K,
+[12.534s]                  from [01m[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8[m[K:
+[12.537s] [01m[K/usr/local/include/dds/ddsrt/sched.h:35:3:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kddsrt_sched_t DDSRT_SCHED_REALTIME[m[K’
+[12.538s]    35 |   [01;36m[KDDSRT_SCHED_REALTIME[m[K,
+[12.539s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[12.540s] In file included from [01m[K/opt/ros/foxy/include/dds/ddsrt/rusage.h:33[m[K,
+[12.541s]                  from [01m[K/opt/ros/foxy/include/dds/ddsi/q_log.h:19[m[K,
+[12.542s]                  from [01m[K/opt/ros/foxy/include/dds/ddsi/ddsi_xqos.h:20[m[K,
+[12.542s]                  from [01m[K/usr/local/include/dds/ddsi/ddsi_sertype.h:18[m[K,
+[12.542s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:155[m[K,
+[12.543s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/BuiltinTopic.hpp:23[m[K,
+[12.544s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/BuiltinTopic.hpp:22[m[K,
+[12.544s]                  from [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/sub/AnyDataReaderDelegate.hpp:36[m[K,
+[12.545s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:31[m[K,
+[12.545s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/ContentFilteredTopic.hpp:22[m[K,
+[12.545s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:25[m[K,
+[12.546s]                  from [01m[K/usr/local/include/ddscxx/dds/dds.hpp:35[m[K,
+[12.546s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4[m[K,
+[12.546s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4[m[K,
+[12.547s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5[m[K,
+[12.552s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4[m[K,
+[12.553s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4[m[K,
+[12.557s]                  from [01m[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8[m[K:
+[12.558s] [01m[K/opt/ros/foxy/include/dds/ddsrt/threads.h:84:3:[m[K [01;31m[Kerror: [m[K‘[01m[KDDSRT_SCHED_TIMESHARE[m[K’ conflicts with a previous declaration
+[12.559s]    84 |   [01;31m[KDDSRT_SCHED_TIMESHARE[m[K
+[12.560s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.561s] In file included from [01m[K/usr/local/include/dds/ddsi/ddsi_config.h:19[m[K,
+[12.561s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/TDomainParticipant.hpp:24[m[K,
+[12.561s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/detail/TDomainParticipantImpl.hpp:22[m[K,
+[12.566s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/detail/DomainParticipant.hpp:22[m[K,
+[12.567s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/DomainParticipant.hpp:22[m[K,
+[12.583s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/find.hpp:22[m[K,
+[12.583s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/ddsdomain.hpp:21[m[K,
+[12.584s]                  from [01m[K/usr/local/include/ddscxx/dds/dds.hpp:34[m[K,
+[12.584s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4[m[K,
+[12.584s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4[m[K,
+[12.584s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5[m[K,
+[12.584s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4[m[K,
+[12.584s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4[m[K,
+[12.584s]                  from [01m[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8[m[K:
+[12.584s] [01m[K/usr/local/include/dds/ddsrt/sched.h:41:3:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kddsrt_sched_t DDSRT_SCHED_TIMESHARE[m[K’
+[12.585s]    41 |   [01;36m[KDDSRT_SCHED_TIMESHARE[m[K
+[12.585s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.585s] In file included from [01m[K/opt/ros/foxy/include/dds/ddsrt/rusage.h:33[m[K,
+[12.585s]                  from [01m[K/opt/ros/foxy/include/dds/ddsi/q_log.h:19[m[K,
+[12.585s]                  from [01m[K/opt/ros/foxy/include/dds/ddsi/ddsi_xqos.h:20[m[K,
+[12.585s]                  from [01m[K/usr/local/include/dds/ddsi/ddsi_sertype.h:18[m[K,
+[12.585s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:155[m[K,
+[12.585s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/BuiltinTopic.hpp:23[m[K,
+[12.586s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/BuiltinTopic.hpp:22[m[K,
+[12.586s]                  from [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/sub/AnyDataReaderDelegate.hpp:36[m[K,
+[12.586s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:31[m[K,
+[12.586s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/ContentFilteredTopic.hpp:22[m[K,
+[12.586s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:25[m[K,
+[12.586s]                  from [01m[K/usr/local/include/ddscxx/dds/dds.hpp:35[m[K,
+[12.586s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4[m[K,
+[12.587s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4[m[K,
+[12.587s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5[m[K,
+[12.587s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4[m[K,
+[12.587s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4[m[K,
+[12.587s]                  from [01m[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8[m[K:
+[12.587s] [01m[K/opt/ros/foxy/include/dds/ddsrt/threads.h:85:3:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Ktypedef enum ddsrt_sched_t ddsrt_sched_t[m[K’
+[12.587s]    85 | } [01;31m[Kddsrt_sched_t[m[K;
+[12.587s]       |   [01;31m[K^~~~~~~~~~~~~[m[K
+[12.588s] In file included from [01m[K/usr/local/include/dds/ddsi/ddsi_config.h:19[m[K,
+[12.588s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/TDomainParticipant.hpp:24[m[K,
+[12.588s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/detail/TDomainParticipantImpl.hpp:22[m[K,
+[12.588s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/detail/DomainParticipant.hpp:22[m[K,
+[12.588s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/DomainParticipant.hpp:22[m[K,
+[12.588s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/find.hpp:22[m[K,
+[12.588s]                  from [01m[K/usr/local/include/ddscxx/dds/domain/ddsdomain.hpp:21[m[K,
+[12.588s]                  from [01m[K/usr/local/include/ddscxx/dds/dds.hpp:34[m[K,
+[12.588s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4[m[K,
+[12.589s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4[m[K,
+[12.589s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5[m[K,
+[12.589s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4[m[K,
+[12.589s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4[m[K,
+[12.589s]                  from [01m[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8[m[K:
+[12.589s] [01m[K/usr/local/include/dds/ddsrt/sched.h:42:3:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Ktypedef enum ddsrt_sched_t ddsrt_sched_t[m[K’
+[12.589s]    42 | } [01;36m[Kddsrt_sched_t[m[K;
+[12.589s]       |   [01;36m[K^~~~~~~~~~~~~[m[K
+[12.590s] In file included from [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:155[m[K,
+[12.590s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/BuiltinTopic.hpp:23[m[K,
+[12.590s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/BuiltinTopic.hpp:22[m[K,
+[12.590s]                  from [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/sub/AnyDataReaderDelegate.hpp:36[m[K,
+[12.590s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:31[m[K,
+[12.596s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/ContentFilteredTopic.hpp:22[m[K,
+[12.596s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:25[m[K,
+[12.596s]                  from [01m[K/usr/local/include/ddscxx/dds/dds.hpp:35[m[K,
+[12.596s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4[m[K,
+[12.596s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4[m[K,
+[12.596s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5[m[K,
+[12.596s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4[m[K,
+[12.597s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4[m[K,
+[12.597s]                  from [01m[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8[m[K:
+[12.597s] [01m[K/usr/local/include/dds/ddsi/ddsi_sertype.h:138:93:[m[K [01;31m[Kerror: [m[K‘[01m[Kdds_data_representation_id_t[m[K’ has not been declared
+[12.597s]   138 | *ddsi_sertype_derive_t) (const struct ddsi_sertype *sertype, [01;31m[Kdds_data_representation_id_t[m[K data_representation, dds_type_consistency_enforcement_qospolicy_t tce_qos);
+[12.597s]       |                                                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.597s] 
+[12.597s] [01m[K/usr/local/include/dds/ddsi/ddsi_sertype.h:138:143:[m[K [01;31m[Kerror: [m[K‘[01m[Kdds_type_consistency_enforcement_qospolicy_t[m[K’ has not been declared
+[12.597s]   138 |  *sertype, dds_data_representation_id_t data_representation, [01;31m[Kdds_type_consistency_enforcement_qospolicy_t[m[K tce_qos);
+[12.598s]       |                                                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.598s] 
+[12.617s] [01m[K/usr/local/include/dds/ddsi/ddsi_sertype.h:202:1:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_INLINE_EXPORT[m[K’ does not name a type; did you mean ‘[01m[KDDS_NO_EXPORT[m[K’?
+[12.617s]   202 | [01;31m[KDDS_INLINE_EXPORT[m[K inline void ddsi_sertype_free (struct ddsi_sertype *tp) {
+[12.617s]       | [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[12.618s]       | [32m[KDDS_NO_EXPORT[m[K
+[12.640s] [01m[K/usr/local/include/dds/ddsi/ddsi_sertype.h:205:1:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_INLINE_EXPORT[m[K’ does not name a type; did you mean ‘[01m[KDDS_NO_EXPORT[m[K’?
+[12.641s]   205 | [01;31m[KDDS_INLINE_EXPORT[m[K inline void ddsi_sertype_zero_samples (const struct ddsi_sertype *tp, void *samples, size_t count) {
+[12.641s]       | [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[12.641s]       | [32m[KDDS_NO_EXPORT[m[K
+[12.654s] [01m[K/usr/local/include/dds/ddsi/ddsi_sertype.h:208:1:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_INLINE_EXPORT[m[K’ does not name a type; did you mean ‘[01m[KDDS_NO_EXPORT[m[K’?
+[12.656s]   208 | [01;31m[KDDS_INLINE_EXPORT[m[K inline void ddsi_sertype_realloc_samples (void **ptrs, const struct ddsi_sertype *tp, void *old, size_t oldcount, size_t count)
+[12.657s]       | [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[12.657s]       | [32m[KDDS_NO_EXPORT[m[K
+[12.670s] [01m[K/usr/local/include/dds/ddsi/ddsi_sertype.h:212:1:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_INLINE_EXPORT[m[K’ does not name a type; did you mean ‘[01m[KDDS_NO_EXPORT[m[K’?
+[12.671s]   212 | [01;31m[KDDS_INLINE_EXPORT[m[K inline void ddsi_sertype_free_samples (const struct ddsi_sertype *tp, void **ptrs, size_t count, dds_free_op_t op) {
+[12.672s]       | [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[12.672s]       | [32m[KDDS_NO_EXPORT[m[K
+[12.684s] [01m[K/usr/local/include/dds/ddsi/ddsi_sertype.h:215:1:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_INLINE_EXPORT[m[K’ does not name a type; did you mean ‘[01m[KDDS_NO_EXPORT[m[K’?
+[12.685s]   215 | [01;31m[KDDS_INLINE_EXPORT[m[K inline void ddsi_sertype_zero_sample (const struct ddsi_sertype *tp, void *sample) {
+[12.685s]       | [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[12.685s]       | [32m[KDDS_NO_EXPORT[m[K
+[12.694s] [01m[K/usr/local/include/dds/ddsi/ddsi_sertype.h:218:1:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_INLINE_EXPORT[m[K’ does not name a type; did you mean ‘[01m[KDDS_NO_EXPORT[m[K’?
+[12.695s]   218 | [01;31m[KDDS_INLINE_EXPORT[m[K inline void *ddsi_sertype_alloc_sample (const struct ddsi_sertype *tp) {
+[12.695s]       | [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[12.695s]       | [32m[KDDS_NO_EXPORT[m[K
+[12.706s] [01m[K/usr/local/include/dds/ddsi/ddsi_sertype.h:223:1:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_INLINE_EXPORT[m[K’ does not name a type; did you mean ‘[01m[KDDS_NO_EXPORT[m[K’?
+[12.706s]   223 | [01;31m[KDDS_INLINE_EXPORT[m[K inline void ddsi_sertype_free_sample (const struct ddsi_sertype *tp, void *sample, dds_free_op_t op) {
+[12.706s]       | [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[12.707s]       | [32m[KDDS_NO_EXPORT[m[K
+[12.722s] [01m[K/usr/local/include/dds/ddsi/ddsi_sertype.h:226:1:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_INLINE_EXPORT[m[K’ does not name a type; did you mean ‘[01m[KDDS_NO_EXPORT[m[K’?
+[12.722s]   226 | [01;31m[KDDS_INLINE_EXPORT[m[K inline ddsi_typeid_t * ddsi_sertype_typeid (const struct ddsi_sertype *tp, ddsi_typeid_kind_t kind)
+[12.722s]       | [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[12.723s]       | [32m[KDDS_NO_EXPORT[m[K
+[12.734s] [01m[K/usr/local/include/dds/ddsi/ddsi_sertype.h:232:1:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_INLINE_EXPORT[m[K’ does not name a type; did you mean ‘[01m[KDDS_NO_EXPORT[m[K’?
+[12.734s]   232 | [01;31m[KDDS_INLINE_EXPORT[m[K inline ddsi_typemap_t * ddsi_sertype_typemap (const struct ddsi_sertype *tp)
+[12.735s]       | [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[12.735s]       | [32m[KDDS_NO_EXPORT[m[K
+[12.747s] [01m[K/usr/local/include/dds/ddsi/ddsi_sertype.h:238:1:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_INLINE_EXPORT[m[K’ does not name a type; did you mean ‘[01m[KDDS_NO_EXPORT[m[K’?
+[12.748s]   238 | [01;31m[KDDS_INLINE_EXPORT[m[K inline ddsi_typeinfo_t *ddsi_sertype_typeinfo (const struct ddsi_sertype *tp)
+[12.749s]       | [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[12.749s]       | [32m[KDDS_NO_EXPORT[m[K
+[12.761s] [01m[K/usr/local/include/dds/ddsi/ddsi_sertype.h:244:1:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_INLINE_EXPORT[m[K’ does not name a type; did you mean ‘[01m[KDDS_NO_EXPORT[m[K’?
+[12.762s]   244 | [01;31m[KDDS_INLINE_EXPORT[m[K inline struct ddsi_sertype * ddsi_sertype_derive_sertype (const struct ddsi_sertype *base_sertype, dds_data_representation_id_t data_representation, dds_type_consistency_enforcement_qospolicy_t tce_qos) {
+[12.762s]       | [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[12.762s]       | [32m[KDDS_NO_EXPORT[m[K
+[12.774s] [01m[K/usr/local/include/dds/ddsi/ddsi_sertype.h:250:1:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_INLINE_EXPORT[m[K’ does not name a type; did you mean ‘[01m[KDDS_NO_EXPORT[m[K’?
+[12.775s]   250 | [01;31m[KDDS_INLINE_EXPORT[m[K inline size_t
+[12.775s]       | [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[12.775s]       | [32m[KDDS_NO_EXPORT[m[K
+[12.788s] [01m[K/usr/local/include/dds/ddsi/ddsi_sertype.h:256:1:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_INLINE_EXPORT[m[K’ does not name a type; did you mean ‘[01m[KDDS_NO_EXPORT[m[K’?
+[12.789s]   256 | [01;31m[KDDS_INLINE_EXPORT[m[K inline bool
+[12.789s]       | [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[12.789s]       | [32m[KDDS_NO_EXPORT[m[K
+[12.805s] In file included from [01m[K/usr/local/include/ddscxx/dds/topic/detail/BuiltinTopic.hpp:23[m[K,
+[12.805s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/BuiltinTopic.hpp:22[m[K,
+[12.805s]                  from [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/sub/AnyDataReaderDelegate.hpp:36[m[K,
+[12.806s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:31[m[K,
+[12.806s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/ContentFilteredTopic.hpp:22[m[K,
+[12.806s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:25[m[K,
+[12.806s]                  from [01m[K/usr/local/include/ddscxx/dds/dds.hpp:35[m[K,
+[12.806s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4[m[K,
+[12.806s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4[m[K,
+[12.806s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5[m[K,
+[12.806s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4[m[K,
+[12.807s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4[m[K,
+[12.807s]                  from [01m[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8[m[K:
+[12.807s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:[m[K In constructor ‘[01m[Kdds::topic::detail::Topic<T>::Topic(const DomainParticipant&, const string&, const string&, const TopicQos&, dds::topic::TopicListener<T>*, const dds::core::status::StatusMask&)[m[K’:
+[12.807s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:176:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kser_type_[m[K’ was not declared in this scope; did you mean ‘[01m[Kref_type[m[K’?
+[12.807s]   176 |     [01;31m[Kser_type_[m[K = org::eclipse::cyclonedds::topic::TopicTraits<T>::getSerType();
+[12.807s]       |     [01;31m[K^~~~~~~~~[m[K
+[12.807s]       |     [32m[Kref_type[m[K
+[12.808s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:178:31:[m[K [01;31m[Kerror: [m[Kthere are no arguments to ‘[01m[Kdds_create_topic_sertype[m[K’ that depend on a template parameter, so a declaration of ‘[01m[Kdds_create_topic_sertype[m[K’ must be available [[01;31m[K-fpermissive[m[K]
+[12.808s]   178 |     dds_entity_t ddsc_topic = [01;31m[Kdds_create_topic_sertype[m[K(
+[12.808s]       |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.821s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:[m[K In static member function ‘[01m[Kstatic dds::topic::Topic<T, dds::topic::detail::Topic> dds::topic::detail::Topic<T>::discover_topic(const DomainParticipant&, const string&, const dds::core::Duration&)[m[K’:
+[12.821s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:311:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kdds_typeinfo_t[m[K’ was not declared in this scope; did you mean ‘[01m[Kddsi_typeinfo_t[m[K’?
+[12.821s]   311 |     std::unique_ptr<[01;31m[Kdds_typeinfo_t[m[K, std::function<void(dds_typeinfo_t *)> >
+[12.822s]       |                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[12.822s]       |                     [32m[Kddsi_typeinfo_t[m[K
+[12.822s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:311:73:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[12.823s]   311 |     std::unique_ptr<dds_typeinfo_t, std::function<void(dds_typeinfo_t *)[01;31m[K>[m[K >
+[12.825s]       |                                                                         [01;31m[K^[m[K
+[12.826s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:311:75:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[12.826s]   311 |     std::unique_ptr<dds_typeinfo_t, std::function<void(dds_typeinfo_t *)> [01;31m[K>[m[K
+[12.826s]       |                                                                           [01;31m[K^[m[K
+[12.827s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:311:75:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[12.830s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:313:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kdds_typeinfo_t[m[K’ is not a type
+[12.830s]   313 |                 []([01;31m[Kdds_typeinfo_t[m[K *ti) { static_cast<void>(dds_free_typeinfo(ti)); });
+[12.830s]       |                    [01;31m[K^~~~~~~~~~~~~~[m[K
+[12.831s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:[m[K In lambda function:
+[12.832s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:313:60:[m[K [01;31m[Kerror: [m[Kthere are no arguments to ‘[01m[Kdds_free_typeinfo[m[K’ that depend on a template parameter, so a declaration of ‘[01m[Kdds_free_typeinfo[m[K’ must be available [[01;31m[K-fpermissive[m[K]
+[12.832s]   313 |                 [](dds_typeinfo_t *ti) { static_cast<void>([01;31m[Kdds_free_typeinfo[m[K(ti)); });
+[12.832s]       |                                                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[12.833s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:[m[K In static member function ‘[01m[Kstatic dds::topic::Topic<T, dds::topic::detail::Topic> dds::topic::detail::Topic<T>::discover_topic(const DomainParticipant&, const string&, const dds::core::Duration&)[m[K’:
+[12.833s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:313:85:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in initializer [[01;31m[K-fpermissive[m[K]
+[12.833s]   313 | typeinfo_t *ti) { static_cast<void>(dds_free_typeinfo(ti)); }[01;31m[K)[m[K;
+[12.834s]       |                                                              [01;31m[K^[m[K
+[12.834s] 
+[12.835s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:314:75:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget[m[K’ in ‘[01m[Ktype_info[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[12.836s]   314 | ity_t ddsc_topic = dp.delegate()->lookup_topic(name, type_info.[01;31m[Kget[m[K(), timeout);
+[12.836s]       |                                                                [01;31m[K^~~[m[K
+[12.837s] 
+[12.980s] In file included from [01m[K/usr/local/include/ddscxx/dds/topic/ContentFilteredTopic.hpp:22[m[K,
+[12.980s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:25[m[K,
+[12.980s]                  from [01m[K/usr/local/include/ddscxx/dds/dds.hpp:35[m[K,
+[12.980s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4[m[K,
+[12.980s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4[m[K,
+[12.981s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5[m[K,
+[12.981s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4[m[K,
+[12.981s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4[m[K,
+[12.981s]                  from [01m[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8[m[K:
+[12.981s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:[m[K At global scope:
+[12.981s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:439:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kdds_topic_filter[m[K’ has not been declared
+[12.981s]   439 |     void filter_function_internal(Functor && func, [01;31m[Kdds_topic_filter[m[K * flt)
+[12.981s]       |                                                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[13.023s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:[m[K In member function ‘[01m[Kvoid dds::topic::detail::ContentFilteredTopic<T>::filter_function(Functor&&)[m[K’:
+[13.023s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:413:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdds_topic_filter[m[K’ was not declared in this scope; did you mean ‘[01m[Kdds_topic_filter_fn[m[K’?
+[13.023s]   413 |         [01;31m[Kdds_topic_filter[m[K flt;
+[13.024s]       |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[13.024s]       |         [32m[Kdds_topic_filter_fn[m[K
+[13.046s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:414:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kflt[m[K’ was not declared in this scope
+[13.047s]   414 |         [01;31m[Kflt[m[K.mode = DDS_TOPIC_FILTER_SAMPLE_ARG;
+[13.047s]       |         [01;31m[K^~~[m[K
+[13.105s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:414:20:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_TOPIC_FILTER_SAMPLE_ARG[m[K’ was not declared in this scope; did you mean ‘[01m[KDDS_TOPIC_FILTER_HPP_[m[K’?
+[13.105s]   414 |         flt.mode = [01;31m[KDDS_TOPIC_FILTER_SAMPLE_ARG[m[K;
+[13.105s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.105s]       |                    [32m[KDDS_TOPIC_FILTER_HPP_[m[K
+[13.120s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:[m[K In member function ‘[01m[Kvoid dds::topic::detail::ContentFilteredTopic<T>::filter_function(Functor&&)[m[K’:
+[13.120s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:422:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdds_topic_filter[m[K’ was not declared in this scope; did you mean ‘[01m[Kdds_topic_filter_fn[m[K’?
+[13.120s]   422 |         [01;31m[Kdds_topic_filter[m[K flt;
+[13.123s]       |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[13.123s]       |         [32m[Kdds_topic_filter_fn[m[K
+[13.142s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:423:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kflt[m[K’ was not declared in this scope
+[13.143s]   423 |         [01;31m[Kflt[m[K.mode = DDS_TOPIC_FILTER_SAMPLEINFO_ARG;
+[13.145s]       |         [01;31m[K^~~[m[K
+[13.194s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:423:20:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_TOPIC_FILTER_SAMPLEINFO_ARG[m[K’ was not declared in this scope
+[13.194s]   423 |         flt.mode = [01;31m[KDDS_TOPIC_FILTER_SAMPLEINFO_ARG[m[K;
+[13.194s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.224s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:[m[K In member function ‘[01m[Kvoid dds::topic::detail::ContentFilteredTopic<T>::filter_function(Functor&&)[m[K’:
+[13.224s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:431:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdds_topic_filter[m[K’ was not declared in this scope; did you mean ‘[01m[Kdds_topic_filter_fn[m[K’?
+[13.224s]   431 |         [01;31m[Kdds_topic_filter[m[K flt;
+[13.224s]       |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[13.225s]       |         [32m[Kdds_topic_filter_fn[m[K
+[13.236s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:432:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kflt[m[K’ was not declared in this scope
+[13.236s]   432 |         [01;31m[Kflt[m[K.mode = DDS_TOPIC_FILTER_SAMPLE_SAMPLEINFO_ARG;
+[13.237s]       |         [01;31m[K^~~[m[K
+[13.284s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:432:20:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_TOPIC_FILTER_SAMPLE_SAMPLEINFO_ARG[m[K’ was not declared in this scope
+[13.289s]   432 |         flt.mode = [01;31m[KDDS_TOPIC_FILTER_SAMPLE_SAMPLEINFO_ARG[m[K;
+[13.290s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.290s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:[m[K In member function ‘[01m[Kvoid dds::topic::detail::ContentFilteredTopic<T>::filter_function_internal(Functor&&, int*)[m[K’:
+[13.290s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:455:14:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Karg[m[K’ in ‘[01m[Kflt->[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[13.290s]   455 |         flt->[01;31m[Karg[m[K = myFunctor;
+[13.291s]       |              [01;31m[K^~~[m[K
+[13.291s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:456:9:[m[K [01;31m[Kerror: [m[Kthere are no arguments to ‘[01m[Kdds_set_topic_filter_extended[m[K’ that depend on a template parameter, so a declaration of ‘[01m[Kdds_set_topic_filter_extended[m[K’ must be available [[01;31m[K-fpermissive[m[K]
+[13.291s]   456 |         [01;31m[Kdds_set_topic_filter_extended[m[K(cfTopic, flt);
+[13.291s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.549s] In file included from [01m[K/usr/local/include/ddscxx/dds/sub/detail/SampleRef.hpp:34[m[K,
+[13.550s]                  from [01m[K/usr/local/include/ddscxx/dds/sub/SampleRef.hpp:22[m[K,
+[13.551s]                  from [01m[K/usr/local/include/ddscxx/dds/sub/LoanedSamples.hpp:22[m[K,
+[13.551s]                  from [01m[K/usr/local/include/ddscxx/dds/sub/detail/DataReader.hpp:21[m[K,
+[13.552s]                  from [01m[K/usr/local/include/ddscxx/dds/sub/DataReader.hpp:21[m[K,
+[13.552s]                  from [01m[K/usr/local/include/ddscxx/dds/sub/ddssub.hpp:30[m[K,
+[13.552s]                  from [01m[K/usr/local/include/ddscxx/dds/dds.hpp:37[m[K,
+[13.552s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4[m[K,
+[13.552s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4[m[K,
+[13.552s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5[m[K,
+[13.553s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4[m[K,
+[13.553s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4[m[K,
+[13.553s]                  from [01m[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8[m[K:
+[13.553s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/datatopic.hpp:[m[K In function ‘[01m[Kbool read_header(const void*, org::eclipse::cyclonedds::core::cdr::encoding_version&, org::eclipse::cyclonedds::core::cdr::endianness&)[m[K’:
+[13.553s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/datatopic.hpp:213:54:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_DATA_REPRESENTATION_FLAG_XCDR1[m[K’ was not declared in this scope
+[13.553s]   213 |           if (TopicTraits<T>::allowableEncodings() & [01;31m[KDDS_DATA_REPRESENTATION_FLAG_XCDR1[m[K)
+[13.553s]       |                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.590s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/datatopic.hpp:[m[K In member function ‘[01m[Kvoid ddscxx_serdata<T>::populate_hash()[m[K’:
+[13.590s] [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/datatopic.hpp:766:11:[m[K [01;31m[Kerror: [m[K‘[01m[Ktype[m[K’ was not declared in this scope
+[13.590s]   766 |   hash ^= [01;31m[Ktype[m[K->serdata_basehash;
+[13.590s]       |           [01;31m[K^~~~[m[K
+[16.587s] In file included from [01m[K/usr/local/include/ddscxx/dds/topic/detail/BuiltinTopic.hpp:23[m[K,
+[16.587s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/BuiltinTopic.hpp:22[m[K,
+[16.587s]                  from [01m[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/sub/AnyDataReaderDelegate.hpp:36[m[K,
+[16.587s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:31[m[K,
+[16.587s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/ContentFilteredTopic.hpp:22[m[K,
+[16.587s]                  from [01m[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:25[m[K,
+[16.588s]                  from [01m[K/usr/local/include/ddscxx/dds/dds.hpp:35[m[K,
+[16.591s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4[m[K,
+[16.591s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4[m[K,
+[16.592s]                  from [01m[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5[m[K,
+[16.592s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4[m[K,
+[16.592s]                  from [01m[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4[m[K,
+[16.592s]                  from [01m[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8[m[K:
+[16.592s] /usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp: In instantiation of ‘[01m[Kdds::topic::detail::Topic<T>::Topic(const DomainParticipant&, const string&, const string&, const TopicQos&, dds::topic::TopicListener<T>*, const dds::core::status::StatusMask&) [with T = unitree_arm::msg::dds_::ArmString_; dds::domain::DomainParticipant = dds::domain::TDomainParticipant<org::eclipse::cyclonedds::domain::DomainParticipantDelegate>; std::string = std::__cxx11::basic_string<char>; dds::topic::qos::TopicQos = dds::core::TEntityQos<org::eclipse::cyclonedds::topic::qos::TopicQosDelegate>][m[K’:
+[16.592s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:84:45:[m[K   required from ‘[01m[Kdds::topic::Topic<T, DELEGATE>::Topic(const DomainParticipant&, const string&, const TopicQos&, dds::topic::TopicListener<T>*, const dds::core::status::StatusMask&) [with T = unitree_arm::msg::dds_::ArmString_; DELEGATE = dds::topic::detail::Topic; dds::domain::DomainParticipant = dds::domain::TDomainParticipant<org::eclipse::cyclonedds::domain::DomainParticipantDelegate>; std::string = std::__cxx11::basic_string<char>; dds::topic::qos::TopicQos = dds::core::TEntityQos<org::eclipse::cyclonedds::topic::qos::TopicQosDelegate>][m[K’
+[16.593s] [01m[K/usr/local/include/unitree/common/dds/dds_entity.hpp:117:19:[m[K   required from ‘[01m[Kunitree::common::DdsTopic<MSG>::DdsTopic(const DdsParticipantPtr&, const string&, const unitree::common::DdsTopicQos&) [with MSG = unitree_arm::msg::dds_::ArmString_; unitree::common::DdsParticipantPtr = std::shared_ptr<unitree::common::DdsParticipant>; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.593s] [01m[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:39:35:[m[K   required from ‘[01m[Kvoid unitree::common::DdsTopicChannel<MSG>::SetTopic(const DdsParticipantPtr&, const string&, const unitree::common::DdsTopicQos&) [with MSG = unitree_arm::msg::dds_::ArmString_; unitree::common::DdsParticipantPtr = std::shared_ptr<unitree::common::DdsParticipant>; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.593s] [01m[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:25:9:[m[K   required from ‘[01m[Kunitree::common::DdsTopicChannelPtr<MSG> unitree::common::DdsFactoryModel::CreateTopicChannel(const string&) [with MSG = unitree_arm::msg::dds_::ArmString_; unitree::common::DdsTopicChannelPtr<MSG> = std::shared_ptr<unitree::common::DdsTopicChannel<unitree_arm::msg::dds_::ArmString_> >; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.593s] [01m[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:34:25:[m[K   required from ‘[01m[Kunitree::robot::ChannelPtr<MSG> unitree::robot::ChannelFactory::CreateSendChannel(const string&) [with MSG = unitree_arm::msg::dds_::ArmString_; unitree::robot::ChannelPtr<MSG> = std::shared_ptr<unitree::common::DdsTopicChannel<unitree_arm::msg::dds_::ArmString_> >; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.593s] [01m[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:20:21:[m[K   required from ‘[01m[Kvoid unitree::robot::ChannelPublisher<MSG>::InitChannel() [with MSG = unitree_arm::msg::dds_::ArmString_][m[K’
+[16.593s] [01m[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:25:37:[m[K   required from here
+[16.593s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:176:76:[m[K [01;31m[Kerror: [m[K‘[01m[KgetSerType[m[K’ is not a member of ‘[01m[Korg::eclipse::cyclonedds::topic::TopicTraits<unitree_arm::msg::dds_::ArmString_>[m[K’
+[16.594s]   176 |     ser_type_ = [01;31m[Korg::eclipse::cyclonedds::topic::TopicTraits<T>::getSerType()[m[K;
+[16.594s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[16.647s] [01m[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:178:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kdds_create_topic_sertype[m[K’ was not declared in this scope; did you mean ‘[01m[Kdds_create_topic_generic[m[K’?
+[16.647s]   178 |     dds_entity_t ddsc_topic = [01;31m[Kdds_create_topic_sertype([m[K
+[16.655s]       |                               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[16.656s]   179 | [01;31m[K      ddsc_par, name.c_str(), &ser_type_, ddsc_qos, NULL, NULL)[m[K;
+[16.656s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[21.128s] make[2]: *** [CMakeFiles/servo_driver.dir/build.make:63: CMakeFiles/servo_driver.dir/src/servo_driver.cpp.o] Error 1
+[21.134s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/servo_driver.dir/all] Error 2
+[21.134s] make: *** [Makefile:141: all] Error 2

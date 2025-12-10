@@ -1,0 +1,1122 @@
+[0.000000] (-) TimerEvent: {}
+[0.000760] (arm_control) JobQueued: {'identifier': 'arm_control', 'dependencies': OrderedDict()}
+[0.000879] (arm_driver) JobQueued: {'identifier': 'arm_driver', 'dependencies': OrderedDict()}
+[0.000932] (aruco_node) JobQueued: {'identifier': 'aruco_node', 'dependencies': OrderedDict()}
+[0.000975] (navigation_node) JobQueued: {'identifier': 'navigation_node', 'dependencies': OrderedDict()}
+[0.001015] (navigation_node_two) JobQueued: {'identifier': 'navigation_node_two', 'dependencies': OrderedDict()}
+[0.001055] (realsense2_camera_msgs) JobQueued: {'identifier': 'realsense2_camera_msgs', 'dependencies': OrderedDict()}
+[0.001092] (vision_node) JobQueued: {'identifier': 'vision_node', 'dependencies': OrderedDict()}
+[0.001128] (realsense2_camera) JobQueued: {'identifier': 'realsense2_camera', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/unitree/106a_final/install/realsense2_camera_msgs')])}
+[0.001176] (realsense2_description) JobQueued: {'identifier': 'realsense2_description', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/unitree/106a_final/install/realsense2_camera_msgs')])}
+[0.001219] (realsense2_camera_msgs) JobStarted: {'identifier': 'realsense2_camera_msgs'}
+[0.086202] (-) TimerEvent: {}
+[0.187022] (-) TimerEvent: {}
+[0.288045] (-) TimerEvent: {}
+[0.388759] (-) TimerEvent: {}
+[0.489437] (-) TimerEvent: {}
+[0.494302] (arm_control) JobStarted: {'identifier': 'arm_control'}
+[0.589622] (-) TimerEvent: {}
+[0.691383] (-) TimerEvent: {}
+[0.792173] (-) TimerEvent: {}
+[0.893009] (-) TimerEvent: {}
+[0.994766] (-) TimerEvent: {}
+[1.097273] (-) TimerEvent: {}
+[1.114398] (arm_driver) JobStarted: {'identifier': 'arm_driver'}
+[1.199034] (-) TimerEvent: {}
+[1.299747] (-) TimerEvent: {}
+[1.400937] (-) TimerEvent: {}
+[1.501993] (-) TimerEvent: {}
+[1.626546] (-) TimerEvent: {}
+[1.725326] (aruco_node) JobStarted: {'identifier': 'aruco_node'}
+[1.726539] (-) TimerEvent: {}
+[1.827972] (-) TimerEvent: {}
+[1.934181] (-) TimerEvent: {}
+[2.036022] (-) TimerEvent: {}
+[2.136792] (-) TimerEvent: {}
+[2.238049] (-) TimerEvent: {}
+[2.346803] (-) TimerEvent: {}
+[2.447772] (-) TimerEvent: {}
+[2.548442] (-) TimerEvent: {}
+[2.577174] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'cmake'}
+[2.579425] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'build'}
+[2.581216] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/unitree/106a_final/build/realsense2_camera_msgs', '--', '-j4', '-l4'], 'cwd': '/home/unitree/106a_final/build/realsense2_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_CLIENT', '192.168.50.246 34186 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree/106a_final/src'), ('SSH_TTY', '/dev/pts/6'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/unitree/106a_final/build/realsense2_camera_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.50.246 34186 192.168.50.28 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[2.648738] (-) TimerEvent: {}
+[2.749989] (-) TimerEvent: {}
+[2.850933] (-) TimerEvent: {}
+[2.951891] (-) TimerEvent: {}
+[3.053492] (-) TimerEvent: {}
+[3.155531] (-) TimerEvent: {}
+[3.256981] (-) TimerEvent: {}
+[3.358414] (-) TimerEvent: {}
+[3.470037] (-) TimerEvent: {}
+[3.576678] (-) TimerEvent: {}
+[3.678838] (-) TimerEvent: {}
+[3.779717] (-) TimerEvent: {}
+[3.880951] (-) TimerEvent: {}
+[3.982559] (-) TimerEvent: {}
+[4.017250] (arm_driver) JobProgress: {'identifier': 'arm_driver', 'progress': 'cmake'}
+[4.019437] (arm_driver) JobProgress: {'identifier': 'arm_driver', 'progress': 'build'}
+[4.020148] (arm_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/unitree/106a_final/build/arm_driver', '--', '-j4', '-l4'], 'cwd': '/home/unitree/106a_final/build/arm_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_CLIENT', '192.168.50.246 34186 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree/106a_final/src'), ('SSH_TTY', '/dev/pts/6'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/unitree/106a_final/build/arm_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.50.246 34186 192.168.50.28 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[4.063483] (realsense2_camera_msgs) StdoutLine: {'line': b'[  1%] Built target realsense2_camera_msgs__cpp\n'}
+[4.064559] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 12%] Built target realsense2_camera_msgs__rosidl_generator_c\n'}
+[4.064804] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 23%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp\n'}
+[4.064973] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 34%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c\n'}
+[4.065125] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 45%] Built target realsense2_camera_msgs__rosidl_typesupport_c\n'}
+[4.065270] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 56%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[4.065412] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 67%] Built target realsense2_camera_msgs__rosidl_typesupport_cpp\n'}
+[4.084806] (-) TimerEvent: {}
+[4.186833] (-) TimerEvent: {}
+[4.189287] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 78%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c\n'}
+[4.286987] (-) TimerEvent: {}
+[4.319060] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 78%] Built target realsense2_camera_msgs\n'}
+[4.387199] (-) TimerEvent: {}
+[4.461367] (arm_driver) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/servo_driver.dir/src/servo_driver.cpp.o\x1b[0m\n'}
+[4.473077] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 80%] Built target realsense2_camera_msgs__py\n'}
+[4.487345] (-) TimerEvent: {}
+[4.588129] (-) TimerEvent: {}
+[4.688970] (-) TimerEvent: {}
+[4.737801] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 89%] Built target realsense2_camera_msgs__python\n'}
+[4.789152] (-) TimerEvent: {}
+[4.890372] (-) TimerEvent: {}
+[4.896340] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 92%] Built target realsense2_camera_msgs__rosidl_typesupport_c__pyext\n'}
+[4.997819] (-) TimerEvent: {}
+[5.072218] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 96%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.098273] (-) TimerEvent: {}
+[5.199375] (-) TimerEvent: {}
+[5.301632] (-) TimerEvent: {}
+[5.330534] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[5.401840] (-) TimerEvent: {}
+[5.503078] (-) TimerEvent: {}
+[5.604397] (-) TimerEvent: {}
+[5.705143] (-) TimerEvent: {}
+[5.806812] (-) TimerEvent: {}
+[5.865337] (realsense2_camera_msgs) CommandEnded: {'returncode': 0}
+[5.871510] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'install'}
+[5.906951] (-) TimerEvent: {}
+[6.008355] (-) TimerEvent: {}
+[6.045581] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/unitree/106a_final/build/realsense2_camera_msgs'], 'cwd': '/home/unitree/106a_final/build/realsense2_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_CLIENT', '192.168.50.246 34186 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree/106a_final/src'), ('SSH_TTY', '/dev/pts/6'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/unitree/106a_final/build/realsense2_camera_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.50.246 34186 192.168.50.28 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[6.096684] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.098098] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[6.098344] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/ament_index/resource_index/rosidl_interfaces/realsense2_camera_msgs\n'}
+[6.098517] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__functions.h\n'}
+[6.098663] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__struct.h\n'}
+[6.098810] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__type_support.h\n'}
+[6.098942] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__functions.h\n'}
+[6.099069] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__struct.h\n'}
+[6.099196] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__type_support.h\n'}
+[6.099317] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__functions.h\n'}
+[6.099441] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__struct.h\n'}
+[6.099566] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__type_support.h\n'}
+[6.099690] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/extrinsics.h\n'}
+[6.099831] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/imu_info.h\n'}
+[6.099955] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/metadata.h\n'}
+[6.100077] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.100206] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__functions.h\n'}
+[6.100361] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__struct.h\n'}
+[6.100514] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__type_support.h\n'}
+[6.100647] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/device_info.h\n'}
+[6.100887] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/library_path.sh\n'}
+[6.101088] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/library_path.dsv\n'}
+[6.101231] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_c.h\n'}
+[6.101380] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_c.h\n'}
+[6.101641] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_c.h\n'}
+[6.102169] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.102767] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_fastrtps_c.h\n'}
+[6.104099] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[6.108470] (-) TimerEvent: {}
+[6.115403] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.116603] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.117108] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.118307] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.118840] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.121957] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.124669] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_c.h\n'}
+[6.126137] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_c.h\n'}
+[6.127147] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_c.h\n'}
+[6.128896] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.130441] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_introspection_c.h\n'}
+[6.134028] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__builder.hpp\n'}
+[6.135912] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__struct.hpp\n'}
+[6.138049] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__traits.hpp\n'}
+[6.140898] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__type_support.hpp\n'}
+[6.141723] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__builder.hpp\n'}
+[6.142618] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__struct.hpp\n'}
+[6.143808] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__traits.hpp\n'}
+[6.144385] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__type_support.hpp\n'}
+[6.147598] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__builder.hpp\n'}
+[6.147955] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__struct.hpp\n'}
+[6.148129] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__traits.hpp\n'}
+[6.153011] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__type_support.hpp\n'}
+[6.164479] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/extrinsics.hpp\n'}
+[6.174937] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/imu_info.hpp\n'}
+[6.175673] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/metadata.hpp\n'}
+[6.177084] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[6.178062] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__builder.hpp\n'}
+[6.178563] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__struct.hpp\n'}
+[6.182577] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__traits.hpp\n'}
+[6.186272] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__type_support.hpp\n'}
+[6.188479] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/device_info.hpp\n'}
+[6.190526] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.194724] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.195816] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.203387] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.204708] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/pythonpath.sh\n'}
+[6.205233] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/pythonpath.dsv\n'}
+[6.205781] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/__init__.py\n'}
+[6.208312] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/msg/__init__.py\n'}
+[6.208703] (-) TimerEvent: {}
+[6.210384] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/msg/_extrinsics.py\n'}
+[6.210886] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/msg/_imu_info.py\n'}
+[6.211214] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/msg/_metadata.py\n'}
+[6.212110] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/srv/__init__.py\n'}
+[6.212510] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/srv/_device_info.py\n'}
+[6.213519] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[6.214566] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[6.215265] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[6.216202] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__python.so\n'}
+[6.216954] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/IMUInfo.idl\n'}
+[6.217609] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Extrinsics.idl\n'}
+[6.219354] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Metadata.idl\n'}
+[6.222006] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo.idl\n'}
+[6.223355] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/IMUInfo.msg\n'}
+[6.224508] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Extrinsics.msg\n'}
+[6.225563] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Metadata.msg\n'}
+[6.226634] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo.srv\n'}
+[6.227803] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo_Request.msg\n'}
+[6.228925] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo_Response.msg\n'}
+[6.229951] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/ament_index/resource_index/package_run_dependencies/realsense2_camera_msgs\n'}
+[6.231064] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/ament_index/resource_index/parent_prefix_path/realsense2_camera_msgs\n'}
+[6.232309] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/ament_prefix_path.sh\n'}
+[6.233336] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/ament_prefix_path.dsv\n'}
+[6.234580] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/path.sh\n'}
+[6.244585] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/path.dsv\n'}
+[6.246157] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.bash\n'}
+[6.247334] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.sh\n'}
+[6.248523] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.zsh\n'}
+[6.249553] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.dsv\n'}
+[6.250516] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv\n'}
+[6.309162] (-) TimerEvent: {}
+[6.335319] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/ament_index/resource_index/packages/realsense2_camera_msgs\n'}
+[6.337946] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[6.340202] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.342913] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.345210] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.347728] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.349935] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.351962] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.354068] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgsConfig.cmake\n'}
+[6.355933] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgsConfig-version.cmake\n'}
+[6.357896] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.xml\n'}
+[6.359623] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_c.so\n'}
+[6.361649] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_c.so\n'}
+[6.364947] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_c.so\n'}
+[6.367330] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[6.370313] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_cpp.so\n'}
+[6.409320] (-) TimerEvent: {}
+[6.512014] (-) TimerEvent: {}
+[6.613318] (-) TimerEvent: {}
+[6.654278] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_generator_cExport.cmake\n'}
+[6.655704] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.657390] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.658358] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.660137] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cExport.cmake\n'}
+[6.660513] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.663917] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_generator_cppExport.cmake\n'}
+[6.666131] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.666742] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.675895] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[6.676594] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.695204] (realsense2_camera_msgs) CommandEnded: {'returncode': 0}
+[6.723671] (-) TimerEvent: {}
+[6.824534] (-) TimerEvent: {}
+[6.925284] (-) TimerEvent: {}
+[7.028069] (-) TimerEvent: {}
+[7.135294] (-) TimerEvent: {}
+[7.237903] (-) TimerEvent: {}
+[7.342704] (-) TimerEvent: {}
+[7.443879] (-) TimerEvent: {}
+[7.548168] (-) TimerEvent: {}
+[7.650086] (-) TimerEvent: {}
+[7.755168] (-) TimerEvent: {}
+[7.856061] (-) TimerEvent: {}
+[7.958442] (-) TimerEvent: {}
+[8.063946] (-) TimerEvent: {}
+[8.164823] (-) TimerEvent: {}
+[8.267637] (-) TimerEvent: {}
+[8.369210] (-) TimerEvent: {}
+[8.509388] (-) TimerEvent: {}
+[8.610503] (-) TimerEvent: {}
+[8.712732] (-) TimerEvent: {}
+[8.814507] (-) TimerEvent: {}
+[8.916506] (-) TimerEvent: {}
+[9.018706] (-) TimerEvent: {}
+[9.120970] (-) TimerEvent: {}
+[9.222494] (-) TimerEvent: {}
+[9.324770] (-) TimerEvent: {}
+[9.427923] (-) TimerEvent: {}
+[9.529780] (-) TimerEvent: {}
+[9.556916] (realsense2_camera_msgs) JobEnded: {'identifier': 'realsense2_camera_msgs', 'rc': 0}
+[9.559713] (navigation_node) JobStarted: {'identifier': 'navigation_node'}
+[9.633122] (-) TimerEvent: {}
+[9.739044] (-) TimerEvent: {}
+[9.840550] (-) TimerEvent: {}
+[9.942251] (-) TimerEvent: {}
+[10.043600] (-) TimerEvent: {}
+[10.145557] (-) TimerEvent: {}
+[10.247004] (-) TimerEvent: {}
+[10.292703] (arm_control) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/arm_control', 'build', '--build-base', '/home/unitree/106a_final/build/arm_control/build', 'install', '--record', '/home/unitree/106a_final/build/arm_control/install.log', '--install-scripts', '$base/lib/arm_control', '--single-version-externally-managed'], 'cwd': '/home/unitree/106a_final/src/arm_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'unitree', 'SSH_CLIENT': '192.168.50.246 34186 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/unitree', 'CYCLONEDDS_URI': '/home/unitree/cyclonedds_ws/cyclonedds.xml', 'OLDPWD': '/home/unitree/106a_final/src', 'SSH_TTY': '/dev/pts/6', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'unitree', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/unitree/106a_final/build/arm_control', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.50.246 34186 192.168.50.28 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/unitree/106a_final/build/arm_control/prefix_override:/home/unitree/106a_final/install/arm_control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds'}, 'shell': False}
+[10.328856] (aruco_node) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/aruco_node', 'build', '--build-base', '/home/unitree/106a_final/build/aruco_node/build', 'install', '--record', '/home/unitree/106a_final/build/aruco_node/install.log', '--single-version-externally-managed'], 'cwd': '/home/unitree/106a_final/src/aruco_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'unitree', 'SSH_CLIENT': '192.168.50.246 34186 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/unitree', 'CYCLONEDDS_URI': '/home/unitree/cyclonedds_ws/cyclonedds.xml', 'OLDPWD': '/home/unitree/106a_final/src', 'SSH_TTY': '/dev/pts/6', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'unitree', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/unitree/106a_final/build/aruco_node', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.50.246 34186 192.168.50.28 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/unitree/106a_final/build/aruco_node/prefix_override:/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds'}, 'shell': False}
+[10.347349] (-) TimerEvent: {}
+[10.448548] (-) TimerEvent: {}
+[10.550495] (-) TimerEvent: {}
+[10.651227] (-) TimerEvent: {}
+[10.751977] (-) TimerEvent: {}
+[10.852970] (-) TimerEvent: {}
+[10.953704] (-) TimerEvent: {}
+[11.054776] (-) TimerEvent: {}
+[11.075457] (aruco_node) StdoutLine: {'line': b'running egg_info\n'}
+[11.079814] (aruco_node) StdoutLine: {'line': b'writing ../../build/aruco_node/aruco_node.egg-info/PKG-INFO\n'}
+[11.083161] (aruco_node) StdoutLine: {'line': b'writing dependency_links to ../../build/aruco_node/aruco_node.egg-info/dependency_links.txt\n'}
+[11.085181] (aruco_node) StdoutLine: {'line': b'writing entry points to ../../build/aruco_node/aruco_node.egg-info/entry_points.txt\n'}
+[11.086923] (aruco_node) StdoutLine: {'line': b'writing requirements to ../../build/aruco_node/aruco_node.egg-info/requires.txt\n'}
+[11.088383] (aruco_node) StdoutLine: {'line': b'writing top-level names to ../../build/aruco_node/aruco_node.egg-info/top_level.txt\n'}
+[11.154960] (-) TimerEvent: {}
+[11.192654] (aruco_node) StdoutLine: {'line': b"reading manifest file '../../build/aruco_node/aruco_node.egg-info/SOURCES.txt'\n"}
+[11.210475] (aruco_node) StdoutLine: {'line': b"writing manifest file '../../build/aruco_node/aruco_node.egg-info/SOURCES.txt'\n"}
+[11.214056] (aruco_node) StdoutLine: {'line': b'running build\n'}
+[11.218554] (aruco_node) StdoutLine: {'line': b'running build_py\n'}
+[11.221047] (aruco_node) StdoutLine: {'line': b'running install\n'}
+[11.228329] (aruco_node) StdoutLine: {'line': b'running install_lib\n'}
+[11.240382] (aruco_node) StdoutLine: {'line': b'running install_data\n'}
+[11.246452] (aruco_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.255116] (-) TimerEvent: {}
+[11.258144] (aruco_node) StdoutLine: {'line': b"removing '/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages/aruco_node-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[11.265458] (aruco_node) StdoutLine: {'line': b'Copying ../../build/aruco_node/aruco_node.egg-info to /home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages/aruco_node-0.0.0-py3.8.egg-info\n'}
+[11.289628] (aruco_node) StdoutLine: {'line': b'running install_scripts\n'}
+[11.346322] (aruco_node) StdoutLine: {'line': b'Installing aruco script to /home/unitree/106a_final/install/aruco_node/bin\n'}
+[11.349493] (aruco_node) StdoutLine: {'line': b"writing list of installed files to '/home/unitree/106a_final/build/aruco_node/install.log'\n"}
+[11.355293] (-) TimerEvent: {}
+[11.457417] (-) TimerEvent: {}
+[11.558700] (-) TimerEvent: {}
+[11.659400] (-) TimerEvent: {}
+[11.760578] (-) TimerEvent: {}
+[11.800469] (arm_control) StdoutLine: {'line': b'running egg_info\n'}
+[11.807263] (arm_control) StdoutLine: {'line': b'writing ../../build/arm_control/arm_control.egg-info/PKG-INFO\n'}
+[11.807765] (arm_control) StdoutLine: {'line': b'writing dependency_links to ../../build/arm_control/arm_control.egg-info/dependency_links.txt\n'}
+[11.807946] (arm_control) StdoutLine: {'line': b'writing entry points to ../../build/arm_control/arm_control.egg-info/entry_points.txt\n'}
+[11.808098] (arm_control) StdoutLine: {'line': b'writing requirements to ../../build/arm_control/arm_control.egg-info/requires.txt\n'}
+[11.808237] (arm_control) StdoutLine: {'line': b'writing top-level names to ../../build/arm_control/arm_control.egg-info/top_level.txt\n'}
+[11.860813] (-) TimerEvent: {}
+[11.874618] (arm_control) StdoutLine: {'line': b"reading manifest file '../../build/arm_control/arm_control.egg-info/SOURCES.txt'\n"}
+[11.878323] (arm_control) StdoutLine: {'line': b"writing manifest file '../../build/arm_control/arm_control.egg-info/SOURCES.txt'\n"}
+[11.879937] (arm_control) StdoutLine: {'line': b'running build\n'}
+[11.880564] (arm_control) StdoutLine: {'line': b'running build_py\n'}
+[11.884510] (arm_control) StdoutLine: {'line': b'running install\n'}
+[11.890053] (arm_control) StdoutLine: {'line': b'running install_lib\n'}
+[11.890681] (arm_control) StdoutLine: {'line': b'running install_data\n'}
+[11.899242] (arm_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.905965] (arm_control) StdoutLine: {'line': b"removing '/home/unitree/106a_final/install/arm_control/lib/python3.8/site-packages/arm_control-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[11.911255] (arm_control) StdoutLine: {'line': b'Copying ../../build/arm_control/arm_control.egg-info to /home/unitree/106a_final/install/arm_control/lib/python3.8/site-packages/arm_control-0.0.0-py3.8.egg-info\n'}
+[11.911848] (arm_control) StdoutLine: {'line': b'running install_scripts\n'}
+[11.954555] (arm_control) StdoutLine: {'line': b'Installing arm_node script to /home/unitree/106a_final/install/arm_control/lib/arm_control\n'}
+[11.955152] (arm_control) StdoutLine: {'line': b'Installing servo_driver script to /home/unitree/106a_final/install/arm_control/lib/arm_control\n'}
+[11.961115] (arm_control) StdoutLine: {'line': b"writing list of installed files to '/home/unitree/106a_final/build/arm_control/install.log'\n"}
+[11.961561] (-) TimerEvent: {}
+[12.063172] (-) TimerEvent: {}
+[12.164464] (-) TimerEvent: {}
+[12.265928] (-) TimerEvent: {}
+[12.372956] (-) TimerEvent: {}
+[12.473909] (-) TimerEvent: {}
+[12.485821] (arm_control) CommandEnded: {'returncode': 0}
+[12.574372] (-) TimerEvent: {}
+[12.679827] (-) TimerEvent: {}
+[12.781417] (-) TimerEvent: {}
+[12.882893] (-) TimerEvent: {}
+[12.896469] (arm_control) JobEnded: {'identifier': 'arm_control', 'rc': 0}
+[12.900601] (aruco_node) CommandEnded: {'returncode': 0}
+[12.985438] (-) TimerEvent: {}
+[13.086110] (-) TimerEvent: {}
+[13.187672] (-) TimerEvent: {}
+[13.293031] (-) TimerEvent: {}
+[13.394961] (-) TimerEvent: {}
+[13.496456] (-) TimerEvent: {}
+[13.598296] (-) TimerEvent: {}
+[13.699682] (-) TimerEvent: {}
+[13.806869] (-) TimerEvent: {}
+[13.919546] (-) TimerEvent: {}
+[14.022155] (-) TimerEvent: {}
+[14.133912] (-) TimerEvent: {}
+[14.149027] (aruco_node) JobEnded: {'identifier': 'aruco_node', 'rc': 0}
+[14.159401] (navigation_node_two) JobStarted: {'identifier': 'navigation_node_two'}
+[14.234087] (-) TimerEvent: {}
+[14.335082] (-) TimerEvent: {}
+[14.435876] (-) TimerEvent: {}
+[14.588231] (-) TimerEvent: {}
+[14.689045] (-) TimerEvent: {}
+[14.789840] (-) TimerEvent: {}
+[14.866171] (arm_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/detail/TDomainParticipantImpl.hpp:23\x1b[m\x1b[K,\n'}
+[14.866754] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/detail/DomainParticipant.hpp:22\x1b[m\x1b[K,\n'}
+[14.866935] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/DomainParticipant.hpp:22\x1b[m\x1b[K,\n'}
+[14.867098] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/find.hpp:22\x1b[m\x1b[K,\n'}
+[14.867239] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/ddsdomain.hpp:21\x1b[m\x1b[K,\n'}
+[14.867371] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/dds.hpp:34\x1b[m\x1b[K,\n'}
+[14.867498] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4\x1b[m\x1b[K,\n'}
+[14.867620] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4\x1b[m\x1b[K,\n'}
+[14.867741] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5\x1b[m\x1b[K,\n'}
+[14.867859] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4\x1b[m\x1b[K,\n'}
+[14.867978] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4\x1b[m\x1b[K,\n'}
+[14.868096] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8\x1b[m\x1b[K:\n'}
+[14.868251] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/domain/DomainParticipantDelegate.hpp:120:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdds_typeinfo_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kdds_sample_info_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[14.868392] (arm_driver) StderrLine: {'line': b'  120 |                  const \x1b[01;31m\x1b[Kdds_typeinfo_t\x1b[m\x1b[K *type_info,\n'}
+[14.868514] (arm_driver) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.868630] (arm_driver) StderrLine: {'line': b'      |                        \x1b[32m\x1b[Kdds_sample_info_t\x1b[m\x1b[K\n'}
+[14.890229] (-) TimerEvent: {}
+[14.917348] (arm_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TopicDescription.hpp:22\x1b[m\x1b[K,\n'}
+[14.917950] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/TopicDescription.hpp:22\x1b[m\x1b[K,\n'}
+[14.918135] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:22\x1b[m\x1b[K,\n'}
+[14.918274] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/dds.hpp:35\x1b[m\x1b[K,\n'}
+[14.918407] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4\x1b[m\x1b[K,\n'}
+[14.918535] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4\x1b[m\x1b[K,\n'}
+[14.918659] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5\x1b[m\x1b[K,\n'}
+[14.918778] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4\x1b[m\x1b[K,\n'}
+[14.918902] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4\x1b[m\x1b[K,\n'}
+[14.919018] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8\x1b[m\x1b[K:\n'}
+[14.919647] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicDescriptionDelegate.hpp:73:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kddsi_sertype\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kddsi_sertopic\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[14.919853] (arm_driver) StderrLine: {'line': b'   73 |     \x1b[01;31m\x1b[Kddsi_sertype\x1b[m\x1b[K *get_ser_type() const;\n'}
+[14.919991] (arm_driver) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.920114] (arm_driver) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kddsi_sertopic\x1b[m\x1b[K\n'}
+[14.938266] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicDescriptionDelegate.hpp:80:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kddsi_sertype\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kddsi_sertopic\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[14.938726] (arm_driver) StderrLine: {'line': b'   80 |     \x1b[01;31m\x1b[Kddsi_sertype\x1b[m\x1b[K *ser_type_;\n'}
+[14.938885] (arm_driver) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.939021] (arm_driver) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kddsi_sertopic\x1b[m\x1b[K\n'}
+[14.974433] (arm_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/AnyTopicDelegate.hpp:23\x1b[m\x1b[K,\n'}
+[14.974953] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/AnyTopic.hpp:22\x1b[m\x1b[K,\n'}
+[14.975213] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/AnyTopic.hpp:22\x1b[m\x1b[K,\n'}
+[14.975371] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/Topic.hpp:27\x1b[m\x1b[K,\n'}
+[14.975509] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/Topic.hpp:21\x1b[m\x1b[K,\n'}
+[14.975638] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:23\x1b[m\x1b[K,\n'}
+[14.975763] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/dds.hpp:35\x1b[m\x1b[K,\n'}
+[14.975888] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4\x1b[m\x1b[K,\n'}
+[14.976046] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4\x1b[m\x1b[K,\n'}
+[14.976193] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5\x1b[m\x1b[K,\n'}
+[14.976312] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4\x1b[m\x1b[K,\n'}
+[14.976432] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4\x1b[m\x1b[K,\n'}
+[14.976551] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8\x1b[m\x1b[K:\n'}
+[14.976668] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:95:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kddsi_sertype\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kddscxx_sertype\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[14.976792] (arm_driver) StderrLine: {'line': b'   95 |     static \x1b[01;31m\x1b[Kddsi_sertype\x1b[m\x1b[K *getSerType(allowable_encodings_t kinds = allowableEncodings())\n'}
+[14.976909] (arm_driver) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.977024] (arm_driver) StderrLine: {'line': b'      |            \x1b[32m\x1b[Kddscxx_sertype\x1b[m\x1b[K\n'}
+[14.990459] (-) TimerEvent: {}
+[14.994504] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:167:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kddsi_typeid_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kdds_guid_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[14.994967] (arm_driver) StderrLine: {'line': b'  167 |     static \x1b[01;31m\x1b[Kddsi_typeid_t\x1b[m\x1b[K* getTypeId(const struct ddsi_sertype *, ddsi_typeid_kind_t kind)\n'}
+[14.995127] (arm_driver) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.995267] (arm_driver) StderrLine: {'line': b'      |            \x1b[32m\x1b[Kdds_guid_t\x1b[m\x1b[K\n'}
+[15.006646] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:188:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kddsi_typemap_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[15.007698] (arm_driver) StderrLine: {'line': b'  188 |     static \x1b[01;31m\x1b[Kddsi_typemap_t\x1b[m\x1b[K* getTypeMap(const struct ddsi_sertype *)\n'}
+[15.008620] (arm_driver) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.010549] (vision_node) JobStarted: {'identifier': 'vision_node'}
+[15.019314] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:202:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kddsi_typeinfo_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kdds_sample_info_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.020017] (arm_driver) StderrLine: {'line': b'  202 |     static \x1b[01;31m\x1b[Kddsi_typeinfo_t\x1b[m\x1b[K* getTypeInfo(const struct ddsi_sertype *)\n'}
+[15.020195] (arm_driver) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.020342] (arm_driver) StderrLine: {'line': b'      |            \x1b[32m\x1b[Kdds_sample_info_t\x1b[m\x1b[K\n'}
+[15.020473] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:266:76:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdds_data_representation_id_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[15.020603] (arm_driver) StderrLine: {'line': b'  266 | uct ddsi_sertype* deriveSertype(const struct ddsi_sertype *, \x1b[01;31m\x1b[Kdds_data_representation_id_t\x1b[m\x1b[K data_representation, dds_type_consistency_enforcement_qospolicy_t)\n'}
+[15.020728] (arm_driver) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.020849] (arm_driver) StderrLine: {'line': b'\n'}
+[15.020967] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:266:126:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdds_type_consistency_enforcement_qospolicy_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[15.021091] (arm_driver) StderrLine: {'line': b'  266 | sertype *, dds_data_representation_id_t data_representation, \x1b[01;31m\x1b[Kdds_type_consistency_enforcement_qospolicy_t\x1b[m\x1b[K)\n'}
+[15.021207] (arm_driver) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.021322] (arm_driver) StderrLine: {'line': b'\n'}
+[15.056278] (arm_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/AnyTopicDelegate.hpp:23\x1b[m\x1b[K,\n'}
+[15.056873] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/AnyTopic.hpp:22\x1b[m\x1b[K,\n'}
+[15.057045] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/AnyTopic.hpp:22\x1b[m\x1b[K,\n'}
+[15.057221] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/Topic.hpp:27\x1b[m\x1b[K,\n'}
+[15.057366] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/Topic.hpp:21\x1b[m\x1b[K,\n'}
+[15.057503] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:23\x1b[m\x1b[K,\n'}
+[15.057636] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/dds.hpp:35\x1b[m\x1b[K,\n'}
+[15.057820] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4\x1b[m\x1b[K,\n'}
+[15.057951] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4\x1b[m\x1b[K,\n'}
+[15.058073] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5\x1b[m\x1b[K,\n'}
+[15.058191] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4\x1b[m\x1b[K,\n'}
+[15.058340] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4\x1b[m\x1b[K,\n'}
+[15.058483] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8\x1b[m\x1b[K:\n'}
+[15.058622] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic org::eclipse::cyclonedds::topic::ddsi_sertype* org::eclipse::cyclonedds::topic::TopicTraits<TOPIC>::deriveSertype(const org::eclipse::cyclonedds::topic::ddsi_sertype*, int, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.058757] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:270:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_DATA_REPRESENTATION_XCDR1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[15.058881] (arm_driver) StderrLine: {'line': b'  270 |           case \x1b[01;31m\x1b[KDDS_DATA_REPRESENTATION_XCDR1\x1b[m\x1b[K:\n'}
+[15.059000] (arm_driver) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.086093] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:271:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_DATA_REPRESENTATION_FLAG_XCDR1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[15.086498] (arm_driver) StderrLine: {'line': b'  271 |               ptr = getSerType(\x1b[01;31m\x1b[KDDS_DATA_REPRESENTATION_FLAG_XCDR1\x1b[m\x1b[K);\n'}
+[15.086659] (arm_driver) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.086802] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:271:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kthere are no arguments to \xe2\x80\x98\x1b[01m\x1b[KgetSerType\x1b[m\x1b[K\xe2\x80\x99 that depend on a template parameter, so a declaration of \xe2\x80\x98\x1b[01m\x1b[KgetSerType\x1b[m\x1b[K\xe2\x80\x99 must be available [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[15.086991] (arm_driver) StderrLine: {'line': b'  271 |               ptr = \x1b[01;31m\x1b[KgetSerType\x1b[m\x1b[K(DDS_DATA_REPRESENTATION_FLAG_XCDR1);\n'}
+[15.087128] (arm_driver) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.087255] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:271:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K(if you use \xe2\x80\x98\x1b[01m\x1b[K-fpermissive\x1b[m\x1b[K\xe2\x80\x99, G++ will accept your code, but allowing the use of an undeclared name is deprecated)\n'}
+[15.090574] (-) TimerEvent: {}
+[15.125251] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:273:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_DATA_REPRESENTATION_XCDR2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[15.125771] (arm_driver) StderrLine: {'line': b'  273 |           case \x1b[01;31m\x1b[KDDS_DATA_REPRESENTATION_XCDR2\x1b[m\x1b[K:\n'}
+[15.125957] (arm_driver) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.171436] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:274:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_DATA_REPRESENTATION_FLAG_XCDR2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[15.171899] (arm_driver) StderrLine: {'line': b'  274 |               ptr = getSerType(\x1b[01;31m\x1b[KDDS_DATA_REPRESENTATION_FLAG_XCDR2\x1b[m\x1b[K);\n'}
+[15.172065] (arm_driver) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.172212] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:274:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kthere are no arguments to \xe2\x80\x98\x1b[01m\x1b[KgetSerType\x1b[m\x1b[K\xe2\x80\x99 that depend on a template parameter, so a declaration of \xe2\x80\x98\x1b[01m\x1b[KgetSerType\x1b[m\x1b[K\xe2\x80\x99 must be available [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[15.172408] (arm_driver) StderrLine: {'line': b'  274 |               ptr = \x1b[01;31m\x1b[KgetSerType\x1b[m\x1b[K(DDS_DATA_REPRESENTATION_FLAG_XCDR2);\n'}
+[15.172542] (arm_driver) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.191894] (-) TimerEvent: {}
+[15.202824] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:279:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDSI_SERTYPE_REFC_MASK\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[15.203291] (arm_driver) StderrLine: {'line': b'  279 |             ddsrt_atomic_st32 (&ptr->flags_refc, refc & ~\x1b[01;31m\x1b[KDDSI_SERTYPE_REFC_MASK\x1b[m\x1b[K);\n'}
+[15.203471] (arm_driver) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.203650] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:279:58:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kthe macro \xe2\x80\x98\x1b[01m\x1b[KDDSI_SERTYPE_REFC_MASK\x1b[m\x1b[K\xe2\x80\x99 had not yet been defined\n'}
+[15.203812] (arm_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:155\x1b[m\x1b[K,\n'}
+[15.203956] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/BuiltinTopic.hpp:23\x1b[m\x1b[K,\n'}
+[15.204090] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/BuiltinTopic.hpp:22\x1b[m\x1b[K,\n'}
+[15.204216] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/sub/AnyDataReaderDelegate.hpp:36\x1b[m\x1b[K,\n'}
+[15.204378] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:31\x1b[m\x1b[K,\n'}
+[15.204522] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ContentFilteredTopic.hpp:22\x1b[m\x1b[K,\n'}
+[15.204648] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:25\x1b[m\x1b[K,\n'}
+[15.204772] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/dds.hpp:35\x1b[m\x1b[K,\n'}
+[15.204897] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4\x1b[m\x1b[K,\n'}
+[15.205018] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4\x1b[m\x1b[K,\n'}
+[15.205132] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5\x1b[m\x1b[K,\n'}
+[15.205246] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4\x1b[m\x1b[K,\n'}
+[15.205362] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4\x1b[m\x1b[K,\n'}
+[15.205478] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8\x1b[m\x1b[K:\n'}
+[15.205595] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_sertype.h:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kit was later defined here\n'}
+[15.205774] (arm_driver) StderrLine: {'line': b'   36 | #define DDSI_SERTYPE_REFC_MASK   0x0fffffffu\n'}
+[15.205900] (arm_driver) StderrLine: {'line': b'      | \n'}
+[15.295913] (-) TimerEvent: {}
+[15.350831] (arm_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/dds/ddsrt/rusage.h:33\x1b[m\x1b[K,\n'}
+[15.351314] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/dds/ddsi/q_log.h:19\x1b[m\x1b[K,\n'}
+[15.364777] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/dds/ddsi/ddsi_xqos.h:20\x1b[m\x1b[K,\n'}
+[15.370251] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_sertype.h:18\x1b[m\x1b[K,\n'}
+[15.372430] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:155\x1b[m\x1b[K,\n'}
+[15.373522] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/BuiltinTopic.hpp:23\x1b[m\x1b[K,\n'}
+[15.374638] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/BuiltinTopic.hpp:22\x1b[m\x1b[K,\n'}
+[15.374820] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/sub/AnyDataReaderDelegate.hpp:36\x1b[m\x1b[K,\n'}
+[15.374966] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:31\x1b[m\x1b[K,\n'}
+[15.375102] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ContentFilteredTopic.hpp:22\x1b[m\x1b[K,\n'}
+[15.375236] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:25\x1b[m\x1b[K,\n'}
+[15.375362] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/dds.hpp:35\x1b[m\x1b[K,\n'}
+[15.375485] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4\x1b[m\x1b[K,\n'}
+[15.375606] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4\x1b[m\x1b[K,\n'}
+[15.375765] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5\x1b[m\x1b[K,\n'}
+[15.375896] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4\x1b[m\x1b[K,\n'}
+[15.376020] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4\x1b[m\x1b[K,\n'}
+[15.376141] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8\x1b[m\x1b[K:\n'}
+[15.376260] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/dds/ddsrt/threads.h:\x1b[m\x1b[K At global scope:\n'}
+[15.376378] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/dds/ddsrt/threads.h:71:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDSRT_SCHED_DEFAULT\x1b[m\x1b[K\xe2\x80\x99 conflicts with a previous declaration\n'}
+[15.376512] (arm_driver) StderrLine: {'line': b'   71 |   \x1b[01;31m\x1b[KDDSRT_SCHED_DEFAULT\x1b[m\x1b[K,\n'}
+[15.376629] (arm_driver) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.376744] (arm_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_config.h:19\x1b[m\x1b[K,\n'}
+[15.376864] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/TDomainParticipant.hpp:24\x1b[m\x1b[K,\n'}
+[15.376987] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/detail/TDomainParticipantImpl.hpp:22\x1b[m\x1b[K,\n'}
+[15.381803] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/detail/DomainParticipant.hpp:22\x1b[m\x1b[K,\n'}
+[15.385456] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/DomainParticipant.hpp:22\x1b[m\x1b[K,\n'}
+[15.391209] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/find.hpp:22\x1b[m\x1b[K,\n'}
+[15.391484] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/ddsdomain.hpp:21\x1b[m\x1b[K,\n'}
+[15.391644] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/dds.hpp:34\x1b[m\x1b[K,\n'}
+[15.391781] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4\x1b[m\x1b[K,\n'}
+[15.391952] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4\x1b[m\x1b[K,\n'}
+[15.392101] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5\x1b[m\x1b[K,\n'}
+[15.392229] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4\x1b[m\x1b[K,\n'}
+[15.392353] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4\x1b[m\x1b[K,\n'}
+[15.392477] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8\x1b[m\x1b[K:\n'}
+[15.392598] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/dds/ddsrt/sched.h:28:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kddsrt_sched_t DDSRT_SCHED_DEFAULT\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.392721] (arm_driver) StderrLine: {'line': b'   28 |   \x1b[01;36m\x1b[KDDSRT_SCHED_DEFAULT\x1b[m\x1b[K,\n'}
+[15.392838] (arm_driver) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.392952] (arm_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/dds/ddsrt/rusage.h:33\x1b[m\x1b[K,\n'}
+[15.393065] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/dds/ddsi/q_log.h:19\x1b[m\x1b[K,\n'}
+[15.393179] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/dds/ddsi/ddsi_xqos.h:20\x1b[m\x1b[K,\n'}
+[15.393290] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_sertype.h:18\x1b[m\x1b[K,\n'}
+[15.393400] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:155\x1b[m\x1b[K,\n'}
+[15.393513] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/BuiltinTopic.hpp:23\x1b[m\x1b[K,\n'}
+[15.393625] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/BuiltinTopic.hpp:22\x1b[m\x1b[K,\n'}
+[15.393813] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/sub/AnyDataReaderDelegate.hpp:36\x1b[m\x1b[K,\n'}
+[15.393942] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:31\x1b[m\x1b[K,\n'}
+[15.398038] (-) TimerEvent: {}
+[15.398393] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ContentFilteredTopic.hpp:22\x1b[m\x1b[K,\n'}
+[15.398583] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:25\x1b[m\x1b[K,\n'}
+[15.398787] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/dds.hpp:35\x1b[m\x1b[K,\n'}
+[15.398930] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4\x1b[m\x1b[K,\n'}
+[15.399062] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4\x1b[m\x1b[K,\n'}
+[15.399190] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5\x1b[m\x1b[K,\n'}
+[15.399335] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4\x1b[m\x1b[K,\n'}
+[15.399462] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4\x1b[m\x1b[K,\n'}
+[15.399588] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8\x1b[m\x1b[K:\n'}
+[15.399708] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/dds/ddsrt/threads.h:78:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDSRT_SCHED_REALTIME\x1b[m\x1b[K\xe2\x80\x99 conflicts with a previous declaration\n'}
+[15.399843] (arm_driver) StderrLine: {'line': b'   78 |   \x1b[01;31m\x1b[KDDSRT_SCHED_REALTIME\x1b[m\x1b[K,\n'}
+[15.399959] (arm_driver) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.400071] (arm_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_config.h:19\x1b[m\x1b[K,\n'}
+[15.400184] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/TDomainParticipant.hpp:24\x1b[m\x1b[K,\n'}
+[15.400295] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/detail/TDomainParticipantImpl.hpp:22\x1b[m\x1b[K,\n'}
+[15.400412] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/detail/DomainParticipant.hpp:22\x1b[m\x1b[K,\n'}
+[15.400526] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/DomainParticipant.hpp:22\x1b[m\x1b[K,\n'}
+[15.400638] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/find.hpp:22\x1b[m\x1b[K,\n'}
+[15.400754] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/ddsdomain.hpp:21\x1b[m\x1b[K,\n'}
+[15.400865] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/dds.hpp:34\x1b[m\x1b[K,\n'}
+[15.412266] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4\x1b[m\x1b[K,\n'}
+[15.412578] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4\x1b[m\x1b[K,\n'}
+[15.412739] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5\x1b[m\x1b[K,\n'}
+[15.412918] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4\x1b[m\x1b[K,\n'}
+[15.416398] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4\x1b[m\x1b[K,\n'}
+[15.416718] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8\x1b[m\x1b[K:\n'}
+[15.416875] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/dds/ddsrt/sched.h:35:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kddsrt_sched_t DDSRT_SCHED_REALTIME\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.418875] (arm_driver) StderrLine: {'line': b'   35 |   \x1b[01;36m\x1b[KDDSRT_SCHED_REALTIME\x1b[m\x1b[K,\n'}
+[15.419093] (arm_driver) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.419239] (arm_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/dds/ddsrt/rusage.h:33\x1b[m\x1b[K,\n'}
+[15.419374] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/dds/ddsi/q_log.h:19\x1b[m\x1b[K,\n'}
+[15.419510] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/dds/ddsi/ddsi_xqos.h:20\x1b[m\x1b[K,\n'}
+[15.419646] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_sertype.h:18\x1b[m\x1b[K,\n'}
+[15.419782] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:155\x1b[m\x1b[K,\n'}
+[15.419909] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/BuiltinTopic.hpp:23\x1b[m\x1b[K,\n'}
+[15.420055] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/BuiltinTopic.hpp:22\x1b[m\x1b[K,\n'}
+[15.420169] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/sub/AnyDataReaderDelegate.hpp:36\x1b[m\x1b[K,\n'}
+[15.420285] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:31\x1b[m\x1b[K,\n'}
+[15.420403] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ContentFilteredTopic.hpp:22\x1b[m\x1b[K,\n'}
+[15.420517] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:25\x1b[m\x1b[K,\n'}
+[15.420627] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/dds.hpp:35\x1b[m\x1b[K,\n'}
+[15.420737] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4\x1b[m\x1b[K,\n'}
+[15.420846] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4\x1b[m\x1b[K,\n'}
+[15.420961] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5\x1b[m\x1b[K,\n'}
+[15.421071] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4\x1b[m\x1b[K,\n'}
+[15.421221] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4\x1b[m\x1b[K,\n'}
+[15.421346] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8\x1b[m\x1b[K:\n'}
+[15.425367] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/dds/ddsrt/threads.h:84:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDSRT_SCHED_TIMESHARE\x1b[m\x1b[K\xe2\x80\x99 conflicts with a previous declaration\n'}
+[15.428686] (arm_driver) StderrLine: {'line': b'   84 |   \x1b[01;31m\x1b[KDDSRT_SCHED_TIMESHARE\x1b[m\x1b[K\n'}
+[15.428867] (arm_driver) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.429009] (arm_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_config.h:19\x1b[m\x1b[K,\n'}
+[15.429146] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/TDomainParticipant.hpp:24\x1b[m\x1b[K,\n'}
+[15.429281] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/detail/TDomainParticipantImpl.hpp:22\x1b[m\x1b[K,\n'}
+[15.429410] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/detail/DomainParticipant.hpp:22\x1b[m\x1b[K,\n'}
+[15.429585] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/DomainParticipant.hpp:22\x1b[m\x1b[K,\n'}
+[15.429745] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/find.hpp:22\x1b[m\x1b[K,\n'}
+[15.429881] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/ddsdomain.hpp:21\x1b[m\x1b[K,\n'}
+[15.430412] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/dds.hpp:34\x1b[m\x1b[K,\n'}
+[15.430606] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4\x1b[m\x1b[K,\n'}
+[15.441243] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4\x1b[m\x1b[K,\n'}
+[15.441441] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5\x1b[m\x1b[K,\n'}
+[15.441588] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4\x1b[m\x1b[K,\n'}
+[15.441761] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4\x1b[m\x1b[K,\n'}
+[15.441906] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8\x1b[m\x1b[K:\n'}
+[15.442177] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/dds/ddsrt/sched.h:41:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kddsrt_sched_t DDSRT_SCHED_TIMESHARE\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.442327] (arm_driver) StderrLine: {'line': b'   41 |   \x1b[01;36m\x1b[KDDSRT_SCHED_TIMESHARE\x1b[m\x1b[K\n'}
+[15.442457] (arm_driver) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.442579] (arm_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/dds/ddsrt/rusage.h:33\x1b[m\x1b[K,\n'}
+[15.442702] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/dds/ddsi/q_log.h:19\x1b[m\x1b[K,\n'}
+[15.442822] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/dds/ddsi/ddsi_xqos.h:20\x1b[m\x1b[K,\n'}
+[15.442942] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_sertype.h:18\x1b[m\x1b[K,\n'}
+[15.443100] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:155\x1b[m\x1b[K,\n'}
+[15.443240] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/BuiltinTopic.hpp:23\x1b[m\x1b[K,\n'}
+[15.443365] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/BuiltinTopic.hpp:22\x1b[m\x1b[K,\n'}
+[15.443486] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/sub/AnyDataReaderDelegate.hpp:36\x1b[m\x1b[K,\n'}
+[15.443611] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:31\x1b[m\x1b[K,\n'}
+[15.443734] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ContentFilteredTopic.hpp:22\x1b[m\x1b[K,\n'}
+[15.443853] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:25\x1b[m\x1b[K,\n'}
+[15.443976] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/dds.hpp:35\x1b[m\x1b[K,\n'}
+[15.444111] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4\x1b[m\x1b[K,\n'}
+[15.444229] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4\x1b[m\x1b[K,\n'}
+[15.444350] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5\x1b[m\x1b[K,\n'}
+[15.444459] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4\x1b[m\x1b[K,\n'}
+[15.444569] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4\x1b[m\x1b[K,\n'}
+[15.444681] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8\x1b[m\x1b[K:\n'}
+[15.444812] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/dds/ddsrt/threads.h:85:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconflicting declaration \xe2\x80\x98\x1b[01m\x1b[Ktypedef enum ddsrt_sched_t ddsrt_sched_t\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.444958] (arm_driver) StderrLine: {'line': b'   85 | } \x1b[01;31m\x1b[Kddsrt_sched_t\x1b[m\x1b[K;\n'}
+[15.445081] (arm_driver) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.445191] (arm_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_config.h:19\x1b[m\x1b[K,\n'}
+[15.445302] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/TDomainParticipant.hpp:24\x1b[m\x1b[K,\n'}
+[15.445414] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/detail/TDomainParticipantImpl.hpp:22\x1b[m\x1b[K,\n'}
+[15.445531] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/detail/DomainParticipant.hpp:22\x1b[m\x1b[K,\n'}
+[15.445644] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/DomainParticipant.hpp:22\x1b[m\x1b[K,\n'}
+[15.445819] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/find.hpp:22\x1b[m\x1b[K,\n'}
+[15.445939] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/domain/ddsdomain.hpp:21\x1b[m\x1b[K,\n'}
+[15.446050] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/dds.hpp:34\x1b[m\x1b[K,\n'}
+[15.446161] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4\x1b[m\x1b[K,\n'}
+[15.446271] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4\x1b[m\x1b[K,\n'}
+[15.446386] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5\x1b[m\x1b[K,\n'}
+[15.446501] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4\x1b[m\x1b[K,\n'}
+[15.446612] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4\x1b[m\x1b[K,\n'}
+[15.446721] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8\x1b[m\x1b[K:\n'}
+[15.446828] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/dds/ddsrt/sched.h:42:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration as \xe2\x80\x98\x1b[01m\x1b[Ktypedef enum ddsrt_sched_t ddsrt_sched_t\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.446944] (arm_driver) StderrLine: {'line': b'   42 | } \x1b[01;36m\x1b[Kddsrt_sched_t\x1b[m\x1b[K;\n'}
+[15.447096] (arm_driver) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.447213] (arm_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:155\x1b[m\x1b[K,\n'}
+[15.447329] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/BuiltinTopic.hpp:23\x1b[m\x1b[K,\n'}
+[15.447449] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/BuiltinTopic.hpp:22\x1b[m\x1b[K,\n'}
+[15.447568] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/sub/AnyDataReaderDelegate.hpp:36\x1b[m\x1b[K,\n'}
+[15.447686] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:31\x1b[m\x1b[K,\n'}
+[15.447801] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ContentFilteredTopic.hpp:22\x1b[m\x1b[K,\n'}
+[15.447914] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:25\x1b[m\x1b[K,\n'}
+[15.448027] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/dds.hpp:35\x1b[m\x1b[K,\n'}
+[15.448139] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4\x1b[m\x1b[K,\n'}
+[15.448273] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4\x1b[m\x1b[K,\n'}
+[15.448404] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5\x1b[m\x1b[K,\n'}
+[15.448522] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4\x1b[m\x1b[K,\n'}
+[15.448640] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4\x1b[m\x1b[K,\n'}
+[15.448753] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8\x1b[m\x1b[K:\n'}
+[15.448866] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_sertype.h:138:93:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdds_data_representation_id_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[15.448984] (arm_driver) StderrLine: {'line': b'  138 | *ddsi_sertype_derive_t) (const struct ddsi_sertype *sertype, \x1b[01;31m\x1b[Kdds_data_representation_id_t\x1b[m\x1b[K data_representation, dds_type_consistency_enforcement_qospolicy_t tce_qos);\n'}
+[15.449102] (arm_driver) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.449230] (arm_driver) StderrLine: {'line': b'\n'}
+[15.449349] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_sertype.h:138:143:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdds_type_consistency_enforcement_qospolicy_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[15.449470] (arm_driver) StderrLine: {'line': b'  138 |  *sertype, dds_data_representation_id_t data_representation, \x1b[01;31m\x1b[Kdds_type_consistency_enforcement_qospolicy_t\x1b[m\x1b[K tce_qos);\n'}
+[15.449584] (arm_driver) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.449722] (arm_driver) StderrLine: {'line': b'\n'}
+[15.449848] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_sertype.h:202:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.449989] (arm_driver) StderrLine: {'line': b'  202 | \x1b[01;31m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K inline void ddsi_sertype_free (struct ddsi_sertype *tp) {\n'}
+[15.450111] (arm_driver) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.450226] (arm_driver) StderrLine: {'line': b'      | \x1b[32m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\n'}
+[15.450342] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_sertype.h:205:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.450463] (arm_driver) StderrLine: {'line': b'  205 | \x1b[01;31m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K inline void ddsi_sertype_zero_samples (const struct ddsi_sertype *tp, void *samples, size_t count) {\n'}
+[15.450580] (arm_driver) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.456824] (arm_driver) StderrLine: {'line': b'      | \x1b[32m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\n'}
+[15.457164] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_sertype.h:208:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.457334] (arm_driver) StderrLine: {'line': b'  208 | \x1b[01;31m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K inline void ddsi_sertype_realloc_samples (void **ptrs, const struct ddsi_sertype *tp, void *old, size_t oldcount, size_t count)\n'}
+[15.457487] (arm_driver) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.457623] (arm_driver) StderrLine: {'line': b'      | \x1b[32m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\n'}
+[15.483407] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_sertype.h:212:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.485699] (arm_driver) StderrLine: {'line': b'  212 | \x1b[01;31m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K inline void ddsi_sertype_free_samples (const struct ddsi_sertype *tp, void **ptrs, size_t count, dds_free_op_t op) {\n'}
+[15.489161] (arm_driver) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.489343] (arm_driver) StderrLine: {'line': b'      | \x1b[32m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\n'}
+[15.497124] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_sertype.h:215:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.497500] (arm_driver) StderrLine: {'line': b'  215 | \x1b[01;31m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K inline void ddsi_sertype_zero_sample (const struct ddsi_sertype *tp, void *sample) {\n'}
+[15.497664] (arm_driver) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.497845] (arm_driver) StderrLine: {'line': b'      | \x1b[32m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\n'}
+[15.498234] (-) TimerEvent: {}
+[15.508965] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_sertype.h:218:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.509425] (arm_driver) StderrLine: {'line': b'  218 | \x1b[01;31m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K inline void *ddsi_sertype_alloc_sample (const struct ddsi_sertype *tp) {\n'}
+[15.509598] (arm_driver) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.509825] (arm_driver) StderrLine: {'line': b'      | \x1b[32m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\n'}
+[15.527464] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_sertype.h:223:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.528014] (arm_driver) StderrLine: {'line': b'  223 | \x1b[01;31m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K inline void ddsi_sertype_free_sample (const struct ddsi_sertype *tp, void *sample, dds_free_op_t op) {\n'}
+[15.528215] (arm_driver) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.528368] (arm_driver) StderrLine: {'line': b'      | \x1b[32m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\n'}
+[15.548257] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_sertype.h:226:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.548726] (arm_driver) StderrLine: {'line': b'  226 | \x1b[01;31m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K inline ddsi_typeid_t * ddsi_sertype_typeid (const struct ddsi_sertype *tp, ddsi_typeid_kind_t kind)\n'}
+[15.548895] (arm_driver) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.550281] (arm_driver) StderrLine: {'line': b'      | \x1b[32m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\n'}
+[15.564784] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_sertype.h:232:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.566170] (arm_driver) StderrLine: {'line': b'  232 | \x1b[01;31m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K inline ddsi_typemap_t * ddsi_sertype_typemap (const struct ddsi_sertype *tp)\n'}
+[15.566365] (arm_driver) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.566508] (arm_driver) StderrLine: {'line': b'      | \x1b[32m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\n'}
+[15.572334] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_sertype.h:238:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.572855] (arm_driver) StderrLine: {'line': b'  238 | \x1b[01;31m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K inline ddsi_typeinfo_t *ddsi_sertype_typeinfo (const struct ddsi_sertype *tp)\n'}
+[15.573079] (arm_driver) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.573230] (arm_driver) StderrLine: {'line': b'      | \x1b[32m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\n'}
+[15.611763] (-) TimerEvent: {}
+[15.612998] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_sertype.h:244:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.613525] (arm_driver) StderrLine: {'line': b'  244 | \x1b[01;31m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K inline struct ddsi_sertype * ddsi_sertype_derive_sertype (const struct ddsi_sertype *base_sertype, dds_data_representation_id_t data_representation, dds_type_consistency_enforcement_qospolicy_t tce_qos) {\n'}
+[15.613746] (arm_driver) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.613909] (arm_driver) StderrLine: {'line': b'      | \x1b[32m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\n'}
+[15.637928] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_sertype.h:250:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.638397] (arm_driver) StderrLine: {'line': b'  250 | \x1b[01;31m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K inline size_t\n'}
+[15.638550] (arm_driver) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.638688] (arm_driver) StderrLine: {'line': b'      | \x1b[32m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\n'}
+[15.653947] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/dds/ddsi/ddsi_sertype.h:256:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.654365] (arm_driver) StderrLine: {'line': b'  256 | \x1b[01;31m\x1b[KDDS_INLINE_EXPORT\x1b[m\x1b[K inline bool\n'}
+[15.654524] (arm_driver) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.654663] (arm_driver) StderrLine: {'line': b'      | \x1b[32m\x1b[KDDS_NO_EXPORT\x1b[m\x1b[K\n'}
+[15.693998] (arm_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/BuiltinTopic.hpp:23\x1b[m\x1b[K,\n'}
+[15.694464] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/BuiltinTopic.hpp:22\x1b[m\x1b[K,\n'}
+[15.694635] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/sub/AnyDataReaderDelegate.hpp:36\x1b[m\x1b[K,\n'}
+[15.694778] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:31\x1b[m\x1b[K,\n'}
+[15.694920] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ContentFilteredTopic.hpp:22\x1b[m\x1b[K,\n'}
+[15.695048] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:25\x1b[m\x1b[K,\n'}
+[15.695173] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/dds.hpp:35\x1b[m\x1b[K,\n'}
+[15.695293] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4\x1b[m\x1b[K,\n'}
+[15.695415] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4\x1b[m\x1b[K,\n'}
+[15.695532] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5\x1b[m\x1b[K,\n'}
+[15.695649] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4\x1b[m\x1b[K,\n'}
+[15.695766] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4\x1b[m\x1b[K,\n'}
+[15.695885] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8\x1b[m\x1b[K:\n'}
+[15.696001] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kdds::topic::detail::Topic<T>::Topic(const DomainParticipant&, const string&, const string&, const TopicQos&, dds::topic::TopicListener<T>*, const dds::core::status::StatusMask&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.696184] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:176:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kser_type_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kref_type\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.696326] (arm_driver) StderrLine: {'line': b'  176 |     \x1b[01;31m\x1b[Kser_type_\x1b[m\x1b[K = org::eclipse::cyclonedds::topic::TopicTraits<T>::getSerType();\n'}
+[15.696462] (arm_driver) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[15.696579] (arm_driver) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kref_type\x1b[m\x1b[K\n'}
+[15.696803] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:178:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kthere are no arguments to \xe2\x80\x98\x1b[01m\x1b[Kdds_create_topic_sertype\x1b[m\x1b[K\xe2\x80\x99 that depend on a template parameter, so a declaration of \xe2\x80\x98\x1b[01m\x1b[Kdds_create_topic_sertype\x1b[m\x1b[K\xe2\x80\x99 must be available [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[15.696951] (arm_driver) StderrLine: {'line': b'  178 |     dds_entity_t ddsc_topic = \x1b[01;31m\x1b[Kdds_create_topic_sertype\x1b[m\x1b[K(\n'}
+[15.697077] (arm_driver) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.711937] (-) TimerEvent: {}
+[15.716001] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic dds::topic::Topic<T, dds::topic::detail::Topic> dds::topic::detail::Topic<T>::discover_topic(const DomainParticipant&, const string&, const dds::core::Duration&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.716441] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:311:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdds_typeinfo_t\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kddsi_typeinfo_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.716612] (arm_driver) StderrLine: {'line': b'  311 |     std::unique_ptr<\x1b[01;31m\x1b[Kdds_typeinfo_t\x1b[m\x1b[K, std::function<void(dds_typeinfo_t *)> >\n'}
+[15.716759] (arm_driver) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.716898] (arm_driver) StderrLine: {'line': b'      |                     \x1b[32m\x1b[Kddsi_typeinfo_t\x1b[m\x1b[K\n'}
+[15.717035] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:311:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[15.717166] (arm_driver) StderrLine: {'line': b'  311 |     std::unique_ptr<dds_typeinfo_t, std::function<void(dds_typeinfo_t *)\x1b[01;31m\x1b[K>\x1b[m\x1b[K >\n'}
+[15.717289] (arm_driver) StderrLine: {'line': b'      |                                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[15.717414] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:311:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[15.717537] (arm_driver) StderrLine: {'line': b'  311 |     std::unique_ptr<dds_typeinfo_t, std::function<void(dds_typeinfo_t *)> \x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[15.717655] (arm_driver) StderrLine: {'line': b'      |                                                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[15.717832] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:311:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[15.718090] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:313:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdds_typeinfo_t\x1b[m\x1b[K\xe2\x80\x99 is not a type\n'}
+[15.718249] (arm_driver) StderrLine: {'line': b'  313 |                 [](\x1b[01;31m\x1b[Kdds_typeinfo_t\x1b[m\x1b[K *ti) { static_cast<void>(dds_free_typeinfo(ti)); });\n'}
+[15.718381] (arm_driver) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.724466] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:\x1b[m\x1b[K In lambda function:\n'}
+[15.724841] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:313:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kthere are no arguments to \xe2\x80\x98\x1b[01m\x1b[Kdds_free_typeinfo\x1b[m\x1b[K\xe2\x80\x99 that depend on a template parameter, so a declaration of \xe2\x80\x98\x1b[01m\x1b[Kdds_free_typeinfo\x1b[m\x1b[K\xe2\x80\x99 must be available [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[15.725016] (arm_driver) StderrLine: {'line': b'  313 |                 [](dds_typeinfo_t *ti) { static_cast<void>(\x1b[01;31m\x1b[Kdds_free_typeinfo\x1b[m\x1b[K(ti)); });\n'}
+[15.725164] (arm_driver) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.725302] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic dds::topic::Topic<T, dds::topic::detail::Topic> dds::topic::detail::Topic<T>::discover_topic(const DomainParticipant&, const string&, const dds::core::Duration&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.725440] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:313:85:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpression list treated as compound expression in initializer [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[15.725569] (arm_driver) StderrLine: {'line': b'  313 | typeinfo_t *ti) { static_cast<void>(dds_free_typeinfo(ti)); }\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[15.725759] (arm_driver) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[15.725923] (arm_driver) StderrLine: {'line': b'\n'}
+[15.726174] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:314:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kget\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Ktype_info\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.726342] (arm_driver) StderrLine: {'line': b'  314 | ity_t ddsc_topic = dp.delegate()->lookup_topic(name, type_info.\x1b[01;31m\x1b[Kget\x1b[m\x1b[K(), timeout);\n'}
+[15.726479] (arm_driver) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[15.726609] (arm_driver) StderrLine: {'line': b'\n'}
+[15.819980] (-) TimerEvent: {}
+[15.848987] (arm_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ContentFilteredTopic.hpp:22\x1b[m\x1b[K,\n'}
+[15.849498] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:25\x1b[m\x1b[K,\n'}
+[15.849674] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/dds.hpp:35\x1b[m\x1b[K,\n'}
+[15.849887] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4\x1b[m\x1b[K,\n'}
+[15.850030] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4\x1b[m\x1b[K,\n'}
+[15.850166] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5\x1b[m\x1b[K,\n'}
+[15.850294] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4\x1b[m\x1b[K,\n'}
+[15.850420] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4\x1b[m\x1b[K,\n'}
+[15.850542] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8\x1b[m\x1b[K:\n'}
+[15.850703] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:\x1b[m\x1b[K At global scope:\n'}
+[15.850829] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:439:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdds_topic_filter\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[15.850956] (arm_driver) StderrLine: {'line': b'  439 |     void filter_function_internal(Functor && func, \x1b[01;31m\x1b[Kdds_topic_filter\x1b[m\x1b[K * flt)\n'}
+[15.851079] (arm_driver) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.877213] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid dds::topic::detail::ContentFilteredTopic<T>::filter_function(Functor&&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.877663] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:413:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdds_topic_filter\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kdds_topic_filter_fn\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.877848] (arm_driver) StderrLine: {'line': b'  413 |         \x1b[01;31m\x1b[Kdds_topic_filter\x1b[m\x1b[K flt;\n'}
+[15.877985] (arm_driver) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.878116] (arm_driver) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kdds_topic_filter_fn\x1b[m\x1b[K\n'}
+[15.897057] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:414:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kflt\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[15.897648] (arm_driver) StderrLine: {'line': b'  414 |         \x1b[01;31m\x1b[Kflt\x1b[m\x1b[K.mode = DDS_TOPIC_FILTER_SAMPLE_ARG;\n'}
+[15.897881] (arm_driver) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[15.920884] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:414:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_TOPIC_FILTER_SAMPLE_ARG\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KDDS_TOPIC_FILTER_HPP_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.921401] (-) TimerEvent: {}
+[15.921759] (arm_driver) StderrLine: {'line': b'  414 |         flt.mode = \x1b[01;31m\x1b[KDDS_TOPIC_FILTER_SAMPLE_ARG\x1b[m\x1b[K;\n'}
+[15.921959] (arm_driver) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.922104] (arm_driver) StderrLine: {'line': b'      |                    \x1b[32m\x1b[KDDS_TOPIC_FILTER_HPP_\x1b[m\x1b[K\n'}
+[15.936941] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid dds::topic::detail::ContentFilteredTopic<T>::filter_function(Functor&&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.937376] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:422:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdds_topic_filter\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kdds_topic_filter_fn\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.937554] (arm_driver) StderrLine: {'line': b'  422 |         \x1b[01;31m\x1b[Kdds_topic_filter\x1b[m\x1b[K flt;\n'}
+[15.937767] (arm_driver) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.937996] (arm_driver) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kdds_topic_filter_fn\x1b[m\x1b[K\n'}
+[15.948058] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:423:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kflt\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[15.948544] (arm_driver) StderrLine: {'line': b'  423 |         \x1b[01;31m\x1b[Kflt\x1b[m\x1b[K.mode = DDS_TOPIC_FILTER_SAMPLEINFO_ARG;\n'}
+[15.948741] (arm_driver) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[15.986620] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:423:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_TOPIC_FILTER_SAMPLEINFO_ARG\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[15.987119] (arm_driver) StderrLine: {'line': b'  423 |         flt.mode = \x1b[01;31m\x1b[KDDS_TOPIC_FILTER_SAMPLEINFO_ARG\x1b[m\x1b[K;\n'}
+[15.987289] (arm_driver) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.002403] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid dds::topic::detail::ContentFilteredTopic<T>::filter_function(Functor&&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.002869] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:431:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdds_topic_filter\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kdds_topic_filter_fn\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[16.003052] (arm_driver) StderrLine: {'line': b'  431 |         \x1b[01;31m\x1b[Kdds_topic_filter\x1b[m\x1b[K flt;\n'}
+[16.003202] (arm_driver) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.003340] (arm_driver) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kdds_topic_filter_fn\x1b[m\x1b[K\n'}
+[16.018051] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:432:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kflt\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[16.018636] (arm_driver) StderrLine: {'line': b'  432 |         \x1b[01;31m\x1b[Kflt\x1b[m\x1b[K.mode = DDS_TOPIC_FILTER_SAMPLE_SAMPLEINFO_ARG;\n'}
+[16.018817] (arm_driver) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[16.021596] (-) TimerEvent: {}
+[16.046795] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:432:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_TOPIC_FILTER_SAMPLE_SAMPLEINFO_ARG\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[16.047338] (arm_driver) StderrLine: {'line': b'  432 |         flt.mode = \x1b[01;31m\x1b[KDDS_TOPIC_FILTER_SAMPLE_SAMPLEINFO_ARG\x1b[m\x1b[K;\n'}
+[16.047554] (arm_driver) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.047718] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid dds::topic::detail::ContentFilteredTopic<T>::filter_function_internal(Functor&&, int*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.047873] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:455:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Karg\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kflt->\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.048071] (arm_driver) StderrLine: {'line': b'  455 |         flt->\x1b[01;31m\x1b[Karg\x1b[m\x1b[K = myFunctor;\n'}
+[16.048212] (arm_driver) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[16.048339] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:456:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kthere are no arguments to \xe2\x80\x98\x1b[01m\x1b[Kdds_set_topic_filter_extended\x1b[m\x1b[K\xe2\x80\x99 that depend on a template parameter, so a declaration of \xe2\x80\x98\x1b[01m\x1b[Kdds_set_topic_filter_extended\x1b[m\x1b[K\xe2\x80\x99 must be available [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[16.048485] (arm_driver) StderrLine: {'line': b'  456 |         \x1b[01;31m\x1b[Kdds_set_topic_filter_extended\x1b[m\x1b[K(cfTopic, flt);\n'}
+[16.048613] (arm_driver) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.123890] (-) TimerEvent: {}
+[16.225895] (-) TimerEvent: {}
+[16.306623] (arm_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/sub/detail/SampleRef.hpp:34\x1b[m\x1b[K,\n'}
+[16.307416] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/sub/SampleRef.hpp:22\x1b[m\x1b[K,\n'}
+[16.307619] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/sub/LoanedSamples.hpp:22\x1b[m\x1b[K,\n'}
+[16.307773] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/sub/detail/DataReader.hpp:21\x1b[m\x1b[K,\n'}
+[16.307918] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/sub/DataReader.hpp:21\x1b[m\x1b[K,\n'}
+[16.308052] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/sub/ddssub.hpp:30\x1b[m\x1b[K,\n'}
+[16.308184] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/dds.hpp:37\x1b[m\x1b[K,\n'}
+[16.308307] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4\x1b[m\x1b[K,\n'}
+[16.308426] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4\x1b[m\x1b[K,\n'}
+[16.308615] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5\x1b[m\x1b[K,\n'}
+[16.308757] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4\x1b[m\x1b[K,\n'}
+[16.308885] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4\x1b[m\x1b[K,\n'}
+[16.309009] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8\x1b[m\x1b[K:\n'}
+[16.309126] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/datatopic.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool read_header(const void*, org::eclipse::cyclonedds::core::cdr::encoding_version&, org::eclipse::cyclonedds::core::cdr::endianness&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.309267] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/datatopic.hpp:213:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDDS_DATA_REPRESENTATION_FLAG_XCDR1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[16.309450] (arm_driver) StderrLine: {'line': b'  213 |           if (TopicTraits<T>::allowableEncodings() & \x1b[01;31m\x1b[KDDS_DATA_REPRESENTATION_FLAG_XCDR1\x1b[m\x1b[K)\n'}
+[16.309581] (arm_driver) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.326104] (-) TimerEvent: {}
+[16.413246] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/datatopic.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ddscxx_serdata<T>::populate_hash()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.413848] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/datatopic.hpp:766:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[16.414068] (arm_driver) StderrLine: {'line': b'  766 |   hash ^= \x1b[01;31m\x1b[Ktype\x1b[m\x1b[K->serdata_basehash;\n'}
+[16.414225] (arm_driver) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[16.426253] (-) TimerEvent: {}
+[16.527221] (-) TimerEvent: {}
+[16.628205] (-) TimerEvent: {}
+[16.729459] (-) TimerEvent: {}
+[16.831105] (-) TimerEvent: {}
+[16.932275] (-) TimerEvent: {}
+[17.033270] (-) TimerEvent: {}
+[17.134514] (-) TimerEvent: {}
+[17.235778] (-) TimerEvent: {}
+[17.337303] (-) TimerEvent: {}
+[17.440735] (-) TimerEvent: {}
+[17.543540] (-) TimerEvent: {}
+[17.644854] (-) TimerEvent: {}
+[17.745833] (-) TimerEvent: {}
+[17.848046] (-) TimerEvent: {}
+[17.952534] (-) TimerEvent: {}
+[18.056252] (-) TimerEvent: {}
+[18.171209] (-) TimerEvent: {}
+[18.278481] (-) TimerEvent: {}
+[18.379360] (-) TimerEvent: {}
+[18.480166] (-) TimerEvent: {}
+[18.581413] (-) TimerEvent: {}
+[18.682415] (-) TimerEvent: {}
+[18.783616] (-) TimerEvent: {}
+[18.884540] (-) TimerEvent: {}
+[18.985485] (-) TimerEvent: {}
+[19.086418] (-) TimerEvent: {}
+[19.187345] (-) TimerEvent: {}
+[19.288258] (-) TimerEvent: {}
+[19.389171] (-) TimerEvent: {}
+[19.490661] (-) TimerEvent: {}
+[19.592117] (-) TimerEvent: {}
+[19.693230] (-) TimerEvent: {}
+[19.794521] (-) TimerEvent: {}
+[19.908018] (-) TimerEvent: {}
+[20.039315] (-) TimerEvent: {}
+[20.140425] (-) TimerEvent: {}
+[20.241751] (-) TimerEvent: {}
+[20.251604] (navigation_node) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/navigation_node', 'build', '--build-base', '/home/unitree/106a_final/build/navigation_node/build', 'install', '--record', '/home/unitree/106a_final/build/navigation_node/install.log', '--install-scripts', '$base/lib/navigation_node', '--single-version-externally-managed'], 'cwd': '/home/unitree/106a_final/src/navigation_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'unitree', 'SSH_CLIENT': '192.168.50.246 34186 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/unitree', 'CYCLONEDDS_URI': '/home/unitree/cyclonedds_ws/cyclonedds.xml', 'OLDPWD': '/home/unitree/106a_final/src', 'SSH_TTY': '/dev/pts/6', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'unitree', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/unitree/106a_final/build/navigation_node', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.50.246 34186 192.168.50.28 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/unitree/106a_final/build/navigation_node/prefix_override:/home/unitree/106a_final/install/navigation_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds'}, 'shell': False}
+[20.341966] (-) TimerEvent: {}
+[20.404533] (arm_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/BuiltinTopic.hpp:23\x1b[m\x1b[K,\n'}
+[20.406031] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/BuiltinTopic.hpp:22\x1b[m\x1b[K,\n'}
+[20.406922] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/org/eclipse/cyclonedds/sub/AnyDataReaderDelegate.hpp:36\x1b[m\x1b[K,\n'}
+[20.407737] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/ContentFilteredTopic.hpp:31\x1b[m\x1b[K,\n'}
+[20.408594] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ContentFilteredTopic.hpp:22\x1b[m\x1b[K,\n'}
+[20.409488] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/ddstopic.hpp:25\x1b[m\x1b[K,\n'}
+[20.410380] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/ddscxx/dds/dds.hpp:35\x1b[m\x1b[K,\n'}
+[20.411109] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_entity.hpp:4\x1b[m\x1b[K,\n'}
+[20.411841] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:4\x1b[m\x1b[K,\n'}
+[20.412556] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:5\x1b[m\x1b[K,\n'}
+[20.413278] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:4\x1b[m\x1b[K,\n'}
+[20.414123] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:4\x1b[m\x1b[K,\n'}
+[20.415005] (arm_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:8\x1b[m\x1b[K:\n'}
+[20.415822] (arm_driver) StderrLine: {'line': b'/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kdds::topic::detail::Topic<T>::Topic(const DomainParticipant&, const string&, const string&, const TopicQos&, dds::topic::TopicListener<T>*, const dds::core::status::StatusMask&) [with T = unitree_arm::msg::dds_::ArmString_; dds::domain::DomainParticipant = dds::domain::TDomainParticipant<org::eclipse::cyclonedds::domain::DomainParticipantDelegate>; std::string = std::__cxx11::basic_string<char>; dds::topic::qos::TopicQos = dds::core::TEntityQos<org::eclipse::cyclonedds::topic::qos::TopicQosDelegate>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.416598] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:84:45:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kdds::topic::Topic<T, DELEGATE>::Topic(const DomainParticipant&, const string&, const TopicQos&, dds::topic::TopicListener<T>*, const dds::core::status::StatusMask&) [with T = unitree_arm::msg::dds_::ArmString_; DELEGATE = dds::topic::detail::Topic; dds::domain::DomainParticipant = dds::domain::TDomainParticipant<org::eclipse::cyclonedds::domain::DomainParticipantDelegate>; std::string = std::__cxx11::basic_string<char>; dds::topic::qos::TopicQos = dds::core::TEntityQos<org::eclipse::cyclonedds::topic::qos::TopicQosDelegate>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[20.417407] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_entity.hpp:117:19:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kunitree::common::DdsTopic<MSG>::DdsTopic(const DdsParticipantPtr&, const string&, const unitree::common::DdsTopicQos&) [with MSG = unitree_arm::msg::dds_::ArmString_; unitree::common::DdsParticipantPtr = std::shared_ptr<unitree::common::DdsParticipant>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[20.418220] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_topic_channel.hpp:39:35:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid unitree::common::DdsTopicChannel<MSG>::SetTopic(const DdsParticipantPtr&, const string&, const unitree::common::DdsTopicQos&) [with MSG = unitree_arm::msg::dds_::ArmString_; unitree::common::DdsParticipantPtr = std::shared_ptr<unitree::common::DdsParticipant>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[20.419186] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/unitree/common/dds/dds_factory_model.hpp:25:9:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kunitree::common::DdsTopicChannelPtr<MSG> unitree::common::DdsFactoryModel::CreateTopicChannel(const string&) [with MSG = unitree_arm::msg::dds_::ArmString_; unitree::common::DdsTopicChannelPtr<MSG> = std::shared_ptr<unitree::common::DdsTopicChannel<unitree_arm::msg::dds_::ArmString_> >; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[20.420044] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_factory.hpp:34:25:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kunitree::robot::ChannelPtr<MSG> unitree::robot::ChannelFactory::CreateSendChannel(const string&) [with MSG = unitree_arm::msg::dds_::ArmString_; unitree::robot::ChannelPtr<MSG> = std::shared_ptr<unitree::common::DdsTopicChannel<unitree_arm::msg::dds_::ArmString_> >; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[20.420757] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/unitree/robot/channel/channel_publisher.hpp:20:21:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid unitree::robot::ChannelPublisher<MSG>::InitChannel() [with MSG = unitree_arm::msg::dds_::ArmString_]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[20.421425] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/servo_driver.cpp:25:37:\x1b[m\x1b[K   required from here\n'}
+[20.422158] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:176:76:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KgetSerType\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Korg::eclipse::cyclonedds::topic::TopicTraits<unitree_arm::msg::dds_::ArmString_>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[20.422834] (arm_driver) StderrLine: {'line': b'  176 |     ser_type_ = \x1b[01;31m\x1b[Korg::eclipse::cyclonedds::topic::TopicTraits<T>::getSerType()\x1b[m\x1b[K;\n'}
+[20.423489] (arm_driver) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[20.442024] (-) TimerEvent: {}
+[20.496136] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/ddscxx/dds/topic/detail/TTopicImpl.hpp:178:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdds_create_topic_sertype\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kdds_create_topic_generic\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[20.497359] (arm_driver) StderrLine: {'line': b'  178 |     dds_entity_t ddsc_topic = \x1b[01;31m\x1b[Kdds_create_topic_sertype(\x1b[m\x1b[K\n'}
+[20.498222] (arm_driver) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[20.498982] (arm_driver) StderrLine: {'line': b'  179 | \x1b[01;31m\x1b[K      ddsc_par, name.c_str(), &ser_type_, ddsc_qos, NULL, NULL)\x1b[m\x1b[K;\n'}
+[20.499707] (arm_driver) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.542173] (-) TimerEvent: {}
+[20.643648] (-) TimerEvent: {}
+[20.744424] (-) TimerEvent: {}
+[20.845428] (-) TimerEvent: {}
+[20.946398] (-) TimerEvent: {}
+[21.047767] (-) TimerEvent: {}
+[21.151496] (-) TimerEvent: {}
+[21.180863] (navigation_node) StdoutLine: {'line': b'running egg_info\n'}
+[21.186130] (navigation_node) StdoutLine: {'line': b'writing ../../build/navigation_node/navigation_node.egg-info/PKG-INFO\n'}
+[21.190010] (navigation_node) StdoutLine: {'line': b'writing dependency_links to ../../build/navigation_node/navigation_node.egg-info/dependency_links.txt\n'}
+[21.196682] (navigation_node) StdoutLine: {'line': b'writing entry points to ../../build/navigation_node/navigation_node.egg-info/entry_points.txt\n'}
+[21.204328] (navigation_node) StdoutLine: {'line': b'writing requirements to ../../build/navigation_node/navigation_node.egg-info/requires.txt\n'}
+[21.212655] (navigation_node) StdoutLine: {'line': b'writing top-level names to ../../build/navigation_node/navigation_node.egg-info/top_level.txt\n'}
+[21.251769] (-) TimerEvent: {}
+[21.353076] (-) TimerEvent: {}
+[21.446515] (navigation_node) StdoutLine: {'line': b"reading manifest file '../../build/navigation_node/navigation_node.egg-info/SOURCES.txt'\n"}
+[21.453324] (-) TimerEvent: {}
+[21.463775] (navigation_node) StdoutLine: {'line': b"writing manifest file '../../build/navigation_node/navigation_node.egg-info/SOURCES.txt'\n"}
+[21.464901] (navigation_node) StdoutLine: {'line': b'running build\n'}
+[21.465743] (navigation_node) StdoutLine: {'line': b'running build_py\n'}
+[21.466268] (navigation_node) StdoutLine: {'line': b'running install\n'}
+[21.467201] (navigation_node) StdoutLine: {'line': b'running install_lib\n'}
+[21.471636] (navigation_node) StdoutLine: {'line': b'running install_data\n'}
+[21.473022] (navigation_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[21.522409] (navigation_node) StdoutLine: {'line': b"removing '/home/unitree/106a_final/install/navigation_node/lib/python3.8/site-packages/navigation_node-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[21.523473] (navigation_node) StdoutLine: {'line': b'Copying ../../build/navigation_node/navigation_node.egg-info to /home/unitree/106a_final/install/navigation_node/lib/python3.8/site-packages/navigation_node-0.0.0-py3.8.egg-info\n'}
+[21.528113] (navigation_node) StdoutLine: {'line': b'running install_scripts\n'}
+[21.553564] (-) TimerEvent: {}
+[21.655007] (-) TimerEvent: {}
+[21.697883] (navigation_node) StdoutLine: {'line': b'Installing nav_node_go script to /home/unitree/106a_final/install/navigation_node/lib/navigation_node\n'}
+[21.700537] (navigation_node) StdoutLine: {'line': b"writing list of installed files to '/home/unitree/106a_final/build/navigation_node/install.log'\n"}
+[21.755198] (-) TimerEvent: {}
+[21.856115] (-) TimerEvent: {}
+[21.957190] (-) TimerEvent: {}
+[22.039060] (navigation_node) CommandEnded: {'returncode': 0}
+[22.057513] (-) TimerEvent: {}
+[22.165826] (-) TimerEvent: {}
+[22.272817] (-) TimerEvent: {}
+[22.374290] (-) TimerEvent: {}
+[22.484221] (-) TimerEvent: {}
+[22.589954] (-) TimerEvent: {}
+[22.691055] (-) TimerEvent: {}
+[22.792156] (-) TimerEvent: {}
+[22.907344] (-) TimerEvent: {}
+[22.948832] (navigation_node) JobEnded: {'identifier': 'navigation_node', 'rc': 0}
+[22.953244] (realsense2_camera) JobStarted: {'identifier': 'realsense2_camera'}
+[23.007542] (-) TimerEvent: {}
+[23.113896] (-) TimerEvent: {}
+[23.215407] (-) TimerEvent: {}
+[23.316686] (-) TimerEvent: {}
+[23.418117] (-) TimerEvent: {}
+[23.519001] (-) TimerEvent: {}
+[23.623163] (-) TimerEvent: {}
+[23.726027] (-) TimerEvent: {}
+[23.772365] (navigation_node_two) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/navigation_node_two', 'build', '--build-base', '/home/unitree/106a_final/build/navigation_node_two/build', 'install', '--record', '/home/unitree/106a_final/build/navigation_node_two/install.log', '--install-scripts', '$base/lib/navigation_node_two', '--single-version-externally-managed'], 'cwd': '/home/unitree/106a_final/src/navigation_node_two', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'unitree', 'SSH_CLIENT': '192.168.50.246 34186 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/unitree', 'CYCLONEDDS_URI': '/home/unitree/cyclonedds_ws/cyclonedds.xml', 'OLDPWD': '/home/unitree/106a_final/src', 'SSH_TTY': '/dev/pts/6', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'unitree', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/unitree/106a_final/build/navigation_node_two', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.50.246 34186 192.168.50.28 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/unitree/106a_final/build/navigation_node_two/prefix_override:/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds'}, 'shell': False}
+[23.800302] (vision_node) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/vision_node', 'build', '--build-base', '/home/unitree/106a_final/build/vision_node/build', 'install', '--record', '/home/unitree/106a_final/build/vision_node/install.log', '--install-scripts', '$base/lib/vision_node', '--single-version-externally-managed'], 'cwd': '/home/unitree/106a_final/src/vision_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'unitree', 'SSH_CLIENT': '192.168.50.246 34186 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/unitree', 'CYCLONEDDS_URI': '/home/unitree/cyclonedds_ws/cyclonedds.xml', 'OLDPWD': '/home/unitree/106a_final/src', 'SSH_TTY': '/dev/pts/6', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'unitree', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/unitree/106a_final/build/vision_node', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.50.246 34186 192.168.50.28 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/unitree/106a_final/build/vision_node/prefix_override:/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds'}, 'shell': False}
+[23.826517] (-) TimerEvent: {}
+[23.838493] (realsense2_camera) JobProgress: {'identifier': 'realsense2_camera', 'progress': 'cmake'}
+[23.840685] (realsense2_camera) JobProgress: {'identifier': 'realsense2_camera', 'progress': 'build'}
+[23.841446] (realsense2_camera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/unitree/106a_final/build/realsense2_camera', '--', '-j4', '-l4'], 'cwd': '/home/unitree/106a_final/build/realsense2_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_CLIENT', '192.168.50.246 34186 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs/lib:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree/106a_final/src'), ('SSH_TTY', '/dev/pts/6'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/unitree/106a_final/build/realsense2_camera'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.50.246 34186 192.168.50.28 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[23.926650] (-) TimerEvent: {}
+[24.028000] (-) TimerEvent: {}
+[24.129496] (-) TimerEvent: {}
+[24.230215] (-) TimerEvent: {}
+[24.259823] (realsense2_camera) StdoutLine: {'line': b'[ 25%] Built target realsense2_camera_node\n'}
+[24.331978] (-) TimerEvent: {}
+[24.433307] (-) TimerEvent: {}
+[24.534585] (-) TimerEvent: {}
+[24.635604] (-) TimerEvent: {}
+[24.688083] (navigation_node_two) StdoutLine: {'line': b'running egg_info\n'}
+[24.693135] (navigation_node_two) StdoutLine: {'line': b'writing ../../build/navigation_node_two/navigation_node_two.egg-info/PKG-INFO\n'}
+[24.695069] (navigation_node_two) StdoutLine: {'line': b'writing dependency_links to ../../build/navigation_node_two/navigation_node_two.egg-info/dependency_links.txt\n'}
+[24.696108] (navigation_node_two) StdoutLine: {'line': b'writing entry points to ../../build/navigation_node_two/navigation_node_two.egg-info/entry_points.txt\n'}
+[24.697101] (navigation_node_two) StdoutLine: {'line': b'writing requirements to ../../build/navigation_node_two/navigation_node_two.egg-info/requires.txt\n'}
+[24.697435] (navigation_node_two) StdoutLine: {'line': b'writing top-level names to ../../build/navigation_node_two/navigation_node_two.egg-info/top_level.txt\n'}
+[24.699692] (realsense2_camera) StdoutLine: {'line': b'[100%] Built target realsense2_camera\n'}
+[24.737829] (-) TimerEvent: {}
+[24.747745] (realsense2_camera) CommandEnded: {'returncode': 0}
+[24.755399] (realsense2_camera) JobProgress: {'identifier': 'realsense2_camera', 'progress': 'install'}
+[24.755608] (realsense2_camera) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/unitree/106a_final/build/realsense2_camera'], 'cwd': '/home/unitree/106a_final/build/realsense2_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_CLIENT', '192.168.50.246 34186 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs/lib:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree/106a_final/src'), ('SSH_TTY', '/dev/pts/6'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/unitree/106a_final/build/realsense2_camera'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.50.246 34186 192.168.50.28 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[24.791050] (realsense2_camera) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[24.792235] (realsense2_camera) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[24.793562] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node\n'}
+[24.794716] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/lib/librealsense2_camera.so\n'}
+[24.795612] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/include/base_realsense_node.h\n'}
+[24.795848] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/include/constants.h\n'}
+[24.796529] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/include/dynamic_params.h\n'}
+[24.797211] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/include/realsense_node_factory.h\n'}
+[24.797478] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/include/ros_param_backend.h\n'}
+[24.797635] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/include/t265_realsense_node.h\n'}
+[24.798233] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/launch/default.rviz\n'}
+[24.798839] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/launch/demo_pointcloud_launch.py\n'}
+[24.799018] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/launch/demo_t265_launch.py\n'}
+[24.799618] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/launch/rs_d400_and_t265_launch.py\n'}
+[24.800155] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/launch/rs_launch.py\n'}
+[24.800659] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/launch/rs_multi_camera_launch.py\n'}
+[24.800835] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/launch/rs_t265_launch.py\n'}
+[24.800973] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/config/d435i.yaml\n'}
+[24.801732] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/rviz/pointcloud.rviz\n'}
+[24.801945] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/rviz/t265.rviz\n'}
+[24.802642] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/environment/library_path.sh\n'}
+[24.802821] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/environment/library_path.dsv\n'}
+[24.803415] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/ament_index/resource_index/package_run_dependencies/realsense2_camera\n'}
+[24.804151] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/ament_index/resource_index/parent_prefix_path/realsense2_camera\n'}
+[24.804652] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.sh\n'}
+[24.805094] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.dsv\n'}
+[24.805572] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/environment/path.sh\n'}
+[24.806079] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/environment/path.dsv\n'}
+[24.806527] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/local_setup.bash\n'}
+[24.806991] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/local_setup.sh\n'}
+[24.807444] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/local_setup.zsh\n'}
+[24.807880] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/local_setup.dsv\n'}
+[24.808260] (realsense2_camera) StdoutLine: {'line': b'-- Symlinking: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/package.dsv\n'}
+[24.824562] (vision_node) StdoutLine: {'line': b'running egg_info\n'}
+[24.826970] (vision_node) StdoutLine: {'line': b'writing ../../build/vision_node/vision_node.egg-info/PKG-INFO\n'}
+[24.828111] (vision_node) StdoutLine: {'line': b'writing dependency_links to ../../build/vision_node/vision_node.egg-info/dependency_links.txt\n'}
+[24.828716] (vision_node) StdoutLine: {'line': b'writing entry points to ../../build/vision_node/vision_node.egg-info/entry_points.txt\n'}
+[24.829354] (vision_node) StdoutLine: {'line': b'writing requirements to ../../build/vision_node/vision_node.egg-info/requires.txt\n'}
+[24.829560] (vision_node) StdoutLine: {'line': b'writing top-level names to ../../build/vision_node/vision_node.egg-info/top_level.txt\n'}
+[24.834155] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/ament_index/resource_index/packages/realsense2_camera\n'}
+[24.834870] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/ament_index/resource_index/rclcpp_components/realsense2_camera\n'}
+[24.835413] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[24.836028] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[24.836378] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[24.836863] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig.cmake\n'}
+[24.837173] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig-version.cmake\n'}
+[24.837667] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/package.xml\n'}
+[24.837885] (-) TimerEvent: {}
+[24.849411] (realsense2_camera) CommandEnded: {'returncode': 0}
+[24.910971] (vision_node) StdoutLine: {'line': b"reading manifest file '../../build/vision_node/vision_node.egg-info/SOURCES.txt'\n"}
+[24.911387] (vision_node) StdoutLine: {'line': b"writing manifest file '../../build/vision_node/vision_node.egg-info/SOURCES.txt'\n"}
+[24.911581] (vision_node) StdoutLine: {'line': b'running build\n'}
+[24.911745] (vision_node) StdoutLine: {'line': b'running build_py\n'}
+[24.914556] (vision_node) StdoutLine: {'line': b'running install\n'}
+[24.915037] (vision_node) StdoutLine: {'line': b'running install_lib\n'}
+[24.922173] (vision_node) StdoutLine: {'line': b'running install_data\n'}
+[24.926463] (vision_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[24.935744] (vision_node) StdoutLine: {'line': b"removing '/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages/vision_node-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[24.936293] (vision_node) StdoutLine: {'line': b'Copying ../../build/vision_node/vision_node.egg-info to /home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages/vision_node-0.0.0-py3.8.egg-info\n'}
+[24.936508] (vision_node) StdoutLine: {'line': b'running install_scripts\n'}
+[24.944953] (-) TimerEvent: {}
+[24.946436] (navigation_node_two) StdoutLine: {'line': b"reading manifest file '../../build/navigation_node_two/navigation_node_two.egg-info/SOURCES.txt'\n"}
+[24.949442] (navigation_node_two) StdoutLine: {'line': b"writing manifest file '../../build/navigation_node_two/navigation_node_two.egg-info/SOURCES.txt'\n"}
+[24.949956] (navigation_node_two) StdoutLine: {'line': b'running build\n'}
+[24.950210] (navigation_node_two) StdoutLine: {'line': b'running build_py\n'}
+[24.951922] (navigation_node_two) StdoutLine: {'line': b'running install\n'}
+[24.958474] (navigation_node_two) StdoutLine: {'line': b'running install_lib\n'}
+[24.966734] (navigation_node_two) StdoutLine: {'line': b'running install_data\n'}
+[24.967255] (navigation_node_two) StdoutLine: {'line': b'running install_egg_info\n'}
+[24.969726] (navigation_node_two) StdoutLine: {'line': b"removing '/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages/navigation_node_two-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[24.970382] (navigation_node_two) StdoutLine: {'line': b'Copying ../../build/navigation_node_two/navigation_node_two.egg-info to /home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages/navigation_node_two-0.0.0-py3.8.egg-info\n'}
+[24.978163] (navigation_node_two) StdoutLine: {'line': b'running install_scripts\n'}
+[24.978854] (vision_node) StdoutLine: {'line': b'Installing pingpong_node script to /home/unitree/106a_final/install/vision_node/lib/vision_node\n'}
+[24.979064] (vision_node) StdoutLine: {'line': b"writing list of installed files to '/home/unitree/106a_final/build/vision_node/install.log'\n"}
+[25.030416] (navigation_node_two) StdoutLine: {'line': b'Installing nav_to_bottle script to /home/unitree/106a_final/install/navigation_node_two/lib/navigation_node_two\n'}
+[25.030999] (navigation_node_two) StdoutLine: {'line': b"writing list of installed files to '/home/unitree/106a_final/build/navigation_node_two/install.log'\n"}
+[25.074526] (-) TimerEvent: {}
+[25.175371] (-) TimerEvent: {}
+[25.276583] (-) TimerEvent: {}
+[25.377801] (-) TimerEvent: {}
+[25.479091] (-) TimerEvent: {}
+[25.583561] (-) TimerEvent: {}
+[25.688719] (-) TimerEvent: {}
+[25.798701] (-) TimerEvent: {}
+[25.899555] (-) TimerEvent: {}
+[26.001885] (-) TimerEvent: {}
+[26.109826] (-) TimerEvent: {}
+[26.210699] (-) TimerEvent: {}
+[26.312077] (-) TimerEvent: {}
+[26.412798] (-) TimerEvent: {}
+[26.515441] (-) TimerEvent: {}
+[26.617074] (-) TimerEvent: {}
+[26.626841] (realsense2_camera) JobEnded: {'identifier': 'realsense2_camera', 'rc': 0}
+[26.640551] (realsense2_description) JobStarted: {'identifier': 'realsense2_description'}
+[26.717440] (-) TimerEvent: {}
+[26.818529] (-) TimerEvent: {}
+[26.930546] (-) TimerEvent: {}
+[27.032367] (-) TimerEvent: {}
+[27.133383] (-) TimerEvent: {}
+[27.232017] (arm_driver) StderrLine: {'line': b'make[2]: *** [CMakeFiles/servo_driver.dir/build.make:63: CMakeFiles/servo_driver.dir/src/servo_driver.cpp.o] Error 1\n'}
+[27.233222] (arm_driver) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/servo_driver.dir/all] Error 2\n'}
+[27.233615] (-) TimerEvent: {}
+[27.234411] (arm_driver) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[27.274064] (vision_node) CommandEnded: {'returncode': 0}
+[27.334057] (-) TimerEvent: {}
+[27.434880] (-) TimerEvent: {}
+[27.536050] (-) TimerEvent: {}
+[27.634405] (vision_node) JobEnded: {'identifier': 'vision_node', 'rc': 0}
+[27.636652] (-) TimerEvent: {}
+[27.637384] (navigation_node_two) CommandEnded: {'returncode': 0}
+[27.740201] (-) TimerEvent: {}
+[27.842576] (-) TimerEvent: {}
+[27.943986] (-) TimerEvent: {}
+[28.047470] (-) TimerEvent: {}
+[28.120433] (navigation_node_two) JobEnded: {'identifier': 'navigation_node_two', 'rc': 0}
+[28.123388] (arm_driver) CommandEnded: {'returncode': 2}
+[28.148403] (-) TimerEvent: {}
+[28.249883] (-) TimerEvent: {}
+[28.351361] (-) TimerEvent: {}
+[28.452827] (-) TimerEvent: {}
+[28.554066] (-) TimerEvent: {}
+[28.654557] (arm_driver) JobEnded: {'identifier': 'arm_driver', 'rc': 2}
+[28.659009] (-) TimerEvent: {}
+[28.659596] (realsense2_description) JobEnded: {'identifier': 'realsense2_description', 'rc': 'SIGINT'}
+[28.668531] (-) EventReactorShutdown: {}
