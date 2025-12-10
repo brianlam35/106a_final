@@ -86,7 +86,7 @@ class PingPongNode(Node):
 
         boxes = results[0].boxes
         for i, cls in enumerate(boxes.cls):
-            if int(cls) == 32:  # sports ball
+            if int(cls) == 39:  # sports ball
                 xyxy = boxes.xyxy[i].cpu().numpy()
                 cx = int((xyxy[0] + xyxy[2]) / 2)
                 cy = int((xyxy[1] + xyxy[3]) / 2)
@@ -95,14 +95,14 @@ class PingPongNode(Node):
                 h, w = self.depth_image.shape
                 if cx < 0 or cx >= w or cy < 0 or cy >= h:
                     self.get_logger().warn(
-                        f"Skipping ball: depth index ({cx},{cy}) out of bounds for depth size ({w},{h})"
+                        f"Skipping bottle: depth index ({cx},{cy}) out of bounds for depth size ({w},{h})"
                     )
                     continue
 
                 depth_raw = float(self.depth_image[cy, cx])
                 if depth_raw == 0 or np.isnan(depth_raw):
                     self.get_logger().info(
-                        f"Skipping ball: invalid depth at ({cx},{cy}), value={depth_raw}"
+                        f"Skipping bottle: invalid depth at ({cx},{cy}), value={depth_raw}"
                     )
                     continue
 
@@ -116,7 +116,7 @@ class PingPongNode(Node):
                 pt_msg.point.z = Z
                 self.xyz_pub.publish(pt_msg)
                 self.get_logger().info(
-                    f"Ping pong ball detected at ({X:.2f}, {Y:.2f}, {Z:.2f})"
+                    f"Bottle detected at ({X:.2f}, {Y:.2f}, {Z:.2f})"
                 )
                 break
 
