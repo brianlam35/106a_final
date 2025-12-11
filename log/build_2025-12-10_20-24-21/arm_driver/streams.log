@@ -1,0 +1,74 @@
+[0.391s] Invoking command in '/home/unitree/106a_final/build/arm_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/unitree/106a_final/src/arm_driver -DCMAKE_INSTALL_PREFIX=/home/unitree/106a_final/install/arm_driver
+[0.530s] -- The C compiler identification is GNU 9.4.0
+[0.640s] -- The CXX compiler identification is GNU 9.4.0
+[0.649s] -- Check for working C compiler: /usr/bin/cc
+[0.834s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.836s] -- Detecting C compiler ABI info
+[1.031s] -- Detecting C compiler ABI info - done
+[1.052s] -- Detecting C compile features
+[1.054s] -- Detecting C compile features - done
+[1.060s] -- Check for working CXX compiler: /usr/bin/c++
+[1.274s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.274s] -- Detecting CXX compiler ABI info
+[1.461s] -- Detecting CXX compiler ABI info - done
+[1.481s] -- Detecting CXX compile features
+[1.482s] -- Detecting CXX compile features - done
+[1.487s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.543s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.544s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.104s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.195s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.210s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.424s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.508s] -- Found FastRTPS: /opt/ros/foxy/include  
+[2.680s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.791s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.794s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.797s] -- Looking for pthread.h
+[2.989s] -- Looking for pthread.h - found
+[2.990s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.246s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.246s] -- Looking for pthread_create in pthreads
+[3.402s] -- Looking for pthread_create in pthreads - not found
+[3.406s] -- Looking for pthread_create in pthread
+[3.582s] -- Looking for pthread_create in pthread - found
+[3.585s] -- Found Threads: TRUE  
+[3.901s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[4.296s] -- Configuring done
+[4.321s] -- Generating done
+[4.336s] -- Build files have been written to: /home/unitree/106a_final/build/arm_driver
+[4.365s] Invoked command in '/home/unitree/106a_final/build/arm_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/unitree/106a_final/src/arm_driver -DCMAKE_INSTALL_PREFIX=/home/unitree/106a_final/install/arm_driver
+[4.373s] Invoking command in '/home/unitree/106a_final/build/arm_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/unitree/106a_final/build/arm_driver -- -j4 -l4
+[4.489s] [35m[1mScanning dependencies of target d1_wrapper[0m
+[4.527s] [ 16%] [32mBuilding CXX object CMakeFiles/d1_wrapper.dir/home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.cpp.o[0m
+[4.529s] [ 33%] [32mBuilding CXX object CMakeFiles/d1_wrapper.dir/home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.cpp.o[0m
+[4.556s] [ 50%] [32mBuilding CXX object CMakeFiles/d1_wrapper.dir/src/D1Wrapper.cpp.o[0m
+[13.513s] [ 66%] [32m[1mLinking CXX static library libd1_wrapper.a[0m
+[13.658s] [ 66%] Built target d1_wrapper
+[13.695s] [35m[1mScanning dependencies of target servo_driver[0m
+[13.785s] [ 83%] [32mBuilding CXX object CMakeFiles/servo_driver.dir/src/servo_driver.cpp.o[0m
+[27.882s] [100%] [32m[1mLinking CXX executable servo_driver[0m
+[29.341s] [100%] Built target servo_driver
+[29.376s] Invoked command in '/home/unitree/106a_final/build/arm_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/unitree/106a_final/build/arm_driver -- -j4 -l4
+[29.415s] Invoking command in '/home/unitree/106a_final/build/arm_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/unitree/106a_final/build/arm_driver
+[29.449s] -- Install configuration: ""
+[29.450s] -- Installing: /home/unitree/106a_final/install/arm_driver/lib/arm_driver/servo_driver
+[29.462s] -- Set runtime path of "/home/unitree/106a_final/install/arm_driver/lib/arm_driver/servo_driver" to ""
+[29.462s] -- Installing: /home/unitree/106a_final/install/arm_driver/share/arm_driver/launch
+[29.462s] -- Installing: /home/unitree/106a_final/install/arm_driver/share/arm_driver/launch/arm_driver.launch.py
+[29.463s] -- Installing: /home/unitree/106a_final/install/arm_driver/share/ament_index/resource_index/package_run_dependencies/arm_driver
+[29.463s] -- Installing: /home/unitree/106a_final/install/arm_driver/share/ament_index/resource_index/parent_prefix_path/arm_driver
+[29.463s] -- Installing: /home/unitree/106a_final/install/arm_driver/share/arm_driver/environment/ament_prefix_path.sh
+[29.464s] -- Installing: /home/unitree/106a_final/install/arm_driver/share/arm_driver/environment/ament_prefix_path.dsv
+[29.464s] -- Installing: /home/unitree/106a_final/install/arm_driver/share/arm_driver/environment/path.sh
+[29.464s] -- Installing: /home/unitree/106a_final/install/arm_driver/share/arm_driver/environment/path.dsv
+[29.465s] -- Installing: /home/unitree/106a_final/install/arm_driver/share/arm_driver/local_setup.bash
+[29.465s] -- Installing: /home/unitree/106a_final/install/arm_driver/share/arm_driver/local_setup.sh
+[29.465s] -- Installing: /home/unitree/106a_final/install/arm_driver/share/arm_driver/local_setup.zsh
+[29.466s] -- Installing: /home/unitree/106a_final/install/arm_driver/share/arm_driver/local_setup.dsv
+[29.466s] -- Installing: /home/unitree/106a_final/install/arm_driver/share/arm_driver/package.dsv
+[29.466s] -- Installing: /home/unitree/106a_final/install/arm_driver/share/ament_index/resource_index/packages/arm_driver
+[29.467s] -- Installing: /home/unitree/106a_final/install/arm_driver/share/arm_driver/cmake/arm_driverConfig.cmake
+[29.467s] -- Installing: /home/unitree/106a_final/install/arm_driver/share/arm_driver/cmake/arm_driverConfig-version.cmake
+[29.468s] -- Installing: /home/unitree/106a_final/install/arm_driver/share/arm_driver/package.xml
+[29.474s] Invoked command in '/home/unitree/106a_final/build/arm_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/unitree/106a_final/build/arm_driver

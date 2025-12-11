@@ -80,6 +80,10 @@ servo_driver_EXTERNAL_OBJECTS =
 servo_driver: CMakeFiles/servo_driver.dir/src/servo_driver.cpp.o
 servo_driver: CMakeFiles/servo_driver.dir/build.make
 servo_driver: /opt/ros/foxy/lib/librclcpp.so
+servo_driver: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
+servo_driver: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_c.so
+servo_driver: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
+servo_driver: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 servo_driver: libd1_wrapper.a
 servo_driver: /opt/ros/foxy/lib/liblibstatistics_collector.so
 servo_driver: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_c.so
@@ -87,11 +91,6 @@ servo_driver: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_gen
 servo_driver: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_c.so
 servo_driver: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_cpp.so
 servo_driver: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_cpp.so
-servo_driver: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-servo_driver: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
-servo_driver: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
-servo_driver: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-servo_driver: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_cpp.so
 servo_driver: /opt/ros/foxy/lib/librcl.so
 servo_driver: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
 servo_driver: /opt/ros/foxy/lib/librcl_interfaces__rosidl_generator_c.so
@@ -114,6 +113,18 @@ servo_driver: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_generator_c.so
 servo_driver: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_c.so
 servo_driver: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
 servo_driver: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
+servo_driver: /opt/ros/foxy/lib/libtracetools.so
+servo_driver: /opt/ros/foxy/lib/libsensor_msgs__rosidl_generator_c.so
+servo_driver: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+servo_driver: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
+servo_driver: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
+servo_driver: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+servo_driver: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+servo_driver: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+servo_driver: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
+servo_driver: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
+servo_driver: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
+servo_driver: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_cpp.so
 servo_driver: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 servo_driver: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 servo_driver: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
@@ -126,7 +137,6 @@ servo_driver: /opt/ros/foxy/lib/librosidl_typesupport_c.so
 servo_driver: /opt/ros/foxy/lib/librcpputils.so
 servo_driver: /opt/ros/foxy/lib/librosidl_runtime_c.so
 servo_driver: /opt/ros/foxy/lib/librcutils.so
-servo_driver: /opt/ros/foxy/lib/libtracetools.so
 servo_driver: CMakeFiles/servo_driver.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/unitree/106a_final/build/arm_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable servo_driver"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/servo_driver.dir/link.txt --verbose=$(VERBOSE)

@@ -15,6 +15,12 @@ class ArmManager(Node):
         # Offsets
         self.cam_x_offset, self.cam_y_offset, self.cam_z_offset = 0.2, 0.0, 0.1
 
+        # --- NEW: HARDWARE CALIBRATION SHIM ---
+        # If the arm consistently misses to the Left, put a negative number here.
+        # If it misses to the Right, put a positive number.
+        # Start with 2cm (0.02) and tune it.
+        self.y_bias = 0.1  # Example: Adjust this until it hits dead center!
+
         # State Variables
         self.current_joints = []
         self.target_joints = []
@@ -86,7 +92,7 @@ class ArmManager(Node):
             
         elif self.state == "GRIPPING":
             # Gripper doesn't give good position feedback (stall), so we use time here
-            if (self.get_clock().now().seconds_nanoseconds()[0] - self.start_time) > 1.5:
+            if (self.get_clock().now().seconds_nanoseconds()[0] - self.start_time) > 3:
                 self.get_logger().info("Grip Complete. Lifting...")
                 self.state = "START_LIFT"
         

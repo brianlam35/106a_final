@@ -8,18 +8,17 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED) # <--- ADDED THIS
 
 set(D1_SDK_SRC "/home/unitree/106a_final/src/d1_sdk")
 
 # --- 1. BUILD THE ISOLATED UNITREE LIBRARY ---
-# This library sees Unitree headers but NOT ROS headers.
 add_library(d1_wrapper 
   src/D1Wrapper.cpp
   ${D1_SDK_SRC}/src/msg/ArmString_.cpp
   ${D1_SDK_SRC}/src/msg/PubServoInfo_.cpp
 )
 
-# Only give Unitree includes to this library
 target_include_directories(d1_wrapper PUBLIC
   include
   src
@@ -29,7 +28,6 @@ target_include_directories(d1_wrapper PUBLIC
   /usr/local/include/iceoryx/v2.0.2
 )
 
-# Link Unitree deps
 target_link_libraries(d1_wrapper
   unitree_sdk2
   ddsc
@@ -39,13 +37,10 @@ target_link_libraries(d1_wrapper
 )
 
 # --- 2. BUILD THE ROS DRIVER ---
-# This executable sees ROS headers, but only sees the CLEAN header of d1_wrapper
 add_executable(servo_driver src/servo_driver.cpp)
 
-# Link ROS deps
-ament_target_dependencies(servo_driver rclcpp std_msgs)
+ament_target_dependencies(servo_driver rclcpp std_msgs sensor_msgs) # <--- ADDED HERE
 
-# Link the wrapper
 target_link_libraries(servo_driver d1_wrapper)
 
 # --- 3. INSTALL ---

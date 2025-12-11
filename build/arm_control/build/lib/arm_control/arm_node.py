@@ -2,85 +2,110 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PointStamped
 from std_msgs.msg import Float32MultiArray
+from sensor_msgs.msg import JointState
 import numpy as np
 
-# Import your helper class
 from arm_control.ik_solver import IKSolver
 
 class ArmManager(Node):
     def __init__(self):
         super().__init__('arm_manager')
-
-        # 1. Initialize IK Solver 
-        self.get_logger().info("Loading IK Solver...")
         self.ik = IKSolver()
-
-        # 2. MANUAL CALIBRATION (Camera -> Arm)      
-        # EXAMPLE: If Camera is 20cm IN FRONT of arm, x_offset = 0.2
-        # EXAMPLE: If Camera is 10cm ABOVE arm, z_offset = 0.1
-        self.cam_x_offset = 0.367  
-        self.cam_y_offset = 0.034
-        self.cam_z_offset = 0.0
-
-        # 3. Setup Pub/Sub
-        # Listen for the bottle position from the vision node
-        self.sub_vision = self.create_subscription(
-            PointStamped, 
-            '/vision/target_pose',  # <--- UPDATED TOPIC NAME
-            self.vision_callback, 
-            10
-        )
         
-        # Publish commands to the arm driver
-        self.pub_joints = self.create_publisher(
-            Float32MultiArray, 
-            '/arm_joint_commands', 
-            10
-        )
+        # Offsets
+        self.cam_x_offset, self.cam_y_offset, self.cam_z_offset = 0.2, 0.0, 0.1
 
-        self.get_logger().info("Arm Manager Ready! Waiting for /vision/target_pose...")
+        # --- NEW: HARDWARE CALIBRATION SHIM ---
+        # If the arm consistently misses to the Left, put a negative number here.
+        # If it misses to the Right, put a positive number.
+        # Start with 2cm (0.02) and tune it.
+        self.y_bias = 0.1  # Example: Adjust this until it hits dead center!
 
-    def vision_callback(self, msg):
-        try:
-            # --- A. MANUAL TRANSFORM (Camera Frame -> Arm Frame) ---
-            # We assume the camera and arm are aligned (x=forward, z=up).
-            # If the camera is tilted, this math gets harder (requires rotation matrix).
-            # For now, we just add the linear offset.
-            
-            # P_arm = P_camera + Offset
-            target_x = msg.point.x + self.cam_x_offset
-            target_y = msg.point.y + self.cam_y_offset
-            target_z = msg.point.z + self.cam_z_offset
-            
-            self.get_logger().info(f"Vision Target: ({msg.point.x:.2f}, {msg.point.y:.2f}, {msg.point.z:.2f})")
-            self.get_logger().info(f"Arm Target:    ({target_x:.2f}, {target_y:.2f}, {target_z:.2f})")
+        # State Variables
+        self.current_joints = []
+        self.target_joints = []
+        self.state = "IDLE" # IDLE, MOVING, GRIPPING, LIFTING, DONE
+        self.start_time = 0
 
-            # --- B. COMPUTE IK ---
-            joint_angles = self.ik.compute_ik(target_x, target_y, target_z)
-            
-            # --- C. PUBLISH COMMAND ---
-            cmd = Float32MultiArray()
-            
-            # 1.5 = Open Gripper (Ready to grab)
-            # -1.5 = Close Gripper
-            gripper_cmd = 1.5 
-            
-            # Combine [6 angles] + [1 gripper]
-            cmd.data = list(joint_angles) + [gripper_cmd]
-            
-            self.pub_joints.publish(cmd)
-            self.get_logger().info("Move Command Sent!")
+        # Communication
+        self.sub_vision = self.create_subscription(PointStamped, '/vision/target_pose', self.vision_cb, 10)
+        self.sub_state = self.create_subscription(JointState, '/arm_joint_states', self.state_cb, 10)
+        self.pub_joints = self.create_publisher(Float32MultiArray, '/arm_joint_commands', 10)
+        
+        # 10Hz Control Loop (Checks "Are we there yet?")
+        self.timer = self.create_timer(0.1, self.control_loop)
+        
+        self.get_logger().info("Arm Manager Ready (Closed Loop).")
 
-        except Exception as e:
-            self.get_logger().error(f"Logic Error: {e}")
+    def state_cb(self, msg):
+        self.current_joints = list(msg.position) # Update current angles (radians)
+
+    def vision_cb(self, msg):
+        if self.state != "IDLE": return # Ignore if busy
+        
+        # Calculate Approach Target
+        tx = msg.point.x + self.cam_x_offset
+        ty = msg.point.y + self.cam_y_offset
+        tz = msg.point.z + self.cam_z_offset
+        
+        self.approach_angles = list(self.ik.compute_ik(tx, ty, tz))
+        
+        # Calculate Lift Target (Same XY, Higher Z)
+        self.lift_angles = list(self.ik.compute_ik(tx, ty, tz + 0.1))
+
+        self.get_logger().info("Target Received. Starting Approach...")
+        self.state = "START_APPROACH"
+
+    def send_cmd(self, angles, gripper):
+        cmd = Float32MultiArray()
+        cmd.data = angles + [gripper]
+        self.pub_joints.publish(cmd)
+        self.target_joints = angles # Store for error checking
+
+    def is_at_target(self, threshold=0.1):
+        if not self.current_joints or not self.target_joints: return False
+        
+        # Check error for first 6 joints (ignore gripper for now)
+        error = 0.0
+        for i in range(6):
+            error += abs(self.current_joints[i] - self.target_joints[i])
+        return error < threshold
+
+    def control_loop(self):
+        # State Machine Logic
+        if self.state == "IDLE":
+            pass
+
+        elif self.state == "START_APPROACH":
+            self.send_cmd(self.approach_angles, 1.5) # Open
+            self.state = "APPROACHING"
+            
+        elif self.state == "APPROACHING":
+            if self.is_at_target():
+                self.get_logger().info("Reached Target. Gripping...")
+                self.state = "START_GRIP"
+        
+        elif self.state == "START_GRIP":
+            self.send_cmd(self.approach_angles, -1.5) # Close
+            self.start_time = self.get_clock().now().seconds_nanoseconds()[0]
+            self.state = "GRIPPING"
+            
+        elif self.state == "GRIPPING":
+            # Gripper doesn't give good position feedback (stall), so we use time here
+            if (self.get_clock().now().seconds_nanoseconds()[0] - self.start_time) > 3:
+                self.get_logger().info("Grip Complete. Lifting...")
+                self.state = "START_LIFT"
+        
+        elif self.state == "START_LIFT":
+            self.send_cmd(self.lift_angles, -1.5) # Keep Closed
+            self.state = "LIFTING"
+
+        elif self.state == "LIFTING":
+            if self.is_at_target():
+                self.get_logger().info("Lift Complete! Resetting.")
+                self.state = "IDLE"
 
 def main(args=None):
     rclpy.init(args=args)
-    node = ArmManager()
-    try:
-        rclpy.spin(node)
-    except KeyboardInterrupt:
-        pass
-    finally:
-        node.destroy_node()
-        rclpy.shutdown()
+    rclpy.spin(ArmManager())
+    rclpy.shutdown()
