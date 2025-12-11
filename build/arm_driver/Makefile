@@ -181,6 +181,19 @@ servo_driver/fast:
 .PHONY : servo_driver/fast
 
 #=============================================================================
+# Target rules for targets named d1_wrapper
+
+# Build rule for target.
+d1_wrapper: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 d1_wrapper
+.PHONY : d1_wrapper
+
+# fast build rule for target.
+d1_wrapper/fast:
+	$(MAKE) -f CMakeFiles/d1_wrapper.dir/build.make CMakeFiles/d1_wrapper.dir/build
+.PHONY : d1_wrapper/fast
+
+#=============================================================================
 # Target rules for targets named arm_driver_uninstall
 
 # Build rule for target.
@@ -212,7 +225,7 @@ home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.o: home/unitree/106a_final
 
 # target to build an object file
 home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.cpp.o:
-	$(MAKE) -f CMakeFiles/servo_driver.dir/build.make CMakeFiles/servo_driver.dir/home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.cpp.o
+	$(MAKE) -f CMakeFiles/d1_wrapper.dir/build.make CMakeFiles/d1_wrapper.dir/home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.cpp.o
 .PHONY : home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.cpp.o
 
 home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.i: home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.cpp.i
@@ -221,7 +234,7 @@ home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.i: home/unitree/106a_final
 
 # target to preprocess a source file
 home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.cpp.i:
-	$(MAKE) -f CMakeFiles/servo_driver.dir/build.make CMakeFiles/servo_driver.dir/home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.cpp.i
+	$(MAKE) -f CMakeFiles/d1_wrapper.dir/build.make CMakeFiles/d1_wrapper.dir/home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.cpp.i
 .PHONY : home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.cpp.i
 
 home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.s: home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.cpp.s
@@ -230,8 +243,62 @@ home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.s: home/unitree/106a_final
 
 # target to generate assembly for a file
 home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.cpp.s:
-	$(MAKE) -f CMakeFiles/servo_driver.dir/build.make CMakeFiles/servo_driver.dir/home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.cpp.s
+	$(MAKE) -f CMakeFiles/d1_wrapper.dir/build.make CMakeFiles/d1_wrapper.dir/home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.cpp.s
 .PHONY : home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.cpp.s
+
+home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.o: home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.cpp.o
+
+.PHONY : home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.o
+
+# target to build an object file
+home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.cpp.o:
+	$(MAKE) -f CMakeFiles/d1_wrapper.dir/build.make CMakeFiles/d1_wrapper.dir/home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.cpp.o
+.PHONY : home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.cpp.o
+
+home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.i: home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.cpp.i
+
+.PHONY : home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.i
+
+# target to preprocess a source file
+home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.cpp.i:
+	$(MAKE) -f CMakeFiles/d1_wrapper.dir/build.make CMakeFiles/d1_wrapper.dir/home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.cpp.i
+.PHONY : home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.cpp.i
+
+home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.s: home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.cpp.s
+
+.PHONY : home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.s
+
+# target to generate assembly for a file
+home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.cpp.s:
+	$(MAKE) -f CMakeFiles/d1_wrapper.dir/build.make CMakeFiles/d1_wrapper.dir/home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.cpp.s
+.PHONY : home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.cpp.s
+
+src/D1Wrapper.o: src/D1Wrapper.cpp.o
+
+.PHONY : src/D1Wrapper.o
+
+# target to build an object file
+src/D1Wrapper.cpp.o:
+	$(MAKE) -f CMakeFiles/d1_wrapper.dir/build.make CMakeFiles/d1_wrapper.dir/src/D1Wrapper.cpp.o
+.PHONY : src/D1Wrapper.cpp.o
+
+src/D1Wrapper.i: src/D1Wrapper.cpp.i
+
+.PHONY : src/D1Wrapper.i
+
+# target to preprocess a source file
+src/D1Wrapper.cpp.i:
+	$(MAKE) -f CMakeFiles/d1_wrapper.dir/build.make CMakeFiles/d1_wrapper.dir/src/D1Wrapper.cpp.i
+.PHONY : src/D1Wrapper.cpp.i
+
+src/D1Wrapper.s: src/D1Wrapper.cpp.s
+
+.PHONY : src/D1Wrapper.s
+
+# target to generate assembly for a file
+src/D1Wrapper.cpp.s:
+	$(MAKE) -f CMakeFiles/d1_wrapper.dir/build.make CMakeFiles/d1_wrapper.dir/src/D1Wrapper.cpp.s
+.PHONY : src/D1Wrapper.cpp.s
 
 src/servo_driver.o: src/servo_driver.cpp.o
 
@@ -274,11 +341,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... servo_driver"
+	@echo "... d1_wrapper"
 	@echo "... arm_driver_uninstall"
 	@echo "... uninstall"
 	@echo "... home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.o"
 	@echo "... home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.i"
 	@echo "... home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.s"
+	@echo "... home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.o"
+	@echo "... home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.i"
+	@echo "... home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.s"
+	@echo "... src/D1Wrapper.o"
+	@echo "... src/D1Wrapper.i"
+	@echo "... src/D1Wrapper.s"
 	@echo "... src/servo_driver.o"
 	@echo "... src/servo_driver.i"
 	@echo "... src/servo_driver.s"

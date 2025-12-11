@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'nav_to_bottle = navigation_node_two.nav_to_bottle:main',
+            'pose_bridge_node = navigation_node_two.pose_bridge_node:main',
         ],
     },
 )

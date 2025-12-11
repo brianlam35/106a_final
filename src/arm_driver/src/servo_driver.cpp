@@ -1,14 +1,10 @@
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/float32_multi_array.hpp>
+#include <sensor_msgs/msg/joint_state.hpp> // Standard ROS message for joints
 #include <cmath>
-#include <sstream>
-#include <iomanip>
-
-// Unitree SDK2 Headers
-#include <unitree/robot/channel/channel_publisher.hpp>
-#include "ArmString_.hpp" // We will make CMake find this
-
-#define TOPIC "rt/arm_Command"
+#include <thread>
+#include <cstdlib>
+#include "D1Wrapper.hpp"
 
 using std::placeholders::_1;
 
@@ -17,78 +13,61 @@ class ServoDriver : public rclcpp::Node
 public:
     ServoDriver() : Node("servo_driver")
     {
-        // 1. Initialize Unitree Channel
-        RCLCPP_INFO(this->get_logger(), "Initializing Unitree DDS Channel...");
-        try {
-            unitree::robot::ChannelFactory::Instance()->Init(0);
-            publisher_ = std::make_shared<unitree::robot::ChannelPublisher<unitree_arm::msg::dds_::ArmString_>>(TOPIC);
-            publisher_->InitChannel();
-            RCLCPP_INFO(this->get_logger(), "Unitree Channel Ready!");
-        } catch (...) {
-            RCLCPP_ERROR(this->get_logger(), "Failed to init Unitree Channel. Is unitree_sdk2 installed?");
-        }
+        // 1. Setup Wrapper
+        d1_ = std::make_shared<D1Wrapper>();
+        
+        // 2. Setup Feedback Callback
+        // When wrapper gets data, it calls this lambda function
+        d1_->set_feedback_callback([this](const std::vector<double>& angles) {
+            this->publish_state(angles);
+        });
 
-        // 2. Subscriber
+        // 3. Setup Pub/Sub
+        pub_state_ = this->create_publisher<sensor_msgs::msg::JointState>("/arm_joint_states", 10);
+        
         subscription_ = this->create_subscription<std_msgs::msg::Float32MultiArray>(
             "/arm_joint_commands", 10, std::bind(&ServoDriver::topic_callback, this, _1));
-            
-        // Move to start pose (Optional: You can trigger this manually via topic if preferred)
-        // send_command(0, 0, 0, 0, 0, 0); 
+        
+        // 4. Enable Arm
+        RCLCPP_INFO(this->get_logger(), "Enabling Arm...");
+        rclcpp::sleep_for(std::chrono::seconds(1)); 
+        d1_->enable_arm();
+    }
+
+    ~ServoDriver() {
+        if(d1_) d1_->damp_arm();
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
     }
 
 private:
-    void topic_callback(const std_msgs::msg::Float32MultiArray::SharedPtr msg)
-    {
-        if (msg->data.size() < 6) return;
-
-        // ROS uses Radians, Unitree JSON uses Degrees. Convert!
-        double q[6];
-        for(int i=0; i<6; i++) {
-            q[i] = msg->data[i] * (180.0 / M_PI);
-        }
-
-        // Send to Robot
-        send_command(q[0], q[1], q[2], q[3], q[4], q[5]);
-    }
-
-    void send_command(double q0, double q1, double q2, double q3, double q4, double q5)
-    {
-        static int seq = 0;
-        seq++;
-
-        // Construct the JSON String manually
-        // Format: {"seq":X,"address":1,"funcode":2,"data":{"mode":1,"angle0":...}}
-        std::stringstream ss;
-        ss << "{"
-           << "\"seq\":" << seq << ","
-           << "\"address\":1,"
-           << "\"funcode\":2,"  // 2 = Multiple Joint Control
-           << "\"data\":{"
-           << "\"mode\":1,"     // 1 = Position Mode
-           << "\"angle0\":" << std::fixed << std::setprecision(2) << q0 << ","
-           << "\"angle1\":" << q1 << ","
-           << "\"angle2\":" << q2 << ","
-           << "\"angle3\":" << q3 << ","
-           << "\"angle4\":" << q4 << ","
-           << "\"angle5\":" << q5 << ","
-           << "\"angle6\":0"    // Gripper (Joint 7) - Add logic if needed later
-           << "}}";
-
-        // Create and Send Message
-        unitree_arm::msg::dds_::ArmString_ dds_msg;
-        dds_msg.data_() = ss.str();
+    void publish_state(const std::vector<double>& angles_deg) {
+        auto msg = sensor_msgs::msg::JointState();
+        msg.header.stamp = this->now();
+        msg.name = {"joint1", "joint2", "joint3", "joint4", "joint5", "joint6", "gripper"};
         
-        if (publisher_) {
-            publisher_->Write(dds_msg);
+        // Convert Degrees (Unitree) -> Radians (ROS)
+        for(double deg : angles_deg) {
+            msg.position.push_back(deg * (M_PI / 180.0));
         }
+        
+        pub_state_->publish(msg);
     }
 
-    std::shared_ptr<unitree::robot::ChannelPublisher<unitree_arm::msg::dds_::ArmString_>> publisher_;
+    void topic_callback(const std_msgs::msg::Float32MultiArray::SharedPtr msg) {
+        if (msg->data.size() < 6) return;
+        double q[6];
+        for(int i=0; i<6; i++) q[i] = msg->data[i] * (180.0 / M_PI);
+        double gripper = (msg->data.size() >= 7) ? msg->data[6] * (180.0 / M_PI) : 0.0;
+        d1_->send_command(q[0], q[1], q[2], q[3], q[4], q[5], gripper);
+    }
+
+    std::shared_ptr<D1Wrapper> d1_;
+    rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr pub_state_;
     rclcpp::Subscription<std_msgs::msg::Float32MultiArray>::SharedPtr subscription_;
 };
 
-int main(int argc, char * argv[])
-{
+int main(int argc, char * argv[]) {
+    setenv("CYCLONEDDS_URI", "<CycloneDDS><Domain><General><NetworkInterfaceAddress>eth0</NetworkInterfaceAddress></General></Domain></CycloneDDS>", 1);
     rclcpp::init(argc, argv);
     rclcpp::spin(std::make_shared<ServoDriver>());
     rclcpp::shutdown();

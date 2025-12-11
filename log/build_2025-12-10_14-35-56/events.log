@@ -1,0 +1,81 @@
+[0.000000] (-) TimerEvent: {}
+[0.000464] (-) JobUnselected: {'identifier': 'arm_control'}
+[0.000854] (-) JobUnselected: {'identifier': 'arm_driver'}
+[0.001024] (-) JobUnselected: {'identifier': 'aruco_node'}
+[0.001396] (-) JobUnselected: {'identifier': 'navigation_node'}
+[0.001749] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.001900] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.001943] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.001976] (-) JobUnselected: {'identifier': 'vision_node'}
+[0.002012] (navigation_node_two) JobQueued: {'identifier': 'navigation_node_two', 'dependencies': OrderedDict()}
+[0.002053] (navigation_node_two) JobStarted: {'identifier': 'navigation_node_two'}
+[0.099585] (-) TimerEvent: {}
+[0.200048] (-) TimerEvent: {}
+[0.300896] (-) TimerEvent: {}
+[0.401780] (-) TimerEvent: {}
+[0.502674] (-) TimerEvent: {}
+[0.603438] (-) TimerEvent: {}
+[0.704148] (-) TimerEvent: {}
+[0.804705] (-) TimerEvent: {}
+[0.905259] (-) TimerEvent: {}
+[1.005815] (-) TimerEvent: {}
+[1.106935] (-) TimerEvent: {}
+[1.207772] (-) TimerEvent: {}
+[1.308587] (-) TimerEvent: {}
+[1.409294] (-) TimerEvent: {}
+[1.509967] (-) TimerEvent: {}
+[1.610531] (-) TimerEvent: {}
+[1.711084] (-) TimerEvent: {}
+[1.811658] (-) TimerEvent: {}
+[1.912216] (-) TimerEvent: {}
+[2.012780] (-) TimerEvent: {}
+[2.113375] (-) TimerEvent: {}
+[2.214099] (-) TimerEvent: {}
+[2.252171] (navigation_node_two) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/navigation_node_two', 'build', '--build-base', '/home/unitree/106a_final/build/navigation_node_two/build', 'install', '--record', '/home/unitree/106a_final/build/navigation_node_two/install.log', '--install-scripts', '$base/lib/navigation_node_two', '--single-version-externally-managed'], 'cwd': '/home/unitree/106a_final/src/navigation_node_two', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'unitree', 'SSH_AGENT_PID': '2935', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/unitree', 'CYCLONEDDS_URI': '/home/unitree/cyclonedds_ws/cyclonedds.xml', 'OLDPWD': '/home/unitree/106a_final/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2765', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/unitree/106a_final/install:/home/unitree/cyclonedds_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'unitree', 'JOURNAL_STREAM': '7:68959', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'unitree', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/unitree/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/2970,unix/ubuntu:/tmp/.ICE-unix/2970', 'INVOCATION_ID': 'a98f4262bfd44a28b8d5b3913eb806a5', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f085a667_3c9a_44ba_aeb9_158432dd8bf0', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.80', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/aruco_node:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/unitree/106a_final/build/navigation_node_two', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/unitree/106a_final/build/navigation_node_two/prefix_override:/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages:/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages:/home/unitree/106a_final/build/aruco_node:/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds'}, 'shell': False}
+[2.314301] (-) TimerEvent: {}
+[2.414974] (-) TimerEvent: {}
+[2.515528] (-) TimerEvent: {}
+[2.616079] (-) TimerEvent: {}
+[2.690601] (navigation_node_two) StdoutLine: {'line': b'running egg_info\n'}
+[2.691504] (navigation_node_two) StdoutLine: {'line': b'creating ../../build/navigation_node_two/navigation_node_two.egg-info\n'}
+[2.691857] (navigation_node_two) StdoutLine: {'line': b'writing ../../build/navigation_node_two/navigation_node_two.egg-info/PKG-INFO\n'}
+[2.692389] (navigation_node_two) StdoutLine: {'line': b'writing dependency_links to ../../build/navigation_node_two/navigation_node_two.egg-info/dependency_links.txt\n'}
+[2.692643] (navigation_node_two) StdoutLine: {'line': b'writing entry points to ../../build/navigation_node_two/navigation_node_two.egg-info/entry_points.txt\n'}
+[2.692866] (navigation_node_two) StdoutLine: {'line': b'writing requirements to ../../build/navigation_node_two/navigation_node_two.egg-info/requires.txt\n'}
+[2.693218] (navigation_node_two) StdoutLine: {'line': b'writing top-level names to ../../build/navigation_node_two/navigation_node_two.egg-info/top_level.txt\n'}
+[2.697017] (navigation_node_two) StdoutLine: {'line': b"writing manifest file '../../build/navigation_node_two/navigation_node_two.egg-info/SOURCES.txt'\n"}
+[2.716162] (-) TimerEvent: {}
+[2.755081] (navigation_node_two) StdoutLine: {'line': b"reading manifest file '../../build/navigation_node_two/navigation_node_two.egg-info/SOURCES.txt'\n"}
+[2.756350] (navigation_node_two) StdoutLine: {'line': b"writing manifest file '../../build/navigation_node_two/navigation_node_two.egg-info/SOURCES.txt'\n"}
+[2.756601] (navigation_node_two) StdoutLine: {'line': b'running build\n'}
+[2.756822] (navigation_node_two) StdoutLine: {'line': b'running build_py\n'}
+[2.757007] (navigation_node_two) StdoutLine: {'line': b'creating /home/unitree/106a_final/build/navigation_node_two/build\n'}
+[2.757201] (navigation_node_two) StdoutLine: {'line': b'creating /home/unitree/106a_final/build/navigation_node_two/build/lib\n'}
+[2.757367] (navigation_node_two) StdoutLine: {'line': b'creating /home/unitree/106a_final/build/navigation_node_two/build/lib/navigation_node_two\n'}
+[2.757509] (navigation_node_two) StdoutLine: {'line': b'copying navigation_node_two/nav_to_bottle.py -> /home/unitree/106a_final/build/navigation_node_two/build/lib/navigation_node_two\n'}
+[2.757716] (navigation_node_two) StdoutLine: {'line': b'copying navigation_node_two/__init__.py -> /home/unitree/106a_final/build/navigation_node_two/build/lib/navigation_node_two\n'}
+[2.758024] (navigation_node_two) StdoutLine: {'line': b'running install\n'}
+[2.759901] (navigation_node_two) StdoutLine: {'line': b'running install_lib\n'}
+[2.761757] (navigation_node_two) StdoutLine: {'line': b'creating /home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages/navigation_node_two\n'}
+[2.761951] (navigation_node_two) StdoutLine: {'line': b'copying /home/unitree/106a_final/build/navigation_node_two/build/lib/navigation_node_two/nav_to_bottle.py -> /home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages/navigation_node_two\n'}
+[2.762184] (navigation_node_two) StdoutLine: {'line': b'copying /home/unitree/106a_final/build/navigation_node_two/build/lib/navigation_node_two/__init__.py -> /home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages/navigation_node_two\n'}
+[2.763131] (navigation_node_two) StdoutLine: {'line': b'byte-compiling /home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages/navigation_node_two/nav_to_bottle.py to nav_to_bottle.cpython-38.pyc\n'}
+[2.766561] (navigation_node_two) StdoutLine: {'line': b'byte-compiling /home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages/navigation_node_two/__init__.py to __init__.cpython-38.pyc\n'}
+[2.766879] (navigation_node_two) StdoutLine: {'line': b'running install_data\n'}
+[2.767785] (navigation_node_two) StdoutLine: {'line': b'creating /home/unitree/106a_final/install/navigation_node_two/share/ament_index\n'}
+[2.767943] (navigation_node_two) StdoutLine: {'line': b'creating /home/unitree/106a_final/install/navigation_node_two/share/ament_index/resource_index\n'}
+[2.768113] (navigation_node_two) StdoutLine: {'line': b'creating /home/unitree/106a_final/install/navigation_node_two/share/ament_index/resource_index/packages\n'}
+[2.768235] (navigation_node_two) StdoutLine: {'line': b'copying resource/navigation_node_two -> /home/unitree/106a_final/install/navigation_node_two/share/ament_index/resource_index/packages\n'}
+[2.768383] (navigation_node_two) StdoutLine: {'line': b'copying package.xml -> /home/unitree/106a_final/install/navigation_node_two/share/navigation_node_two\n'}
+[2.768533] (navigation_node_two) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.771461] (navigation_node_two) StdoutLine: {'line': b'Copying ../../build/navigation_node_two/navigation_node_two.egg-info to /home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages/navigation_node_two-0.0.0-py3.8.egg-info\n'}
+[2.773253] (navigation_node_two) StdoutLine: {'line': b'running install_scripts\n'}
+[2.806960] (navigation_node_two) StdoutLine: {'line': b'Installing nav_to_bottle script to /home/unitree/106a_final/install/navigation_node_two/lib/navigation_node_two\n'}
+[2.807686] (navigation_node_two) StdoutLine: {'line': b"writing list of installed files to '/home/unitree/106a_final/build/navigation_node_two/install.log'\n"}
+[2.816274] (-) TimerEvent: {}
+[2.863031] (navigation_node_two) CommandEnded: {'returncode': 0}
+[2.917157] (-) TimerEvent: {}
+[3.018605] (-) TimerEvent: {}
+[3.119361] (-) TimerEvent: {}
+[3.141606] (navigation_node_two) JobEnded: {'identifier': 'navigation_node_two', 'rc': 0}
+[3.143035] (-) EventReactorShutdown: {}

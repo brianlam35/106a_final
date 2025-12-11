@@ -1,0 +1,1312 @@
+[0.000000] (-) TimerEvent: {}
+[0.000749] (-) JobUnselected: {'identifier': 'arm_control'}
+[0.000933] (-) JobUnselected: {'identifier': 'arm_driver'}
+[0.001298] (-) JobUnselected: {'identifier': 'aruco_node'}
+[0.001574] (-) JobUnselected: {'identifier': 'navigation_node'}
+[0.001721] (-) JobUnselected: {'identifier': 'navigation_node_two'}
+[0.001763] (-) JobUnselected: {'identifier': 'vision_node'}
+[0.001801] (realsense2_camera_msgs) JobQueued: {'identifier': 'realsense2_camera_msgs', 'dependencies': OrderedDict()}
+[0.001842] (realsense2_camera) JobQueued: {'identifier': 'realsense2_camera', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/unitree/106a_final/install/realsense2_camera_msgs')])}
+[0.001884] (realsense2_description) JobQueued: {'identifier': 'realsense2_description', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/unitree/106a_final/install/realsense2_camera_msgs')])}
+[0.001921] (realsense2_camera_msgs) JobStarted: {'identifier': 'realsense2_camera_msgs'}
+[0.099877] (-) TimerEvent: {}
+[0.200368] (-) TimerEvent: {}
+[0.301228] (-) TimerEvent: {}
+[0.402271] (-) TimerEvent: {}
+[0.418347] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'cmake'}
+[0.419428] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/unitree/106a_final/src/realsense-ros/realsense2_camera_msgs', '-DCMAKE_INSTALL_PREFIX=/home/unitree/106a_final/install/realsense2_camera_msgs'], 'cwd': '/home/unitree/106a_final/build/realsense2_camera_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_AGENT_PID', '2935'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree/106a_final/src/realsense-ros'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2765'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/unitree/106a_final/install:/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('JOURNAL_STREAM', '7:68959'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'unitree'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/unitree/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2970,unix/ubuntu:/tmp/.ICE-unix/2970'), ('INVOCATION_ID', 'a98f4262bfd44a28b8d5b3913eb806a5'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d8bede9_e990_407e_b9b6_2208b29c6af9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/aruco_node:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/unitree/106a_final/build/realsense2_camera_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages:/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/aruco_node:/opt/ros/foxy')]), 'shell': False}
+[0.502505] (-) TimerEvent: {}
+[0.603265] (-) TimerEvent: {}
+[0.611238] (realsense2_camera_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.703436] (-) TimerEvent: {}
+[0.757211] (realsense2_camera_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.770867] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.803598] (-) TimerEvent: {}
+[0.902510] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.903696] (-) TimerEvent: {}
+[0.906226] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.003892] (-) TimerEvent: {}
+[1.042719] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.074267] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.075154] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.081988] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[1.104019] (-) TimerEvent: {}
+[1.204614] (-) TimerEvent: {}
+[1.223868] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[1.227605] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.304793] (-) TimerEvent: {}
+[1.373497] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.404888] (-) TimerEvent: {}
+[1.408315] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.409404] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.422363] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[1.484563] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[1.485377] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.505053] (-) TimerEvent: {}
+[1.605591] (-) TimerEvent: {}
+[1.706165] (-) TimerEvent: {}
+[1.806708] (-) TimerEvent: {}
+[1.907343] (-) TimerEvent: {}
+[1.937063] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[1.946193] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.961067] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[2.007427] (-) TimerEvent: {}
+[2.107959] (-) TimerEvent: {}
+[2.165071] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[2.208100] (-) TimerEvent: {}
+[2.218247] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[2.308273] (-) TimerEvent: {}
+[2.373906] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.408447] (-) TimerEvent: {}
+[2.427618] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)\n'}
+[2.455470] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)\n'}
+[2.508551] (-) TimerEvent: {}
+[2.536786] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[2.608697] (-) TimerEvent: {}
+[2.709302] (-) TimerEvent: {}
+[2.809917] (-) TimerEvent: {}
+[2.869259] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.9.8 (/opt/ros/foxy/share/ament_cmake_cppcheck/cmake)\n'}
+[2.873627] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.9.8 (/opt/ros/foxy/share/ament_cmake_cpplint/cmake)\n'}
+[2.878018] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.9.8 (/opt/ros/foxy/share/ament_cmake_uncrustify/cmake)\n'}
+[2.883168] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[2.909985] (-) TimerEvent: {}
+[3.010450] (-) TimerEvent: {}
+[3.111068] (-) TimerEvent: {}
+[3.211704] (-) TimerEvent: {}
+[3.212260] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.311862] (-) TimerEvent: {}
+[3.324923] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.382371] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[3.386172] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[3.411942] (-) TimerEvent: {}
+[3.448930] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[3.449528] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.449758] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[3.449930] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so\n'}
+[3.500080] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.512040] (-) TimerEvent: {}
+[3.612577] (-) TimerEvent: {}
+[3.632047] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.9.8 (/opt/ros/foxy/share/ament_cmake_flake8/cmake)\n'}
+[3.636438] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.9.8 (/opt/ros/foxy/share/ament_cmake_pep257/cmake)\n'}
+[3.661876] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.712688] (-) TimerEvent: {}
+[3.751673] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[3.778248] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/unitree/106a_final/build/realsense2_camera_msgs\n'}
+[3.802694] (realsense2_camera_msgs) CommandEnded: {'returncode': 0}
+[3.804700] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'build'}
+[3.806127] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/unitree/106a_final/build/realsense2_camera_msgs', '--', '-j4', '-l4'], 'cwd': '/home/unitree/106a_final/build/realsense2_camera_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_AGENT_PID', '2935'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree/106a_final/src/realsense-ros'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2765'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/unitree/106a_final/install:/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('JOURNAL_STREAM', '7:68959'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'unitree'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/unitree/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2970,unix/ubuntu:/tmp/.ICE-unix/2970'), ('INVOCATION_ID', 'a98f4262bfd44a28b8d5b3913eb806a5'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d8bede9_e990_407e_b9b6_2208b29c6af9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/aruco_node:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/unitree/106a_final/build/realsense2_camera_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages:/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/aruco_node:/opt/ros/foxy')]), 'shell': False}
+[3.813095] (-) TimerEvent: {}
+[3.894069] (realsense2_camera_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.894633] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realsense2_camera_msgs__cpp\x1b[0m\n'}
+[3.913262] (-) TimerEvent: {}
+[3.917674] (realsense2_camera_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.013398] (-) TimerEvent: {}
+[4.114004] (-) TimerEvent: {}
+[4.214592] (-) TimerEvent: {}
+[4.315200] (-) TimerEvent: {}
+[4.415758] (-) TimerEvent: {}
+[4.516326] (-) TimerEvent: {}
+[4.616886] (-) TimerEvent: {}
+[4.717443] (-) TimerEvent: {}
+[4.818112] (-) TimerEvent: {}
+[4.873154] (realsense2_camera_msgs) StdoutLine: {'line': b'[  3%] Built target realsense2_camera_msgs__cpp\n'}
+[4.905471] (realsense2_camera_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.906012] (realsense2_camera_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.918262] (-) TimerEvent: {}
+[4.930315] (realsense2_camera_msgs) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[4.946918] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realsense2_camera_msgs__rosidl_generator_c\x1b[0m\n'}
+[4.986692] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/msg/detail/imu_info__functions.c.o\x1b[0m\n'}
+[5.018437] (-) TimerEvent: {}
+[5.107031] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/msg/detail/extrinsics__functions.c.o\x1b[0m\n'}
+[5.118580] (-) TimerEvent: {}
+[5.212838] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/msg/detail/metadata__functions.c.o\x1b[0m\n'}
+[5.218720] (-) TimerEvent: {}
+[5.312577] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/srv/detail/device_info__functions.c.o\x1b[0m\n'}
+[5.318869] (-) TimerEvent: {}
+[5.419483] (-) TimerEvent: {}
+[5.437330] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library librealsense2_camera_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[5.519237] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 18%] Built target realsense2_camera_msgs__rosidl_generator_c\n'}
+[5.519681] (-) TimerEvent: {}
+[5.544411] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.619896] (-) TimerEvent: {}
+[5.703973] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realsense2_camera_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[5.720080] (-) TimerEvent: {}
+[5.739144] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/msg/imu_info__type_support.cpp.o\x1b[0m\n'}
+[5.814754] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[5.820204] (-) TimerEvent: {}
+[5.847432] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/imu_info__type_support.cpp.o\x1b[0m\n'}
+[5.873473] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[5.917927] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/msg/detail/dds_fastrtps/imu_info__type_support.cpp.o\x1b[0m\n'}
+[5.920344] (-) TimerEvent: {}
+[6.021165] (-) TimerEvent: {}
+[6.122083] (-) TimerEvent: {}
+[6.223061] (-) TimerEvent: {}
+[6.324005] (-) TimerEvent: {}
+[6.425036] (-) TimerEvent: {}
+[6.443298] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/msg/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[6.492147] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[6.498344] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realsense2_camera_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[6.525238] (-) TimerEvent: {}
+[6.533153] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/msg/detail/imu_info__type_support.c.o\x1b[0m\n'}
+[6.604921] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/msg/detail/extrinsics__type_support.c.o\x1b[0m\n'}
+[6.625436] (-) TimerEvent: {}
+[6.676183] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/msg/detail/metadata__type_support.c.o\x1b[0m\n'}
+[6.725649] (-) TimerEvent: {}
+[6.749048] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/srv/detail/device_info__type_support.c.o\x1b[0m\n'}
+[6.820147] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/msg/detail/dds_fastrtps/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[6.825073] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking C shared library librealsense2_camera_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[6.825715] (-) TimerEvent: {}
+[6.893740] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 40%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c\n'}
+[6.917254] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/msg/detail/dds_fastrtps/metadata__type_support.cpp.o\x1b[0m\n'}
+[6.925943] (-) TimerEvent: {}
+[7.026903] (-) TimerEvent: {}
+[7.128208] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/msg/metadata__type_support.cpp.o\x1b[0m\n'}
+[7.128775] (-) TimerEvent: {}
+[7.146266] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/metadata__type_support.cpp.o\x1b[0m\n'}
+[7.229017] (-) TimerEvent: {}
+[7.329771] (-) TimerEvent: {}
+[7.430548] (-) TimerEvent: {}
+[7.531351] (-) TimerEvent: {}
+[7.632127] (-) TimerEvent: {}
+[7.714899] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/srv/detail/device_info__type_support.cpp.o\x1b[0m\n'}
+[7.732317] (-) TimerEvent: {}
+[7.737633] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/srv/device_info__type_support.cpp.o\x1b[0m\n'}
+[7.809781] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/srv/detail/dds_fastrtps/device_info__type_support.cpp.o\x1b[0m\n'}
+[7.815139] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 52%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.832476] (-) TimerEvent: {}
+[7.933108] (-) TimerEvent: {}
+[8.033746] (-) TimerEvent: {}
+[8.134439] (-) TimerEvent: {}
+[8.235170] (-) TimerEvent: {}
+[8.335846] (-) TimerEvent: {}
+[8.337557] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[8.338385] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[8.429362] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 56%] Built target realsense2_camera_msgs__rosidl_typesupport_cpp\n'}
+[8.435994] (-) TimerEvent: {}
+[8.490343] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 56%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp\n'}
+[8.536196] (-) TimerEvent: {}
+[8.540640] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realsense2_camera_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[8.569657] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/msg/imu_info__type_support.cpp.o\x1b[0m\n'}
+[8.570174] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/msg/metadata__type_support.cpp.o\x1b[0m\n'}
+[8.573992] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/msg/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[8.635370] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/srv/device_info__type_support.cpp.o\x1b[0m\n'}
+[8.636260] (-) TimerEvent: {}
+[8.700063] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[8.736479] (-) TimerEvent: {}
+[8.775834] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 65%] Built target realsense2_camera_msgs__rosidl_typesupport_c\n'}
+[8.799331] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[8.836657] (-) TimerEvent: {}
+[8.937332] (-) TimerEvent: {}
+[8.952153] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 67%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[8.974194] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 69%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[9.037485] (-) TimerEvent: {}
+[9.138045] (-) TimerEvent: {}
+[9.238592] (-) TimerEvent: {}
+[9.339176] (-) TimerEvent: {}
+[9.439772] (-) TimerEvent: {}
+[9.540322] (-) TimerEvent: {}
+[9.640864] (-) TimerEvent: {}
+[9.741457] (-) TimerEvent: {}
+[9.766007] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[9.805779] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/metadata__type_support_c.cpp.o\x1b[0m\n'}
+[9.806642] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/imu_info__type_support_c.cpp.o\x1b[0m\n'}
+[9.808877] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/extrinsics__type_support_c.cpp.o\x1b[0m\n'}
+[9.809433] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/srv/detail/device_info__type_support_c.cpp.o\x1b[0m\n'}
+[9.841654] (-) TimerEvent: {}
+[9.942418] (-) TimerEvent: {}
+[10.043204] (-) TimerEvent: {}
+[10.143972] (-) TimerEvent: {}
+[10.244740] (-) TimerEvent: {}
+[10.345537] (-) TimerEvent: {}
+[10.446314] (-) TimerEvent: {}
+[10.547180] (-) TimerEvent: {}
+[10.639649] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[10.647261] (-) TimerEvent: {}
+[10.747802] (-) TimerEvent: {}
+[10.786948] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 78%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c\n'}
+[10.807706] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realsense2_camera_msgs\x1b[0m\n'}
+[10.829111] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 78%] Built target realsense2_camera_msgs\n'}
+[10.847933] (-) TimerEvent: {}
+[10.849564] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realsense2_camera_msgs__py\x1b[0m\n'}
+[10.871291] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[10.948097] (-) TimerEvent: {}
+[11.048670] (-) TimerEvent: {}
+[11.149224] (-) TimerEvent: {}
+[11.249795] (-) TimerEvent: {}
+[11.350369] (-) TimerEvent: {}
+[11.450934] (-) TimerEvent: {}
+[11.551475] (-) TimerEvent: {}
+[11.652054] (-) TimerEvent: {}
+[11.752651] (-) TimerEvent: {}
+[11.853194] (-) TimerEvent: {}
+[11.953703] (-) TimerEvent: {}
+[12.054241] (-) TimerEvent: {}
+[12.154765] (-) TimerEvent: {}
+[12.255287] (-) TimerEvent: {}
+[12.355849] (-) TimerEvent: {}
+[12.396510] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 80%] Built target realsense2_camera_msgs__py\n'}
+[12.417330] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realsense2_camera_msgs__python\x1b[0m\n'}
+[12.455965] (-) TimerEvent: {}
+[12.476258] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__python.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_metadata_s.c.o\x1b[0m\n'}
+[12.476904] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__python.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_imu_info_s.c.o\x1b[0m\n'}
+[12.477076] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__python.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_extrinsics_s.c.o\x1b[0m\n'}
+[12.484703] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__python.dir/rosidl_generator_py/realsense2_camera_msgs/srv/_device_info_s.c.o\x1b[0m\n'}
+[12.556180] (-) TimerEvent: {}
+[12.656902] (-) TimerEvent: {}
+[12.679741] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/librealsense2_camera_msgs__python.so\x1b[0m\n'}
+[12.757082] (-) TimerEvent: {}
+[12.759021] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 89%] Built target realsense2_camera_msgs__python\n'}
+[12.779569] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[12.780161] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realsense2_camera_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[12.780336] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[12.815567] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[12.816095] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[12.822926] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[12.857261] (-) TimerEvent: {}
+[12.958301] (-) TimerEvent: {}
+[12.990726] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[12.991277] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[13.004591] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[13.058494] (-) TimerEvent: {}
+[13.062889] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[13.063431] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target realsense2_camera_msgs__rosidl_typesupport_c__pyext\n'}
+[13.124847] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[13.150687] (realsense2_camera_msgs) CommandEnded: {'returncode': 0}
+[13.153489] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'install'}
+[13.158656] (-) TimerEvent: {}
+[13.177516] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/unitree/106a_final/build/realsense2_camera_msgs'], 'cwd': '/home/unitree/106a_final/build/realsense2_camera_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_AGENT_PID', '2935'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree/106a_final/src/realsense-ros'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2765'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/unitree/106a_final/install:/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('JOURNAL_STREAM', '7:68959'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'unitree'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/unitree/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2970,unix/ubuntu:/tmp/.ICE-unix/2970'), ('INVOCATION_ID', 'a98f4262bfd44a28b8d5b3913eb806a5'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d8bede9_e990_407e_b9b6_2208b29c6af9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/aruco_node:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/unitree/106a_final/build/realsense2_camera_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages:/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/aruco_node:/opt/ros/foxy')]), 'shell': False}
+[13.201804] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.202342] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/ament_index/resource_index/rosidl_interfaces/realsense2_camera_msgs\n'}
+[13.202549] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs\n'}
+[13.202722] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv\n'}
+[13.202889] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/device_info.h\n'}
+[13.203072] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail\n'}
+[13.203252] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__functions.h\n'}
+[13.203428] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__struct.h\n'}
+[13.203598] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__type_support.h\n'}
+[13.203802] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__functions.c\n'}
+[13.204001] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg\n'}
+[13.204145] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/imu_info.h\n'}
+[13.204319] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[13.204505] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/extrinsics.h\n'}
+[13.204684] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/metadata.h\n'}
+[13.204858] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail\n'}
+[13.205013] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__type_support.h\n'}
+[13.205181] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__struct.h\n'}
+[13.205369] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__functions.h\n'}
+[13.205569] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__functions.c\n'}
+[13.205767] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__type_support.h\n'}
+[13.205955] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__struct.h\n'}
+[13.206139] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__functions.c\n'}
+[13.206330] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__functions.h\n'}
+[13.206543] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__functions.c\n'}
+[13.206735] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__type_support.h\n'}
+[13.206915] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__functions.h\n'}
+[13.207130] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__struct.h\n'}
+[13.207514] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/library_path.sh\n'}
+[13.207799] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/library_path.dsv\n'}
+[13.208240] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_c.so\n'}
+[13.208914] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_c.so" to ""\n'}
+[13.209073] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs\n'}
+[13.209250] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv\n'}
+[13.209398] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail\n'}
+[13.209565] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_fastrtps_c.h\n'}
+[13.209685] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg\n'}
+[13.209848] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[13.209983] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail\n'}
+[13.210099] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_c.h\n'}
+[13.210382] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_c.h\n'}
+[13.210509] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_c.h\n'}
+[13.210744] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[13.211210] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[13.211428] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs\n'}
+[13.211599] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv\n'}
+[13.211764] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail\n'}
+[13.211911] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.212054] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/dds_fastrtps\n'}
+[13.212202] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg\n'}
+[13.212347] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[13.212496] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail\n'}
+[13.212704] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.212885] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.213005] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.213180] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/dds_fastrtps\n'}
+[13.213301] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[13.213829] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[13.214095] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs\n'}
+[13.214272] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv\n'}
+[13.214440] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail\n'}
+[13.214625] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__type_support.c\n'}
+[13.214756] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_introspection_c.h\n'}
+[13.214934] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg\n'}
+[13.215133] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[13.215265] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail\n'}
+[13.215444] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_c.h\n'}
+[13.215600] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__type_support.c\n'}
+[13.215782] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_c.h\n'}
+[13.215976] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__type_support.c\n'}
+[13.216096] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_c.h\n'}
+[13.216210] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__type_support.c\n'}
+[13.216363] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_c.so\n'}
+[13.216866] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[13.217077] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_c.so\n'}
+[13.217624] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_c.so" to ""\n'}
+[13.217784] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs\n'}
+[13.217959] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv\n'}
+[13.218096] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/device_info.hpp\n'}
+[13.218245] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail\n'}
+[13.218386] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__type_support.hpp\n'}
+[13.218506] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__traits.hpp\n'}
+[13.218650] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__builder.hpp\n'}
+[13.218803] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__struct.hpp\n'}
+[13.218976] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg\n'}
+[13.219382] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/imu_info.hpp\n'}
+[13.219568] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/extrinsics.hpp\n'}
+[13.219735] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail\n'}
+[13.219878] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__traits.hpp\n'}
+[13.220028] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__struct.hpp\n'}
+[13.220207] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__builder.hpp\n'}
+[13.220397] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__struct.hpp\n'}
+[13.220592] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__type_support.hpp\n'}
+[13.220776] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__type_support.hpp\n'}
+[13.220969] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__traits.hpp\n'}
+[13.221157] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__struct.hpp\n'}
+[13.221352] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__type_support.hpp\n'}
+[13.221537] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__builder.hpp\n'}
+[13.221746] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__traits.hpp\n'}
+[13.221934] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__builder.hpp\n'}
+[13.222122] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[13.222303] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/metadata.hpp\n'}
+[13.222564] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs\n'}
+[13.222730] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv\n'}
+[13.222893] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail\n'}
+[13.223080] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.223238] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/srv/detail/device_info__type_support.cpp\n'}
+[13.223412] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg\n'}
+[13.223553] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail\n'}
+[13.223672] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.223812] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/metadata__type_support.cpp\n'}
+[13.223969] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.224084] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__type_support.cpp\n'}
+[13.224238] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.224396] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/include/realsense2_camera_msgs/msg/detail/imu_info__type_support.cpp\n'}
+[13.224700] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[13.225421] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[13.225643] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_cpp.so\n'}
+[13.226228] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[13.226386] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/pythonpath.sh\n'}
+[13.226654] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/pythonpath.dsv\n'}
+[13.227088] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/__init__.py\n'}
+[13.258721] (-) TimerEvent: {}
+[13.286607] (realsense2_camera_msgs) StdoutLine: {'line': b"Compiling '/home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/__init__.py'...\n"}
+[13.296162] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/msg\n'}
+[13.296591] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/msg/_metadata.py\n'}
+[13.296771] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/msg/_metadata_s.c\n'}
+[13.296939] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/msg/__init__.py\n'}
+[13.297118] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/msg/_extrinsics.py\n'}
+[13.297320] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/msg/_extrinsics_s.c\n'}
+[13.297497] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/msg/_imu_info_s.c\n'}
+[13.297778] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/msg/_imu_info.py\n'}
+[13.298070] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/srv\n'}
+[13.298318] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/srv/_device_info_s.c\n'}
+[13.298497] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/srv/__init__.py\n'}
+[13.298756] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/srv/_device_info.py\n'}
+[13.299409] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[13.300411] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[13.300866] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[13.301864] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[13.302288] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[13.303199] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[13.303423] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__python.so\n'}
+[13.304018] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/unitree/106a_final/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__python.so" to ""\n'}
+[13.304246] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/IMUInfo.idl\n'}
+[13.304515] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Extrinsics.idl\n'}
+[13.304784] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Metadata.idl\n'}
+[13.305117] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo.idl\n'}
+[13.305383] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/IMUInfo.msg\n'}
+[13.305643] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Extrinsics.msg\n'}
+[13.305898] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Metadata.msg\n'}
+[13.306157] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo.srv\n'}
+[13.306412] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo_Request.msg\n'}
+[13.306660] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo_Response.msg\n'}
+[13.307039] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/ament_index/resource_index/package_run_dependencies/realsense2_camera_msgs\n'}
+[13.307394] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/ament_index/resource_index/parent_prefix_path/realsense2_camera_msgs\n'}
+[13.307690] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/ament_prefix_path.sh\n'}
+[13.307958] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/ament_prefix_path.dsv\n'}
+[13.308223] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/path.sh\n'}
+[13.308491] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/path.dsv\n'}
+[13.308751] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.bash\n'}
+[13.309049] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.sh\n'}
+[13.309282] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.zsh\n'}
+[13.309526] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.dsv\n'}
+[13.309775] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv\n'}
+[13.310105] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/ament_index/resource_index/packages/realsense2_camera_msgs\n'}
+[13.310528] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_generator_cExport.cmake\n'}
+[13.310825] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[13.311239] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[13.311535] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[13.311928] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cExport.cmake\n'}
+[13.312208] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[13.312577] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_generator_cppExport.cmake\n'}
+[13.312987] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[13.313295] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[13.313664] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[13.313969] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[13.314240] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[13.314500] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[13.314771] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[13.315062] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[13.315359] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[13.315676] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[13.316024] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[13.316223] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgsConfig.cmake\n'}
+[13.316394] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgsConfig-version.cmake\n'}
+[13.316613] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.xml\n'}
+[13.321781] (realsense2_camera_msgs) CommandEnded: {'returncode': 0}
+[13.359028] (-) TimerEvent: {}
+[13.459670] (-) TimerEvent: {}
+[13.560612] (-) TimerEvent: {}
+[13.661326] (-) TimerEvent: {}
+[13.762211] (-) TimerEvent: {}
+[13.862829] (-) TimerEvent: {}
+[13.963466] (-) TimerEvent: {}
+[14.065241] (-) TimerEvent: {}
+[14.165997] (-) TimerEvent: {}
+[14.257053] (realsense2_camera_msgs) JobEnded: {'identifier': 'realsense2_camera_msgs', 'rc': 0}
+[14.258137] (realsense2_camera) JobStarted: {'identifier': 'realsense2_camera'}
+[14.266261] (-) TimerEvent: {}
+[14.366819] (-) TimerEvent: {}
+[14.467933] (-) TimerEvent: {}
+[14.569016] (-) TimerEvent: {}
+[14.667055] (realsense2_description) JobStarted: {'identifier': 'realsense2_description'}
+[14.669110] (-) TimerEvent: {}
+[14.769655] (-) TimerEvent: {}
+[14.870616] (-) TimerEvent: {}
+[14.971457] (-) TimerEvent: {}
+[15.072633] (-) TimerEvent: {}
+[15.111717] (realsense2_camera) JobProgress: {'identifier': 'realsense2_camera', 'progress': 'cmake'}
+[15.112958] (realsense2_camera) Command: {'cmd': ['/usr/bin/cmake', '/home/unitree/106a_final/src/realsense-ros/realsense2_camera', '-DCMAKE_INSTALL_PREFIX=/home/unitree/106a_final/install/realsense2_camera'], 'cwd': '/home/unitree/106a_final/build/realsense2_camera', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_AGENT_PID', '2935'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs/lib:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree/106a_final/src/realsense-ros'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2765'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/unitree/106a_final/install:/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('JOURNAL_STREAM', '7:68959'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'unitree'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/unitree/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2970,unix/ubuntu:/tmp/.ICE-unix/2970'), ('INVOCATION_ID', 'a98f4262bfd44a28b8d5b3913eb806a5'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d8bede9_e990_407e_b9b6_2208b29c6af9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/aruco_node:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/unitree/106a_final/build/realsense2_camera'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages:/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/aruco_node:/opt/ros/foxy')]), 'shell': False}
+[15.121541] (realsense2_description) JobProgress: {'identifier': 'realsense2_description', 'progress': 'cmake'}
+[15.122540] (realsense2_description) Command: {'cmd': ['/usr/bin/cmake', '/home/unitree/106a_final/src/realsense-ros/realsense2_description', '-DCMAKE_INSTALL_PREFIX=/home/unitree/106a_final/install/realsense2_description'], 'cwd': '/home/unitree/106a_final/build/realsense2_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_AGENT_PID', '2935'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs/lib:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree/106a_final/src/realsense-ros'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2765'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/unitree/106a_final/install:/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('JOURNAL_STREAM', '7:68959'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'unitree'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/unitree/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2970,unix/ubuntu:/tmp/.ICE-unix/2970'), ('INVOCATION_ID', 'a98f4262bfd44a28b8d5b3913eb806a5'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d8bede9_e990_407e_b9b6_2208b29c6af9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/aruco_node:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/unitree/106a_final/build/realsense2_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages:/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/aruco_node:/opt/ros/foxy')]), 'shell': False}
+[15.172882] (-) TimerEvent: {}
+[15.221356] (realsense2_camera) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[15.224425] (realsense2_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[15.273042] (-) TimerEvent: {}
+[15.314951] (realsense2_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[15.315501] (realsense2_camera) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[15.322917] (realsense2_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[15.323291] (realsense2_camera) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[15.373210] (-) TimerEvent: {}
+[15.451396] (realsense2_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[15.451919] (realsense2_camera) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[15.453093] (realsense2_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[15.453375] (realsense2_camera) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[15.473375] (-) TimerEvent: {}
+[15.574051] (-) TimerEvent: {}
+[15.587137] (realsense2_camera) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[15.587815] (realsense2_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[15.615234] (realsense2_camera) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[15.615693] (realsense2_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[15.615987] (realsense2_camera) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[15.616159] (realsense2_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[15.620599] (realsense2_camera) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[15.621068] (realsense2_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[15.674232] (-) TimerEvent: {}
+[15.764933] (realsense2_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[15.765472] (realsense2_camera) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[15.767397] (realsense2_camera) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[15.767716] (realsense2_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[15.774303] (-) TimerEvent: {}
+[15.874860] (-) TimerEvent: {}
+[15.916792] (realsense2_camera) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[15.917575] (realsense2_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[15.947191] (realsense2_camera) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[15.947568] (realsense2_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[15.948151] (realsense2_camera) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[15.948476] (realsense2_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[15.949765] (realsense2_camera) StdoutLine: {'line': b'-- Create Release Build.\n'}
+[15.954074] (realsense2_camera) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[15.954307] (realsense2_description) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[15.975021] (-) TimerEvent: {}
+[16.014863] (realsense2_description) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[16.015417] (realsense2_description) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[16.015649] (realsense2_camera) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[16.015876] (realsense2_camera) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[16.075175] (-) TimerEvent: {}
+[16.175799] (-) TimerEvent: {}
+[16.276375] (-) TimerEvent: {}
+[16.376976] (-) TimerEvent: {}
+[16.459553] (realsense2_camera) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)\n'}
+[16.477094] (-) TimerEvent: {}
+[16.511553] (realsense2_camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[16.524701] (realsense2_camera) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[16.572737] (realsense2_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[16.576233] (realsense2_description) StdoutLine: {'line': b'-- Generating done\n'}
+[16.577155] (-) TimerEvent: {}
+[16.579041] (realsense2_description) StdoutLine: {'line': b'-- Build files have been written to: /home/unitree/106a_final/build/realsense2_description\n'}
+[16.586851] (realsense2_description) CommandEnded: {'returncode': 0}
+[16.588211] (realsense2_description) JobProgress: {'identifier': 'realsense2_description', 'progress': 'build'}
+[16.588734] (realsense2_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/unitree/106a_final/build/realsense2_description', '--', '-j4', '-l4'], 'cwd': '/home/unitree/106a_final/build/realsense2_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_AGENT_PID', '2935'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs/lib:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree/106a_final/src/realsense-ros'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2765'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/unitree/106a_final/install:/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('JOURNAL_STREAM', '7:68959'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'unitree'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/unitree/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2970,unix/ubuntu:/tmp/.ICE-unix/2970'), ('INVOCATION_ID', 'a98f4262bfd44a28b8d5b3913eb806a5'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d8bede9_e990_407e_b9b6_2208b29c6af9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/aruco_node:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/unitree/106a_final/build/realsense2_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages:/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/aruco_node:/opt/ros/foxy')]), 'shell': False}
+[16.676534] (realsense2_description) CommandEnded: {'returncode': 0}
+[16.677656] (-) TimerEvent: {}
+[16.678835] (realsense2_description) JobProgress: {'identifier': 'realsense2_description', 'progress': 'install'}
+[16.679466] (realsense2_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/unitree/106a_final/build/realsense2_description'], 'cwd': '/home/unitree/106a_final/build/realsense2_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_AGENT_PID', '2935'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs/lib:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree/106a_final/src/realsense-ros'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2765'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/unitree/106a_final/install:/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('JOURNAL_STREAM', '7:68959'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'unitree'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/unitree/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2970,unix/ubuntu:/tmp/.ICE-unix/2970'), ('INVOCATION_ID', 'a98f4262bfd44a28b8d5b3913eb806a5'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d8bede9_e990_407e_b9b6_2208b29c6af9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/aruco_node:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/unitree/106a_final/build/realsense2_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages:/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/aruco_node:/opt/ros/foxy')]), 'shell': False}
+[16.689774] (realsense2_camera) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[16.704390] (realsense2_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.704895] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/launch\n'}
+[16.705131] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/launch/launch_utils.py\n'}
+[16.705569] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/launch/view_model.launch.py\n'}
+[16.706250] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/meshes\n'}
+[16.706436] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/meshes/plug_collision.stl\n'}
+[16.706669] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/meshes/l515.dae\n'}
+[16.747467] (realsense2_camera) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[16.777843] (-) TimerEvent: {}
+[16.778584] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/meshes/plug.stl\n'}
+[16.779600] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/meshes/d455.stl\n'}
+[16.785583] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/meshes/d415.stl\n'}
+[16.831018] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/meshes/d435.dae\n'}
+[16.863743] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/rviz\n'}
+[16.864278] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/rviz/urdf.rviz\n'}
+[16.864493] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/urdf\n'}
+[16.864700] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/urdf/test_d435_multiple_cameras.urdf.xacro\n'}
+[16.865004] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/urdf/test_d455_camera.urdf.xacro\n'}
+[16.865308] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/urdf/test_r410_camera.urdf.xacro\n'}
+[16.865553] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/urdf/_d435.urdf.xacro\n'}
+[16.865880] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/urdf/_d435i_imu_modules.urdf.xacro\n'}
+[16.866192] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/urdf/_l515.urdf.xacro\n'}
+[16.866510] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/urdf/_d455.urdf.xacro\n'}
+[16.866812] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/urdf/_materials.urdf.xacro\n'}
+[16.867099] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/urdf/_d415.urdf.xacro\n'}
+[16.867407] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/urdf/test_d435i_camera.urdf.xacro\n'}
+[16.867660] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/urdf/_r410.urdf.xacro\n'}
+[16.867974] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/urdf/_d435i.urdf.xacro\n'}
+[16.868246] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/urdf/_usb_plug.urdf.xacro\n'}
+[16.868540] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/urdf/_r430.urdf.xacro\n'}
+[16.868805] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/urdf/test_d435_camera.urdf.xacro\n'}
+[16.869040] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/urdf/test_r430_camera.urdf.xacro\n'}
+[16.869284] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/urdf/test_d415_camera.urdf.xacro\n'}
+[16.869526] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/urdf/test_l515_camera.urdf.xacro\n'}
+[16.870074] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/ament_index/resource_index/package_run_dependencies/realsense2_description\n'}
+[16.870449] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/ament_index/resource_index/parent_prefix_path/realsense2_description\n'}
+[16.870823] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/environment/ament_prefix_path.sh\n'}
+[16.871124] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/environment/ament_prefix_path.dsv\n'}
+[16.871393] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/environment/path.sh\n'}
+[16.871678] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/environment/path.dsv\n'}
+[16.871969] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/local_setup.bash\n'}
+[16.872197] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/local_setup.sh\n'}
+[16.872455] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/local_setup.zsh\n'}
+[16.872709] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/local_setup.dsv\n'}
+[16.872968] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/package.dsv\n'}
+[16.873306] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/ament_index/resource_index/packages/realsense2_description\n'}
+[16.873623] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/cmake/realsense2_descriptionConfig.cmake\n'}
+[16.873821] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/cmake/realsense2_descriptionConfig-version.cmake\n'}
+[16.874067] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_description/share/realsense2_description/package.xml\n'}
+[16.878230] (realsense2_description) CommandEnded: {'returncode': 0}
+[16.879237] (-) TimerEvent: {}
+[16.898308] (realsense2_camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[16.949222] (realsense2_camera) StdoutLine: {'line': b'-- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)\n'}
+[16.979473] (-) TimerEvent: {}
+[17.080068] (-) TimerEvent: {}
+[17.181225] (-) TimerEvent: {}
+[17.231887] (realsense2_camera) StdoutLine: {'line': b'-- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)\n'}
+[17.281419] (-) TimerEvent: {}
+[17.343045] (realsense2_camera) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[17.347093] (realsense2_camera) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[17.349590] (realsense2_camera) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[17.381650] (-) TimerEvent: {}
+[17.474191] (realsense2_description) JobEnded: {'identifier': 'realsense2_description', 'rc': 0}
+[17.481752] (-) TimerEvent: {}
+[17.488511] (realsense2_camera) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[17.489151] (realsense2_camera) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[17.581945] (-) TimerEvent: {}
+[17.626724] (realsense2_camera) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[17.627521] (realsense2_camera) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[17.682118] (-) TimerEvent: {}
+[17.745909] (realsense2_camera) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[17.746737] (realsense2_camera) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[17.782276] (-) TimerEvent: {}
+[17.882927] (-) TimerEvent: {}
+[17.889038] (realsense2_camera) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[17.892919] (realsense2_camera) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[17.983092] (-) TimerEvent: {}
+[18.083651] (-) TimerEvent: {}
+[18.184210] (-) TimerEvent: {}
+[18.258870] (realsense2_camera) StdoutLine: {'line': b'-- Found rclcpp_components: 2.4.3 (/opt/ros/foxy/share/rclcpp_components/cmake)\n'}
+[18.284317] (-) TimerEvent: {}
+[18.349690] (realsense2_camera) StdoutLine: {'line': b'-- Found realsense2_camera_msgs: 3.2.3 (/home/unitree/106a_final/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake)\n'}
+[18.384408] (-) TimerEvent: {}
+[18.413712] (realsense2_camera) StdoutLine: {'line': b'-- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)\n'}
+[18.436680] (realsense2_camera) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[18.484530] (-) TimerEvent: {}
+[18.565254] (realsense2_camera) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[18.584632] (-) TimerEvent: {}
+[18.685134] (-) TimerEvent: {}
+[18.785681] (-) TimerEvent: {}
+[18.886192] (-) TimerEvent: {}
+[18.986714] (-) TimerEvent: {}
+[19.055807] (realsense2_camera) StdoutLine: {'line': b'-- Found diagnostic_updater: 3.1.2 (/opt/ros/foxy/share/diagnostic_updater/cmake)\n'}
+[19.086834] (-) TimerEvent: {}
+[19.170121] (realsense2_camera) StdoutLine: {'line': b'-- Build for ROS2 Foxy\n'}
+[19.186908] (-) TimerEvent: {}
+[19.215913] (realsense2_camera) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[19.222059] (realsense2_camera) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[19.287062] (-) TimerEvent: {}
+[19.387672] (-) TimerEvent: {}
+[19.404580] (realsense2_camera) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[19.411048] (realsense2_camera) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[19.411571] (realsense2_camera) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/unitree/106a_final/src/realsense-ros/realsense2_camera/include\n'}
+[19.411781] (realsense2_camera) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[19.416092] (realsense2_camera) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[19.416353] (realsense2_camera) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[19.417838] (realsense2_camera) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[19.419920] (realsense2_camera) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[19.421896] (realsense2_camera) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[19.426223] (realsense2_camera) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[19.426423] (realsense2_camera) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[19.427716] (realsense2_camera) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[19.440429] (realsense2_camera) StdoutLine: {'line': b'-- Configuring done\n'}
+[19.487777] (-) TimerEvent: {}
+[19.506401] (realsense2_camera) StdoutLine: {'line': b'-- Generating done\n'}
+[19.533405] (realsense2_camera) StdoutLine: {'line': b'-- Build files have been written to: /home/unitree/106a_final/build/realsense2_camera\n'}
+[19.559902] (realsense2_camera) CommandEnded: {'returncode': 0}
+[19.561275] (realsense2_camera) JobProgress: {'identifier': 'realsense2_camera', 'progress': 'build'}
+[19.562271] (realsense2_camera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/unitree/106a_final/build/realsense2_camera', '--', '-j4', '-l4'], 'cwd': '/home/unitree/106a_final/build/realsense2_camera', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_AGENT_PID', '2935'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs/lib:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree/106a_final/src/realsense-ros'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2765'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/unitree/106a_final/install:/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('JOURNAL_STREAM', '7:68959'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'unitree'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/unitree/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2970,unix/ubuntu:/tmp/.ICE-unix/2970'), ('INVOCATION_ID', 'a98f4262bfd44a28b8d5b3913eb806a5'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d8bede9_e990_407e_b9b6_2208b29c6af9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/aruco_node:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/unitree/106a_final/build/realsense2_camera'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages:/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/aruco_node:/opt/ros/foxy')]), 'shell': False}
+[19.587982] (-) TimerEvent: {}
+[19.655591] (realsense2_camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realsense2_camera\x1b[0m\n'}
+[19.656070] (realsense2_camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realsense2_camera_node\x1b[0m\n'}
+[19.688128] (-) TimerEvent: {}
+[19.762746] (realsense2_camera) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_node.dir/rclcpp_components/node_main_realsense2_camera_node.cpp.o\x1b[0m\n'}
+[19.788297] (-) TimerEvent: {}
+[19.824932] (realsense2_camera) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o\x1b[0m\n'}
+[19.825449] (realsense2_camera) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o\x1b[0m\n'}
+[19.825619] (realsense2_camera) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o\x1b[0m\n'}
+[19.888557] (-) TimerEvent: {}
+[19.989309] (-) TimerEvent: {}
+[20.090092] (-) TimerEvent: {}
+[20.190911] (-) TimerEvent: {}
+[20.291729] (-) TimerEvent: {}
+[20.392494] (-) TimerEvent: {}
+[20.493214] (-) TimerEvent: {}
+[20.594021] (-) TimerEvent: {}
+[20.694836] (-) TimerEvent: {}
+[20.795667] (-) TimerEvent: {}
+[20.896445] (-) TimerEvent: {}
+[20.997235] (-) TimerEvent: {}
+[21.098084] (-) TimerEvent: {}
+[21.198902] (-) TimerEvent: {}
+[21.299736] (-) TimerEvent: {}
+[21.400507] (-) TimerEvent: {}
+[21.501319] (-) TimerEvent: {}
+[21.602165] (-) TimerEvent: {}
+[21.703028] (-) TimerEvent: {}
+[21.803841] (-) TimerEvent: {}
+[21.904616] (-) TimerEvent: {}
+[22.005353] (-) TimerEvent: {}
+[22.106146] (-) TimerEvent: {}
+[22.206926] (-) TimerEvent: {}
+[22.307766] (-) TimerEvent: {}
+[22.408577] (-) TimerEvent: {}
+[22.509334] (-) TimerEvent: {}
+[22.610208] (-) TimerEvent: {}
+[22.711057] (-) TimerEvent: {}
+[22.811817] (-) TimerEvent: {}
+[22.912593] (-) TimerEvent: {}
+[23.013385] (-) TimerEvent: {}
+[23.114165] (-) TimerEvent: {}
+[23.214879] (-) TimerEvent: {}
+[23.315654] (-) TimerEvent: {}
+[23.416401] (-) TimerEvent: {}
+[23.517162] (-) TimerEvent: {}
+[23.617942] (-) TimerEvent: {}
+[23.718756] (-) TimerEvent: {}
+[23.819564] (-) TimerEvent: {}
+[23.920318] (-) TimerEvent: {}
+[24.021086] (-) TimerEvent: {}
+[24.121822] (-) TimerEvent: {}
+[24.222559] (-) TimerEvent: {}
+[24.323312] (-) TimerEvent: {}
+[24.424061] (-) TimerEvent: {}
+[24.524853] (-) TimerEvent: {}
+[24.625652] (-) TimerEvent: {}
+[24.726438] (-) TimerEvent: {}
+[24.827511] (-) TimerEvent: {}
+[24.928532] (-) TimerEvent: {}
+[25.029380] (-) TimerEvent: {}
+[25.130302] (-) TimerEvent: {}
+[25.231135] (-) TimerEvent: {}
+[25.331903] (-) TimerEvent: {}
+[25.432673] (-) TimerEvent: {}
+[25.533528] (-) TimerEvent: {}
+[25.634320] (-) TimerEvent: {}
+[25.735139] (-) TimerEvent: {}
+[25.835884] (-) TimerEvent: {}
+[25.936636] (-) TimerEvent: {}
+[26.037422] (-) TimerEvent: {}
+[26.138176] (-) TimerEvent: {}
+[26.182608] (realsense2_camera) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX executable realsense2_camera_node\x1b[0m\n'}
+[26.238379] (-) TimerEvent: {}
+[26.339144] (-) TimerEvent: {}
+[26.440104] (-) TimerEvent: {}
+[26.468505] (realsense2_camera) StdoutLine: {'line': b'[ 62%] Built target realsense2_camera_node\n'}
+[26.494180] (realsense2_camera) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o\x1b[0m\n'}
+[26.540289] (-) TimerEvent: {}
+[26.641048] (-) TimerEvent: {}
+[26.741942] (-) TimerEvent: {}
+[26.842780] (-) TimerEvent: {}
+[26.943597] (-) TimerEvent: {}
+[27.044432] (-) TimerEvent: {}
+[27.145455] (-) TimerEvent: {}
+[27.246304] (-) TimerEvent: {}
+[27.347198] (-) TimerEvent: {}
+[27.447974] (-) TimerEvent: {}
+[27.548743] (-) TimerEvent: {}
+[27.649637] (-) TimerEvent: {}
+[27.750425] (-) TimerEvent: {}
+[27.851230] (-) TimerEvent: {}
+[27.952108] (-) TimerEvent: {}
+[28.052988] (-) TimerEvent: {}
+[28.154138] (-) TimerEvent: {}
+[28.254902] (-) TimerEvent: {}
+[28.355735] (-) TimerEvent: {}
+[28.456531] (-) TimerEvent: {}
+[28.557315] (-) TimerEvent: {}
+[28.658166] (-) TimerEvent: {}
+[28.758992] (-) TimerEvent: {}
+[28.859800] (-) TimerEvent: {}
+[28.960608] (-) TimerEvent: {}
+[29.061404] (-) TimerEvent: {}
+[29.162176] (-) TimerEvent: {}
+[29.262976] (-) TimerEvent: {}
+[29.363732] (-) TimerEvent: {}
+[29.464537] (-) TimerEvent: {}
+[29.565357] (-) TimerEvent: {}
+[29.666138] (-) TimerEvent: {}
+[29.766949] (-) TimerEvent: {}
+[29.867719] (-) TimerEvent: {}
+[29.968492] (-) TimerEvent: {}
+[30.069258] (-) TimerEvent: {}
+[30.170018] (-) TimerEvent: {}
+[30.270870] (-) TimerEvent: {}
+[30.371802] (-) TimerEvent: {}
+[30.472582] (-) TimerEvent: {}
+[30.573377] (-) TimerEvent: {}
+[30.674214] (-) TimerEvent: {}
+[30.775047] (-) TimerEvent: {}
+[30.875882] (-) TimerEvent: {}
+[30.976677] (-) TimerEvent: {}
+[31.077434] (-) TimerEvent: {}
+[31.178205] (-) TimerEvent: {}
+[31.278995] (-) TimerEvent: {}
+[31.379860] (-) TimerEvent: {}
+[31.480734] (-) TimerEvent: {}
+[31.581547] (-) TimerEvent: {}
+[31.682349] (-) TimerEvent: {}
+[31.783125] (-) TimerEvent: {}
+[31.883869] (-) TimerEvent: {}
+[31.984643] (-) TimerEvent: {}
+[32.085495] (-) TimerEvent: {}
+[32.186316] (-) TimerEvent: {}
+[32.287117] (-) TimerEvent: {}
+[32.387912] (-) TimerEvent: {}
+[32.488670] (-) TimerEvent: {}
+[32.589401] (-) TimerEvent: {}
+[32.690189] (-) TimerEvent: {}
+[32.790987] (-) TimerEvent: {}
+[32.891791] (-) TimerEvent: {}
+[32.992603] (-) TimerEvent: {}
+[33.093419] (-) TimerEvent: {}
+[33.194210] (-) TimerEvent: {}
+[33.295001] (-) TimerEvent: {}
+[33.395767] (-) TimerEvent: {}
+[33.496595] (-) TimerEvent: {}
+[33.597343] (-) TimerEvent: {}
+[33.698161] (-) TimerEvent: {}
+[33.798937] (-) TimerEvent: {}
+[33.899810] (-) TimerEvent: {}
+[34.000580] (-) TimerEvent: {}
+[34.101385] (-) TimerEvent: {}
+[34.202229] (-) TimerEvent: {}
+[34.303013] (-) TimerEvent: {}
+[34.403831] (-) TimerEvent: {}
+[34.504603] (-) TimerEvent: {}
+[34.605376] (-) TimerEvent: {}
+[34.706182] (-) TimerEvent: {}
+[34.806986] (-) TimerEvent: {}
+[34.907793] (-) TimerEvent: {}
+[34.943772] (realsense2_camera) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_param_backend_foxy.cpp.o\x1b[0m\n'}
+[35.007975] (-) TimerEvent: {}
+[35.109043] (-) TimerEvent: {}
+[35.210072] (-) TimerEvent: {}
+[35.311151] (-) TimerEvent: {}
+[35.412241] (-) TimerEvent: {}
+[35.513333] (-) TimerEvent: {}
+[35.614439] (-) TimerEvent: {}
+[35.715269] (-) TimerEvent: {}
+[35.816087] (-) TimerEvent: {}
+[35.916844] (-) TimerEvent: {}
+[36.017619] (-) TimerEvent: {}
+[36.118377] (-) TimerEvent: {}
+[36.219133] (-) TimerEvent: {}
+[36.319871] (-) TimerEvent: {}
+[36.420696] (-) TimerEvent: {}
+[36.521517] (-) TimerEvent: {}
+[36.622272] (-) TimerEvent: {}
+[36.723084] (-) TimerEvent: {}
+[36.823978] (-) TimerEvent: {}
+[36.924758] (-) TimerEvent: {}
+[37.025567] (-) TimerEvent: {}
+[37.126376] (-) TimerEvent: {}
+[37.227220] (-) TimerEvent: {}
+[37.328017] (-) TimerEvent: {}
+[37.428846] (-) TimerEvent: {}
+[37.529633] (-) TimerEvent: {}
+[37.630411] (-) TimerEvent: {}
+[37.731279] (-) TimerEvent: {}
+[37.832039] (-) TimerEvent: {}
+[37.932804] (-) TimerEvent: {}
+[38.033571] (-) TimerEvent: {}
+[38.134368] (-) TimerEvent: {}
+[38.235123] (-) TimerEvent: {}
+[38.335937] (-) TimerEvent: {}
+[38.436956] (-) TimerEvent: {}
+[38.537960] (-) TimerEvent: {}
+[38.639060] (-) TimerEvent: {}
+[38.740160] (-) TimerEvent: {}
+[38.841203] (-) TimerEvent: {}
+[38.942313] (-) TimerEvent: {}
+[39.043373] (-) TimerEvent: {}
+[39.144318] (-) TimerEvent: {}
+[39.245359] (-) TimerEvent: {}
+[39.346372] (-) TimerEvent: {}
+[39.447179] (-) TimerEvent: {}
+[39.547926] (-) TimerEvent: {}
+[39.648663] (-) TimerEvent: {}
+[39.749418] (-) TimerEvent: {}
+[39.850252] (-) TimerEvent: {}
+[39.951080] (-) TimerEvent: {}
+[40.051866] (-) TimerEvent: {}
+[40.152679] (-) TimerEvent: {}
+[40.253429] (-) TimerEvent: {}
+[40.354185] (-) TimerEvent: {}
+[40.454940] (-) TimerEvent: {}
+[40.555771] (-) TimerEvent: {}
+[40.656651] (-) TimerEvent: {}
+[40.757342] (-) TimerEvent: {}
+[40.858082] (-) TimerEvent: {}
+[40.958861] (-) TimerEvent: {}
+[41.059710] (-) TimerEvent: {}
+[41.160464] (-) TimerEvent: {}
+[41.261266] (-) TimerEvent: {}
+[41.362058] (-) TimerEvent: {}
+[41.462824] (-) TimerEvent: {}
+[41.563822] (-) TimerEvent: {}
+[41.664802] (-) TimerEvent: {}
+[41.765759] (-) TimerEvent: {}
+[41.866803] (-) TimerEvent: {}
+[41.967774] (-) TimerEvent: {}
+[42.068717] (-) TimerEvent: {}
+[42.169615] (-) TimerEvent: {}
+[42.270307] (-) TimerEvent: {}
+[42.371188] (-) TimerEvent: {}
+[42.471870] (-) TimerEvent: {}
+[42.572558] (-) TimerEvent: {}
+[42.673265] (-) TimerEvent: {}
+[42.774125] (-) TimerEvent: {}
+[42.874808] (-) TimerEvent: {}
+[42.975574] (-) TimerEvent: {}
+[43.076270] (-) TimerEvent: {}
+[43.176951] (-) TimerEvent: {}
+[43.277658] (-) TimerEvent: {}
+[43.378351] (-) TimerEvent: {}
+[43.479050] (-) TimerEvent: {}
+[43.579745] (-) TimerEvent: {}
+[43.680448] (-) TimerEvent: {}
+[43.781149] (-) TimerEvent: {}
+[43.881829] (-) TimerEvent: {}
+[43.982485] (-) TimerEvent: {}
+[44.083192] (-) TimerEvent: {}
+[44.183861] (-) TimerEvent: {}
+[44.284530] (-) TimerEvent: {}
+[44.385211] (-) TimerEvent: {}
+[44.485882] (-) TimerEvent: {}
+[44.586554] (-) TimerEvent: {}
+[44.687261] (-) TimerEvent: {}
+[44.787939] (-) TimerEvent: {}
+[44.888594] (-) TimerEvent: {}
+[44.989245] (-) TimerEvent: {}
+[45.089915] (-) TimerEvent: {}
+[45.190591] (-) TimerEvent: {}
+[45.291288] (-) TimerEvent: {}
+[45.391975] (-) TimerEvent: {}
+[45.492652] (-) TimerEvent: {}
+[45.593332] (-) TimerEvent: {}
+[45.693998] (-) TimerEvent: {}
+[45.794657] (-) TimerEvent: {}
+[45.895343] (-) TimerEvent: {}
+[45.996010] (-) TimerEvent: {}
+[46.096689] (-) TimerEvent: {}
+[46.197358] (-) TimerEvent: {}
+[46.298022] (-) TimerEvent: {}
+[46.398695] (-) TimerEvent: {}
+[46.499384] (-) TimerEvent: {}
+[46.600055] (-) TimerEvent: {}
+[46.700725] (-) TimerEvent: {}
+[46.801387] (-) TimerEvent: {}
+[46.902038] (-) TimerEvent: {}
+[47.002690] (-) TimerEvent: {}
+[47.103354] (-) TimerEvent: {}
+[47.204056] (-) TimerEvent: {}
+[47.304748] (-) TimerEvent: {}
+[47.405447] (-) TimerEvent: {}
+[47.506120] (-) TimerEvent: {}
+[47.606760] (-) TimerEvent: {}
+[47.707488] (-) TimerEvent: {}
+[47.808208] (-) TimerEvent: {}
+[47.908880] (-) TimerEvent: {}
+[48.009539] (-) TimerEvent: {}
+[48.110198] (-) TimerEvent: {}
+[48.210856] (-) TimerEvent: {}
+[48.311537] (-) TimerEvent: {}
+[48.412189] (-) TimerEvent: {}
+[48.512853] (-) TimerEvent: {}
+[48.613499] (-) TimerEvent: {}
+[48.714143] (-) TimerEvent: {}
+[48.814791] (-) TimerEvent: {}
+[48.915468] (-) TimerEvent: {}
+[49.016163] (-) TimerEvent: {}
+[49.116862] (-) TimerEvent: {}
+[49.217536] (-) TimerEvent: {}
+[49.318191] (-) TimerEvent: {}
+[49.418843] (-) TimerEvent: {}
+[49.519535] (-) TimerEvent: {}
+[49.620182] (-) TimerEvent: {}
+[49.720845] (-) TimerEvent: {}
+[49.821496] (-) TimerEvent: {}
+[49.922149] (-) TimerEvent: {}
+[50.022825] (-) TimerEvent: {}
+[50.123513] (-) TimerEvent: {}
+[50.224230] (-) TimerEvent: {}
+[50.324877] (-) TimerEvent: {}
+[50.425544] (-) TimerEvent: {}
+[50.526255] (-) TimerEvent: {}
+[50.626926] (-) TimerEvent: {}
+[50.727608] (-) TimerEvent: {}
+[50.828275] (-) TimerEvent: {}
+[50.928935] (-) TimerEvent: {}
+[51.029598] (-) TimerEvent: {}
+[51.130286] (-) TimerEvent: {}
+[51.230952] (-) TimerEvent: {}
+[51.331659] (-) TimerEvent: {}
+[51.432328] (-) TimerEvent: {}
+[51.532977] (-) TimerEvent: {}
+[51.633626] (-) TimerEvent: {}
+[51.734301] (-) TimerEvent: {}
+[51.834976] (-) TimerEvent: {}
+[51.935630] (-) TimerEvent: {}
+[52.036329] (-) TimerEvent: {}
+[52.136986] (-) TimerEvent: {}
+[52.237655] (-) TimerEvent: {}
+[52.338316] (-) TimerEvent: {}
+[52.439008] (-) TimerEvent: {}
+[52.539645] (-) TimerEvent: {}
+[52.640316] (-) TimerEvent: {}
+[52.740988] (-) TimerEvent: {}
+[52.841649] (-) TimerEvent: {}
+[52.942300] (-) TimerEvent: {}
+[53.042978] (-) TimerEvent: {}
+[53.143634] (-) TimerEvent: {}
+[53.244300] (-) TimerEvent: {}
+[53.344970] (-) TimerEvent: {}
+[53.445633] (-) TimerEvent: {}
+[53.546308] (-) TimerEvent: {}
+[53.646983] (-) TimerEvent: {}
+[53.747631] (-) TimerEvent: {}
+[53.848295] (-) TimerEvent: {}
+[53.949000] (-) TimerEvent: {}
+[54.049692] (-) TimerEvent: {}
+[54.150356] (-) TimerEvent: {}
+[54.251043] (-) TimerEvent: {}
+[54.351708] (-) TimerEvent: {}
+[54.452400] (-) TimerEvent: {}
+[54.553093] (-) TimerEvent: {}
+[54.653790] (-) TimerEvent: {}
+[54.754477] (-) TimerEvent: {}
+[54.855114] (-) TimerEvent: {}
+[54.955787] (-) TimerEvent: {}
+[55.056453] (-) TimerEvent: {}
+[55.157087] (-) TimerEvent: {}
+[55.257701] (-) TimerEvent: {}
+[55.358363] (-) TimerEvent: {}
+[55.459034] (-) TimerEvent: {}
+[55.559893] (-) TimerEvent: {}
+[55.660591] (-) TimerEvent: {}
+[55.761263] (-) TimerEvent: {}
+[55.861957] (-) TimerEvent: {}
+[55.962617] (-) TimerEvent: {}
+[56.063309] (-) TimerEvent: {}
+[56.163936] (-) TimerEvent: {}
+[56.264578] (-) TimerEvent: {}
+[56.365238] (-) TimerEvent: {}
+[56.465899] (-) TimerEvent: {}
+[56.566569] (-) TimerEvent: {}
+[56.667242] (-) TimerEvent: {}
+[56.767909] (-) TimerEvent: {}
+[56.868572] (-) TimerEvent: {}
+[56.969238] (-) TimerEvent: {}
+[57.069915] (-) TimerEvent: {}
+[57.170540] (-) TimerEvent: {}
+[57.271216] (-) TimerEvent: {}
+[57.371873] (-) TimerEvent: {}
+[57.472527] (-) TimerEvent: {}
+[57.573184] (-) TimerEvent: {}
+[57.673839] (-) TimerEvent: {}
+[57.774484] (-) TimerEvent: {}
+[57.875144] (-) TimerEvent: {}
+[57.975816] (-) TimerEvent: {}
+[58.076480] (-) TimerEvent: {}
+[58.177138] (-) TimerEvent: {}
+[58.277784] (-) TimerEvent: {}
+[58.378453] (-) TimerEvent: {}
+[58.479125] (-) TimerEvent: {}
+[58.579784] (-) TimerEvent: {}
+[58.680429] (-) TimerEvent: {}
+[58.781074] (-) TimerEvent: {}
+[58.881757] (-) TimerEvent: {}
+[58.982437] (-) TimerEvent: {}
+[59.083121] (-) TimerEvent: {}
+[59.183787] (-) TimerEvent: {}
+[59.284438] (-) TimerEvent: {}
+[59.385094] (-) TimerEvent: {}
+[59.485760] (-) TimerEvent: {}
+[59.586414] (-) TimerEvent: {}
+[59.687100] (-) TimerEvent: {}
+[59.787796] (-) TimerEvent: {}
+[59.888490] (-) TimerEvent: {}
+[59.989175] (-) TimerEvent: {}
+[60.089874] (-) TimerEvent: {}
+[60.190575] (-) TimerEvent: {}
+[60.291297] (-) TimerEvent: {}
+[60.391982] (-) TimerEvent: {}
+[60.492681] (-) TimerEvent: {}
+[60.593332] (-) TimerEvent: {}
+[60.694002] (-) TimerEvent: {}
+[60.794710] (-) TimerEvent: {}
+[60.895451] (-) TimerEvent: {}
+[60.996151] (-) TimerEvent: {}
+[61.096863] (-) TimerEvent: {}
+[61.197557] (-) TimerEvent: {}
+[61.298249] (-) TimerEvent: {}
+[61.399015] (-) TimerEvent: {}
+[61.499708] (-) TimerEvent: {}
+[61.600401] (-) TimerEvent: {}
+[61.701098] (-) TimerEvent: {}
+[61.801813] (-) TimerEvent: {}
+[61.902496] (-) TimerEvent: {}
+[62.003158] (-) TimerEvent: {}
+[62.103883] (-) TimerEvent: {}
+[62.204579] (-) TimerEvent: {}
+[62.305276] (-) TimerEvent: {}
+[62.405936] (-) TimerEvent: {}
+[62.506590] (-) TimerEvent: {}
+[62.607303] (-) TimerEvent: {}
+[62.708020] (-) TimerEvent: {}
+[62.808727] (-) TimerEvent: {}
+[62.909420] (-) TimerEvent: {}
+[63.010105] (-) TimerEvent: {}
+[63.110801] (-) TimerEvent: {}
+[63.211527] (-) TimerEvent: {}
+[63.312224] (-) TimerEvent: {}
+[63.412923] (-) TimerEvent: {}
+[63.513608] (-) TimerEvent: {}
+[63.614306] (-) TimerEvent: {}
+[63.715065] (-) TimerEvent: {}
+[63.815792] (-) TimerEvent: {}
+[63.916487] (-) TimerEvent: {}
+[64.017174] (-) TimerEvent: {}
+[64.117919] (-) TimerEvent: {}
+[64.218618] (-) TimerEvent: {}
+[64.319353] (-) TimerEvent: {}
+[64.420314] (-) TimerEvent: {}
+[64.521046] (-) TimerEvent: {}
+[64.621752] (-) TimerEvent: {}
+[64.722695] (-) TimerEvent: {}
+[64.823414] (-) TimerEvent: {}
+[64.924110] (-) TimerEvent: {}
+[65.024780] (-) TimerEvent: {}
+[65.125478] (-) TimerEvent: {}
+[65.226207] (-) TimerEvent: {}
+[65.326924] (-) TimerEvent: {}
+[65.427679] (-) TimerEvent: {}
+[65.528406] (-) TimerEvent: {}
+[65.629115] (-) TimerEvent: {}
+[65.729806] (-) TimerEvent: {}
+[65.830518] (-) TimerEvent: {}
+[65.931208] (-) TimerEvent: {}
+[66.031866] (-) TimerEvent: {}
+[66.132553] (-) TimerEvent: {}
+[66.233217] (-) TimerEvent: {}
+[66.333888] (-) TimerEvent: {}
+[66.434553] (-) TimerEvent: {}
+[66.535240] (-) TimerEvent: {}
+[66.635912] (-) TimerEvent: {}
+[66.736602] (-) TimerEvent: {}
+[66.837296] (-) TimerEvent: {}
+[66.937968] (-) TimerEvent: {}
+[67.038644] (-) TimerEvent: {}
+[67.139340] (-) TimerEvent: {}
+[67.240035] (-) TimerEvent: {}
+[67.340750] (-) TimerEvent: {}
+[67.441432] (-) TimerEvent: {}
+[67.542104] (-) TimerEvent: {}
+[67.642759] (-) TimerEvent: {}
+[67.743688] (-) TimerEvent: {}
+[67.844382] (-) TimerEvent: {}
+[67.945051] (-) TimerEvent: {}
+[68.045731] (-) TimerEvent: {}
+[68.146389] (-) TimerEvent: {}
+[68.247064] (-) TimerEvent: {}
+[68.347740] (-) TimerEvent: {}
+[68.448415] (-) TimerEvent: {}
+[68.549116] (-) TimerEvent: {}
+[68.649769] (-) TimerEvent: {}
+[68.750443] (-) TimerEvent: {}
+[68.851115] (-) TimerEvent: {}
+[68.951780] (-) TimerEvent: {}
+[69.052414] (-) TimerEvent: {}
+[69.153090] (-) TimerEvent: {}
+[69.253735] (-) TimerEvent: {}
+[69.354372] (-) TimerEvent: {}
+[69.455071] (-) TimerEvent: {}
+[69.555720] (-) TimerEvent: {}
+[69.656394] (-) TimerEvent: {}
+[69.757049] (-) TimerEvent: {}
+[69.857703] (-) TimerEvent: {}
+[69.958369] (-) TimerEvent: {}
+[70.059045] (-) TimerEvent: {}
+[70.159707] (-) TimerEvent: {}
+[70.260352] (-) TimerEvent: {}
+[70.361015] (-) TimerEvent: {}
+[70.461666] (-) TimerEvent: {}
+[70.562328] (-) TimerEvent: {}
+[70.663018] (-) TimerEvent: {}
+[70.763687] (-) TimerEvent: {}
+[70.864351] (-) TimerEvent: {}
+[70.965028] (-) TimerEvent: {}
+[71.065660] (-) TimerEvent: {}
+[71.166329] (-) TimerEvent: {}
+[71.267036] (-) TimerEvent: {}
+[71.367706] (-) TimerEvent: {}
+[71.468403] (-) TimerEvent: {}
+[71.569108] (-) TimerEvent: {}
+[71.669803] (-) TimerEvent: {}
+[71.770486] (-) TimerEvent: {}
+[71.871247] (-) TimerEvent: {}
+[71.971919] (-) TimerEvent: {}
+[72.072593] (-) TimerEvent: {}
+[72.173280] (-) TimerEvent: {}
+[72.273991] (-) TimerEvent: {}
+[72.374674] (-) TimerEvent: {}
+[72.475347] (-) TimerEvent: {}
+[72.576023] (-) TimerEvent: {}
+[72.676694] (-) TimerEvent: {}
+[72.777356] (-) TimerEvent: {}
+[72.878017] (-) TimerEvent: {}
+[72.978655] (-) TimerEvent: {}
+[73.079352] (-) TimerEvent: {}
+[73.180000] (-) TimerEvent: {}
+[73.280655] (-) TimerEvent: {}
+[73.381343] (-) TimerEvent: {}
+[73.482029] (-) TimerEvent: {}
+[73.582701] (-) TimerEvent: {}
+[73.683397] (-) TimerEvent: {}
+[73.784077] (-) TimerEvent: {}
+[73.884763] (-) TimerEvent: {}
+[73.985459] (-) TimerEvent: {}
+[74.086147] (-) TimerEvent: {}
+[74.186849] (-) TimerEvent: {}
+[74.287532] (-) TimerEvent: {}
+[74.388192] (-) TimerEvent: {}
+[74.488836] (-) TimerEvent: {}
+[74.589508] (-) TimerEvent: {}
+[74.690188] (-) TimerEvent: {}
+[74.790859] (-) TimerEvent: {}
+[74.891539] (-) TimerEvent: {}
+[74.992173] (-) TimerEvent: {}
+[75.092787] (-) TimerEvent: {}
+[75.193402] (-) TimerEvent: {}
+[75.294050] (-) TimerEvent: {}
+[75.394742] (-) TimerEvent: {}
+[75.403298] (realsense2_camera) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera.so\x1b[0m\n'}
+[75.494914] (-) TimerEvent: {}
+[75.595632] (-) TimerEvent: {}
+[75.696309] (-) TimerEvent: {}
+[75.797035] (-) TimerEvent: {}
+[75.897742] (-) TimerEvent: {}
+[75.998441] (-) TimerEvent: {}
+[76.099153] (-) TimerEvent: {}
+[76.199883] (-) TimerEvent: {}
+[76.300585] (-) TimerEvent: {}
+[76.401274] (-) TimerEvent: {}
+[76.501975] (-) TimerEvent: {}
+[76.587922] (realsense2_camera) StdoutLine: {'line': b'[100%] Built target realsense2_camera\n'}
+[76.602118] (-) TimerEvent: {}
+[76.613666] (realsense2_camera) CommandEnded: {'returncode': 0}
+[76.616716] (realsense2_camera) JobProgress: {'identifier': 'realsense2_camera', 'progress': 'install'}
+[76.617722] (realsense2_camera) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/unitree/106a_final/build/realsense2_camera'], 'cwd': '/home/unitree/106a_final/build/realsense2_camera', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_AGENT_PID', '2935'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs/lib:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree/106a_final/src/realsense-ros'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2765'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/unitree/106a_final/install:/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('JOURNAL_STREAM', '7:68959'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'unitree'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/unitree/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2970,unix/ubuntu:/tmp/.ICE-unix/2970'), ('INVOCATION_ID', 'a98f4262bfd44a28b8d5b3913eb806a5'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d8bede9_e990_407e_b9b6_2208b29c6af9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/aruco_node:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/unitree/106a_final/build/realsense2_camera'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages:/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/aruco_node:/opt/ros/foxy')]), 'shell': False}
+[76.643559] (realsense2_camera) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[76.644070] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node\n'}
+[76.644706] (realsense2_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/unitree/106a_final/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node" to ""\n'}
+[76.644926] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/lib/librealsense2_camera.so\n'}
+[76.649318] (realsense2_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/unitree/106a_final/install/realsense2_camera/lib/librealsense2_camera.so" to ""\n'}
+[76.649561] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/include\n'}
+[76.649724] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/include/constants.h\n'}
+[76.649870] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/include/realsense_node_factory.h\n'}
+[76.650034] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/include/t265_realsense_node.h\n'}
+[76.650206] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/include/ros_param_backend.h\n'}
+[76.650371] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/include/base_realsense_node.h\n'}
+[76.650568] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/include/dynamic_params.h\n'}
+[76.650823] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/launch\n'}
+[76.651015] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/launch/rs_multi_camera_launch.py\n'}
+[76.651541] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/launch/rs_t265_launch.py\n'}
+[76.651827] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/launch/rs_launch.py\n'}
+[76.652218] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/launch/default.rviz\n'}
+[76.652552] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/launch/rs_d400_and_t265_launch.py\n'}
+[76.652847] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/launch/demo_t265_launch.py\n'}
+[76.653093] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/launch/demo_pointcloud_launch.py\n'}
+[76.653334] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/config\n'}
+[76.653511] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/config/d435i.yaml\n'}
+[76.653793] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/rviz\n'}
+[76.653947] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/rviz/pointcloud.rviz\n'}
+[76.654393] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/rviz/t265.rviz\n'}
+[76.654919] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/environment/library_path.sh\n'}
+[76.655525] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/environment/library_path.dsv\n'}
+[76.656004] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/ament_index/resource_index/package_run_dependencies/realsense2_camera\n'}
+[76.656392] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/ament_index/resource_index/parent_prefix_path/realsense2_camera\n'}
+[76.656680] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.sh\n'}
+[76.656952] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.dsv\n'}
+[76.657217] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/environment/path.sh\n'}
+[76.657473] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/environment/path.dsv\n'}
+[76.657729] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/local_setup.bash\n'}
+[76.658000] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/local_setup.sh\n'}
+[76.658247] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/local_setup.zsh\n'}
+[76.658499] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/local_setup.dsv\n'}
+[76.658753] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/package.dsv\n'}
+[76.659149] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/ament_index/resource_index/packages/realsense2_camera\n'}
+[76.659495] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/ament_index/resource_index/rclcpp_components/realsense2_camera\n'}
+[76.659865] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[76.660125] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[76.660394] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[76.660670] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig.cmake\n'}
+[76.660863] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig-version.cmake\n'}
+[76.661125] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/realsense2_camera/share/realsense2_camera/package.xml\n'}
+[76.665201] (realsense2_camera) CommandEnded: {'returncode': 0}
+[76.702493] (-) TimerEvent: {}
+[76.803689] (-) TimerEvent: {}
+[76.904416] (-) TimerEvent: {}
+[77.005176] (-) TimerEvent: {}
+[77.106354] (-) TimerEvent: {}
+[77.207090] (-) TimerEvent: {}
+[77.307848] (-) TimerEvent: {}
+[77.409107] (-) TimerEvent: {}
+[77.429262] (realsense2_camera) JobEnded: {'identifier': 'realsense2_camera', 'rc': 0}
+[77.430920] (-) EventReactorShutdown: {}

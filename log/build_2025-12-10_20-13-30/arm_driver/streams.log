@@ -1,0 +1,64 @@
+[0.568s] Invoking command in '/home/unitree/106a_final/build/arm_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/unitree/106a_final/src/arm_driver -DCMAKE_INSTALL_PREFIX=/home/unitree/106a_final/install/arm_driver
+[1.119s] -- The C compiler identification is GNU 9.4.0
+[1.412s] -- The CXX compiler identification is GNU 9.4.0
+[1.436s] -- Check for working C compiler: /usr/bin/cc
+[1.754s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.758s] -- Detecting C compiler ABI info
+[1.979s] -- Detecting C compiler ABI info - done
+[2.004s] -- Detecting C compile features
+[2.007s] -- Detecting C compile features - done
+[2.022s] -- Check for working CXX compiler: /usr/bin/c++
+[2.283s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.284s] -- Detecting CXX compiler ABI info
+[2.480s] -- Detecting CXX compiler ABI info - done
+[2.515s] -- Detecting CXX compile features
+[2.517s] -- Detecting CXX compile features - done
+[2.533s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.613s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.615s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.396s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[3.578s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.605s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[4.004s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[4.185s] -- Found FastRTPS: /opt/ros/foxy/include  
+[4.571s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.918s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[4.933s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[4.937s] -- Looking for pthread.h
+[5.271s] -- Looking for pthread.h - found
+[5.272s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.570s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[5.571s] -- Looking for pthread_create in pthreads
+[5.838s] -- Looking for pthread_create in pthreads - not found
+[5.839s] -- Looking for pthread_create in pthread
+[6.090s] -- Looking for pthread_create in pthread - found
+[6.091s] -- Found Threads: TRUE  
+[6.683s] -- Configuring done
+[6.708s] -- Generating done
+[6.718s] -- Build files have been written to: /home/unitree/106a_final/build/arm_driver
+[6.739s] Invoked command in '/home/unitree/106a_final/build/arm_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/unitree/106a_final/src/arm_driver -DCMAKE_INSTALL_PREFIX=/home/unitree/106a_final/install/arm_driver
+[6.747s] Invoking command in '/home/unitree/106a_final/build/arm_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/unitree/106a_final/build/arm_driver -- -j4 -l4
+[6.895s] [35m[1mScanning dependencies of target d1_wrapper[0m
+[6.958s] [ 16%] [32mBuilding CXX object CMakeFiles/d1_wrapper.dir/home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.cpp.o[0m
+[6.982s] [ 33%] [32mBuilding CXX object CMakeFiles/d1_wrapper.dir/home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.cpp.o[0m
+[6.992s] [ 50%] [32mBuilding CXX object CMakeFiles/d1_wrapper.dir/src/D1Wrapper.cpp.o[0m
+[7.218s] In file included from [01m[K/home/unitree/106a_final/src/arm_driver/src/D1Wrapper.cpp:1[m[K:
+[7.218s] [01m[K/home/unitree/106a_final/src/arm_driver/src/D1Wrapper.hpp:6:23:[m[K [01;35m[Kwarning: [m[Kextra tokens at end of #include directive
+[7.219s]     6 | #include <functional> [01;35m[K#[m[Kinclude <functional>
+[7.219s]       |                       [01;35m[K^[m[K
+[7.820s] [01m[K/home/unitree/106a_final/src/arm_driver/src/D1Wrapper.cpp:3:57:[m[K [01;35m[Kwarning: [m[Kextra tokens at end of #include directive
+[7.820s]     3 | #include <unitree/robot/channel/channel_subscriber.hpp> [01;35m[K#[m[Kinclude <unitree/robot/channel/channel_subscriber.hpp>
+[7.821s]       |                                                         [01;35m[K^[m[K
+[7.822s] [01m[K/home/unitree/106a_final/src/arm_driver/src/D1Wrapper.cpp:5:30:[m[K [01;35m[Kwarning: [m[Kextra tokens at end of #include directive
+[7.823s]     5 | #include "PubServoInfo_.hpp" [01;35m[K#[m[Kinclude "PubServoInfo_.hpp"
+[7.823s]       |                              [01;35m[K^[m[K
+[11.378s] [01m[K/home/unitree/106a_final/src/arm_driver/src/D1Wrapper.cpp:43:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct D1Wrapper::Impl[m[K’ is private within this context
+[11.378s]    43 | D1Wrapper::[01;31m[KImpl[m[K* g_d1_impl = nullptr;
+[11.378s]       |            [01;31m[K^~~~[m[K
+[11.378s] [01m[K/home/unitree/106a_final/src/arm_driver/src/D1Wrapper.cpp:17:19:[m[K [01;36m[Knote: [m[Kdeclared private here
+[11.378s]    17 | struct D1Wrapper::[01;36m[KImpl[m[K {
+[11.378s]       |                   [01;36m[K^~~~[m[K
+[13.586s] make[2]: *** [CMakeFiles/d1_wrapper.dir/build.make:63: CMakeFiles/d1_wrapper.dir/src/D1Wrapper.cpp.o] Error 1
+[13.587s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/d1_wrapper.dir/all] Error 2
+[13.589s] make: *** [Makefile:141: all] Error 2
+[13.594s] Invoked command in '/home/unitree/106a_final/build/arm_driver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/unitree/106a_final/build/arm_driver -- -j4 -l4

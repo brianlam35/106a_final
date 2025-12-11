@@ -1,1 +1,3 @@
-/home/unitree/106a_final/src/realsense-ros/realsense2_camera_msgs/msg/Extrinsics.msg
+std_msgs/Header header
+float64[9] rotation
+float64[3] translation

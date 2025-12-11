@@ -1,0 +1,14 @@
+[0.434s] Invoking command in '/home/unitree/106a_final/build/arm_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/unitree/106a_final/build/arm_driver -- -j4 -l4
+[0.622s] [35m[1mScanning dependencies of target d1_wrapper[0m
+[0.655s] [ 16%] [32mBuilding CXX object CMakeFiles/d1_wrapper.dir/src/D1Wrapper.cpp.o[0m
+[3.804s] [01m[K/home/unitree/106a_final/src/arm_driver/src/D1Wrapper.cpp:[m[K In function ‘[01m[Kvoid GlobalHandler(const void*)[m[K’:
+[3.805s] [01m[K/home/unitree/106a_final/src/arm_driver/src/D1Wrapper.cpp:48:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct D1Wrapper::Impl[m[K’ is private within this context
+[3.805s]    48 |         static_cast<D1Wrapper::[01;31m[KImpl[m[K*>(g_d1_impl_ptr)->process_msg(msg);
+[3.805s]       |                                [01;31m[K^~~~[m[K
+[3.805s] [01m[K/home/unitree/106a_final/src/arm_driver/src/D1Wrapper.cpp:15:19:[m[K [01;36m[Knote: [m[Kdeclared private here
+[3.805s]    15 | struct D1Wrapper::[01;36m[KImpl[m[K {
+[3.805s]       |                   [01;36m[K^~~~[m[K
+[6.033s] make[2]: *** [CMakeFiles/d1_wrapper.dir/build.make:63: CMakeFiles/d1_wrapper.dir/src/D1Wrapper.cpp.o] Error 1
+[6.034s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/d1_wrapper.dir/all] Error 2
+[6.034s] make: *** [Makefile:141: all] Error 2
+[6.043s] Invoked command in '/home/unitree/106a_final/build/arm_driver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/unitree/106a_final/build/arm_driver -- -j4 -l4

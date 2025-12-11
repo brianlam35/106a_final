@@ -1,0 +1,280 @@
+[0.000000] (-) TimerEvent: {}
+[0.013224] (-) JobUnselected: {'identifier': 'arm_control'}
+[0.013489] (-) JobUnselected: {'identifier': 'aruco_node'}
+[0.013544] (-) JobUnselected: {'identifier': 'navigation_node'}
+[0.013586] (-) JobUnselected: {'identifier': 'navigation_node_two'}
+[0.013620] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.013695] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.013769] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.013806] (-) JobUnselected: {'identifier': 'vision_node'}
+[0.013853] (arm_driver) JobQueued: {'identifier': 'arm_driver', 'dependencies': OrderedDict()}
+[0.013901] (arm_driver) JobStarted: {'identifier': 'arm_driver'}
+[0.095273] (-) TimerEvent: {}
+[0.195988] (-) TimerEvent: {}
+[0.296968] (-) TimerEvent: {}
+[0.397517] (-) TimerEvent: {}
+[0.498430] (-) TimerEvent: {}
+[0.544704] (arm_driver) JobProgress: {'identifier': 'arm_driver', 'progress': 'cmake'}
+[0.546594] (arm_driver) JobProgress: {'identifier': 'arm_driver', 'progress': 'build'}
+[0.548106] (arm_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/unitree/106a_final/build/arm_driver', '--', '-j4', '-l4'], 'cwd': '/home/unitree/106a_final/build/arm_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_CLIENT', '192.168.50.153 36204 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/unitree/106a_final/install/realsense2_camera/lib:/home/unitree/106a_final/install/realsense2_camera_msgs/lib:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree'), ('SSH_TTY', '/dev/pts/8'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/unitree/106a_final/install:/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '10'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/realsense2_description:/home/unitree/106a_final/install/realsense2_camera:/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/navigation_node:/home/unitree/106a_final/install/aruco_node:/home/unitree/106a_final/install/arm_driver:/home/unitree/106a_final/install/arm_control:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/unitree/106a_final/build/arm_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.50.153 36204 192.168.50.28 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/arm_control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/unitree/106a_final/install/realsense2_description:/home/unitree/106a_final/install/realsense2_camera:/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/106a_final/install/arm_driver:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/navigation_node:/home/unitree/106a_final/install/aruco_node:/home/unitree/106a_final/install/arm_control:/opt/ros/foxy')]), 'shell': False}
+[0.598674] (-) TimerEvent: {}
+[0.699540] (-) TimerEvent: {}
+[0.800217] (-) TimerEvent: {}
+[0.901425] (-) TimerEvent: {}
+[0.918551] (arm_driver) StdoutLine: {'line': b'[ 60%] Built target d1_wrapper\n'}
+[0.998403] (arm_driver) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/servo_driver.dir/src/servo_driver.cpp.o\x1b[0m\n'}
+[1.001622] (-) TimerEvent: {}
+[1.102419] (-) TimerEvent: {}
+[1.203048] (-) TimerEvent: {}
+[1.303702] (-) TimerEvent: {}
+[1.404396] (-) TimerEvent: {}
+[1.505676] (-) TimerEvent: {}
+[1.606596] (-) TimerEvent: {}
+[1.707639] (-) TimerEvent: {}
+[1.808608] (-) TimerEvent: {}
+[1.909662] (-) TimerEvent: {}
+[2.011070] (-) TimerEvent: {}
+[2.111840] (-) TimerEvent: {}
+[2.212859] (-) TimerEvent: {}
+[2.313579] (-) TimerEvent: {}
+[2.414334] (-) TimerEvent: {}
+[2.514980] (-) TimerEvent: {}
+[2.615779] (-) TimerEvent: {}
+[2.717644] (-) TimerEvent: {}
+[2.818337] (-) TimerEvent: {}
+[2.919110] (-) TimerEvent: {}
+[3.020193] (-) TimerEvent: {}
+[3.121289] (-) TimerEvent: {}
+[3.222314] (-) TimerEvent: {}
+[3.323386] (-) TimerEvent: {}
+[3.424798] (-) TimerEvent: {}
+[3.525803] (-) TimerEvent: {}
+[3.627856] (-) TimerEvent: {}
+[3.728915] (-) TimerEvent: {}
+[3.829541] (-) TimerEvent: {}
+[3.930288] (-) TimerEvent: {}
+[4.031414] (-) TimerEvent: {}
+[4.132511] (-) TimerEvent: {}
+[4.233504] (-) TimerEvent: {}
+[4.334533] (-) TimerEvent: {}
+[4.435558] (-) TimerEvent: {}
+[4.536214] (-) TimerEvent: {}
+[4.636925] (-) TimerEvent: {}
+[4.737509] (-) TimerEvent: {}
+[4.838143] (-) TimerEvent: {}
+[4.938779] (-) TimerEvent: {}
+[5.039385] (-) TimerEvent: {}
+[5.139997] (-) TimerEvent: {}
+[5.240642] (-) TimerEvent: {}
+[5.341370] (-) TimerEvent: {}
+[5.442067] (-) TimerEvent: {}
+[5.542715] (-) TimerEvent: {}
+[5.643359] (-) TimerEvent: {}
+[5.743999] (-) TimerEvent: {}
+[5.844665] (-) TimerEvent: {}
+[5.945381] (-) TimerEvent: {}
+[6.046046] (-) TimerEvent: {}
+[6.146783] (-) TimerEvent: {}
+[6.247592] (-) TimerEvent: {}
+[6.348293] (-) TimerEvent: {}
+[6.449022] (-) TimerEvent: {}
+[6.549718] (-) TimerEvent: {}
+[6.650427] (-) TimerEvent: {}
+[6.751191] (-) TimerEvent: {}
+[6.851942] (-) TimerEvent: {}
+[6.952648] (-) TimerEvent: {}
+[7.053737] (-) TimerEvent: {}
+[7.154726] (-) TimerEvent: {}
+[7.255794] (-) TimerEvent: {}
+[7.357628] (-) TimerEvent: {}
+[7.458594] (-) TimerEvent: {}
+[7.559522] (-) TimerEvent: {}
+[7.660768] (-) TimerEvent: {}
+[7.761837] (-) TimerEvent: {}
+[7.862434] (-) TimerEvent: {}
+[7.963430] (-) TimerEvent: {}
+[8.064088] (-) TimerEvent: {}
+[8.164759] (-) TimerEvent: {}
+[8.265729] (-) TimerEvent: {}
+[8.366667] (-) TimerEvent: {}
+[8.467796] (-) TimerEvent: {}
+[8.568770] (-) TimerEvent: {}
+[8.669715] (-) TimerEvent: {}
+[8.770701] (-) TimerEvent: {}
+[8.871385] (-) TimerEvent: {}
+[8.972066] (-) TimerEvent: {}
+[9.072759] (-) TimerEvent: {}
+[9.173437] (-) TimerEvent: {}
+[9.274036] (-) TimerEvent: {}
+[9.375015] (-) TimerEvent: {}
+[9.476031] (-) TimerEvent: {}
+[9.577079] (-) TimerEvent: {}
+[9.677722] (-) TimerEvent: {}
+[9.778425] (-) TimerEvent: {}
+[9.879127] (-) TimerEvent: {}
+[9.979813] (-) TimerEvent: {}
+[10.080510] (-) TimerEvent: {}
+[10.181131] (-) TimerEvent: {}
+[10.282075] (-) TimerEvent: {}
+[10.383206] (-) TimerEvent: {}
+[10.484124] (-) TimerEvent: {}
+[10.585188] (-) TimerEvent: {}
+[10.686251] (-) TimerEvent: {}
+[10.786974] (-) TimerEvent: {}
+[10.888245] (-) TimerEvent: {}
+[10.988996] (-) TimerEvent: {}
+[11.089670] (-) TimerEvent: {}
+[11.190423] (-) TimerEvent: {}
+[11.291463] (-) TimerEvent: {}
+[11.392498] (-) TimerEvent: {}
+[11.493562] (-) TimerEvent: {}
+[11.594507] (-) TimerEvent: {}
+[11.696110] (-) TimerEvent: {}
+[11.796823] (-) TimerEvent: {}
+[11.897528] (-) TimerEvent: {}
+[11.999409] (-) TimerEvent: {}
+[12.100190] (-) TimerEvent: {}
+[12.201187] (-) TimerEvent: {}
+[12.301866] (-) TimerEvent: {}
+[12.402575] (-) TimerEvent: {}
+[12.503254] (-) TimerEvent: {}
+[12.603975] (-) TimerEvent: {}
+[12.704644] (-) TimerEvent: {}
+[12.805340] (-) TimerEvent: {}
+[12.905972] (-) TimerEvent: {}
+[13.006723] (-) TimerEvent: {}
+[13.107435] (-) TimerEvent: {}
+[13.208125] (-) TimerEvent: {}
+[13.308823] (-) TimerEvent: {}
+[13.410032] (-) TimerEvent: {}
+[13.511122] (-) TimerEvent: {}
+[13.612276] (-) TimerEvent: {}
+[13.712950] (-) TimerEvent: {}
+[13.816001] (-) TimerEvent: {}
+[13.918299] (-) TimerEvent: {}
+[14.025074] (-) TimerEvent: {}
+[14.126386] (-) TimerEvent: {}
+[14.227955] (-) TimerEvent: {}
+[14.329183] (-) TimerEvent: {}
+[14.430019] (-) TimerEvent: {}
+[14.532540] (-) TimerEvent: {}
+[14.633917] (-) TimerEvent: {}
+[14.735038] (-) TimerEvent: {}
+[14.835969] (-) TimerEvent: {}
+[14.937848] (-) TimerEvent: {}
+[15.038936] (-) TimerEvent: {}
+[15.139756] (-) TimerEvent: {}
+[15.241007] (-) TimerEvent: {}
+[15.341663] (-) TimerEvent: {}
+[15.442679] (-) TimerEvent: {}
+[15.543346] (-) TimerEvent: {}
+[15.644337] (-) TimerEvent: {}
+[15.745108] (-) TimerEvent: {}
+[15.845795] (-) TimerEvent: {}
+[15.946873] (-) TimerEvent: {}
+[16.048129] (-) TimerEvent: {}
+[16.148902] (-) TimerEvent: {}
+[16.249557] (-) TimerEvent: {}
+[16.350260] (-) TimerEvent: {}
+[16.451061] (-) TimerEvent: {}
+[16.557116] (-) TimerEvent: {}
+[16.658081] (-) TimerEvent: {}
+[16.759120] (-) TimerEvent: {}
+[16.859921] (-) TimerEvent: {}
+[16.960689] (-) TimerEvent: {}
+[17.062193] (-) TimerEvent: {}
+[17.163342] (-) TimerEvent: {}
+[17.264090] (-) TimerEvent: {}
+[17.364865] (-) TimerEvent: {}
+[17.465822] (-) TimerEvent: {}
+[17.566615] (-) TimerEvent: {}
+[17.667418] (-) TimerEvent: {}
+[17.768177] (-) TimerEvent: {}
+[17.869082] (-) TimerEvent: {}
+[17.970308] (-) TimerEvent: {}
+[18.071282] (-) TimerEvent: {}
+[18.172043] (-) TimerEvent: {}
+[18.273020] (-) TimerEvent: {}
+[18.374146] (-) TimerEvent: {}
+[18.474997] (-) TimerEvent: {}
+[18.575789] (-) TimerEvent: {}
+[18.676557] (-) TimerEvent: {}
+[18.777948] (-) TimerEvent: {}
+[18.879678] (-) TimerEvent: {}
+[18.982116] (-) TimerEvent: {}
+[19.083610] (-) TimerEvent: {}
+[19.185978] (-) TimerEvent: {}
+[19.290383] (-) TimerEvent: {}
+[19.391174] (-) TimerEvent: {}
+[19.492034] (-) TimerEvent: {}
+[19.596191] (-) TimerEvent: {}
+[19.697039] (-) TimerEvent: {}
+[19.797841] (-) TimerEvent: {}
+[19.899335] (-) TimerEvent: {}
+[20.000197] (-) TimerEvent: {}
+[20.100963] (-) TimerEvent: {}
+[20.201661] (-) TimerEvent: {}
+[20.302477] (-) TimerEvent: {}
+[20.403266] (-) TimerEvent: {}
+[20.504166] (-) TimerEvent: {}
+[20.605100] (-) TimerEvent: {}
+[20.705887] (-) TimerEvent: {}
+[20.806635] (-) TimerEvent: {}
+[20.909092] (-) TimerEvent: {}
+[21.010383] (-) TimerEvent: {}
+[21.061326] (arm_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable servo_driver\x1b[0m\n'}
+[21.110641] (-) TimerEvent: {}
+[21.211450] (-) TimerEvent: {}
+[21.312351] (-) TimerEvent: {}
+[21.413207] (-) TimerEvent: {}
+[21.513932] (-) TimerEvent: {}
+[21.614672] (-) TimerEvent: {}
+[21.715426] (-) TimerEvent: {}
+[21.816141] (-) TimerEvent: {}
+[21.916996] (-) TimerEvent: {}
+[22.017826] (-) TimerEvent: {}
+[22.118597] (-) TimerEvent: {}
+[22.219324] (-) TimerEvent: {}
+[22.320208] (-) TimerEvent: {}
+[22.421479] (-) TimerEvent: {}
+[22.522483] (-) TimerEvent: {}
+[22.624429] (-) TimerEvent: {}
+[22.725187] (-) TimerEvent: {}
+[22.752270] (arm_driver) StdoutLine: {'line': b'Built target servo_driver\n'}
+[22.805878] (arm_driver) CommandEnded: {'returncode': 0}
+[22.810936] (arm_driver) JobProgress: {'identifier': 'arm_driver', 'progress': 'install'}
+[22.825404] (-) TimerEvent: {}
+[22.851615] (arm_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/unitree/106a_final/build/arm_driver'], 'cwd': '/home/unitree/106a_final/build/arm_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_CLIENT', '192.168.50.153 36204 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/unitree/106a_final/install/realsense2_camera/lib:/home/unitree/106a_final/install/realsense2_camera_msgs/lib:/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree'), ('SSH_TTY', '/dev/pts/8'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/unitree/106a_final/install:/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '10'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/realsense2_description:/home/unitree/106a_final/install/realsense2_camera:/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/navigation_node:/home/unitree/106a_final/install/aruco_node:/home/unitree/106a_final/install/arm_driver:/home/unitree/106a_final/install/arm_control:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/unitree/106a_final/build/arm_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.50.153 36204 192.168.50.28 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/arm_control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/unitree/106a_final/install/realsense2_description:/home/unitree/106a_final/install/realsense2_camera:/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/106a_final/install/arm_driver:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/navigation_node:/home/unitree/106a_final/install/aruco_node:/home/unitree/106a_final/install/arm_control:/opt/ros/foxy')]), 'shell': False}
+[22.898654] (arm_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.899911] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/lib/arm_driver/servo_driver\n'}
+[22.900653] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/ament_index/resource_index/package_run_dependencies/arm_driver\n'}
+[22.901599] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/ament_index/resource_index/parent_prefix_path/arm_driver\n'}
+[22.902199] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/environment/ament_prefix_path.sh\n'}
+[22.902717] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/environment/ament_prefix_path.dsv\n'}
+[22.903196] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/environment/path.sh\n'}
+[22.903803] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/environment/path.dsv\n'}
+[22.904353] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/local_setup.bash\n'}
+[22.904835] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/local_setup.sh\n'}
+[22.905363] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/local_setup.zsh\n'}
+[22.905818] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/local_setup.dsv\n'}
+[22.906246] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/package.dsv\n'}
+[22.906706] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/ament_index/resource_index/packages/arm_driver\n'}
+[22.907255] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/cmake/arm_driverConfig.cmake\n'}
+[22.907666] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/cmake/arm_driverConfig-version.cmake\n'}
+[22.908132] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/package.xml\n'}
+[22.919156] (arm_driver) CommandEnded: {'returncode': 0}
+[22.925665] (-) TimerEvent: {}
+[23.026539] (-) TimerEvent: {}
+[23.130984] (-) TimerEvent: {}
+[23.231633] (-) TimerEvent: {}
+[23.333072] (-) TimerEvent: {}
+[23.434243] (-) TimerEvent: {}
+[23.537386] (-) TimerEvent: {}
+[23.638761] (-) TimerEvent: {}
+[23.739666] (-) TimerEvent: {}
+[23.847334] (-) TimerEvent: {}
+[23.948941] (-) TimerEvent: {}
+[24.051604] (-) TimerEvent: {}
+[24.152371] (-) TimerEvent: {}
+[24.212053] (arm_driver) JobEnded: {'identifier': 'arm_driver', 'rc': 0}
+[24.214946] (-) EventReactorShutdown: {}

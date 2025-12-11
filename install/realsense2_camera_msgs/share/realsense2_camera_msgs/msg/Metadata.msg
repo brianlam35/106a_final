@@ -1,1 +1,2 @@
-/home/unitree/106a_final/src/realsense-ros/realsense2_camera_msgs/msg/Metadata.msg
+std_msgs/Header header
+string json_data

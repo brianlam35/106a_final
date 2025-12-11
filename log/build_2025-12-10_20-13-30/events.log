@@ -1,0 +1,214 @@
+[0.000000] (-) TimerEvent: {}
+[0.018462] (-) JobUnselected: {'identifier': 'arm_control'}
+[0.026491] (-) JobUnselected: {'identifier': 'aruco_node'}
+[0.026636] (-) JobUnselected: {'identifier': 'navigation_node'}
+[0.026681] (-) JobUnselected: {'identifier': 'navigation_node_two'}
+[0.026718] (-) JobUnselected: {'identifier': 'vision_node'}
+[0.026770] (arm_driver) JobQueued: {'identifier': 'arm_driver', 'dependencies': OrderedDict()}
+[0.026823] (arm_driver) JobStarted: {'identifier': 'arm_driver'}
+[0.100402] (-) TimerEvent: {}
+[0.203716] (-) TimerEvent: {}
+[0.308351] (-) TimerEvent: {}
+[0.410359] (-) TimerEvent: {}
+[0.511003] (-) TimerEvent: {}
+[0.591906] (arm_driver) JobProgress: {'identifier': 'arm_driver', 'progress': 'cmake'}
+[0.593422] (arm_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/unitree/106a_final/src/arm_driver', '-DCMAKE_INSTALL_PREFIX=/home/unitree/106a_final/install/arm_driver'], 'cwd': '/home/unitree/106a_final/build/arm_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_CLIENT', '192.168.50.153 54464 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/unitree/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('BROWSER', '/home/unitree/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('TERM_PROGRAM_VERSION', '1.106.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-d6d7b906-9548-4c08-a74d-2054cca2089c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/unitree/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/unitree/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/unitree/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/remote-cli:/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-cab9244181.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/unitree/106a_final/build/arm_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.50.153 54464 192.168.50.28 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[0.611549] (-) TimerEvent: {}
+[0.712776] (-) TimerEvent: {}
+[0.813626] (-) TimerEvent: {}
+[0.914415] (-) TimerEvent: {}
+[1.015824] (-) TimerEvent: {}
+[1.117941] (-) TimerEvent: {}
+[1.145414] (arm_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[1.218240] (-) TimerEvent: {}
+[1.320103] (-) TimerEvent: {}
+[1.421796] (-) TimerEvent: {}
+[1.437981] (arm_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.462607] (arm_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.523403] (-) TimerEvent: {}
+[1.629153] (-) TimerEvent: {}
+[1.731078] (-) TimerEvent: {}
+[1.780467] (arm_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.784047] (arm_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.831319] (-) TimerEvent: {}
+[1.932231] (-) TimerEvent: {}
+[2.005237] (arm_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.030618] (arm_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.032337] (-) TimerEvent: {}
+[2.033742] (arm_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.048123] (arm_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.132832] (-) TimerEvent: {}
+[2.233890] (-) TimerEvent: {}
+[2.309423] (arm_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[2.310216] (arm_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.334079] (-) TimerEvent: {}
+[2.434852] (-) TimerEvent: {}
+[2.506854] (arm_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.535088] (-) TimerEvent: {}
+[2.541633] (arm_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.543645] (arm_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.559825] (arm_driver) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[2.635238] (-) TimerEvent: {}
+[2.639253] (arm_driver) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[2.641083] (arm_driver) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.735399] (-) TimerEvent: {}
+[2.836102] (-) TimerEvent: {}
+[2.937296] (-) TimerEvent: {}
+[3.037920] (-) TimerEvent: {}
+[3.138612] (-) TimerEvent: {}
+[3.239526] (-) TimerEvent: {}
+[3.341291] (-) TimerEvent: {}
+[3.422398] (arm_driver) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[3.441623] (-) TimerEvent: {}
+[3.544315] (-) TimerEvent: {}
+[3.603969] (arm_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.631886] (arm_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[3.644517] (-) TimerEvent: {}
+[3.745192] (-) TimerEvent: {}
+[3.846490] (-) TimerEvent: {}
+[3.947905] (-) TimerEvent: {}
+[4.030882] (arm_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[4.048085] (-) TimerEvent: {}
+[4.148852] (-) TimerEvent: {}
+[4.210891] (arm_driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[4.249019] (-) TimerEvent: {}
+[4.349730] (-) TimerEvent: {}
+[4.450411] (-) TimerEvent: {}
+[4.551089] (-) TimerEvent: {}
+[4.597871] (arm_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.651299] (-) TimerEvent: {}
+[4.751995] (-) TimerEvent: {}
+[4.852705] (-) TimerEvent: {}
+[4.944824] (arm_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[4.952913] (-) TimerEvent: {}
+[4.959637] (arm_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[4.963084] (arm_driver) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[5.053099] (-) TimerEvent: {}
+[5.153779] (-) TimerEvent: {}
+[5.254479] (-) TimerEvent: {}
+[5.297621] (arm_driver) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[5.298222] (arm_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.354648] (-) TimerEvent: {}
+[5.456536] (-) TimerEvent: {}
+[5.557994] (-) TimerEvent: {}
+[5.596589] (arm_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[5.598102] (arm_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[5.658171] (-) TimerEvent: {}
+[5.759301] (-) TimerEvent: {}
+[5.860816] (-) TimerEvent: {}
+[5.864217] (arm_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[5.865298] (arm_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[5.961039] (-) TimerEvent: {}
+[6.061983] (-) TimerEvent: {}
+[6.116157] (arm_driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[6.117713] (arm_driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.162561] (-) TimerEvent: {}
+[6.265509] (-) TimerEvent: {}
+[6.366316] (-) TimerEvent: {}
+[6.467788] (-) TimerEvent: {}
+[6.568447] (-) TimerEvent: {}
+[6.669192] (-) TimerEvent: {}
+[6.709723] (arm_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.735007] (arm_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[6.744046] (arm_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/unitree/106a_final/build/arm_driver\n'}
+[6.764839] (arm_driver) CommandEnded: {'returncode': 0}
+[6.771361] (arm_driver) JobProgress: {'identifier': 'arm_driver', 'progress': 'build'}
+[6.771866] (-) TimerEvent: {}
+[6.772821] (arm_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/unitree/106a_final/build/arm_driver', '--', '-j4', '-l4'], 'cwd': '/home/unitree/106a_final/build/arm_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_CLIENT', '192.168.50.153 54464 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/unitree/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('BROWSER', '/home/unitree/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('TERM_PROGRAM_VERSION', '1.106.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-d6d7b906-9548-4c08-a74d-2054cca2089c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/unitree/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/unitree/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/unitree/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/remote-cli:/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-cab9244181.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/unitree/106a_final/build/arm_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.50.153 54464 192.168.50.28 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[6.872052] (-) TimerEvent: {}
+[6.921130] (arm_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target d1_wrapper\x1b[0m\n'}
+[6.972263] (-) TimerEvent: {}
+[6.984475] (arm_driver) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/d1_wrapper.dir/home/unitree/106a_final/src/d1_sdk/src/msg/ArmString_.cpp.o\x1b[0m\n'}
+[7.008325] (arm_driver) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/d1_wrapper.dir/home/unitree/106a_final/src/d1_sdk/src/msg/PubServoInfo_.cpp.o\x1b[0m\n'}
+[7.018217] (arm_driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/d1_wrapper.dir/src/D1Wrapper.cpp.o\x1b[0m\n'}
+[7.072434] (-) TimerEvent: {}
+[7.173118] (-) TimerEvent: {}
+[7.244445] (arm_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/D1Wrapper.cpp:1\x1b[m\x1b[K:\n'}
+[7.245091] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/D1Wrapper.hpp:6:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra tokens at end of #include directive\n'}
+[7.245269] (arm_driver) StderrLine: {'line': b'    6 | #include <functional> \x1b[01;35m\x1b[K#\x1b[m\x1b[Kinclude <functional>\n'}
+[7.245406] (arm_driver) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.273307] (-) TimerEvent: {}
+[7.373969] (-) TimerEvent: {}
+[7.474739] (-) TimerEvent: {}
+[7.575666] (-) TimerEvent: {}
+[7.677091] (-) TimerEvent: {}
+[7.778991] (-) TimerEvent: {}
+[7.846566] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/D1Wrapper.cpp:3:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra tokens at end of #include directive\n'}
+[7.847176] (arm_driver) StderrLine: {'line': b'    3 | #include <unitree/robot/channel/channel_subscriber.hpp> \x1b[01;35m\x1b[K#\x1b[m\x1b[Kinclude <unitree/robot/channel/channel_subscriber.hpp>\n'}
+[7.847368] (arm_driver) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.848914] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/D1Wrapper.cpp:5:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra tokens at end of #include directive\n'}
+[7.849264] (arm_driver) StderrLine: {'line': b'    5 | #include "PubServoInfo_.hpp" \x1b[01;35m\x1b[K#\x1b[m\x1b[Kinclude "PubServoInfo_.hpp"\n'}
+[7.849415] (arm_driver) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.879157] (-) TimerEvent: {}
+[7.980608] (-) TimerEvent: {}
+[8.082059] (-) TimerEvent: {}
+[8.183506] (-) TimerEvent: {}
+[8.285333] (-) TimerEvent: {}
+[8.386696] (-) TimerEvent: {}
+[8.487464] (-) TimerEvent: {}
+[8.588300] (-) TimerEvent: {}
+[8.688992] (-) TimerEvent: {}
+[8.789731] (-) TimerEvent: {}
+[8.890489] (-) TimerEvent: {}
+[8.991947] (-) TimerEvent: {}
+[9.093324] (-) TimerEvent: {}
+[9.194954] (-) TimerEvent: {}
+[9.296299] (-) TimerEvent: {}
+[9.397017] (-) TimerEvent: {}
+[9.497708] (-) TimerEvent: {}
+[9.598410] (-) TimerEvent: {}
+[9.699376] (-) TimerEvent: {}
+[9.800200] (-) TimerEvent: {}
+[9.900938] (-) TimerEvent: {}
+[10.001707] (-) TimerEvent: {}
+[10.103122] (-) TimerEvent: {}
+[10.203809] (-) TimerEvent: {}
+[10.304568] (-) TimerEvent: {}
+[10.405344] (-) TimerEvent: {}
+[10.506645] (-) TimerEvent: {}
+[10.608084] (-) TimerEvent: {}
+[10.708809] (-) TimerEvent: {}
+[10.810292] (-) TimerEvent: {}
+[10.911085] (-) TimerEvent: {}
+[11.012222] (-) TimerEvent: {}
+[11.113043] (-) TimerEvent: {}
+[11.213874] (-) TimerEvent: {}
+[11.314743] (-) TimerEvent: {}
+[11.403834] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/D1Wrapper.cpp:43:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct D1Wrapper::Impl\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[11.404529] (arm_driver) StderrLine: {'line': b'   43 | D1Wrapper::\x1b[01;31m\x1b[KImpl\x1b[m\x1b[K* g_d1_impl = nullptr;\n'}
+[11.404723] (arm_driver) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.404895] (arm_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/unitree/106a_final/src/arm_driver/src/D1Wrapper.cpp:17:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[11.405025] (arm_driver) StderrLine: {'line': b'   17 | struct D1Wrapper::\x1b[01;36m\x1b[KImpl\x1b[m\x1b[K {\n'}
+[11.405179] (arm_driver) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.415375] (-) TimerEvent: {}
+[11.516441] (-) TimerEvent: {}
+[11.622870] (-) TimerEvent: {}
+[11.723739] (-) TimerEvent: {}
+[11.825248] (-) TimerEvent: {}
+[11.927595] (-) TimerEvent: {}
+[12.028897] (-) TimerEvent: {}
+[12.129686] (-) TimerEvent: {}
+[12.230546] (-) TimerEvent: {}
+[12.331396] (-) TimerEvent: {}
+[12.432222] (-) TimerEvent: {}
+[12.532979] (-) TimerEvent: {}
+[12.633693] (-) TimerEvent: {}
+[12.734449] (-) TimerEvent: {}
+[12.835505] (-) TimerEvent: {}
+[12.937140] (-) TimerEvent: {}
+[13.038655] (-) TimerEvent: {}
+[13.139526] (-) TimerEvent: {}
+[13.240207] (-) TimerEvent: {}
+[13.340944] (-) TimerEvent: {}
+[13.441624] (-) TimerEvent: {}
+[13.542318] (-) TimerEvent: {}
+[13.612334] (arm_driver) StderrLine: {'line': b'make[2]: *** [CMakeFiles/d1_wrapper.dir/build.make:63: CMakeFiles/d1_wrapper.dir/src/D1Wrapper.cpp.o] Error 1\n'}
+[13.613850] (arm_driver) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/d1_wrapper.dir/all] Error 2\n'}
+[13.615927] (arm_driver) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[13.619995] (arm_driver) CommandEnded: {'returncode': 2}
+[13.642689] (-) TimerEvent: {}
+[13.744137] (-) TimerEvent: {}
+[13.846331] (-) TimerEvent: {}
+[13.948637] (-) TimerEvent: {}
+[13.982238] (arm_driver) JobEnded: {'identifier': 'arm_driver', 'rc': 2}
+[13.994231] (-) EventReactorShutdown: {}

@@ -11,40 +11,34 @@ from cv_bridge import CvBridge
 from sensor_msgs.msg import Image, CameraInfo
 from geometry_msgs.msg import PointStamped
 
+# SYNC: Import message_filters for time synchronization
+import message_filters
 
 class ArucoNode(Node):
     def __init__(self):
         super().__init__("aruco_node")
 
         self.bridge = CvBridge()
-
-        # Camera intrinsics
-        self.K = None   # fx,0,cx,0,fy,cy,0,0,1
-
-        # Image buffers
-        self.rgb = None
-        self.depth = None
-
-        # Set the dictionary and target marker ID
+        self.K = None 
+        
+        # ---------------------------------------------------------
+        # OPENCV FIX: Setup ArucoDetector for OpenCV 4.7+
+        # ---------------------------------------------------------
         self.aruco_dict = aruco.getPredefinedDictionary(aruco.DICT_4X4_50)
         self.aruco_params = aruco.DetectorParameters()
-        self.target_id = 0   # We printed marker ID = 0
+        
+        # Try-catch to handle different OpenCV versions automatically
+        try:
+            # New OpenCV (4.7+)
+            self.detector = aruco.ArucoDetector(self.aruco_dict, self.aruco_params)
+            self.use_new_api = True
+        except AttributeError:
+            # Old OpenCV (<4.7)
+            self.use_new_api = False
 
-        # Subscribers
-        self.create_subscription(
-            Image,
-            "/camera/color/image_raw",
-            self.rgb_callback,
-            10
-        )
+        self.target_id = 0
 
-        self.create_subscription(
-            Image,
-            "/camera/aligned_depth_to_color/image_raw",
-            self.depth_callback,
-            10
-        )
-
+        # 1. Subscriber for Camera Info
         self.create_subscription(
             CameraInfo,
             "/camera/color/camera_info",
@@ -52,102 +46,97 @@ class ArucoNode(Node):
             10
         )
 
-        # Publisher
-        self.home_pub = self.create_publisher(
-            PointStamped,
-            "/vision/home_xyz",
-            10
-        )
+        # 2. Setup Subscribers using message_filters
+        rgb_sub = message_filters.Subscriber(self, Image, "/camera/color/image_raw")
+        depth_sub = message_filters.Subscriber(self, Image, "/camera/aligned_depth_to_color/image_raw")
 
-        self.get_logger().info("ArucoNode is running. Looking for DICT_4X4_50, ID = 0")
+        # 3. Synchronize the topics
+        # ApproximateTimeSynchronizer ensures we get matching RGB and Depth frames
+        self.ts = message_filters.ApproximateTimeSynchronizer([rgb_sub, depth_sub], queue_size=10, slop=0.1)
+        self.ts.registerCallback(self.sync_callback)
 
-    # ---------------------------
-    # Camera Info callback
-    # ---------------------------
+        self.home_pub = self.create_publisher(PointStamped, "/vision/home_xyz", 10)
+
+        self.get_logger().info(f"ArucoNode running. OpenCV Version: {cv2.__version__}")
+
     def caminfo_callback(self, msg):
         self.K = msg.k
 
-    # ---------------------------
-    # RGB callback
-    # ---------------------------
-    def rgb_callback(self, msg):
-        self.rgb = self.bridge.imgmsg_to_cv2(msg, "bgr8")
-        self.try_process()
-
-    # ---------------------------
-    # Depth callback
-    # ---------------------------
-    def depth_callback(self, msg):
-        self.depth = self.bridge.imgmsg_to_cv2(msg, "passthrough")
-        self.try_process()
-
-    # ---------------------------
-    # Main processing
-    # ---------------------------
-    def try_process(self):
-        if self.rgb is None or self.depth is None or self.K is None:
+    def sync_callback(self, rgb_msg, depth_msg):
+        if self.K is None:
             return
 
-        gray = cv2.cvtColor(self.rgb, cv2.COLOR_BGR2GRAY)
+        try:
+            cv_rgb = self.bridge.imgmsg_to_cv2(rgb_msg, "bgr8")
+            cv_depth = self.bridge.imgmsg_to_cv2(depth_msg, "passthrough")
+        except Exception as e:
+            self.get_logger().error(f"CV Bridge error: {e}")
+            return
 
-        corners, ids, _ = aruco.detectMarkers(
-            gray,
-            self.aruco_dict,
-            parameters=self.aruco_params
-        )
+        self.process_frame(cv_rgb, cv_depth, rgb_msg.header)
+
+    def process_frame(self, rgb, depth_img, header):
+        gray = cv2.cvtColor(rgb, cv2.COLOR_BGR2GRAY)
+
+        # ---------------------------------------------------------
+        # OPENCV FIX: Use the correct detection method
+        # ---------------------------------------------------------
+        if self.use_new_api:
+            corners, ids, _ = self.detector.detectMarkers(gray)
+        else:
+            corners, ids, _ = aruco.detectMarkers(
+                gray, 
+                self.aruco_dict, 
+                parameters=self.aruco_params
+            )
 
         if ids is None:
             return
 
         ids = ids.flatten()
 
-        # Find our specific marker ID = 0
         for i, marker_id in enumerate(ids):
             if marker_id == self.target_id:
-                pts = corners[i][0]   # 4x2 corner array
-
-                # Compute marker center (avg of opposite corners)
+                pts = corners[i][0]
+                
+                # Calculate center
                 cx = int((pts[0][0] + pts[2][0]) / 2)
                 cy = int((pts[0][1] + pts[2][1]) / 2)
 
-                # Check depth image bounds
-                h, w = self.depth.shape
+                # Bounds check
+                h, w = depth_img.shape
                 if not (0 <= cx < w and 0 <= cy < h):
-                    return
+                    continue
 
-                depth_raw = float(self.depth[cy, cx])
-                if depth_raw <= 0 or np.isnan(depth_raw):
-                    return
+                depth_raw = depth_img[cy, cx]
+                
+                if depth_raw == 0 or np.isnan(depth_raw):
+                    continue
 
-                depth_m = depth_raw * 0.001   # mm → m
+                # Conversion: mm to meters
+                depth_m = float(depth_raw) * 0.001 
 
                 X, Y, Z = self.pixel_to_3d(cx, cy, depth_m)
 
-                # Publish result
-                msg = PointStamped()
-                msg.header.stamp = self.get_clock().now().to_msg()
-                msg.header.frame_id = "camera_link"
-                msg.point.x = X
-                msg.point.y = Y
-                msg.point.z = Z
+                # Publish
+                point_msg = PointStamped()
+                point_msg.header = header 
+                point_msg.point.x = X
+                point_msg.point.y = Y
+                point_msg.point.z = Z
 
-                self.home_pub.publish(msg)
+                self.home_pub.publish(point_msg)
+                
+                # Log occasionally (every 50th frame or similar) to avoid spam, 
+                # or just log once per detection:
+                # self.get_logger().info(f"Detected ID {marker_id}: {X:.3f}, {Y:.3f}, {Z:.3f}")
 
-                self.get_logger().info(
-                    f"Aruco ID {marker_id} at X={X:.2f}, Y={Y:.2f}, Z={Z:.2f}"
-                )
-                return
-
-    # ---------------------------
-    # Pixel → 3D conversion
-    # ---------------------------
     def pixel_to_3d(self, u, v, depth):
         fx, fy, cx, cy = self.K[0], self.K[4], self.K[2], self.K[5]
-        X = (u - cx) * depth / fx
-        Y = (v - cy) * depth / fy
-        Z = depth
-        return X, Y, Z
-
+        x = (u - cx) * depth / fx
+        y = (v - cy) * depth / fy
+        z = depth
+        return x, y, z
 
 def main(args=None):
     rclpy.init(args=args)
@@ -160,9 +149,5 @@ def main(args=None):
         node.destroy_node()
         rclpy.shutdown()
 
-
 if __name__ == "__main__":
     main()
-
-
-
