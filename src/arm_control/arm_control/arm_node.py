@@ -19,7 +19,7 @@ class ArmManager(Node):
         # If the arm consistently misses to the Left, put a negative number here.
         # If it misses to the Right, put a positive number.
         # Start with 2cm (0.02) and tune it.
-        self.y_bias = 0.1  # Example: Adjust this until it hits dead center!
+        self.y_bias = 0.2  # Example: Adjust this until it hits dead center!
 
         # State Variables
         self.current_joints = []

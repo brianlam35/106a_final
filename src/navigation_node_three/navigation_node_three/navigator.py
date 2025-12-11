@@ -47,7 +47,7 @@ class Navigator(Node):
         self.bottle_detected = True
         self.last_seen_time = self.get_clock().now().seconds_nanoseconds()[0]
         self.bottle_depth = msg.pose.position.z      
-        self.bottle_angle = msg.pose.position.x     
+        self.bottle_angle = -msg.pose.position.x     
 
     def control_loop(self):
         if self.task_complete: return
