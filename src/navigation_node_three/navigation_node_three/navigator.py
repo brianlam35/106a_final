@@ -11,7 +11,7 @@ class Navigator(Node):
         super().__init__('navigator')
 
         # --- TUNING ---
-        self.TARGET_DIST = 0.15 
+        self.TARGET_DIST = 0.06 
         self.ALIGN_SPEED = 0.25 # TWEAK: Reduced speed for finer control
         self.DRIVE_SPEED = 0.3 
         self.SAMPLES_NEEDED = 3

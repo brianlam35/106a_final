@@ -1,0 +1,618 @@
+[9.335s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'build'][0m
+[9.336s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb895a4f0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb895a4f0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffb8821100>)[0m
+[10.314s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[10.315s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[10.315s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[10.315s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[10.315s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[10.315s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[10.315s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/unitree/106a_final'
+[10.316s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[10.316s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[10.316s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[10.316s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[10.316s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[10.316s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[10.316s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[10.316s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[10.317s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[10.356s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[10.356s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[10.356s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[10.356s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[10.356s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[10.357s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[10.357s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[10.357s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[10.358s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[10.358s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[10.358s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[10.359s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[10.359s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[10.359s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[10.359s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[10.360s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore'
+[10.360s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore_ament_install'
+[10.360s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_pkg']
+[10.360s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_pkg'
+[10.360s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_meta']
+[10.360s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_meta'
+[10.377s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ros']
+[10.378s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ros'
+[10.378s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['cmake', 'python']
+[10.378s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'cmake'
+[10.378s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python'
+[10.378s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['python_setup_py']
+[10.378s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python_setup_py'
+[10.379s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_control) by extensions ['ignore', 'ignore_ament_install']
+[10.379s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_control) by extension 'ignore'
+[10.379s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_control) by extension 'ignore_ament_install'
+[10.380s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_control) by extensions ['colcon_pkg']
+[10.380s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_control) by extension 'colcon_pkg'
+[10.380s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_control) by extensions ['colcon_meta']
+[10.380s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_control) by extension 'colcon_meta'
+[10.380s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_control) by extensions ['ros']
+[10.380s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_control) by extension 'ros'
+[10.390s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/arm_control' with type 'ros.ament_python' and name 'arm_control'[0m
+[10.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_driver) by extensions ['ignore', 'ignore_ament_install']
+[10.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_driver) by extension 'ignore'
+[10.392s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_driver) by extension 'ignore_ament_install'
+[10.392s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_driver) by extensions ['colcon_pkg']
+[10.392s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_driver) by extension 'colcon_pkg'
+[10.392s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_driver) by extensions ['colcon_meta']
+[10.392s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_driver) by extension 'colcon_meta'
+[10.392s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_driver) by extensions ['ros']
+[10.392s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arm_driver) by extension 'ros'
+[10.394s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/arm_driver' with type 'ros.ament_cmake' and name 'arm_driver'[0m
+[10.395s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/aruco_node) by extensions ['ignore', 'ignore_ament_install']
+[10.395s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/aruco_node) by extension 'ignore'
+[10.395s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/aruco_node) by extension 'ignore_ament_install'
+[10.395s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/aruco_node) by extensions ['colcon_pkg']
+[10.396s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/aruco_node) by extension 'colcon_pkg'
+[10.396s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/aruco_node) by extensions ['colcon_meta']
+[10.396s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/aruco_node) by extension 'colcon_meta'
+[10.396s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/aruco_node) by extensions ['ros']
+[10.396s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/aruco_node) by extension 'ros'
+[10.398s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/aruco_node' with type 'ros.ament_python' and name 'aruco_node'[0m
+[10.399s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/base_driver) by extensions ['ignore', 'ignore_ament_install']
+[10.399s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/base_driver) by extension 'ignore'
+[10.399s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/base_driver) by extension 'ignore_ament_install'
+[10.399s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/base_driver) by extensions ['colcon_pkg']
+[10.400s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/base_driver) by extension 'colcon_pkg'
+[10.400s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/base_driver) by extensions ['colcon_meta']
+[10.400s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/base_driver) by extension 'colcon_meta'
+[10.400s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/base_driver) by extensions ['ros']
+[10.400s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/base_driver) by extension 'ros'
+[10.402s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/base_driver' with type 'ros.ament_cmake' and name 'base_driver'[0m
+[10.402s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/d1_sdk) by extensions ['ignore', 'ignore_ament_install']
+[10.402s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/d1_sdk) by extension 'ignore'
+[10.403s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/d1_sdk) ignored
+[10.403s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/go2_bringup) by extensions ['ignore', 'ignore_ament_install']
+[10.403s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/go2_bringup) by extension 'ignore'
+[10.403s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/go2_bringup) by extension 'ignore_ament_install'
+[10.403s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/go2_bringup) by extensions ['colcon_pkg']
+[10.403s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/go2_bringup) by extension 'colcon_pkg'
+[10.404s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/go2_bringup) by extensions ['colcon_meta']
+[10.404s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/go2_bringup) by extension 'colcon_meta'
+[10.404s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/go2_bringup) by extensions ['ros']
+[10.404s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/go2_bringup) by extension 'ros'
+[10.407s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/go2_bringup' with type 'ros.ament_python' and name 'go2_bringup'[0m
+[10.408s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node) by extensions ['ignore', 'ignore_ament_install']
+[10.408s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node) by extension 'ignore'
+[10.408s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node) by extension 'ignore_ament_install'
+[10.409s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node) by extensions ['colcon_pkg']
+[10.409s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node) by extension 'colcon_pkg'
+[10.409s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node) by extensions ['colcon_meta']
+[10.409s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node) by extension 'colcon_meta'
+[10.409s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node) by extensions ['ros']
+[10.409s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node) by extension 'ros'
+[10.413s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/navigation_node' with type 'ros.ament_python' and name 'navigation_node'[0m
+[10.414s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node_three) by extensions ['ignore', 'ignore_ament_install']
+[10.415s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node_three) by extension 'ignore'
+[10.415s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node_three) by extension 'ignore_ament_install'
+[10.415s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node_three) by extensions ['colcon_pkg']
+[10.415s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node_three) by extension 'colcon_pkg'
+[10.415s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node_three) by extensions ['colcon_meta']
+[10.416s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node_three) by extension 'colcon_meta'
+[10.416s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node_three) by extensions ['ros']
+[10.416s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node_three) by extension 'ros'
+[10.418s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/navigation_node_three' with type 'ros.ament_python' and name 'navigation_node_three'[0m
+[10.418s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node_two) by extensions ['ignore', 'ignore_ament_install']
+[10.419s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node_two) by extension 'ignore'
+[10.420s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node_two) by extension 'ignore_ament_install'
+[10.420s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node_two) by extensions ['colcon_pkg']
+[10.420s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node_two) by extension 'colcon_pkg'
+[10.420s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node_two) by extensions ['colcon_meta']
+[10.420s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node_two) by extension 'colcon_meta'
+[10.420s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node_two) by extensions ['ros']
+[10.421s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_node_two) by extension 'ros'
+[10.422s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/navigation_node_two' with type 'ros.ament_python' and name 'navigation_node_two'[0m
+[10.423s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_return_node) by extensions ['ignore', 'ignore_ament_install']
+[10.423s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_return_node) by extension 'ignore'
+[10.423s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_return_node) by extension 'ignore_ament_install'
+[10.423s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_return_node) by extensions ['colcon_pkg']
+[10.424s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_return_node) by extension 'colcon_pkg'
+[10.426s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_return_node) by extensions ['colcon_meta']
+[10.426s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_return_node) by extension 'colcon_meta'
+[10.426s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_return_node) by extensions ['ros']
+[10.426s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/navigation_return_node) by extension 'ros'
+[10.438s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/navigation_return_node' with type 'ros.ament_python' and name 'navigation_return_node'[0m
+[10.439s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/realsense-ros) by extensions ['ignore', 'ignore_ament_install']
+[10.439s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/realsense-ros) by extension 'ignore'
+[10.440s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/realsense-ros) ignored
+[10.440s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/unitree_sdk2) by extensions ['ignore', 'ignore_ament_install']
+[10.440s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/unitree_sdk2) by extension 'ignore'
+[10.440s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/unitree_sdk2) ignored
+[10.440s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/unitree_sdk2_python) by extensions ['ignore', 'ignore_ament_install']
+[10.441s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/unitree_sdk2_python) by extension 'ignore'
+[10.454s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/unitree_sdk2_python) ignored
+[10.455s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vision_node) by extensions ['ignore', 'ignore_ament_install']
+[10.455s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vision_node) by extension 'ignore'
+[10.455s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vision_node) by extension 'ignore_ament_install'
+[10.455s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vision_node) by extensions ['colcon_pkg']
+[10.455s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vision_node) by extension 'colcon_pkg'
+[10.456s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vision_node) by extensions ['colcon_meta']
+[10.456s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vision_node) by extension 'colcon_meta'
+[10.456s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vision_node) by extensions ['ros']
+[10.456s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/vision_node) by extension 'ros'
+[10.461s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/vision_node' with type 'ros.ament_python' and name 'vision_node'[0m
+[10.463s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[10.463s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[10.463s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[10.463s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[10.463s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[11.402s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) check parameters
+[11.402s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) discover
+[11.622s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 14 installed packages in /home/unitree/106a_final/install[0m
+[11.773s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 2 installed packages in /home/unitree/cyclonedds_ws/install[0m
+[12.004s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 292 installed packages in /opt/ros/foxy[0m
+[12.008s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) using defaults
+[12.687s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arm_control' build argument 'cmake_args' from command line to 'None'
+[12.688s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arm_control' build argument 'cmake_target' from command line to 'None'
+[12.688s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arm_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[12.689s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arm_control' build argument 'cmake_clean_cache' from command line to 'False'
+[12.689s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arm_control' build argument 'cmake_clean_first' from command line to 'False'
+[12.689s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arm_control' build argument 'cmake_force_configure' from command line to 'False'
+[12.690s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arm_control' build argument 'ament_cmake_args' from command line to 'None'
+[12.690s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arm_control' build argument 'catkin_cmake_args' from command line to 'None'
+[12.690s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arm_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[12.690s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'arm_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/unitree/106a_final/build/arm_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/unitree/106a_final/install/arm_control', 'merge_install': False, 'path': '/home/unitree/106a_final/src/arm_control', 'symlink_install': False, 'test_result_base': None}[0m
+[12.831s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arm_driver' build argument 'cmake_args' from command line to 'None'
+[12.831s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arm_driver' build argument 'cmake_target' from command line to 'None'
+[12.831s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arm_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[12.831s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arm_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[12.832s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arm_driver' build argument 'cmake_clean_first' from command line to 'False'
+[12.832s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arm_driver' build argument 'cmake_force_configure' from command line to 'False'
+[12.832s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arm_driver' build argument 'ament_cmake_args' from command line to 'None'
+[12.832s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arm_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[12.832s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arm_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[12.832s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'arm_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/unitree/106a_final/build/arm_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/unitree/106a_final/install/arm_driver', 'merge_install': False, 'path': '/home/unitree/106a_final/src/arm_driver', 'symlink_install': False, 'test_result_base': None}[0m
+[13.022s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'aruco_node' build argument 'cmake_args' from command line to 'None'
+[13.022s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'aruco_node' build argument 'cmake_target' from command line to 'None'
+[13.022s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'aruco_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[13.023s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'aruco_node' build argument 'cmake_clean_cache' from command line to 'False'
+[13.023s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'aruco_node' build argument 'cmake_clean_first' from command line to 'False'
+[13.023s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'aruco_node' build argument 'cmake_force_configure' from command line to 'False'
+[13.023s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'aruco_node' build argument 'ament_cmake_args' from command line to 'None'
+[13.023s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'aruco_node' build argument 'catkin_cmake_args' from command line to 'None'
+[13.023s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'aruco_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[13.023s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'aruco_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/unitree/106a_final/build/aruco_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/unitree/106a_final/install/aruco_node', 'merge_install': False, 'path': '/home/unitree/106a_final/src/aruco_node', 'symlink_install': False, 'test_result_base': None}[0m
+[13.162s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'base_driver' build argument 'cmake_args' from command line to 'None'
+[13.163s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'base_driver' build argument 'cmake_target' from command line to 'None'
+[13.163s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'base_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[13.163s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'base_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[13.163s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'base_driver' build argument 'cmake_clean_first' from command line to 'False'
+[13.163s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'base_driver' build argument 'cmake_force_configure' from command line to 'False'
+[13.163s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'base_driver' build argument 'ament_cmake_args' from command line to 'None'
+[13.163s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'base_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[13.163s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'base_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[13.163s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'base_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/unitree/106a_final/build/base_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/unitree/106a_final/install/base_driver', 'merge_install': False, 'path': '/home/unitree/106a_final/src/base_driver', 'symlink_install': False, 'test_result_base': None}[0m
+[13.394s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node' build argument 'cmake_args' from command line to 'None'
+[13.394s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node' build argument 'cmake_target' from command line to 'None'
+[13.394s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[13.394s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node' build argument 'cmake_clean_cache' from command line to 'False'
+[13.394s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node' build argument 'cmake_clean_first' from command line to 'False'
+[13.395s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node' build argument 'cmake_force_configure' from command line to 'False'
+[13.395s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node' build argument 'ament_cmake_args' from command line to 'None'
+[13.395s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node' build argument 'catkin_cmake_args' from command line to 'None'
+[13.395s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[13.395s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'navigation_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/unitree/106a_final/build/navigation_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/unitree/106a_final/install/navigation_node', 'merge_install': False, 'path': '/home/unitree/106a_final/src/navigation_node', 'symlink_install': False, 'test_result_base': None}[0m
+[13.791s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node_three' build argument 'cmake_args' from command line to 'None'
+[13.791s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node_three' build argument 'cmake_target' from command line to 'None'
+[13.791s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node_three' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[13.791s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node_three' build argument 'cmake_clean_cache' from command line to 'False'
+[13.791s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node_three' build argument 'cmake_clean_first' from command line to 'False'
+[13.791s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node_three' build argument 'cmake_force_configure' from command line to 'False'
+[13.791s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node_three' build argument 'ament_cmake_args' from command line to 'None'
+[13.791s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node_three' build argument 'catkin_cmake_args' from command line to 'None'
+[13.791s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node_three' build argument 'catkin_skip_building_tests' from command line to 'False'
+[13.791s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'navigation_node_three' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/unitree/106a_final/build/navigation_node_three', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/unitree/106a_final/install/navigation_node_three', 'merge_install': False, 'path': '/home/unitree/106a_final/src/navigation_node_three', 'symlink_install': False, 'test_result_base': None}[0m
+[13.932s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node_two' build argument 'cmake_args' from command line to 'None'
+[13.933s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node_two' build argument 'cmake_target' from command line to 'None'
+[13.933s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node_two' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[13.933s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node_two' build argument 'cmake_clean_cache' from command line to 'False'
+[13.933s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node_two' build argument 'cmake_clean_first' from command line to 'False'
+[13.933s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node_two' build argument 'cmake_force_configure' from command line to 'False'
+[13.933s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node_two' build argument 'ament_cmake_args' from command line to 'None'
+[13.933s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node_two' build argument 'catkin_cmake_args' from command line to 'None'
+[13.933s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_node_two' build argument 'catkin_skip_building_tests' from command line to 'False'
+[13.933s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'navigation_node_two' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/unitree/106a_final/build/navigation_node_two', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/unitree/106a_final/install/navigation_node_two', 'merge_install': False, 'path': '/home/unitree/106a_final/src/navigation_node_two', 'symlink_install': False, 'test_result_base': None}[0m
+[14.031s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_return_node' build argument 'cmake_args' from command line to 'None'
+[14.031s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_return_node' build argument 'cmake_target' from command line to 'None'
+[14.031s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_return_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[14.031s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_return_node' build argument 'cmake_clean_cache' from command line to 'False'
+[14.031s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_return_node' build argument 'cmake_clean_first' from command line to 'False'
+[14.031s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_return_node' build argument 'cmake_force_configure' from command line to 'False'
+[14.031s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_return_node' build argument 'ament_cmake_args' from command line to 'None'
+[14.031s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_return_node' build argument 'catkin_cmake_args' from command line to 'None'
+[14.031s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'navigation_return_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[14.032s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'navigation_return_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/unitree/106a_final/build/navigation_return_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/unitree/106a_final/install/navigation_return_node', 'merge_install': False, 'path': '/home/unitree/106a_final/src/navigation_return_node', 'symlink_install': False, 'test_result_base': None}[0m
+[14.172s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vision_node' build argument 'cmake_args' from command line to 'None'
+[14.172s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vision_node' build argument 'cmake_target' from command line to 'None'
+[14.173s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vision_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[14.181s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vision_node' build argument 'cmake_clean_cache' from command line to 'False'
+[14.181s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vision_node' build argument 'cmake_clean_first' from command line to 'False'
+[14.181s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vision_node' build argument 'cmake_force_configure' from command line to 'False'
+[14.181s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vision_node' build argument 'ament_cmake_args' from command line to 'None'
+[14.181s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vision_node' build argument 'catkin_cmake_args' from command line to 'None'
+[14.181s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vision_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[14.182s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'vision_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/unitree/106a_final/build/vision_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/unitree/106a_final/install/vision_node', 'merge_install': False, 'path': '/home/unitree/106a_final/src/vision_node', 'symlink_install': False, 'test_result_base': None}[0m
+[14.364s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'go2_bringup' build argument 'cmake_args' from command line to 'None'
+[14.364s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'go2_bringup' build argument 'cmake_target' from command line to 'None'
+[14.364s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'go2_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[14.364s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'go2_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[14.364s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'go2_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[14.364s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'go2_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[14.364s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'go2_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[14.364s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'go2_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[14.364s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'go2_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[14.364s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'go2_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/unitree/106a_final/build/go2_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/unitree/106a_final/install/go2_bringup', 'merge_install': False, 'path': '/home/unitree/106a_final/src/go2_bringup', 'symlink_install': False, 'test_result_base': None}[0m
+[14.516s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[14.725s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[14.726s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/unitree/106a_final/src/arm_control' with build type 'ament_python'
+[14.727s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('arm_control', 'ament_prefix_path')
+[14.888s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[14.888s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/arm_control/share/arm_control/hook/ament_prefix_path.ps1'
+[14.890s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/unitree/106a_final/install/arm_control/share/arm_control/hook/ament_prefix_path.dsv'
+[14.891s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/arm_control/share/arm_control/hook/ament_prefix_path.sh'
+[15.042s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[15.042s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[15.653s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/unitree/106a_final/src/arm_driver' with build type 'ament_cmake'
+[15.653s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/unitree/106a_final/src/arm_driver'
+[15.792s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[15.792s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[16.653s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/unitree/106a_final/src/aruco_node' with build type 'ament_python'
+[16.655s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('aruco_node', 'ament_prefix_path')
+[16.819s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/aruco_node/share/aruco_node/hook/ament_prefix_path.ps1'
+[16.821s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/unitree/106a_final/install/aruco_node/share/aruco_node/hook/ament_prefix_path.dsv'
+[16.824s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/aruco_node/share/aruco_node/hook/ament_prefix_path.sh'
+[17.095s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[17.096s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[17.705s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/unitree/106a_final/src/base_driver' with build type 'ament_cmake'
+[17.706s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/unitree/106a_final/src/base_driver'
+[17.919s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[17.920s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[19.568s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/unitree/106a_final/src/arm_control'
+[19.785s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[19.785s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[20.360s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/unitree/106a_final/build/arm_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unitree/106a_final/install/go2_bringup:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_return_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/navigation_node_three:/home/unitree/106a_final/install/navigation_node:/home/unitree/106a_final/install/navigatigation_node_three:/home/unitree/106a_final/install/aruco_node:/home/unitree/106a_final/install/arm_control:/opt/ros/foxy /usr/bin/cmake --build /home/unitree/106a_final/build/arm_driver -- -j4 -l4[0m
+[21.574s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/unitree/106a_final/src/aruco_node'
+[21.873s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[21.873s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[22.568s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/unitree/106a_final/build/base_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unitree/106a_final/install/go2_bringup:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_return_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/navigation_node_three:/home/unitree/106a_final/install/navigation_node:/home/unitree/106a_final/install/navigatigation_node_three:/home/unitree/106a_final/install/aruco_node:/home/unitree/106a_final/install/arm_control:/opt/ros/foxy /usr/bin/cmake --build /home/unitree/106a_final/build/base_driver -- -j4 -l4[0m
+[22.597s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/unitree/106a_final/build/arm_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unitree/106a_final/install/go2_bringup:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_return_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/navigation_node_three:/home/unitree/106a_final/install/navigation_node:/home/unitree/106a_final/install/navigatigation_node_three:/home/unitree/106a_final/install/aruco_node:/home/unitree/106a_final/install/arm_control:/opt/ros/foxy /usr/bin/cmake --build /home/unitree/106a_final/build/arm_driver -- -j4 -l4[0m
+[22.635s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/unitree/106a_final/build/arm_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unitree/106a_final/install/go2_bringup:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_return_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/navigation_node_three:/home/unitree/106a_final/install/navigation_node:/home/unitree/106a_final/install/navigatigation_node_three:/home/unitree/106a_final/install/aruco_node:/home/unitree/106a_final/install/arm_control:/opt/ros/foxy /usr/bin/cmake --install /home/unitree/106a_final/build/arm_driver[0m
+[22.782s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(arm_driver)
+[22.789s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/unitree/106a_final/build/arm_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unitree/106a_final/install/go2_bringup:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_return_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/navigation_node_three:/home/unitree/106a_final/install/navigation_node:/home/unitree/106a_final/install/navigatigation_node_three:/home/unitree/106a_final/install/aruco_node:/home/unitree/106a_final/install/arm_control:/opt/ros/foxy /usr/bin/cmake --install /home/unitree/106a_final/build/arm_driver[0m
+[23.087s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_driver' for CMake module files
+[23.088s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_driver' for CMake config files
+[23.089s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('arm_driver', 'cmake_prefix_path')
+[23.656s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/arm_driver/share/arm_driver/hook/cmake_prefix_path.ps1'
+[23.669s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/unitree/106a_final/install/arm_driver/share/arm_driver/hook/cmake_prefix_path.dsv'
+[23.671s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/arm_driver/share/arm_driver/hook/cmake_prefix_path.sh'
+[23.672s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_driver/lib'
+[23.673s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_driver/bin'
+[23.673s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_driver/lib/pkgconfig/arm_driver.pc'
+[23.673s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_driver/lib/python3.8/site-packages'
+[23.674s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_driver/bin'
+[24.102s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/arm_driver/share/arm_driver/package.ps1'
+[24.104s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/unitree/106a_final/install/arm_driver/share/arm_driver/package.dsv'
+[24.115s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/arm_driver/share/arm_driver/package.sh'
+[24.117s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/arm_driver/share/arm_driver/package.bash'
+[24.119s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/arm_driver/share/arm_driver/package.zsh'
+[24.120s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/unitree/106a_final/install/arm_driver/share/colcon-core/packages/arm_driver)
+[24.361s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(arm_driver)
+[24.466s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_driver' for CMake module files
+[24.467s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_driver' for CMake config files
+[24.467s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('arm_driver', 'cmake_prefix_path')
+[24.583s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/arm_driver/share/arm_driver/hook/cmake_prefix_path.ps1'
+[24.584s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/unitree/106a_final/install/arm_driver/share/arm_driver/hook/cmake_prefix_path.dsv'
+[24.585s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/arm_driver/share/arm_driver/hook/cmake_prefix_path.sh'
+[24.600s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_driver/lib'
+[24.601s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_driver/bin'
+[24.601s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_driver/lib/pkgconfig/arm_driver.pc'
+[24.601s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_driver/lib/python3.8/site-packages'
+[24.602s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_driver/bin'
+[24.811s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/arm_driver/share/arm_driver/package.ps1'
+[24.812s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/unitree/106a_final/install/arm_driver/share/arm_driver/package.dsv'
+[24.813s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/arm_driver/share/arm_driver/package.sh'
+[24.814s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/arm_driver/share/arm_driver/package.bash'
+[24.815s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/arm_driver/share/arm_driver/package.zsh'
+[24.816s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/unitree/106a_final/install/arm_driver/share/colcon-core/packages/arm_driver)
+[24.820s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/unitree/106a_final/src/navigation_node_three' with build type 'ament_python'
+[24.821s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('navigation_node_three', 'ament_prefix_path')
+[25.216s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/navigation_node_three/share/navigation_node_three/hook/ament_prefix_path.ps1'
+[25.218s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/unitree/106a_final/install/navigation_node_three/share/navigation_node_three/hook/ament_prefix_path.dsv'
+[25.219s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/navigation_node_three/share/navigation_node_three/hook/ament_prefix_path.sh'
+[25.438s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[25.438s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[26.177s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/unitree/106a_final/build/base_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unitree/106a_final/install/go2_bringup:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_return_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/navigation_node_three:/home/unitree/106a_final/install/navigation_node:/home/unitree/106a_final/install/navigatigation_node_three:/home/unitree/106a_final/install/aruco_node:/home/unitree/106a_final/install/arm_control:/opt/ros/foxy /usr/bin/cmake --build /home/unitree/106a_final/build/base_driver -- -j4 -l4[0m
+[26.183s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/unitree/106a_final/build/base_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unitree/106a_final/install/go2_bringup:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_return_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/navigation_node_three:/home/unitree/106a_final/install/navigation_node:/home/unitree/106a_final/install/navigatigation_node_three:/home/unitree/106a_final/install/aruco_node:/home/unitree/106a_final/install/arm_control:/opt/ros/foxy /usr/bin/cmake --install /home/unitree/106a_final/build/base_driver[0m
+[26.229s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/unitree/106a_final/src/aruco_node': PYTHONPATH=/home/unitree/106a_final/build/aruco_node/prefix_override:/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/aruco_node build --build-base /home/unitree/106a_final/build/aruco_node/build install --record /home/unitree/106a_final/build/aruco_node/install.log --single-version-externally-managed[0m
+[26.289s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/unitree/106a_final/src/arm_control': PYTHONPATH=/home/unitree/106a_final/build/arm_control/prefix_override:/home/unitree/106a_final/install/arm_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/arm_control build --build-base /home/unitree/106a_final/build/arm_control/build install --record /home/unitree/106a_final/build/arm_control/install.log --install-scripts $base/lib/arm_control --single-version-externally-managed[0m
+[27.788s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/unitree/106a_final/src/navigation_node_three'
+[27.897s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[27.898s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[28.631s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(base_driver)
+[28.632s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/unitree/106a_final/build/base_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unitree/106a_final/install/go2_bringup:/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_return_node:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/navigation_node_three:/home/unitree/106a_final/install/navigation_node:/home/unitree/106a_final/install/navigatigation_node_three:/home/unitree/106a_final/install/aruco_node:/home/unitree/106a_final/install/arm_control:/opt/ros/foxy /usr/bin/cmake --install /home/unitree/106a_final/build/base_driver[0m
+[28.747s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/base_driver' for CMake module files
+[28.748s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/base_driver' for CMake config files
+[28.749s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('base_driver', 'cmake_prefix_path')
+[29.021s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/base_driver/share/base_driver/hook/cmake_prefix_path.ps1'
+[29.033s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/unitree/106a_final/install/base_driver/share/base_driver/hook/cmake_prefix_path.dsv'
+[29.035s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/base_driver/share/base_driver/hook/cmake_prefix_path.sh'
+[29.037s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/base_driver/lib'
+[29.037s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/base_driver/bin'
+[29.037s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/base_driver/lib/pkgconfig/base_driver.pc'
+[29.038s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/base_driver/lib/python3.8/site-packages'
+[29.038s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/base_driver/bin'
+[29.263s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/base_driver/share/base_driver/package.ps1'
+[29.265s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/unitree/106a_final/install/base_driver/share/base_driver/package.dsv'
+[29.267s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/base_driver/share/base_driver/package.sh'
+[29.269s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/base_driver/share/base_driver/package.bash'
+[29.270s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/base_driver/share/base_driver/package.zsh'
+[29.271s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/unitree/106a_final/install/base_driver/share/colcon-core/packages/base_driver)
+[29.440s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(base_driver)
+[29.603s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/base_driver' for CMake module files
+[29.604s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/base_driver' for CMake config files
+[29.605s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('base_driver', 'cmake_prefix_path')
+[29.826s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/base_driver/share/base_driver/hook/cmake_prefix_path.ps1'
+[29.828s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/unitree/106a_final/install/base_driver/share/base_driver/hook/cmake_prefix_path.dsv'
+[29.837s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/base_driver/share/base_driver/hook/cmake_prefix_path.sh'
+[29.839s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/base_driver/lib'
+[29.839s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/base_driver/bin'
+[29.839s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/base_driver/lib/pkgconfig/base_driver.pc'
+[29.840s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/base_driver/lib/python3.8/site-packages'
+[29.840s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/base_driver/bin'
+[29.971s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/base_driver/share/base_driver/package.ps1'
+[29.973s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/unitree/106a_final/install/base_driver/share/base_driver/package.dsv'
+[29.974s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/base_driver/share/base_driver/package.sh'
+[29.975s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/base_driver/share/base_driver/package.bash'
+[29.977s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/base_driver/share/base_driver/package.zsh'
+[29.979s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/unitree/106a_final/install/base_driver/share/colcon-core/packages/base_driver)
+[29.984s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/unitree/106a_final/src/navigation_return_node' with build type 'ament_python'
+[29.986s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('navigation_return_node', 'ament_prefix_path')
+[30.168s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/navigation_return_node/share/navigation_return_node/hook/ament_prefix_path.ps1'
+[30.169s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/unitree/106a_final/install/navigation_return_node/share/navigation_return_node/hook/ament_prefix_path.dsv'
+[30.170s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/navigation_return_node/share/navigation_return_node/hook/ament_prefix_path.sh'
+[30.321s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[30.321s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[31.084s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/unitree/106a_final/src/arm_control' returned '0': PYTHONPATH=/home/unitree/106a_final/build/arm_control/prefix_override:/home/unitree/106a_final/install/arm_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/arm_control build --build-base /home/unitree/106a_final/build/arm_control/build install --record /home/unitree/106a_final/build/arm_control/install.log --install-scripts $base/lib/arm_control --single-version-externally-managed[0m
+[31.346s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_control' for CMake module files
+[31.358s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_control' for CMake config files
+[31.362s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_control/lib'
+[31.362s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_control/bin'
+[31.362s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_control/lib/pkgconfig/arm_control.pc'
+[31.363s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_control/lib/python3.8/site-packages'
+[31.363s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('arm_control', 'pythonpath')
+[31.524s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/arm_control/share/arm_control/hook/pythonpath.ps1'
+[31.526s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/unitree/106a_final/install/arm_control/share/arm_control/hook/pythonpath.dsv'
+[31.527s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/arm_control/share/arm_control/hook/pythonpath.sh'
+[31.528s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/arm_control/bin'
+[31.529s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(arm_control)
+[31.795s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/arm_control/share/arm_control/package.ps1'
+[31.798s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/unitree/106a_final/install/arm_control/share/arm_control/package.dsv'
+[31.799s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/arm_control/share/arm_control/package.sh'
+[31.801s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/arm_control/share/arm_control/package.bash'
+[31.802s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/arm_control/share/arm_control/package.zsh'
+[31.804s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/unitree/106a_final/install/arm_control/share/colcon-core/packages/arm_control)
+[31.807s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/unitree/106a_final/src/aruco_node' returned '0': PYTHONPATH=/home/unitree/106a_final/build/aruco_node/prefix_override:/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/aruco_node build --build-base /home/unitree/106a_final/build/aruco_node/build install --record /home/unitree/106a_final/build/aruco_node/install.log --single-version-externally-managed[0m
+[31.984s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/aruco_node' for CMake module files
+[31.985s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/aruco_node' for CMake config files
+[31.987s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/aruco_node/lib'
+[31.987s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/aruco_node/bin'
+[31.987s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/aruco_node/lib/pkgconfig/aruco_node.pc'
+[31.988s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages'
+[31.988s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('aruco_node', 'pythonpath')
+[32.102s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/aruco_node/share/aruco_node/hook/pythonpath.ps1'
+[32.103s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/unitree/106a_final/install/aruco_node/share/aruco_node/hook/pythonpath.dsv'
+[32.105s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/aruco_node/share/aruco_node/hook/pythonpath.sh'
+[32.107s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/aruco_node/bin'
+[32.107s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(aruco_node)
+[32.261s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/aruco_node/share/aruco_node/package.ps1'
+[32.263s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/unitree/106a_final/install/aruco_node/share/aruco_node/package.dsv'
+[32.264s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/aruco_node/share/aruco_node/package.sh'
+[32.266s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/aruco_node/share/aruco_node/package.bash'
+[32.267s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/aruco_node/share/aruco_node/package.zsh'
+[32.268s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/unitree/106a_final/install/aruco_node/share/colcon-core/packages/aruco_node)
+[32.270s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/unitree/106a_final/src/vision_node' with build type 'ament_python'
+[32.270s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vision_node', 'ament_prefix_path')
+[32.374s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/vision_node/share/vision_node/hook/ament_prefix_path.ps1'
+[32.375s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/unitree/106a_final/install/vision_node/share/vision_node/hook/ament_prefix_path.dsv'
+[32.377s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/vision_node/share/vision_node/hook/ament_prefix_path.sh'
+[32.502s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[32.502s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[33.341s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/unitree/106a_final/src/navigation_node' with build type 'ament_python'
+[33.344s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('navigation_node', 'ament_prefix_path')
+[33.523s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/navigation_node/share/navigation_node/hook/ament_prefix_path.ps1'
+[33.527s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/unitree/106a_final/install/navigation_node/share/navigation_node/hook/ament_prefix_path.dsv'
+[33.528s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/navigation_node/share/navigation_node/hook/ament_prefix_path.sh'
+[33.676s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[33.676s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[35.593s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/unitree/106a_final/src/navigation_return_node'
+[35.925s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[35.926s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[37.381s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/unitree/106a_final/src/vision_node'
+[37.574s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[37.574s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[39.068s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/unitree/106a_final/src/navigation_node'
+[39.334s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[39.335s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[40.353s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/unitree/106a_final/src/navigation_node_three': PYTHONPATH=/home/unitree/106a_final/build/navigation_node_three/prefix_override:/home/unitree/106a_final/install/navigation_node_three/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/navigation_node_three build --build-base /home/unitree/106a_final/build/navigation_node_three/build install --record /home/unitree/106a_final/build/navigation_node_three/install.log --install-scripts $base/lib/navigation_node_three --single-version-externally-managed[0m
+[42.399s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/unitree/106a_final/src/vision_node': PYTHONPATH=/home/unitree/106a_final/build/vision_node/prefix_override:/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/vision_node build --build-base /home/unitree/106a_final/build/vision_node/build install --record /home/unitree/106a_final/build/vision_node/install.log --install-scripts $base/lib/vision_node --single-version-externally-managed[0m
+[42.497s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/unitree/106a_final/src/navigation_node_three' returned '0': PYTHONPATH=/home/unitree/106a_final/build/navigation_node_three/prefix_override:/home/unitree/106a_final/install/navigation_node_three/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/navigation_node_three build --build-base /home/unitree/106a_final/build/navigation_node_three/build install --record /home/unitree/106a_final/build/navigation_node_three/install.log --install-scripts $base/lib/navigation_node_three --single-version-externally-managed[0m
+[42.926s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node_three' for CMake module files
+[42.927s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node_three' for CMake config files
+[42.933s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node_three/lib'
+[42.933s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node_three/bin'
+[42.934s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node_three/lib/pkgconfig/navigation_node_three.pc'
+[42.934s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node_three/lib/python3.8/site-packages'
+[42.934s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('navigation_node_three', 'pythonpath')
+[43.284s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/navigation_node_three/share/navigation_node_three/hook/pythonpath.ps1'
+[43.290s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/unitree/106a_final/install/navigation_node_three/share/navigation_node_three/hook/pythonpath.dsv'
+[43.291s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/navigation_node_three/share/navigation_node_three/hook/pythonpath.sh'
+[43.293s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node_three/bin'
+[43.293s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(navigation_node_three)
+[43.620s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/navigation_node_three/share/navigation_node_three/package.ps1'
+[43.621s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/unitree/106a_final/install/navigation_node_three/share/navigation_node_three/package.dsv'
+[43.622s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/navigation_node_three/share/navigation_node_three/package.sh'
+[43.623s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/navigation_node_three/share/navigation_node_three/package.bash'
+[43.624s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/navigation_node_three/share/navigation_node_three/package.zsh'
+[43.625s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/unitree/106a_final/install/navigation_node_three/share/colcon-core/packages/navigation_node_three)
+[43.628s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/unitree/106a_final/src/navigation_node_two' with build type 'ament_python'
+[43.629s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('navigation_node_two', 'ament_prefix_path')
+[43.803s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/navigation_node_two/share/navigation_node_two/hook/ament_prefix_path.ps1'
+[43.804s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/unitree/106a_final/install/navigation_node_two/share/navigation_node_two/hook/ament_prefix_path.dsv'
+[43.806s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/navigation_node_two/share/navigation_node_two/hook/ament_prefix_path.sh'
+[43.996s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[43.996s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[44.891s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/unitree/106a_final/src/vision_node' returned '0': PYTHONPATH=/home/unitree/106a_final/build/vision_node/prefix_override:/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/vision_node build --build-base /home/unitree/106a_final/build/vision_node/build install --record /home/unitree/106a_final/build/vision_node/install.log --install-scripts $base/lib/vision_node --single-version-externally-managed[0m
+[45.030s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/vision_node' for CMake module files
+[45.031s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/vision_node' for CMake config files
+[45.032s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/vision_node/lib'
+[45.033s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/vision_node/bin'
+[45.047s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/vision_node/lib/pkgconfig/vision_node.pc'
+[45.048s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages'
+[45.048s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('vision_node', 'pythonpath')
+[45.187s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/vision_node/share/vision_node/hook/pythonpath.ps1'
+[45.189s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/unitree/106a_final/install/vision_node/share/vision_node/hook/pythonpath.dsv'
+[45.190s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/vision_node/share/vision_node/hook/pythonpath.sh'
+[45.192s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/vision_node/bin'
+[45.192s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(vision_node)
+[45.342s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/vision_node/share/vision_node/package.ps1'
+[45.345s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/unitree/106a_final/install/vision_node/share/vision_node/package.dsv'
+[45.346s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/vision_node/share/vision_node/package.sh'
+[45.348s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/vision_node/share/vision_node/package.bash'
+[45.349s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/vision_node/share/vision_node/package.zsh'
+[45.355s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/unitree/106a_final/install/vision_node/share/colcon-core/packages/vision_node)
+[45.368s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/unitree/106a_final/src/navigation_node': PYTHONPATH=/home/unitree/106a_final/build/navigation_node/prefix_override:/home/unitree/106a_final/install/navigation_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/navigation_node build --build-base /home/unitree/106a_final/build/navigation_node/build install --record /home/unitree/106a_final/build/navigation_node/install.log --install-scripts $base/lib/navigation_node --single-version-externally-managed[0m
+[45.397s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/unitree/106a_final/src/navigation_return_node': PYTHONPATH=/home/unitree/106a_final/build/navigation_return_node/prefix_override:/home/unitree/106a_final/install/navigation_return_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/navigation_return_node build --build-base /home/unitree/106a_final/build/navigation_return_node/build install --record /home/unitree/106a_final/build/navigation_return_node/install.log --install-scripts $base/lib/navigation_return_node --single-version-externally-managed[0m
+[46.502s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/unitree/106a_final/src/navigation_node_two'
+[46.666s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[46.667s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[47.571s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/unitree/106a_final/src/navigation_return_node' returned '0': PYTHONPATH=/home/unitree/106a_final/build/navigation_return_node/prefix_override:/home/unitree/106a_final/install/navigation_return_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/navigation_return_node build --build-base /home/unitree/106a_final/build/navigation_return_node/build install --record /home/unitree/106a_final/build/navigation_return_node/install.log --install-scripts $base/lib/navigation_return_node --single-version-externally-managed[0m
+[47.767s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_return_node' for CMake module files
+[47.768s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_return_node' for CMake config files
+[47.769s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_return_node/lib'
+[47.769s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_return_node/bin'
+[47.769s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_return_node/lib/pkgconfig/navigation_return_node.pc'
+[47.770s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_return_node/lib/python3.8/site-packages'
+[47.770s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('navigation_return_node', 'pythonpath')
+[47.875s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/navigation_return_node/share/navigation_return_node/hook/pythonpath.ps1'
+[47.876s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/unitree/106a_final/install/navigation_return_node/share/navigation_return_node/hook/pythonpath.dsv'
+[47.877s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/navigation_return_node/share/navigation_return_node/hook/pythonpath.sh'
+[47.878s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_return_node/bin'
+[47.878s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(navigation_return_node)
+[48.020s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/navigation_return_node/share/navigation_return_node/package.ps1'
+[48.022s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/unitree/106a_final/install/navigation_return_node/share/navigation_return_node/package.dsv'
+[48.024s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/navigation_return_node/share/navigation_return_node/package.sh'
+[48.025s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/navigation_return_node/share/navigation_return_node/package.bash'
+[48.026s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/navigation_return_node/share/navigation_return_node/package.zsh'
+[48.027s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/unitree/106a_final/install/navigation_return_node/share/colcon-core/packages/navigation_return_node)
+[48.030s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/unitree/106a_final/src/navigation_node' returned '0': PYTHONPATH=/home/unitree/106a_final/build/navigation_node/prefix_override:/home/unitree/106a_final/install/navigation_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/navigation_node build --build-base /home/unitree/106a_final/build/navigation_node/build install --record /home/unitree/106a_final/build/navigation_node/install.log --install-scripts $base/lib/navigation_node --single-version-externally-managed[0m
+[48.270s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node' for CMake module files
+[48.271s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node' for CMake config files
+[48.272s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node/lib'
+[48.272s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node/bin'
+[48.273s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node/lib/pkgconfig/navigation_node.pc'
+[48.273s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node/lib/python3.8/site-packages'
+[48.273s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('navigation_node', 'pythonpath')
+[48.646s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/navigation_node/share/navigation_node/hook/pythonpath.ps1'
+[48.647s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/unitree/106a_final/install/navigation_node/share/navigation_node/hook/pythonpath.dsv'
+[48.648s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/navigation_node/share/navigation_node/hook/pythonpath.sh'
+[48.649s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node/bin'
+[48.650s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(navigation_node)
+[48.810s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/navigation_node/share/navigation_node/package.ps1'
+[48.812s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/unitree/106a_final/install/navigation_node/share/navigation_node/package.dsv'
+[48.814s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/navigation_node/share/navigation_node/package.sh'
+[48.815s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/navigation_node/share/navigation_node/package.bash'
+[48.816s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/navigation_node/share/navigation_node/package.zsh'
+[48.816s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/unitree/106a_final/install/navigation_node/share/colcon-core/packages/navigation_node)
+[48.819s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/unitree/106a_final/src/go2_bringup' with build type 'ament_python'
+[48.820s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('go2_bringup', 'ament_prefix_path')
+[48.968s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/go2_bringup/share/go2_bringup/hook/ament_prefix_path.ps1'
+[48.969s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/unitree/106a_final/install/go2_bringup/share/go2_bringup/hook/ament_prefix_path.dsv'
+[48.970s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/go2_bringup/share/go2_bringup/hook/ament_prefix_path.sh'
+[49.096s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[49.096s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[50.973s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/unitree/106a_final/src/go2_bringup'
+[51.297s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[51.298s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[52.028s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/unitree/106a_final/src/navigation_node_two': PYTHONPATH=/home/unitree/106a_final/build/navigation_node_two/prefix_override:/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/navigation_node_two build --build-base /home/unitree/106a_final/build/navigation_node_two/build install --record /home/unitree/106a_final/build/navigation_node_two/install.log --install-scripts $base/lib/navigation_node_two --single-version-externally-managed[0m
+[53.325s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/unitree/106a_final/src/navigation_node_two' returned '0': PYTHONPATH=/home/unitree/106a_final/build/navigation_node_two/prefix_override:/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/navigation_node_two build --build-base /home/unitree/106a_final/build/navigation_node_two/build install --record /home/unitree/106a_final/build/navigation_node_two/install.log --install-scripts $base/lib/navigation_node_two --single-version-externally-managed[0m
+[53.494s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node_two' for CMake module files
+[53.496s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node_two' for CMake config files
+[53.498s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node_two/lib'
+[53.498s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node_two/bin'
+[53.498s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node_two/lib/pkgconfig/navigation_node_two.pc'
+[53.499s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages'
+[53.499s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('navigation_node_two', 'pythonpath')
+[53.817s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/navigation_node_two/share/navigation_node_two/hook/pythonpath.ps1'
+[53.819s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/unitree/106a_final/install/navigation_node_two/share/navigation_node_two/hook/pythonpath.dsv'
+[53.820s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/navigation_node_two/share/navigation_node_two/hook/pythonpath.sh'
+[53.821s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/navigation_node_two/bin'
+[53.821s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(navigation_node_two)
+[54.064s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/navigation_node_two/share/navigation_node_two/package.ps1'
+[54.066s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/unitree/106a_final/install/navigation_node_two/share/navigation_node_two/package.dsv'
+[54.067s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/navigation_node_two/share/navigation_node_two/package.sh'
+[54.083s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/navigation_node_two/share/navigation_node_two/package.bash'
+[54.085s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/navigation_node_two/share/navigation_node_two/package.zsh'
+[54.086s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/unitree/106a_final/install/navigation_node_two/share/colcon-core/packages/navigation_node_two)
+[54.593s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/unitree/106a_final/src/go2_bringup': AMENT_PREFIX_PATH=/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_return_node:/home/unitree/106a_final/install/navigation_node_three:/home/unitree/106a_final/install/aruco_node:/home/unitree/106a_final/install/arm_control:/home/unitree/106a_final/install/go2_bringup:/home/unitree/106a_final/install/realsense2_description:/home/unitree/106a_final/install/realsense2_camera:/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/navigation_node:/home/unitree/106a_final/install/navigatigation_node_three:/home/unitree/106a_final/install/base_driver:/home/unitree/106a_final/install/arm_driver:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/unitree/106a_final/install/base_driver:/home/unitree/106a_final/install/arm_driver:/home/unitree/106a_final/install/realsense2_description:/home/unitree/106a_final/install/realsense2_camera:/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds PYTHONPATH=/home/unitree/106a_final/build/go2_bringup/prefix_override:/home/unitree/106a_final/install/go2_bringup/lib/python3.8/site-packages:/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_return_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_node_three/lib/python3.8/site-packages:/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/arm_control/lib/python3.8/site-packages:/home/unitree/106a_final/install/go2_bringup/lib/python3.8/site-packages:/home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigatigation_node_three/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/go2_bringup build --build-base /home/unitree/106a_final/build/go2_bringup/build install --record /home/unitree/106a_final/build/go2_bringup/install.log --install-scripts $base/lib/go2_bringup --single-version-externally-managed[0m
+[55.862s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/unitree/106a_final/src/go2_bringup' returned '0': AMENT_PREFIX_PATH=/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_return_node:/home/unitree/106a_final/install/navigation_node_three:/home/unitree/106a_final/install/aruco_node:/home/unitree/106a_final/install/arm_control:/home/unitree/106a_final/install/go2_bringup:/home/unitree/106a_final/install/realsense2_description:/home/unitree/106a_final/install/realsense2_camera:/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/106a_final/install/navigation_node_two:/home/unitree/106a_final/install/navigation_node:/home/unitree/106a_final/install/navigatigation_node_three:/home/unitree/106a_final/install/base_driver:/home/unitree/106a_final/install/arm_driver:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/unitree/106a_final/install/base_driver:/home/unitree/106a_final/install/arm_driver:/home/unitree/106a_final/install/realsense2_description:/home/unitree/106a_final/install/realsense2_camera:/home/unitree/106a_final/install/realsense2_camera_msgs:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds PYTHONPATH=/home/unitree/106a_final/build/go2_bringup/prefix_override:/home/unitree/106a_final/install/go2_bringup/lib/python3.8/site-packages:/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_return_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_node_three/lib/python3.8/site-packages:/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/arm_control/lib/python3.8/site-packages:/home/unitree/106a_final/install/go2_bringup/lib/python3.8/site-packages:/home/unitree/106a_final/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigatigation_node_three/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/go2_bringup build --build-base /home/unitree/106a_final/build/go2_bringup/build install --record /home/unitree/106a_final/build/go2_bringup/install.log --install-scripts $base/lib/go2_bringup --single-version-externally-managed[0m
+[56.002s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/go2_bringup' for CMake module files
+[56.003s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/go2_bringup' for CMake config files
+[56.004s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/go2_bringup/lib'
+[56.004s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/go2_bringup/bin'
+[56.004s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/go2_bringup/lib/pkgconfig/go2_bringup.pc'
+[56.005s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/go2_bringup/lib/python3.8/site-packages'
+[56.005s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('go2_bringup', 'pythonpath')
+[56.148s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/go2_bringup/share/go2_bringup/hook/pythonpath.ps1'
+[56.150s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/unitree/106a_final/install/go2_bringup/share/go2_bringup/hook/pythonpath.dsv'
+[56.151s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/unitree/106a_final/install/go2_bringup/share/go2_bringup/hook/pythonpath.sh'
+[56.152s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/unitree/106a_final/install/go2_bringup/bin'
+[56.152s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(go2_bringup)
+[56.268s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/go2_bringup/share/go2_bringup/package.ps1'
+[56.270s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/unitree/106a_final/install/go2_bringup/share/go2_bringup/package.dsv'
+[56.271s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/go2_bringup/share/go2_bringup/package.sh'
+[56.271s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/go2_bringup/share/go2_bringup/package.bash'
+[56.272s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/unitree/106a_final/install/go2_bringup/share/go2_bringup/package.zsh'
+[56.273s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/unitree/106a_final/install/go2_bringup/share/colcon-core/packages/go2_bringup)
+[56.277s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[56.280s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[56.280s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '0'[0m
+[56.281s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[56.574s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[56.578s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[56.578s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'notify2'
+[56.640s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[56.760s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/unitree/106a_final/install/local_setup.ps1'
+[56.762s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/unitree/106a_final/install/_local_setup_util_ps1.py'
+[56.766s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/unitree/106a_final/install/setup.ps1'
+[56.928s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/unitree/106a_final/install/local_setup.sh'
+[56.929s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/unitree/106a_final/install/_local_setup_util_sh.py'
+[56.930s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/unitree/106a_final/install/setup.sh'
+[57.050s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/unitree/106a_final/install/local_setup.bash'
+[57.052s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/unitree/106a_final/install/setup.bash'
+[57.157s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/unitree/106a_final/install/local_setup.zsh'
+[57.158s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/unitree/106a_final/install/setup.zsh'

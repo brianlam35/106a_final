@@ -1,0 +1,441 @@
+[0.000000] (-) TimerEvent: {}
+[0.000642] (arm_control) JobQueued: {'identifier': 'arm_control', 'dependencies': OrderedDict()}
+[0.000833] (arm_driver) JobQueued: {'identifier': 'arm_driver', 'dependencies': OrderedDict()}
+[0.001313] (aruco_node) JobQueued: {'identifier': 'aruco_node', 'dependencies': OrderedDict()}
+[0.001623] (base_driver) JobQueued: {'identifier': 'base_driver', 'dependencies': OrderedDict()}
+[0.001768] (navigation_node) JobQueued: {'identifier': 'navigation_node', 'dependencies': OrderedDict()}
+[0.001811] (navigation_node_three) JobQueued: {'identifier': 'navigation_node_three', 'dependencies': OrderedDict()}
+[0.001846] (navigation_node_two) JobQueued: {'identifier': 'navigation_node_two', 'dependencies': OrderedDict()}
+[0.001879] (navigation_return_node) JobQueued: {'identifier': 'navigation_return_node', 'dependencies': OrderedDict()}
+[0.001910] (vision_node) JobQueued: {'identifier': 'vision_node', 'dependencies': OrderedDict()}
+[0.001941] (go2_bringup) JobQueued: {'identifier': 'go2_bringup', 'dependencies': OrderedDict([('arm_control', '/home/unitree/106a_final/install/arm_control'), ('arm_driver', '/home/unitree/106a_final/install/arm_driver'), ('aruco_node', '/home/unitree/106a_final/install/aruco_node'), ('base_driver', '/home/unitree/106a_final/install/base_driver'), ('navigation_node_three', '/home/unitree/106a_final/install/navigation_node_three'), ('navigation_return_node', '/home/unitree/106a_final/install/navigation_return_node'), ('vision_node', '/home/unitree/106a_final/install/vision_node')])}
+[0.001998] (arm_control) JobStarted: {'identifier': 'arm_control'}
+[0.099801] (-) TimerEvent: {}
+[0.200497] (-) TimerEvent: {}
+[0.301483] (-) TimerEvent: {}
+[0.402663] (-) TimerEvent: {}
+[0.412550] (arm_driver) JobStarted: {'identifier': 'arm_driver'}
+[0.502918] (-) TimerEvent: {}
+[0.603548] (-) TimerEvent: {}
+[0.704265] (-) TimerEvent: {}
+[0.736153] (aruco_node) JobStarted: {'identifier': 'aruco_node'}
+[0.804386] (-) TimerEvent: {}
+[0.905149] (-) TimerEvent: {}
+[1.005913] (-) TimerEvent: {}
+[1.106862] (-) TimerEvent: {}
+[1.173159] (base_driver) JobStarted: {'identifier': 'base_driver'}
+[1.207035] (-) TimerEvent: {}
+[1.307595] (-) TimerEvent: {}
+[1.408363] (-) TimerEvent: {}
+[1.509675] (-) TimerEvent: {}
+[1.610323] (-) TimerEvent: {}
+[1.710924] (-) TimerEvent: {}
+[1.811504] (-) TimerEvent: {}
+[1.912091] (-) TimerEvent: {}
+[2.012865] (-) TimerEvent: {}
+[2.113695] (-) TimerEvent: {}
+[2.214873] (-) TimerEvent: {}
+[2.263198] (arm_driver) JobProgress: {'identifier': 'arm_driver', 'progress': 'cmake'}
+[2.264580] (arm_driver) JobProgress: {'identifier': 'arm_driver', 'progress': 'build'}
+[2.265951] (arm_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/unitree/106a_final/build/arm_driver', '--', '-j4', '-l4'], 'cwd': '/home/unitree/106a_final/build/arm_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_CLIENT', '10.42.0.135 53185 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/unitree/106a_final/build/arm_driver'), ('SSH_CONNECTION', '10.42.0.135 53185 192.168.123.18 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[2.315303] (-) TimerEvent: {}
+[2.416194] (-) TimerEvent: {}
+[2.516806] (-) TimerEvent: {}
+[2.617409] (-) TimerEvent: {}
+[2.717969] (-) TimerEvent: {}
+[2.818742] (-) TimerEvent: {}
+[2.920783] (-) TimerEvent: {}
+[3.021399] (-) TimerEvent: {}
+[3.051600] (arm_driver) StderrLine: {'line': b"make: Warning: File 'Makefile' has modification time 1764653215 s in the future\n"}
+[3.052269] (arm_driver) StderrLine: {'line': b"make[1]: Warning: File 'CMakeFiles/Makefile2' has modification time 1764653215 s in the future\n"}
+[3.052729] (arm_driver) StderrLine: {'line': b"make[2]: Warning: File 'CMakeFiles/d1_wrapper.dir/flags.make' has modification time 1764653215 s in the future\n"}
+[3.052981] (arm_driver) StderrLine: {'line': b'make[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[3.053441] (arm_driver) StderrLine: {'line': b"make[2]: Warning: File 'CMakeFiles/d1_wrapper.dir/flags.make' has modification time 1764653215 s in the future\n"}
+[3.053896] (arm_driver) StderrLine: {'line': b'make[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[3.054100] (arm_driver) StderrLine: {'line': b"make[2]: Warning: File 'CMakeFiles/servo_driver.dir/flags.make' has modification time 1764653215 s in the future\n"}
+[3.054450] (arm_driver) StderrLine: {'line': b'make[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[3.054937] (arm_driver) StderrLine: {'line': b"make[2]: Warning: File 'CMakeFiles/servo_driver.dir/flags.make' has modification time 1764653215 s in the future\n"}
+[3.057828] (arm_driver) StderrLine: {'line': b'make[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[3.058167] (arm_driver) StderrLine: {'line': b'make[1]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[3.058332] (arm_driver) StderrLine: {'line': b'make: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[3.058468] (arm_driver) StdoutLine: {'line': b'[ 66%] Built target d1_wrapper\n'}
+[3.058693] (arm_driver) StdoutLine: {'line': b'[100%] Built target servo_driver\n'}
+[3.058841] (base_driver) JobProgress: {'identifier': 'base_driver', 'progress': 'cmake'}
+[3.058887] (base_driver) JobProgress: {'identifier': 'base_driver', 'progress': 'build'}
+[3.058936] (base_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/unitree/106a_final/build/base_driver', '--', '-j4', '-l4'], 'cwd': '/home/unitree/106a_final/build/base_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_CLIENT', '10.42.0.135 53185 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/unitree/106a_final/build/base_driver'), ('SSH_CONNECTION', '10.42.0.135 53185 192.168.123.18 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[3.063380] (arm_driver) CommandEnded: {'returncode': 0}
+[3.064475] (arm_driver) JobProgress: {'identifier': 'arm_driver', 'progress': 'install'}
+[3.079665] (base_driver) StderrLine: {'line': b"make: Warning: File 'Makefile' has modification time 1764694498 s in the future\n"}
+[3.085903] (arm_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/unitree/106a_final/build/arm_driver'], 'cwd': '/home/unitree/106a_final/build/arm_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_CLIENT', '10.42.0.135 53185 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/unitree/106a_final/build/arm_driver'), ('SSH_CONNECTION', '10.42.0.135 53185 192.168.123.18 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[3.109335] (arm_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.110196] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/lib/arm_driver/servo_driver\n'}
+[3.110459] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/launch\n'}
+[3.110670] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/launch/arm_driver.launch.py\n'}
+[3.110952] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/ament_index/resource_index/package_run_dependencies/arm_driver\n'}
+[3.111127] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/ament_index/resource_index/parent_prefix_path/arm_driver\n'}
+[3.111259] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/environment/ament_prefix_path.sh\n'}
+[3.111385] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/environment/ament_prefix_path.dsv\n'}
+[3.111604] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/environment/path.sh\n'}
+[3.111819] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/environment/path.dsv\n'}
+[3.111945] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/local_setup.bash\n'}
+[3.112100] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/local_setup.sh\n'}
+[3.112234] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/local_setup.zsh\n'}
+[3.112350] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/local_setup.dsv\n'}
+[3.112463] (arm_driver) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/arm_driver/share/arm_driver/package.dsv\n'}
+[3.112576] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/ament_index/resource_index/packages/arm_driver\n'}
+[3.112687] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/cmake/arm_driverConfig.cmake\n'}
+[3.112794] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/cmake/arm_driverConfig-version.cmake\n'}
+[3.112973] (arm_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/arm_driver/share/arm_driver/package.xml\n'}
+[3.117109] (arm_driver) CommandEnded: {'returncode': 0}
+[3.122143] (-) TimerEvent: {}
+[3.128652] (base_driver) StderrLine: {'line': b"make[1]: Warning: File 'CMakeFiles/Makefile2' has modification time 1764694498 s in the future\n"}
+[3.130620] (base_driver) StderrLine: {'line': b"make[2]: Warning: File 'CMakeFiles/base_wrapper.dir/flags.make' has modification time 1764694498 s in the future\n"}
+[3.171895] (base_driver) StderrLine: {'line': b'make[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[3.175834] (base_driver) StderrLine: {'line': b"make[2]: Warning: File 'CMakeFiles/base_wrapper.dir/flags.make' has modification time 1764694498 s in the future\n"}
+[3.176233] (base_driver) StderrLine: {'line': b'make[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[3.195328] (base_driver) StdoutLine: {'line': b'[ 50%] Built target base_wrapper\n'}
+[3.201023] (base_driver) StderrLine: {'line': b"make[2]: Warning: File 'CMakeFiles/base_driver.dir/flags.make' has modification time 1764694498 s in the future\n"}
+[3.223772] (-) TimerEvent: {}
+[3.226382] (base_driver) StderrLine: {'line': b'make[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[3.230527] (base_driver) StderrLine: {'line': b"make[2]: Warning: File 'CMakeFiles/base_driver.dir/flags.make' has modification time 1764694498 s in the future\n"}
+[3.246695] (base_driver) StderrLine: {'line': b'make[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[3.266995] (base_driver) StdoutLine: {'line': b'[100%] Built target base_driver\n'}
+[3.268891] (base_driver) StderrLine: {'line': b'make[1]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[3.289849] (base_driver) StderrLine: {'line': b'make: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[3.324060] (-) TimerEvent: {}
+[3.425776] (-) TimerEvent: {}
+[3.527004] (-) TimerEvent: {}
+[3.628309] (-) TimerEvent: {}
+[3.729982] (-) TimerEvent: {}
+[3.753995] (arm_driver) JobEnded: {'identifier': 'arm_driver', 'rc': 0}
+[3.756463] (navigation_node_three) JobStarted: {'identifier': 'navigation_node_three'}
+[3.830270] (-) TimerEvent: {}
+[3.931146] (-) TimerEvent: {}
+[4.033228] (-) TimerEvent: {}
+[4.134010] (-) TimerEvent: {}
+[4.220237] (base_driver) CommandEnded: {'returncode': 0}
+[4.222007] (base_driver) JobProgress: {'identifier': 'base_driver', 'progress': 'install'}
+[4.222471] (base_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/unitree/106a_final/build/base_driver'], 'cwd': '/home/unitree/106a_final/build/base_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unitree'), ('SSH_CLIENT', '10.42.0.135 53185 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/unitree'), ('CYCLONEDDS_URI', '/home/unitree/cyclonedds_ws/cyclonedds.xml'), ('OLDPWD', '/home/unitree'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'unitree'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/unitree/106a_final/build/base_driver'), ('SSH_CONNECTION', '10.42.0.135 53185 192.168.123.18 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[4.230780] (arm_control) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/arm_control', 'build', '--build-base', '/home/unitree/106a_final/build/arm_control/build', 'install', '--record', '/home/unitree/106a_final/build/arm_control/install.log', '--install-scripts', '$base/lib/arm_control', '--single-version-externally-managed'], 'cwd': '/home/unitree/106a_final/src/arm_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'unitree', 'SSH_CLIENT': '10.42.0.135 53185 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/unitree', 'CYCLONEDDS_URI': '/home/unitree/cyclonedds_ws/cyclonedds.xml', 'OLDPWD': '/home/unitree', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'unitree', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/unitree/106a_final/build/arm_control', 'SSH_CONNECTION': '10.42.0.135 53185 192.168.123.18 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/unitree/106a_final/build/arm_control/prefix_override:/home/unitree/106a_final/install/arm_control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds'}, 'shell': False}
+[4.235271] (-) TimerEvent: {}
+[4.238014] (aruco_node) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/aruco_node', 'build', '--build-base', '/home/unitree/106a_final/build/aruco_node/build', 'install', '--record', '/home/unitree/106a_final/build/aruco_node/install.log', '--single-version-externally-managed'], 'cwd': '/home/unitree/106a_final/src/aruco_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'unitree', 'SSH_CLIENT': '10.42.0.135 53185 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/unitree', 'CYCLONEDDS_URI': '/home/unitree/cyclonedds_ws/cyclonedds.xml', 'OLDPWD': '/home/unitree', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'unitree', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/unitree/106a_final/build/aruco_node', 'SSH_CONNECTION': '10.42.0.135 53185 192.168.123.18 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/unitree/106a_final/build/aruco_node/prefix_override:/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds'}, 'shell': False}
+[4.246539] (base_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.247073] (base_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/base_driver/lib/base_driver/base_driver\n'}
+[4.247390] (base_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/base_driver/lib/base_driver/libbase_wrapper.a\n'}
+[4.247616] (base_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/base_driver/include\n'}
+[4.247847] (base_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/base_driver/include/base_driver\n'}
+[4.248068] (base_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/base_driver/share/ament_index/resource_index/package_run_dependencies/base_driver\n'}
+[4.249082] (base_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/base_driver/share/ament_index/resource_index/parent_prefix_path/base_driver\n'}
+[4.249348] (base_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/base_driver/share/base_driver/environment/ament_prefix_path.sh\n'}
+[4.249574] (base_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/base_driver/share/base_driver/environment/ament_prefix_path.dsv\n'}
+[4.249707] (base_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/base_driver/share/base_driver/environment/path.sh\n'}
+[4.249827] (base_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/base_driver/share/base_driver/environment/path.dsv\n'}
+[4.249946] (base_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/base_driver/share/base_driver/local_setup.bash\n'}
+[4.250093] (base_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/base_driver/share/base_driver/local_setup.sh\n'}
+[4.250287] (base_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/base_driver/share/base_driver/local_setup.zsh\n'}
+[4.250476] (base_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/base_driver/share/base_driver/local_setup.dsv\n'}
+[4.250661] (base_driver) StdoutLine: {'line': b'-- Installing: /home/unitree/106a_final/install/base_driver/share/base_driver/package.dsv\n'}
+[4.250880] (base_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/base_driver/share/ament_index/resource_index/packages/base_driver\n'}
+[4.250999] (base_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/base_driver/share/base_driver/cmake/base_driverConfig.cmake\n'}
+[4.251115] (base_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/base_driver/share/base_driver/cmake/base_driverConfig-version.cmake\n'}
+[4.251227] (base_driver) StdoutLine: {'line': b'-- Up-to-date: /home/unitree/106a_final/install/base_driver/share/base_driver/package.xml\n'}
+[4.335547] (-) TimerEvent: {}
+[4.436715] (-) TimerEvent: {}
+[4.537570] (-) TimerEvent: {}
+[4.638467] (-) TimerEvent: {}
+[4.673390] (arm_control) StdoutLine: {'line': b'running egg_info\n'}
+[4.674573] (arm_control) StdoutLine: {'line': b'writing ../../build/arm_control/arm_control.egg-info/PKG-INFO\n'}
+[4.675176] (arm_control) StdoutLine: {'line': b'writing dependency_links to ../../build/arm_control/arm_control.egg-info/dependency_links.txt\n'}
+[4.675524] (arm_control) StdoutLine: {'line': b'writing entry points to ../../build/arm_control/arm_control.egg-info/entry_points.txt\n'}
+[4.675841] (arm_control) StdoutLine: {'line': b'writing requirements to ../../build/arm_control/arm_control.egg-info/requires.txt\n'}
+[4.676080] (arm_control) StdoutLine: {'line': b'writing top-level names to ../../build/arm_control/arm_control.egg-info/top_level.txt\n'}
+[4.691436] (aruco_node) StdoutLine: {'line': b'running egg_info\n'}
+[4.692544] (aruco_node) StdoutLine: {'line': b'writing ../../build/aruco_node/aruco_node.egg-info/PKG-INFO\n'}
+[4.693115] (aruco_node) StdoutLine: {'line': b'writing dependency_links to ../../build/aruco_node/aruco_node.egg-info/dependency_links.txt\n'}
+[4.693581] (aruco_node) StdoutLine: {'line': b'writing entry points to ../../build/aruco_node/aruco_node.egg-info/entry_points.txt\n'}
+[4.693848] (aruco_node) StdoutLine: {'line': b'writing requirements to ../../build/aruco_node/aruco_node.egg-info/requires.txt\n'}
+[4.694073] (aruco_node) StdoutLine: {'line': b'writing top-level names to ../../build/aruco_node/aruco_node.egg-info/top_level.txt\n'}
+[4.738707] (arm_control) StdoutLine: {'line': b"reading manifest file '../../build/arm_control/arm_control.egg-info/SOURCES.txt'\n"}
+[4.739181] (-) TimerEvent: {}
+[4.740365] (arm_control) StdoutLine: {'line': b"writing manifest file '../../build/arm_control/arm_control.egg-info/SOURCES.txt'\n"}
+[4.740783] (arm_control) StdoutLine: {'line': b'running build\n'}
+[4.740962] (arm_control) StdoutLine: {'line': b'running build_py\n'}
+[4.741433] (arm_control) StdoutLine: {'line': b'running install\n'}
+[4.743220] (arm_control) StdoutLine: {'line': b'running install_lib\n'}
+[4.746405] (arm_control) StdoutLine: {'line': b'running install_data\n'}
+[4.756979] (aruco_node) StdoutLine: {'line': b"reading manifest file '../../build/aruco_node/aruco_node.egg-info/SOURCES.txt'\n"}
+[4.759219] (arm_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.760267] (arm_control) StdoutLine: {'line': b"removing '/home/unitree/106a_final/install/arm_control/lib/python3.8/site-packages/arm_control-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[4.760694] (arm_control) StdoutLine: {'line': b'Copying ../../build/arm_control/arm_control.egg-info to /home/unitree/106a_final/install/arm_control/lib/python3.8/site-packages/arm_control-0.0.0-py3.8.egg-info\n'}
+[4.761299] (arm_control) StdoutLine: {'line': b'running install_scripts\n'}
+[4.761930] (aruco_node) StdoutLine: {'line': b"writing manifest file '../../build/aruco_node/aruco_node.egg-info/SOURCES.txt'\n"}
+[4.762805] (aruco_node) StdoutLine: {'line': b'running build\n'}
+[4.763297] (aruco_node) StdoutLine: {'line': b'running build_py\n'}
+[4.763839] (aruco_node) StdoutLine: {'line': b'running install\n'}
+[4.764389] (aruco_node) StdoutLine: {'line': b'running install_lib\n'}
+[4.764553] (aruco_node) StdoutLine: {'line': b'running install_data\n'}
+[4.765103] (aruco_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.768421] (aruco_node) StdoutLine: {'line': b"removing '/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages/aruco_node-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[4.769809] (aruco_node) StdoutLine: {'line': b'Copying ../../build/aruco_node/aruco_node.egg-info to /home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages/aruco_node-0.0.0-py3.8.egg-info\n'}
+[4.771141] (aruco_node) StdoutLine: {'line': b'running install_scripts\n'}
+[4.790647] (arm_control) StdoutLine: {'line': b'Installing arm_node script to /home/unitree/106a_final/install/arm_control/lib/arm_control\n'}
+[4.797680] (arm_control) StdoutLine: {'line': b'Installing servo_driver script to /home/unitree/106a_final/install/arm_control/lib/arm_control\n'}
+[4.797983] (arm_control) StdoutLine: {'line': b"writing list of installed files to '/home/unitree/106a_final/build/arm_control/install.log'\n"}
+[4.808727] (aruco_node) StdoutLine: {'line': b'Installing aruco script to /home/unitree/106a_final/install/aruco_node/lib/aruco_node\n'}
+[4.810583] (aruco_node) StdoutLine: {'line': b"writing list of installed files to '/home/unitree/106a_final/build/aruco_node/install.log'\n"}
+[4.839424] (-) TimerEvent: {}
+[4.941360] (-) TimerEvent: {}
+[5.042613] (-) TimerEvent: {}
+[5.107797] (base_driver) CommandEnded: {'returncode': 0}
+[5.142811] (-) TimerEvent: {}
+[5.244040] (-) TimerEvent: {}
+[5.344919] (-) TimerEvent: {}
+[5.445807] (-) TimerEvent: {}
+[5.546479] (-) TimerEvent: {}
+[5.647044] (-) TimerEvent: {}
+[5.676248] (base_driver) JobEnded: {'identifier': 'base_driver', 'rc': 0}
+[5.677374] (arm_control) CommandEnded: {'returncode': 0}
+[5.747226] (-) TimerEvent: {}
+[5.848187] (-) TimerEvent: {}
+[5.922593] (arm_control) JobEnded: {'identifier': 'arm_control', 'rc': 0}
+[5.923256] (aruco_node) CommandEnded: {'returncode': 0}
+[5.948441] (-) TimerEvent: {}
+[6.049587] (-) TimerEvent: {}
+[6.150241] (-) TimerEvent: {}
+[6.165952] (aruco_node) JobEnded: {'identifier': 'aruco_node', 'rc': 0}
+[6.167034] (navigation_return_node) JobStarted: {'identifier': 'navigation_return_node'}
+[6.250484] (-) TimerEvent: {}
+[6.351369] (-) TimerEvent: {}
+[6.452266] (-) TimerEvent: {}
+[6.552796] (-) TimerEvent: {}
+[6.596634] (vision_node) JobStarted: {'identifier': 'vision_node'}
+[6.653145] (-) TimerEvent: {}
+[6.753921] (-) TimerEvent: {}
+[6.854837] (-) TimerEvent: {}
+[6.955505] (-) TimerEvent: {}
+[7.000190] (navigation_node) JobStarted: {'identifier': 'navigation_node'}
+[7.055895] (-) TimerEvent: {}
+[7.156581] (-) TimerEvent: {}
+[7.257225] (-) TimerEvent: {}
+[7.358099] (-) TimerEvent: {}
+[7.458924] (-) TimerEvent: {}
+[7.559754] (-) TimerEvent: {}
+[7.660363] (-) TimerEvent: {}
+[7.760957] (-) TimerEvent: {}
+[7.861580] (-) TimerEvent: {}
+[7.962383] (-) TimerEvent: {}
+[8.062993] (-) TimerEvent: {}
+[8.164216] (-) TimerEvent: {}
+[8.265526] (-) TimerEvent: {}
+[8.366564] (-) TimerEvent: {}
+[8.467153] (-) TimerEvent: {}
+[8.567734] (-) TimerEvent: {}
+[8.668466] (-) TimerEvent: {}
+[8.769447] (-) TimerEvent: {}
+[8.870355] (-) TimerEvent: {}
+[8.971748] (-) TimerEvent: {}
+[9.072612] (-) TimerEvent: {}
+[9.173385] (-) TimerEvent: {}
+[9.273967] (-) TimerEvent: {}
+[9.374519] (-) TimerEvent: {}
+[9.475257] (-) TimerEvent: {}
+[9.576574] (-) TimerEvent: {}
+[9.677563] (-) TimerEvent: {}
+[9.773260] (navigation_node_three) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/navigation_node_three', 'build', '--build-base', '/home/unitree/106a_final/build/navigation_node_three/build', 'install', '--record', '/home/unitree/106a_final/build/navigation_node_three/install.log', '--install-scripts', '$base/lib/navigation_node_three', '--single-version-externally-managed'], 'cwd': '/home/unitree/106a_final/src/navigation_node_three', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'unitree', 'SSH_CLIENT': '10.42.0.135 53185 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/unitree', 'CYCLONEDDS_URI': '/home/unitree/cyclonedds_ws/cyclonedds.xml', 'OLDPWD': '/home/unitree', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'unitree', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/unitree/106a_final/build/navigation_node_three', 'SSH_CONNECTION': '10.42.0.135 53185 192.168.123.18 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/unitree/106a_final/build/navigation_node_three/prefix_override:/home/unitree/106a_final/install/navigation_node_three/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds'}, 'shell': False}
+[9.777691] (-) TimerEvent: {}
+[9.878783] (-) TimerEvent: {}
+[9.979888] (-) TimerEvent: {}
+[10.080801] (-) TimerEvent: {}
+[10.181732] (-) TimerEvent: {}
+[10.256576] (navigation_node_three) StdoutLine: {'line': b'running egg_info\n'}
+[10.258412] (navigation_node_three) StdoutLine: {'line': b'writing ../../build/navigation_node_three/navigation_node_three.egg-info/PKG-INFO\n'}
+[10.259256] (navigation_node_three) StdoutLine: {'line': b'writing dependency_links to ../../build/navigation_node_three/navigation_node_three.egg-info/dependency_links.txt\n'}
+[10.259805] (navigation_node_three) StdoutLine: {'line': b'writing entry points to ../../build/navigation_node_three/navigation_node_three.egg-info/entry_points.txt\n'}
+[10.260252] (navigation_node_three) StdoutLine: {'line': b'writing requirements to ../../build/navigation_node_three/navigation_node_three.egg-info/requires.txt\n'}
+[10.260632] (navigation_node_three) StdoutLine: {'line': b'writing top-level names to ../../build/navigation_node_three/navigation_node_three.egg-info/top_level.txt\n'}
+[10.281866] (-) TimerEvent: {}
+[10.324459] (navigation_node_three) StdoutLine: {'line': b"reading manifest file '../../build/navigation_node_three/navigation_node_three.egg-info/SOURCES.txt'\n"}
+[10.326503] (navigation_node_three) StdoutLine: {'line': b"writing manifest file '../../build/navigation_node_three/navigation_node_three.egg-info/SOURCES.txt'\n"}
+[10.326965] (navigation_node_three) StdoutLine: {'line': b'running build\n'}
+[10.327296] (navigation_node_three) StdoutLine: {'line': b'running build_py\n'}
+[10.327856] (navigation_node_three) StdoutLine: {'line': b'running install\n'}
+[10.329778] (navigation_node_three) StdoutLine: {'line': b'running install_lib\n'}
+[10.332869] (navigation_node_three) StdoutLine: {'line': b'byte-compiling /home/unitree/106a_final/install/navigation_node_three/lib/python3.8/site-packages/navigation_node_three/navigator.py to navigator.cpython-38.pyc\n'}
+[10.337170] (navigation_node_three) StdoutLine: {'line': b'running install_data\n'}
+[10.338679] (navigation_node_three) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.342154] (navigation_node_three) StdoutLine: {'line': b"removing '/home/unitree/106a_final/install/navigation_node_three/lib/python3.8/site-packages/navigation_node_three-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[10.342887] (navigation_node_three) StdoutLine: {'line': b'Copying ../../build/navigation_node_three/navigation_node_three.egg-info to /home/unitree/106a_final/install/navigation_node_three/lib/python3.8/site-packages/navigation_node_three-0.0.0-py3.8.egg-info\n'}
+[10.344938] (navigation_node_three) StdoutLine: {'line': b'running install_scripts\n'}
+[10.382009] (-) TimerEvent: {}
+[10.384611] (navigation_node_three) StdoutLine: {'line': b'Installing navigator script to /home/unitree/106a_final/install/navigation_node_three/lib/navigation_node_three\n'}
+[10.385787] (navigation_node_three) StdoutLine: {'line': b"writing list of installed files to '/home/unitree/106a_final/build/navigation_node_three/install.log'\n"}
+[10.464420] (navigation_node_three) CommandEnded: {'returncode': 0}
+[10.482410] (-) TimerEvent: {}
+[10.583130] (-) TimerEvent: {}
+[10.683800] (-) TimerEvent: {}
+[10.765535] (navigation_node_three) JobEnded: {'identifier': 'navigation_node_three', 'rc': 0}
+[10.767505] (navigation_node_two) JobStarted: {'identifier': 'navigation_node_two'}
+[10.784053] (-) TimerEvent: {}
+[10.885103] (-) TimerEvent: {}
+[10.986078] (-) TimerEvent: {}
+[11.088653] (-) TimerEvent: {}
+[11.172879] (navigation_node) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/navigation_node', 'build', '--build-base', '/home/unitree/106a_final/build/navigation_node/build', 'install', '--record', '/home/unitree/106a_final/build/navigation_node/install.log', '--install-scripts', '$base/lib/navigation_node', '--single-version-externally-managed'], 'cwd': '/home/unitree/106a_final/src/navigation_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'unitree', 'SSH_CLIENT': '10.42.0.135 53185 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/unitree', 'CYCLONEDDS_URI': '/home/unitree/cyclonedds_ws/cyclonedds.xml', 'OLDPWD': '/home/unitree', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'unitree', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/unitree/106a_final/build/navigation_node', 'SSH_CONNECTION': '10.42.0.135 53185 192.168.123.18 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/unitree/106a_final/build/navigation_node/prefix_override:/home/unitree/106a_final/install/navigation_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds'}, 'shell': False}
+[11.179759] (navigation_return_node) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/navigation_return_node', 'build', '--build-base', '/home/unitree/106a_final/build/navigation_return_node/build', 'install', '--record', '/home/unitree/106a_final/build/navigation_return_node/install.log', '--install-scripts', '$base/lib/navigation_return_node', '--single-version-externally-managed'], 'cwd': '/home/unitree/106a_final/src/navigation_return_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'unitree', 'SSH_CLIENT': '10.42.0.135 53185 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/unitree', 'CYCLONEDDS_URI': '/home/unitree/cyclonedds_ws/cyclonedds.xml', 'OLDPWD': '/home/unitree', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'unitree', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/unitree/106a_final/build/navigation_return_node', 'SSH_CONNECTION': '10.42.0.135 53185 192.168.123.18 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/unitree/106a_final/build/navigation_return_node/prefix_override:/home/unitree/106a_final/install/navigation_return_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds'}, 'shell': False}
+[11.186781] (vision_node) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/vision_node', 'build', '--build-base', '/home/unitree/106a_final/build/vision_node/build', 'install', '--record', '/home/unitree/106a_final/build/vision_node/install.log', '--install-scripts', '$base/lib/vision_node', '--single-version-externally-managed'], 'cwd': '/home/unitree/106a_final/src/vision_node', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'unitree', 'SSH_CLIENT': '10.42.0.135 53185 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/unitree', 'CYCLONEDDS_URI': '/home/unitree/cyclonedds_ws/cyclonedds.xml', 'OLDPWD': '/home/unitree', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'unitree', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/unitree/106a_final/build/vision_node', 'SSH_CONNECTION': '10.42.0.135 53185 192.168.123.18 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/unitree/106a_final/build/vision_node/prefix_override:/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds'}, 'shell': False}
+[11.192090] (-) TimerEvent: {}
+[11.293236] (-) TimerEvent: {}
+[11.394405] (-) TimerEvent: {}
+[11.495337] (-) TimerEvent: {}
+[11.601584] (-) TimerEvent: {}
+[11.631719] (navigation_return_node) StdoutLine: {'line': b'running egg_info\n'}
+[11.632555] (navigation_node) StdoutLine: {'line': b'running egg_info\n'}
+[11.633053] (navigation_return_node) StdoutLine: {'line': b'writing ../../build/navigation_return_node/navigation_return_node.egg-info/PKG-INFO\n'}
+[11.633738] (navigation_return_node) StdoutLine: {'line': b'writing dependency_links to ../../build/navigation_return_node/navigation_return_node.egg-info/dependency_links.txt\n'}
+[11.634050] (navigation_node) StdoutLine: {'line': b'writing ../../build/navigation_node/navigation_node.egg-info/PKG-INFO\n'}
+[11.634380] (navigation_return_node) StdoutLine: {'line': b'writing entry points to ../../build/navigation_return_node/navigation_return_node.egg-info/entry_points.txt\n'}
+[11.634633] (navigation_node) StdoutLine: {'line': b'writing dependency_links to ../../build/navigation_node/navigation_node.egg-info/dependency_links.txt\n'}
+[11.634914] (navigation_node) StdoutLine: {'line': b'writing entry points to ../../build/navigation_node/navigation_node.egg-info/entry_points.txt\n'}
+[11.635150] (navigation_return_node) StdoutLine: {'line': b'writing requirements to ../../build/navigation_return_node/navigation_return_node.egg-info/requires.txt\n'}
+[11.635497] (navigation_node) StdoutLine: {'line': b'writing requirements to ../../build/navigation_node/navigation_node.egg-info/requires.txt\n'}
+[11.635650] (navigation_node) StdoutLine: {'line': b'writing top-level names to ../../build/navigation_node/navigation_node.egg-info/top_level.txt\n'}
+[11.635779] (navigation_return_node) StdoutLine: {'line': b'writing top-level names to ../../build/navigation_return_node/navigation_return_node.egg-info/top_level.txt\n'}
+[11.663540] (vision_node) StdoutLine: {'line': b'running egg_info\n'}
+[11.664981] (vision_node) StdoutLine: {'line': b'writing ../../build/vision_node/vision_node.egg-info/PKG-INFO\n'}
+[11.665627] (vision_node) StdoutLine: {'line': b'writing dependency_links to ../../build/vision_node/vision_node.egg-info/dependency_links.txt\n'}
+[11.666026] (vision_node) StdoutLine: {'line': b'writing entry points to ../../build/vision_node/vision_node.egg-info/entry_points.txt\n'}
+[11.666312] (vision_node) StdoutLine: {'line': b'writing requirements to ../../build/vision_node/vision_node.egg-info/requires.txt\n'}
+[11.666556] (vision_node) StdoutLine: {'line': b'writing top-level names to ../../build/vision_node/vision_node.egg-info/top_level.txt\n'}
+[11.705106] (navigation_return_node) StdoutLine: {'line': b"reading manifest file '../../build/navigation_return_node/navigation_return_node.egg-info/SOURCES.txt'\n"}
+[11.705656] (-) TimerEvent: {}
+[11.706408] (navigation_return_node) StdoutLine: {'line': b"writing manifest file '../../build/navigation_return_node/navigation_return_node.egg-info/SOURCES.txt'\n"}
+[11.706681] (navigation_return_node) StdoutLine: {'line': b'running build\n'}
+[11.706896] (navigation_return_node) StdoutLine: {'line': b'running build_py\n'}
+[11.707054] (navigation_return_node) StdoutLine: {'line': b'running install\n'}
+[11.707180] (navigation_return_node) StdoutLine: {'line': b'running install_lib\n'}
+[11.707304] (navigation_node) StdoutLine: {'line': b"reading manifest file '../../build/navigation_node/navigation_node.egg-info/SOURCES.txt'\n"}
+[11.707445] (navigation_node) StdoutLine: {'line': b"writing manifest file '../../build/navigation_node/navigation_node.egg-info/SOURCES.txt'\n"}
+[11.707563] (navigation_node) StdoutLine: {'line': b'running build\n'}
+[11.707804] (navigation_node) StdoutLine: {'line': b'running build_py\n'}
+[11.707927] (navigation_node) StdoutLine: {'line': b'running install\n'}
+[11.708096] (navigation_node) StdoutLine: {'line': b'running install_lib\n'}
+[11.708210] (navigation_return_node) StdoutLine: {'line': b'running install_data\n'}
+[11.708325] (navigation_node) StdoutLine: {'line': b'running install_data\n'}
+[11.708457] (navigation_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.708571] (navigation_return_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.711501] (navigation_node) StdoutLine: {'line': b"removing '/home/unitree/106a_final/install/navigation_node/lib/python3.8/site-packages/navigation_node-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[11.711733] (navigation_return_node) StdoutLine: {'line': b"removing '/home/unitree/106a_final/install/navigation_return_node/lib/python3.8/site-packages/navigation_return_node-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[11.712023] (navigation_node) StdoutLine: {'line': b'Copying ../../build/navigation_node/navigation_node.egg-info to /home/unitree/106a_final/install/navigation_node/lib/python3.8/site-packages/navigation_node-0.0.0-py3.8.egg-info\n'}
+[11.712178] (navigation_return_node) StdoutLine: {'line': b'Copying ../../build/navigation_return_node/navigation_return_node.egg-info to /home/unitree/106a_final/install/navigation_return_node/lib/python3.8/site-packages/navigation_return_node-0.0.0-py3.8.egg-info\n'}
+[11.714014] (navigation_node) StdoutLine: {'line': b'running install_scripts\n'}
+[11.714215] (navigation_return_node) StdoutLine: {'line': b'running install_scripts\n'}
+[11.733409] (vision_node) StdoutLine: {'line': b"reading manifest file '../../build/vision_node/vision_node.egg-info/SOURCES.txt'\n"}
+[11.735121] (vision_node) StdoutLine: {'line': b"writing manifest file '../../build/vision_node/vision_node.egg-info/SOURCES.txt'\n"}
+[11.735490] (vision_node) StdoutLine: {'line': b'running build\n'}
+[11.735665] (vision_node) StdoutLine: {'line': b'running build_py\n'}
+[11.736171] (vision_node) StdoutLine: {'line': b'running install\n'}
+[11.738023] (vision_node) StdoutLine: {'line': b'running install_lib\n'}
+[11.741445] (vision_node) StdoutLine: {'line': b'running install_data\n'}
+[11.742476] (vision_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.746401] (vision_node) StdoutLine: {'line': b"removing '/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages/vision_node-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[11.746846] (vision_node) StdoutLine: {'line': b'Copying ../../build/vision_node/vision_node.egg-info to /home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages/vision_node-0.0.0-py3.8.egg-info\n'}
+[11.748882] (vision_node) StdoutLine: {'line': b'running install_scripts\n'}
+[11.750945] (navigation_return_node) StdoutLine: {'line': b'Installing return_navigator script to /home/unitree/106a_final/install/navigation_return_node/lib/navigation_return_node\n'}
+[11.751292] (navigation_node) StdoutLine: {'line': b'Installing nav_node_go script to /home/unitree/106a_final/install/navigation_node/lib/navigation_node\n'}
+[11.752009] (navigation_node) StdoutLine: {'line': b"writing list of installed files to '/home/unitree/106a_final/build/navigation_node/install.log'\n"}
+[11.752198] (navigation_return_node) StdoutLine: {'line': b"writing list of installed files to '/home/unitree/106a_final/build/navigation_return_node/install.log'\n"}
+[11.793814] (vision_node) StdoutLine: {'line': b'Installing arm_aruco script to /home/unitree/106a_final/install/vision_node/lib/vision_node\n'}
+[11.794351] (vision_node) StdoutLine: {'line': b'Installing pingpong_node script to /home/unitree/106a_final/install/vision_node/lib/vision_node\n'}
+[11.795903] (vision_node) StdoutLine: {'line': b"writing list of installed files to '/home/unitree/106a_final/build/vision_node/install.log'\n"}
+[11.806533] (-) TimerEvent: {}
+[11.907479] (-) TimerEvent: {}
+[12.008800] (-) TimerEvent: {}
+[12.061196] (navigation_return_node) CommandEnded: {'returncode': 0}
+[12.108921] (-) TimerEvent: {}
+[12.209406] (-) TimerEvent: {}
+[12.310043] (-) TimerEvent: {}
+[12.311608] (navigation_return_node) JobEnded: {'identifier': 'navigation_return_node', 'rc': 0}
+[12.312266] (navigation_node) CommandEnded: {'returncode': 0}
+[12.410451] (-) TimerEvent: {}
+[12.511289] (-) TimerEvent: {}
+[12.591185] (navigation_node) JobEnded: {'identifier': 'navigation_node', 'rc': 0}
+[12.591888] (vision_node) CommandEnded: {'returncode': 0}
+[12.611435] (-) TimerEvent: {}
+[12.712272] (-) TimerEvent: {}
+[12.812954] (-) TimerEvent: {}
+[12.840211] (vision_node) JobEnded: {'identifier': 'vision_node', 'rc': 0}
+[12.841314] (go2_bringup) JobStarted: {'identifier': 'go2_bringup'}
+[12.913129] (-) TimerEvent: {}
+[13.013779] (-) TimerEvent: {}
+[13.114568] (-) TimerEvent: {}
+[13.215177] (-) TimerEvent: {}
+[13.316038] (-) TimerEvent: {}
+[13.416852] (-) TimerEvent: {}
+[13.517474] (-) TimerEvent: {}
+[13.618077] (-) TimerEvent: {}
+[13.718979] (-) TimerEvent: {}
+[13.819824] (-) TimerEvent: {}
+[13.920652] (-) TimerEvent: {}
+[14.022262] (-) TimerEvent: {}
+[14.092776] (navigation_node_two) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/navigation_node_two', 'build', '--build-base', '/home/unitree/106a_final/build/navigation_node_two/build', 'install', '--record', '/home/unitree/106a_final/build/navigation_node_two/install.log', '--install-scripts', '$base/lib/navigation_node_two', '--single-version-externally-managed'], 'cwd': '/home/unitree/106a_final/src/navigation_node_two', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'unitree', 'SSH_CLIENT': '10.42.0.135 53185 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/unitree', 'CYCLONEDDS_URI': '/home/unitree/cyclonedds_ws/cyclonedds.xml', 'OLDPWD': '/home/unitree', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'unitree', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/unitree/106a_final/build/navigation_node_two', 'SSH_CONNECTION': '10.42.0.135 53185 192.168.123.18 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/unitree/106a_final/build/navigation_node_two/prefix_override:/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds'}, 'shell': False}
+[14.122633] (-) TimerEvent: {}
+[14.223299] (-) TimerEvent: {}
+[14.323899] (-) TimerEvent: {}
+[14.424467] (-) TimerEvent: {}
+[14.525045] (-) TimerEvent: {}
+[14.532486] (navigation_node_two) StdoutLine: {'line': b'running egg_info\n'}
+[14.533771] (navigation_node_two) StdoutLine: {'line': b'writing ../../build/navigation_node_two/navigation_node_two.egg-info/PKG-INFO\n'}
+[14.534371] (navigation_node_two) StdoutLine: {'line': b'writing dependency_links to ../../build/navigation_node_two/navigation_node_two.egg-info/dependency_links.txt\n'}
+[14.534849] (navigation_node_two) StdoutLine: {'line': b'writing entry points to ../../build/navigation_node_two/navigation_node_two.egg-info/entry_points.txt\n'}
+[14.535122] (navigation_node_two) StdoutLine: {'line': b'writing requirements to ../../build/navigation_node_two/navigation_node_two.egg-info/requires.txt\n'}
+[14.535360] (navigation_node_two) StdoutLine: {'line': b'writing top-level names to ../../build/navigation_node_two/navigation_node_two.egg-info/top_level.txt\n'}
+[14.596918] (navigation_node_two) StdoutLine: {'line': b"reading manifest file '../../build/navigation_node_two/navigation_node_two.egg-info/SOURCES.txt'\n"}
+[14.598535] (navigation_node_two) StdoutLine: {'line': b"writing manifest file '../../build/navigation_node_two/navigation_node_two.egg-info/SOURCES.txt'\n"}
+[14.598886] (navigation_node_two) StdoutLine: {'line': b'running build\n'}
+[14.599086] (navigation_node_two) StdoutLine: {'line': b'running build_py\n'}
+[14.599648] (navigation_node_two) StdoutLine: {'line': b'running install\n'}
+[14.601261] (navigation_node_two) StdoutLine: {'line': b'running install_lib\n'}
+[14.604189] (navigation_node_two) StdoutLine: {'line': b'running install_data\n'}
+[14.605113] (navigation_node_two) StdoutLine: {'line': b'running install_egg_info\n'}
+[14.608426] (navigation_node_two) StdoutLine: {'line': b"removing '/home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages/navigation_node_two-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[14.609123] (navigation_node_two) StdoutLine: {'line': b'Copying ../../build/navigation_node_two/navigation_node_two.egg-info to /home/unitree/106a_final/install/navigation_node_two/lib/python3.8/site-packages/navigation_node_two-0.0.0-py3.8.egg-info\n'}
+[14.611135] (navigation_node_two) StdoutLine: {'line': b'running install_scripts\n'}
+[14.625116] (-) TimerEvent: {}
+[14.647062] (navigation_node_two) StdoutLine: {'line': b'Installing nav_to_bottle script to /home/unitree/106a_final/install/navigation_node_two/lib/navigation_node_two\n'}
+[14.647520] (navigation_node_two) StdoutLine: {'line': b'Installing pose_bridge_node script to /home/unitree/106a_final/install/navigation_node_two/lib/navigation_node_two\n'}
+[14.648278] (navigation_node_two) StdoutLine: {'line': b"writing list of installed files to '/home/unitree/106a_final/build/navigation_node_two/install.log'\n"}
+[14.707912] (navigation_node_two) CommandEnded: {'returncode': 0}
+[14.725335] (-) TimerEvent: {}
+[14.826331] (-) TimerEvent: {}
+[14.927531] (-) TimerEvent: {}
+[14.987123] (navigation_node_two) JobEnded: {'identifier': 'navigation_node_two', 'rc': 0}
+[14.990254] (go2_bringup) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/go2_bringup', 'build', '--build-base', '/home/unitree/106a_final/build/go2_bringup/build', 'install', '--record', '/home/unitree/106a_final/build/go2_bringup/install.log', '--install-scripts', '$base/lib/go2_bringup', '--single-version-externally-managed'], 'cwd': '/home/unitree/106a_final/src/go2_bringup', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'unitree', 'SSH_CLIENT': '10.42.0.135 53185 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-11.4/lib64:/usr/local/lib:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/unitree/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/unitree', 'CYCLONEDDS_URI': '/home/unitree/cyclonedds_ws/cyclonedds.xml', 'OLDPWD': '/home/unitree', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/unitree/cyclonedds_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'unitree', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/unitree/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/unitree/cyclonedds_ws/install/cyclonedds/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/unitree/.local/bin:/usr/local/cuda-11.4/bin:/home/unitree/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/unitree/106a_final/install/vision_node:/home/unitree/106a_final/install/navigation_return_node:/home/unitree/106a_final/install/navigation_node_three:/home/unitree/106a_final/install/base_driver:/home/unitree/106a_final/install/aruco_node:/home/unitree/106a_final/install/arm_driver:/home/unitree/106a_final/install/arm_control:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/unitree/106a_final/build/go2_bringup', 'SSH_CONNECTION': '10.42.0.135 53185 192.168.123.18 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/unitree/106a_final/build/go2_bringup/prefix_override:/home/unitree/106a_final/install/go2_bringup/lib/python3.8/site-packages:/home/unitree/106a_final/install/vision_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_return_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/navigation_node_three/lib/python3.8/site-packages:/home/unitree/106a_final/install/aruco_node/lib/python3.8/site-packages:/home/unitree/106a_final/install/arm_control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/unitree/106a_final/install/base_driver:/home/unitree/106a_final/install/arm_driver:/home/unitree/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/unitree/cyclonedds_ws/install/cyclonedds'}, 'shell': False}
+[15.027748] (-) TimerEvent: {}
+[15.128416] (-) TimerEvent: {}
+[15.229010] (-) TimerEvent: {}
+[15.329564] (-) TimerEvent: {}
+[15.430140] (-) TimerEvent: {}
+[15.443390] (go2_bringup) StdoutLine: {'line': b'running egg_info\n'}
+[15.444456] (go2_bringup) StdoutLine: {'line': b'writing ../../build/go2_bringup/go2_bringup.egg-info/PKG-INFO\n'}
+[15.445168] (go2_bringup) StdoutLine: {'line': b'writing dependency_links to ../../build/go2_bringup/go2_bringup.egg-info/dependency_links.txt\n'}
+[15.445497] (go2_bringup) StdoutLine: {'line': b'writing entry points to ../../build/go2_bringup/go2_bringup.egg-info/entry_points.txt\n'}
+[15.445697] (go2_bringup) StdoutLine: {'line': b'writing requirements to ../../build/go2_bringup/go2_bringup.egg-info/requires.txt\n'}
+[15.445860] (go2_bringup) StdoutLine: {'line': b'writing top-level names to ../../build/go2_bringup/go2_bringup.egg-info/top_level.txt\n'}
+[15.503872] (go2_bringup) StdoutLine: {'line': b"reading manifest file '../../build/go2_bringup/go2_bringup.egg-info/SOURCES.txt'\n"}
+[15.505210] (go2_bringup) StdoutLine: {'line': b"writing manifest file '../../build/go2_bringup/go2_bringup.egg-info/SOURCES.txt'\n"}
+[15.505573] (go2_bringup) StdoutLine: {'line': b'running build\n'}
+[15.505731] (go2_bringup) StdoutLine: {'line': b'running build_py\n'}
+[15.505974] (go2_bringup) StdoutLine: {'line': b'running install\n'}
+[15.507420] (go2_bringup) StdoutLine: {'line': b'running install_lib\n'}
+[15.509883] (go2_bringup) StdoutLine: {'line': b'running install_data\n'}
+[15.510784] (go2_bringup) StdoutLine: {'line': b'running install_egg_info\n'}
+[15.513836] (go2_bringup) StdoutLine: {'line': b"removing '/home/unitree/106a_final/install/go2_bringup/lib/python3.8/site-packages/go2_bringup-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[15.514409] (go2_bringup) StdoutLine: {'line': b'Copying ../../build/go2_bringup/go2_bringup.egg-info to /home/unitree/106a_final/install/go2_bringup/lib/python3.8/site-packages/go2_bringup-0.0.0-py3.8.egg-info\n'}
+[15.516152] (go2_bringup) StdoutLine: {'line': b'running install_scripts\n'}
+[15.530237] (-) TimerEvent: {}
+[15.549056] (go2_bringup) StdoutLine: {'line': b"writing list of installed files to '/home/unitree/106a_final/build/go2_bringup/install.log'\n"}
+[15.600677] (go2_bringup) CommandEnded: {'returncode': 0}
+[15.630779] (-) TimerEvent: {}
+[15.731570] (-) TimerEvent: {}
+[15.832416] (-) TimerEvent: {}
+[15.869325] (go2_bringup) JobEnded: {'identifier': 'go2_bringup', 'rc': 0}
+[15.871425] (-) EventReactorShutdown: {}

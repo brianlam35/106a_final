@@ -24,7 +24,7 @@ class ArmManager(Node):
         self.z_scale = 1.0   
 
         # --- TUNING: BIAS ---
-        self.y_bias = -0.04   #tweak this
+        self.y_bias = -0.06   #tweak this
 
         # --- ARUCO SETTINGS ---
         # Radius of the object (Water Bottle)
@@ -96,7 +96,7 @@ class ArmManager(Node):
         
         try:
             self.approach_angles = list(self.ik.compute_ik(tx, ty, tz))
-            self.lift_angles     = list(self.ik.compute_ik(tx, ty, tz + 0.15))
+            self.lift_angles     = list(self.ik.compute_ik(tx, ty, tz + 0.30))
 
             self.get_logger().info("Target Calculated. Starting Approach...")
             self.state = "START_APPROACH"

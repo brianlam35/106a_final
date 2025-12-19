@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'return_navigator = navigation_return_node.return_navigator:main',
+            'gripper_release_node = navigation_return_node.gripper_release_node:main',
         ],
     },
 )

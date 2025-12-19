@@ -2,150 +2,197 @@
 
 import rclpy
 from rclpy.node import Node
-
-from std_msgs.msg import Bool
+from rclpy.qos import qos_profile_sensor_data
 from geometry_msgs.msg import Twist, PointStamped
+from std_msgs.msg import Bool
+import math
+import time
 
 
 class ReturnNavigator(Node):
-    """
-    Skeleton node for 'return home' behavior.
-
-    Plumbing is set up:
-    - subscribes to arm_done and /vision/home_xyz
-    - publishes /cmd_vel and /cmd_laydown
-
-    Actual navigation logic can be filled in or imported later.
-    """
-
     def __init__(self):
         super().__init__('return_navigator')
 
-        # Parameters so you can easily tweak topics later
-        self.arm_done_topic = self.declare_parameter(
-            'arm_done_topic', '/arm/pickup_done'
-        ).get_parameter_value().string_value
+        # --- TUNING ---
+        self.TARGET_DIST = 0.3
+        self.ALIGN_SPEED = 0.20
+        self.DRIVE_SPEED = 0.3
+        self.SEARCH_SPIN_SPEED = -0.25
+        self.SAMPLES_NEEDED = 3
 
-        self.home_xyz_topic = self.declare_parameter(
-            'home_xyz_topic', '/vision/home_xyz'
-        ).get_parameter_value().string_value
+        # --- STATE ---
+        self.state = "SEARCHING"
+        self.samples = []
 
-        self.cmd_vel_topic = self.declare_parameter(
-            'cmd_vel_topic', '/cmd_vel'
-        ).get_parameter_value().string_value
+        self.move_start_time = 0.0
+        self.move_duration = 0.0
+        self.turn_direction = 0
+        self.target_drive_dist = 0.0
+        self.tag_reached_sent = False
 
-        self.cmd_laydown_topic = self.declare_parameter(
-            'cmd_laydown_topic', '/cmd_laydown'
-        ).get_parameter_value().string_value
+        # --- PUBLISHERS ---
+        self.pub_vel = self.create_publisher(Twist, '/cmd_vel', 10)
+        self.pub_tag_reached = self.create_publisher(Bool, '/vision/tag_reached', 10)
 
-        # Publishers
-        self.pub_vel = self.create_publisher(Twist, self.cmd_vel_topic, 10)
-        self.pub_laydown = self.create_publisher(Bool, self.cmd_laydown_topic, 10)
-
-        # Subscribers
-        self.sub_arm_done = self.create_subscription(
-            Bool, self.arm_done_topic, self.arm_done_callback, 10
+        # --- SUBSCRIBER ---
+        self.sub_home = self.create_subscription(
+            PointStamped,
+            '/vision/home_xyz',
+            self.vision_cb,
+            qos_profile_sensor_data
         )
 
-        self.sub_home_xyz = self.create_subscription(
-            PointStamped, self.home_xyz_topic, self.home_xyz_callback, 10
-        )
+        # --- TIMER ---
+        self.timer = self.create_timer(0.05, self.control_loop)
 
-        # Simple state machine scaffold
-        # WAIT_FOR_ARM -> SEARCHING_HOME -> APPROACHING_HOME -> DONE
-        self.state = 'WAIT_FOR_ARM'
-        self.last_home_point = None
+        self.get_logger().info("ReturnNavigator READY — spinning to search for ArUco.")
 
-        # Control loop timer (10 Hz), where your teammate’s logic can live
-        self.timer = self.create_timer(0.1, self.control_loop)
 
-        self.get_logger().info(
-            'ReturnNavigator initialized. '
-            'Waiting for arm_done signal and home_xyz messages...'
-        )
-
-    # ---------- Callbacks ----------
-
-    def arm_done_callback(self, msg: Bool):
-        if not msg.data:
+    # ============================================================
+    # VISION CALLBACK
+    # ============================================================
+    def vision_cb(self, msg: PointStamped):
+        if self.state in ("ALIGNING", "MOVING_BLIND", "DONE"):
             return
 
-        if self.state == 'WAIT_FOR_ARM':
-            self.get_logger().info('Arm reports pickup complete. Transitioning to SEARCHING_HOME.')
-            self.state = 'SEARCHING_HOME'
-            # TODO: stand up + start spin logic can go here later
+        depth = msg.point.z
+        x = msg.point.x
 
-    def home_xyz_callback(self, msg: PointStamped):
-        """
-        Called whenever ArucoNode publishes home position.
-        msg.point.x, msg.point.y, msg.point.z are in camera frame.
-        """
-        self.last_home_point = msg.point
+        if depth <= 0.0:
+            return
 
-        # Later you can use this in SEARCHING_HOME / APPROACHING_HOME
-        # to compute how to move the robot.
-        if self.state in ['SEARCHING_HOME', 'APPROACHING_HOME']:
-            # For now just log occasionally
-            self.get_logger().debug(
-                f'Received home_xyz: ({msg.point.x:.3f}, '
-                f'{msg.point.y:.3f}, {msg.point.z:.3f})'
+        angle = math.atan2(-x, depth)
+
+        if self.state == "SEARCHING":
+            self.get_logger().info("Aruco spotted — sampling...")
+            self.state = "SAMPLING"
+            self.samples = []
+
+        if self.state == "SAMPLING" and len(self.samples) < self.SAMPLES_NEEDED:
+            self.samples.append((depth, angle))
+            self.get_logger().info(
+                f"Sample {len(self.samples)}/{self.SAMPLES_NEEDED}: "
+                f"d={depth:.2f}m  a={math.degrees(angle):.1f}deg"
             )
 
-    # ---------- Main control loop ----------
 
+    # ============================================================
+    # MAIN CONTROL LOOP
+    # ============================================================
     def control_loop(self):
-        """
-        Runs at fixed rate. Actual motion logic can be slotted in here.
-        Right now it just logs state; no movement commands.
-        """
-        if self.state == 'WAIT_FOR_ARM':
-            # Do nothing, just wait for arm_done
+        if self.state == "DONE":
             return
 
-        elif self.state == 'SEARCHING_HOME':
-            # TODO: spin in place, use last_home_point when available to switch
-            # to APPROACHING_HOME
-            # Example placeholder:
-            # cmd = Twist()
-            # cmd.angular.z = 0.3
-            # self.pub_vel.publish(cmd)
-            return
+        cmd = Twist()
+        now = time.time()
 
-        elif self.state == 'APPROACHING_HOME':
-            # TODO: use last_home_point to drive robot in front of the tag
-            # using open-loop or closed-loop logic
-            return
+        # ---------------- SEARCH ----------------
+        if self.state == "SEARCHING":
+            cmd.linear.x = 0.0
+            cmd.angular.z = self.SEARCH_SPIN_SPEED
+            self.pub_vel.publish(cmd)
 
-        elif self.state == 'DONE':
-            # Ensure we stay stopped
-            stop_cmd = Twist()
-            self.pub_vel.publish(stop_cmd)
-            return
+        # ---------------- SAMPLING ----------------
+        elif self.state == "SAMPLING":
+            cmd.linear.x = 0.0
+            cmd.angular.z = 0.0
+            self.pub_vel.publish(cmd)
 
-    # ---------- Helpers you/teammate can fill in ----------
+            if len(self.samples) >= self.SAMPLES_NEEDED:
+                self.plan_approach()
 
-    def send_laydown(self):
-        """Call this once you’re done navigating home."""
-        msg = Bool()
-        msg.data = True
-        self.pub_laydown.publish(msg)
-        self.get_logger().info('Published laydown command.')
+        # ---------------- ALIGN ----------------
+        elif self.state == "ALIGNING":
+            if (now - self.move_start_time) < self.move_duration:
+                cmd.angular.z = self.ALIGN_SPEED * self.turn_direction
+                self.pub_vel.publish(cmd)
+            else:
+                self.get_logger().info("Aligned — driving forward.")
+                self.start_blind_move()
+
+        # ---------------- DRIVE ----------------
+        elif self.state == "MOVING_BLIND":
+            if (now - self.move_start_time) < self.move_duration:
+                cmd.linear.x = self.DRIVE_SPEED
+                self.pub_vel.publish(cmd)
+            else:
+                self.finish_task()
+
+
+    # ============================================================
+    # PLAN TURN + DRIVE
+    # ============================================================
+    def plan_approach(self):
+        avg_depth = sum(s[0] for s in self.samples) / len(self.samples)
+        avg_angle = sum(s[1] for s in self.samples) / len(self.samples)
+
+        turn_seconds = abs(avg_angle) / self.ALIGN_SPEED
+        turn_seconds = max(turn_seconds, 0.4)
+
+        self.turn_direction = 1 if avg_angle > 0 else -1
+        self.target_drive_dist = max(0.0, avg_depth - self.TARGET_DIST)
+
+        self.get_logger().info(
+            f"PLAN → turn {math.degrees(avg_angle):.1f}deg "
+            f"({turn_seconds:.2f}s), drive {self.target_drive_dist:.2f}m"
+        )
+
+        self.move_duration = turn_seconds
+        self.move_start_time = time.time()
+        self.state = "ALIGNING"
+
+
+    # ============================================================
+    # DRIVE STRAIGHT (NO VISION)
+    # ============================================================
+    def start_blind_move(self):
+        drive_seconds = self.target_drive_dist / self.DRIVE_SPEED
+        drive_seconds = max(drive_seconds + 0.4, 0.6)
+
+        self.get_logger().info(
+            f"DRIVE → {self.target_drive_dist:.2f}m "
+            f"({drive_seconds:.2f}s)"
+        )
+
+        self.move_duration = drive_seconds
+        self.move_start_time = time.time()
+        self.state = "MOVING_BLIND"
+
+
+    # ============================================================
+    # FINISH (ROBUST SIGNAL)
+    # ============================================================
+    def finish_task(self):
+        self.get_logger().info("Target reached — stopping.")
+
+        stop = Twist()
+        for _ in range(20):
+            self.pub_vel.publish(stop)
+            time.sleep(0.05)
+
+        if not self.tag_reached_sent:
+            msg = Bool()
+            msg.data = True
+
+            self.get_logger().info("Broadcasting /vision/tag_reached...")
+
+            # 🔥 SPAM FOR ROS2 RELIABILITY
+            for _ in range(20):
+                self.pub_tag_reached.publish(msg)
+                time.sleep(0.05)
+
+            self.tag_reached_sent = True
+            self.get_logger().info("Published /vision/tag_reached")
+
+        self.state = "DONE"
+        self.get_logger().info("RETURN COMPLETE.")
 
 
 def main(args=None):
     rclpy.init(args=args)
-    node = ReturnNavigator()
-    try:
-        rclpy.spin(node)
-    except KeyboardInterrupt:
-        pass
-    finally:
-        # Make sure robot is stopped on shutdown
-        stop_cmd = Twist()
-        node.pub_vel.publish(stop_cmd)
-        node.destroy_node()
-        rclpy.shutdown()
+    rclpy.spin(ReturnNavigator())
+    rclpy.shutdown()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
